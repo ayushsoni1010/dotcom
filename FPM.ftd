@@ -1,0 +1,4 @@
+-- import: fpm
+
+-- fpm.package: fifthtry.github.io/fifthtry.com
+zip: github.com/fifthtry/fifthtry.com/archive/refs/heads/main.zip
