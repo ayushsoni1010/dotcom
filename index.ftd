@@ -92,6 +92,13 @@ FifthTry has a review based workflow for documentation, just like Github Pull Re
 
 
 
+--- sign-up-form: FifthTry is in closed beta Sign up today to get lifetime 50% off on pricing
+	
+
+
+
+
+
 
 
 
@@ -236,6 +243,47 @@ button-bg: $font.cta_secondary_base
 button-bg: $font.cta_primary_base
 
 
+
+
+
+
+
+
+
+
+
+-- ftd.column sign-up-form:
+caption title:
+optional ftd.color bg-color: $font.cta_primary_base
+background-color: $bg-color
+padding-vertical: 90
+width: fill
+
+--- ftd.column:
+width: 844
+align: center
+
+--- ftd.row:
+width: 650
+align: center
+
+--- ftd.text: $title
+role: $font.sub-heading-large
+text-align: center
+
+--- container: ftd.main
+
+--- ftd.column:
+width: 844
+spacing: 30
+align: center
+
+--- ftd.text: Name:
+width: 300
+border-radius: 8
+background-color: $fpm.color.main.text-strong
+padding-vertical: 16
+padding-horizontal 32
 
 
 
