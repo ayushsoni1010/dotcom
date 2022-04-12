@@ -1,1 +1,534 @@
--- ftd.text: fifthtry.com
+-- import: fifthtry.github.io/fifthtry.com/assets
+-- import: fpm
+-- import: fifthtry.github.io/inter/assets as font-assets
+-- import: fifthtry.github.io/fifthtry.com/custom-typo as font
+
+-- fpm.font-display: $font-assets.fonts.Inter
+
+-- fpm.toc-item list empty-toc:
+
+-- fpm.toc-item list main-nav:
+$processor$: toc
+
+- Why FTD?: /why/
+- Docs: /docs/ 
+- News: /news/
+
+
+-- record tc:
+caption title:
+body body:
+
+-- tc list list-tc:
+
+-- list-tc: Commit to the process
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation
+
+-- list-tc: Own the changes
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation
+
+-- list-tc: Deploy when everything’s ready
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation.
+
+
+
+
+
+
+
+
+
+
+-- homepage:
+nav-links: $main-nav
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column homepage:
+optional ftd.color bg-color: $fpm.color.main.background.base
+background-color: $bg-color
+fpm.toc-item list nav-links: $empty-nav
+width: fill
+open: true
+append-at: content-container
+
+--- container: ftd.main
+
+--- header:
+main-nav: $nav-links
+
+
+--- container: ftd.main
+
+--- ftd.column:
+id: content-container
+width: fill
+
+
+--- hero-section:
+
+--- section-list-image-left: Continous Translation
+list-title-copy: $list-tc
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation.
+
+
+
+--- section-list-image-right: Continous Translation
+list-title-copy: $list-tc
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation.
+
+
+
+
+
+
+
+-- ftd.column hero-section:
+caption title: Products should reflect their Documentation. We make that a process.
+optional ftd.image-src image-hero-left: $assets.files.assets.images.code-to-doc.png
+optional string hero-left-sub-heading: Solve it with
+optional string hero-left-heading: Continous Documentation
+optional string hero-left-button-one: How it works
+optional string hero-left-button-two: Join Waitlist
+optional ftd.image-src image-hero-right: $assets.files.assets.images.doc-to-trans.png
+optional string hero-right-sub-heading: Solve it with
+optional string hero-right-heading: Continous Translation
+optional string hero-right-button-one: How it works
+optional string hero-right-button-two: Get Started
+optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
+width: fill
+height: 850
+
+--- ftd.row:
+width: 965
+align: center
+padding-top: 94
+
+
+--- ftd.text: $title 
+role: $font.hero-large
+color: $fpm.color.main.text-strong
+
+
+--- container: ftd.main
+
+--- ftd.column:
+width: fill
+height: 586
+align: center
+background-image: $bg-image
+background-parallax: true
+background-repeat: false
+margin-top: 59
+
+--- ftd.row:
+width: 965
+align: center
+id: hero-image-section
+
+--- ftd.row:
+width: fill
+id: left-section
+
+--- ftd.column:
+align: center
+
+--- ftd.image:
+src: $image-hero-left
+width: fill
+margin-bottom: 10
+
+--- ftd.text: $hero-left-sub-heading
+role: $font.sub-heading-small
+color: $fpm.color.main.text
+text-align: center
+width: fill
+
+--- ftd.text: $hero-left-heading
+role: $font.sub-heading-large
+color: $fpm.color.main.text-strong
+text-align: center
+width: fill
+
+--- ftd.row:
+align: center
+margin-top: 26
+
+--- ftd.row:
+width: fill
+spacing: 16
+
+--- button: How it works
+button-bg: $font.cta_secondary_base
+
+--- button: How it works
+button-bg: $font.cta_primary_base
+
+
+--- container: hero-image-section
+
+--- ftd.row:
+width: 170
+align: center
+
+--- ftd.column:
+border-width: 1
+border-right: 1
+border-left: 0
+border-top: 0
+border-bottom: 0
+border-style: dashed
+border-color: $fpm.main.border
+width: 10
+height: fill
+align: center
+
+--- container: hero-image-section
+
+--- ftd.row:
+width: fill
+id: right-section
+
+--- ftd.column:
+
+--- ftd.image:
+src: $image-hero-right
+width: fill
+margin-bottom: 10
+
+--- ftd.text: $hero-right-sub-heading
+role: $font.sub-heading-small
+color: $fpm.color.main.text
+text-align: center
+width: fill
+
+--- ftd.text: $hero-right-heading
+role: $font.sub-heading-large
+color: $fpm.color.main.text-strong
+text-align: center
+width: fill
+
+--- ftd.row:
+align: center
+margin-top: 26
+
+--- ftd.row:
+width: fill
+spacing: 16
+
+--- button: How it works
+button-bg: $font.cta_secondary_base
+
+--- button: How it works
+button-bg: $font.cta_primary_base
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.row section-list-image-left:
+caption title:
+optional body body:
+optional ftd.color bg-color: $fpm.color.main.background.step-1
+optional string title-copy:
+tc list list-title-copy:
+width: fill
+background-color: $bg-color
+padding-vertical: 70
+padding-horizontal: 48
+
+--- ftd.column:
+width: percent 35
+id: left-section
+padding-right: 45
+
+--- ftd.text: $title
+width: fill
+role: $font.section-title
+color: $fpm.color.main.text-strong
+margin-bottom: 18
+
+--- ftd.text:
+text: $body
+role: $font.list-body
+color: $fpm.color.main.text
+margin-bottom: 30
+
+--- list-loop:
+$loop$: $list-title-copy as $obj
+title: $obj.title
+copy: $obj.body
+
+--- container: ftd.main
+
+--- ftd.row:
+width: percent 65
+id: right-section
+margin-top: 90
+
+--- ftd.image:
+src: $assets.files.assets.images.random-image.png
+width: fill
+
+
+
+
+
+-- ftd.row section-list-image-right:
+caption title:
+optional body body:
+optional ftd.color bg-color: 
+optional string title-copy:
+tc list list-title-copy:
+width: fill
+background-color: $bg-color
+padding-vertical: 70
+padding-horizontal: 48
+
+--- ftd.row:
+width: percent 65
+id: right-section
+margin-top: 90
+
+--- ftd.image:
+src: $assets.files.assets.images.random-image.png
+width: fill
+
+
+--- container: ftd.main
+
+--- ftd.column:
+width: percent 35
+id: left-section
+padding-left: 45
+
+--- ftd.text: $title
+width: fill
+role: $font.section-title
+color: $fpm.color.main.text-strong
+margin-bottom: 18
+
+--- ftd.text:
+text: $body
+role: $font.list-body
+color: $fpm.color.main.text
+margin-bottom: 30
+
+--- list-loop:
+$loop$: $list-title-copy as $obj
+title: $obj.title
+copy: $obj.body
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.row list-loop:
+string title:
+string copy:
+width: fill
+
+--- ftd.row:
+width: 36
+margin-right: 20
+
+--- ftd.image:
+src: $assets.files.assets.images.list-bullet.png
+width: 36
+height: 36
+border-radius: 500
+
+--- container: ftd.main
+
+--- ftd.column:
+width: fill
+spacing: 8
+margin-bottom: 8
+
+--- ftd.text: $title
+role: $font.list-title
+color: $fpm.color.main.text-strong
+width: fill
+
+--- ftd.column:
+
+--- ftd.text: $copy
+role: $font.list-body
+color: $fpm.color.main.text
+width: fill
+
+
+
+
+
+
+
+
+-- ftd.text button:
+caption title:
+text: $title
+optional ftd.color button-bg: $fpm.color.main.background.base
+optional ftd.color button-color: $fpm.color.main.text-strong
+padding-vertical: 16
+padding-horizontal: 32
+background-color: $button-bg
+role: $font.button
+color: $button-color
+link: /
+border-radius: 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column header:
+optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
+optional string site-title: 
+optional string fallback-site-title: Logo
+optional string home-url: /
+optional ftd.color header-bg: $fpm.color.glass.background.base
+optional ftd.image-src icon-theme-mode: $assets.files.assets.images.icon-moon.png
+optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
+optional string github-url: https://github.com/FifthTry/dotcom
+optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
+optional string language-url: /translations/
+fpm.toc-item list main-nav: $empty-toc
+padding-horizontal: 48
+background-color: $header-bg
+width: fill
+
+
+--- header-section-left:
+site-logo: $logo
+id: main-row
+
+--- container: main-row
+
+--- header-section-right:
+nav-list: $main-nav
+icon-theme-mode: $icon-theme-mode
+icon-language: $icon-language
+icon-github: $icon-github
+
+
+
+
+
+
+
+-- ftd.row header-section-left:
+width: fill
+ftd.image-src site-logo:
+id: main-row
+
+--- ftd.row:
+width: fill
+id: left-header
+padding-vertical: 26
+
+--- ftd.image: 
+src: $site-logo
+height: 32
+width: 93
+
+--- container: ftd.main
+
+
+
+
+
+
+
+
+
+
+-- ftd.row header-section-right:
+id: right-header
+fpm.toc-item list nav-list:
+optional ftd.image-src icon-theme-mode:
+optional ftd.image-src icon-language:
+optional ftd.image-src icon-github:
+optional string github-url: 
+optional string language-url:
+padding-vertical: 30
+spacing: 32
+
+
+--- nav-items: $obj.title
+$loop$: $nav-list as $obj
+children: $obj.children 
+link: $obj.url
+
+--- ftd.row:
+padding-left: 16
+spacing: 32
+
+--- ftd.image:
+src: $icon-language
+
+--- ftd.image:
+src: $icon-theme-mode
+
+--- ftd.image:
+src: $icon-github
+link: $github-url
+
+
+
+
+
+
+
+-- ftd.column nav-items:
+caption title:
+optional string link:
+fpm.toc-item list children:
+ftd.color text-color: $fpm.color.glass.text-strong
+
+--- ftd.row: 
+align: center
+
+--- ftd.text: $title
+if: $link is not null
+role: $fpm.type.label-large
+link: $link
+color: $text-color
+white-space: nowrap
+

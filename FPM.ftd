@@ -2,3 +2,5 @@
 
 -- fpm.package: fifthtry.github.io/fifthtry.com
 zip: github.com/fifthtry/fifthtry.com/archive/refs/heads/main.zip
+
+-- fpm.dependency: fifthtry.github.io/inter

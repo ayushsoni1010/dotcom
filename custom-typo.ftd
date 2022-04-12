@@ -1,0 +1,111 @@
+-- import: fifthtry.github.io/fifthtry.com/assets
+-- import: fpm
+-- import: fifthtry.github.io/inter/assets as font-assets
+
+-- fpm.font-display: $font-assets.fonts.Inter
+
+
+-- ftd.font-size sub-heading-sml:
+line-height: 44
+size: 32
+tracking: 0.5
+
+-- ftd.type sub-heading-small: $fpm.font-display
+desktop: $sub-heading-sml
+mobile: $sub-heading-sml
+xl: $sub-heading-sml
+weight: 300
+
+
+-- ftd.color main-text-color:
+light: #FFFBFE
+dark: #1C1B1F
+
+
+
+-- ftd.color cta_secondary_base:
+light: #4FB2DF
+dark: #4FB2DF
+
+
+-- ftd.color cta_primary_base:
+light: #2DD4BF
+dark: #2DD4BF
+
+
+-- ftd.font-size sub-heading-lg:
+line-height: 44
+size: 32
+tracking: 0.5
+
+-- ftd.type sub-heading-large: $fpm.font-display
+desktop: $sub-heading-lg
+mobile: $sub-heading-lg
+xl: $sub-heading-lg
+weight: 700
+
+
+
+-- ftd.font-size hero-lg:
+line-height: 52
+size: 48
+tracking: 0.5
+
+-- ftd.type hero-large: $fpm.font-display
+desktop: $hero-lg
+mobile: $hero-lg
+xl: $hero-lg
+weight: 700
+
+
+
+-- ftd.font-size button-txt:
+line-height: 16
+size: 16
+tracking: 0.5
+
+-- ftd.type button: $fpm.font-display
+desktop: $button-txt
+mobile: $button-txt
+xl: $button-txt
+weight: 700
+
+
+-- ftd.font-size list-tit:
+line-height: 36
+size: 24
+tracking: 0.5
+
+-- ftd.type list-title: $fpm.font-display
+desktop: $list-tit
+mobile: $list-tit
+xl: $list-tit
+weight: 700
+
+
+-- ftd.font-size list-bd:
+line-height: 20
+size: 14
+tracking: 0.5
+
+-- ftd.type list-body: $fpm.font-display
+desktop: $list-bd
+mobile: $list-bd
+xl: $list-bd
+weight: 400
+
+
+-- ftd.font-size section-t:
+line-height: 44
+size: 32
+tracking: 0.5
+
+-- ftd.type section-title: $fpm.font-display
+desktop: $section-t
+mobile: $section-t
+xl: $section-t
+weight: 700
+
+
+
+
