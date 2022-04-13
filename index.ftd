@@ -95,6 +95,15 @@ FifthTry has a review based workflow for documentation, just like Github Pull Re
 --- sign-up-form: FifthTry is in closed beta Sign up today to get lifetime 50% off on pricing
 	
 
+--- testimonial-section: What early users are saying
+left-testimony: Kumar G Varun
+left-designation: Oracle, Ex Splunk
+left-testimony-body: Our latest something
+
+
+
+
+
 
 
 
@@ -254,7 +263,7 @@ button-bg: $font.cta_primary_base
 
 -- ftd.column sign-up-form:
 caption title:
-optional ftd.color bg-color: $font.cta_primary_base
+optional ftd.color bg-color: $font.sign-up-bg
 background-color: $bg-color
 padding-vertical: 90
 width: fill
@@ -277,18 +286,44 @@ text-align: center
 width: 844
 spacing: 30
 align: center
+margin-top: 30
+margin-bottom: 40
 
---- ftd.text: Name:
+--- ftd.row:
+align: center
+spacing: 30
+
+--- sign-up-input:
+input-text: Name:
+
+--- sign-up-input:
+input-text: Email:
+
+--- button: Sign Up
+button-bg: $font.cta_primary_base
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.text sign-up-input:
+string input-text:
+text: $input-text
 width: 300
 border-radius: 8
 background-color: $fpm.color.main.text-strong
 padding-vertical: 16
-padding-horizontal 32
-
-
-
-
-
+padding-horizontal: 32
+role: $font.button
+color: $fpm.color.main.text
 
 
 
@@ -337,6 +372,13 @@ margin-top: 90
 --- ftd.image:
 src: $assets.files.assets.images.random-image.png
 width: fill
+
+
+
+
+
+
+
 
 
 
@@ -580,3 +622,57 @@ link: $link
 color: $text-color
 white-space: nowrap
 
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column testimonial-section:
+caption title:
+optional string left-testimony-body: 
+optional string left-testimony:
+optional string left-designation:
+optional string right-testimony-body:
+optional string right-testimony:
+optional string right-designation:
+padding-vertical: 90
+
+--- ftd.text: $title
+role: $font.section-title
+color: $fpm.color.main.text-strong
+
+
+--- ftd.row:
+id: testimonial-container
+spacing: 42
+
+--- ftd.row:
+id: left-side
+
+--- ftd.column:
+background-image: $assets.files.assets.images.testimonial-bg-left.png
+background-repeat: false
+min-width: 570
+min-height: 205
+
+--- ftd.text:
+text: $left-testimony-body
+
+--- container: ftd.main
+
+--- ftd.column:
+
+--- ftd.text: $left-testimony
+width: fill
+
+--- ftd.text: $left-designation
+width: fill
+
+--- container: testimonial-container

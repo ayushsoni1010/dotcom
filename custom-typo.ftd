@@ -33,6 +33,11 @@ light: #2DD4BF
 dark: #2DD4BF
 
 
+-- ftd.color sign-up-bg:
+light: #118C7C
+dark: #118C7C
+
+
 -- ftd.font-size sub-heading-lg:
 line-height: 44
 size: 32
