@@ -21,6 +21,10 @@ weight: 300
 light: #FFFBFE
 dark: #1C1B1F
 
+-- ftd.color footer-border-color:
+light: #2DD4BF
+dark: #2DD4BF
+
 
 
 -- ftd.color cta_secondary_base:
@@ -78,6 +82,17 @@ mobile: $button-txt
 xl: $button-txt
 weight: 700
 
+
+-- ftd.font-size footer-txt:
+line-height: 16
+size: 14
+tracking: 0.5
+
+-- ftd.type footer-font: $fpm.font-display
+desktop: $footer-txt
+mobile: $footer-txt
+xl: $footer-txt
+weight: 400
 
 -- ftd.font-size list-tit:
 line-height: 36
