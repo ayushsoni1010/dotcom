@@ -743,6 +743,7 @@ optional string right-testimony:
 optional string right-designation:
 padding-vertical: 90
 padding-horizontal: 50
+padding-bottom: 200
 width: fill
 align: center
 
@@ -775,13 +776,19 @@ color: $fpm.color.main.text
 role: $font.copy-relaxed
 
 --- ftd.column:
+margin-top: 32
+padding-left: 100
 
 --- ftd.text: $left-testimony
 width: fill
 color: $font.cta_primary_base
+role: $font.button
+margin-bottom: 8
 
 --- ftd.text: $left-designation
 width: fill
+color: $fpm.color.main.text-strong
+role: $font.copy-relaxed
 
 --- container: testimonial-container
 
@@ -802,11 +809,17 @@ color: $fpm.color.main.text
 role: $font.copy-relaxed
 
 --- ftd.column:
+margin-top: 132
+padding-left: 100
 
 --- ftd.text: $right-testimony
 width: fill
 color: $font.cta_primary_base
+role: $font.button
+margin-bottom: 8
 
 --- ftd.text: $right-designation
 width: fill
+color: $fpm.color.main.text-strong
+role: $font.copy-relaxed
 
