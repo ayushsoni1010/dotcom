@@ -14,6 +14,15 @@ $processor$: toc
 - Docs: /docs/ 
 - News: /news/
 
+-- fpm.toc-item list footer-nav:
+$processor$: toc
+
+- Terms of Use: /Terms of Use/
+- Privacy Policy: /Privacy Policy/ 
+- News: /News/
+- Team: /Team/
+- Team: /Team/
+
 
 -- integer image-hover: 1
 
@@ -119,6 +128,9 @@ right-designation: Oracle, Ex Splunk
 
 
 
+--- footer:
+copyright: © 2022 FifthTry. All rights reserved
+footer-nav: $footer-nav
 
 
 
@@ -823,3 +835,88 @@ width: fill
 color: $fpm.color.main.text-strong
 role: $font.copy-relaxed
 
+-- ftd.column footer:
+optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
+optional ftd.color footer-bg: $fpm.color.glass.background.base
+optional string copyright:
+fpm.toc-item list footer-nav: $empty-toc
+padding-horizontal: 48
+background-color: $footer-bg
+width: fill
+padding-vertical: 61
+border-color: $font.footer-border-color
+border-top:3
+
+
+--- ftd.row:
+width:fill
+id: footer-container
+
+--- ftd.row:
+padding-top:5
+width:fill
+
+--- footer-section-right:
+nav-list: $footer-nav
+
+--- container: footer-container
+
+--- ftd.row:
+width:fill
+align: center
+
+
+--- ftd.row:
+width:fill
+
+--- ftd.image:
+src: $logo
+height: 32
+width: 116
+
+--- container: footer-container
+
+
+--- ftd.row:
+padding-top:25
+align: right
+
+--- ftd.text:
+text: $copyright
+width: fill
+text-align: right
+role: $font.footer-font
+color: $fpm.color.main.text
+white-space: nowrap
+
+
+
+
+
+-- ftd.row footer-section-right:
+fpm.toc-item list nav-list:
+padding-vertical: 30
+spacing: 32
+
+--- footer-nav-items: $obj.title
+$loop$: $nav-list as $obj
+children: $obj.children 
+link: $obj.url
+
+
+
+-- ftd.column footer-nav-items:
+caption title:
+optional string link:
+fpm.toc-item list children:
+ftd.color text-color: $fpm.color.glass.text-strong
+
+--- ftd.row: 
+align: center
+
+--- ftd.text: $title
+if: $link is not null
+role: $fpm.type.label-large
+link: $link
+color: $text-color
+white-space: nowrap
