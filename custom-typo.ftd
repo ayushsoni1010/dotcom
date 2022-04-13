@@ -27,6 +27,9 @@ dark: #1C1B1F
 light: #4FB2DF
 dark: #4FB2DF
 
+-- ftd.color cta_hover:
+light: rgba(79, 178, 223, 0.5)
+dark: rgba(79, 178, 223, 0.5)
 
 -- ftd.color cta_primary_base:
 light: #2DD4BF
@@ -110,6 +113,18 @@ desktop: $section-t
 mobile: $section-t
 xl: $section-t
 weight: 700
+
+
+-- ftd.font-size copy-relax:
+line-height: 24
+size: 16
+tracking: 0.5
+
+-- ftd.type copy-relaxed: $fpm.font-display
+desktop: $copy-relax
+mobile: $copy-relax
+xl: $copy-relax
+weight: 300
 
 
 
