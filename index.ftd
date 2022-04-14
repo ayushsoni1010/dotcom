@@ -835,6 +835,12 @@ width: fill
 color: $fpm.color.main.text-strong
 role: $font.copy-relaxed
 
+
+
+
+
+
+
 -- ftd.column footer:
 optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
 optional ftd.color footer-bg: $fpm.color.glass.background.base
@@ -845,29 +851,27 @@ background-color: $footer-bg
 width: fill
 padding-vertical: 61
 border-color: $font.footer-border-color
-border-top:3
-
+border-top: 3
 
 --- ftd.row:
-width:fill
+width: fill
 id: footer-container
 
 --- ftd.row:
-padding-top:5
-width:fill
+padding-top: 5
+width: fill
 
 --- footer-section-right:
 nav-list: $footer-nav
 
 --- container: footer-container
 
---- ftd.row:
-width:fill
+--- ftd.column:
+width: fill
 align: center
 
-
 --- ftd.row:
-width:fill
+align: center
 
 --- ftd.image:
 src: $logo
@@ -876,9 +880,9 @@ width: 116
 
 --- container: footer-container
 
-
 --- ftd.row:
-padding-top:25
+width: fill
+padding-top: 25
 align: right
 
 --- ftd.text:
@@ -893,6 +897,12 @@ white-space: nowrap
 
 
 
+
+
+
+
+
+
 -- ftd.row footer-section-right:
 fpm.toc-item list nav-list:
 padding-vertical: 30
@@ -902,6 +912,13 @@ spacing: 32
 $loop$: $nav-list as $obj
 children: $obj.children 
 link: $obj.url
+
+
+
+
+
+
+
 
 
 
@@ -920,3 +937,5 @@ role: $fpm.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
+
+
