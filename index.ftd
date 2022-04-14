@@ -68,6 +68,19 @@ FifthTry has a review based workflow for documentation, just like Github Pull Re
 nav-links: $main-nav
 
 
+/--- ftd.row:
+anchor: window
+right: 50
+bottom: 100
+padding: 10
+background-color: $fpm.color.main.background.base
+border-width: 1
+border-color: $fpm.color.main.text
+border-radius: 4
+z-index: 99999999999999
+
+/--- toggle:
+
 
 
 
@@ -90,8 +103,8 @@ append-at: content-container
 --- header:
 main-nav: $nav-links
 
-
 --- container: ftd.main
+
 
 --- ftd.column:
 id: content-container
@@ -711,8 +724,16 @@ margin-top: 5
 spacing: 32
 
 --- ftd.image:
+if: not $ftd.dark-mode
 src: $icon-theme-mode
 cursor: pointer
+$on-click$: message-host enable-dark-mode
+
+--- ftd.image:
+if: $ftd.dark-mode
+src: $icon-theme-mode
+cursor: pointer
+$on-click$: message-host enable-light-mode
 
 --- ftd.image:
 src: $icon-github
@@ -949,4 +970,29 @@ link: $link
 color: $text-color
 white-space: nowrap
 
+
+
+
+
+
+
+
+
+
+
+-- ftd.row toggle:
+
+--- ftd.image:
+if: not $ftd.dark-mode
+src: $assets.files.assets.images.icon.svg
+height: 18
+$on-click$: message-host enable-dark-mode
+align: center
+
+--- ftd.image:
+if:  $ftd.dark-mode
+src: $assets.files.assets.images.icon-dark.svg
+height: 18
+$on-click$: message-host enable-light-mode
+align: center
 
