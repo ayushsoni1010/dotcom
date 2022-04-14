@@ -344,11 +344,9 @@ margin-bottom: 40
 align: center
 spacing: 30
 
---- sign-up-input:
-input-text: Name:
+--- sign-up-input: Name:
 
---- sign-up-input:
-input-text: Email:
+--- sign-up-input: Email:
 
 --- button: Sign Up
 button-bg: $font.cta_primary_base
@@ -365,16 +363,18 @@ button-bg: $font.cta_primary_base
 
 
 
--- ftd.text sign-up-input:
-string input-text:
-text: $input-text
+-- ftd.input sign-up-input: 
+caption title: 
 width: 300
 border-radius: 8
 background-color: $fpm.color.main.text-strong
 padding-vertical: 16
 padding-horizontal: 32
-role: $font.button
-color: $fpm.color.main.text
+placeholder: $title
+border-width: 0
+/role: $font.button
+/color: $fpm.color.main.text
+
 
 
 
