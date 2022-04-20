@@ -451,6 +451,7 @@ align: center
 
 --- ftd.row:
 width: fill
+padding-vertical: 100
 id: right-section
 
 --- ftd.column:
