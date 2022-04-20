@@ -5,6 +5,11 @@
 
 -- fpm.font-display: $font-assets.fonts.Inter
 
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
 -- fpm.toc-item list empty-toc:
 
 -- fpm.toc-item list main-nav:
@@ -166,9 +171,54 @@ optional string hero-right-button-one: How it works
 optional string hero-right-button-two: Get Started
 optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
 width: fill
-height: 850
+height if not $is-mobile: 850
 
---- ftd.row:
+--- desktop-hero: $title
+if: not $is-mobile
+image-hero-left: $image-hero-left
+hero-left-sub-heading: $hero-left-sub-heading
+hero-left-heading: $hero-left-heading
+hero-left-button-one: $hero-left-button-one
+hero-left-button-two: $hero-left-button-two
+image-hero-right: $image-hero-right
+hero-right-sub-heading: $hero-right-sub-heading
+hero-right-heading: $hero-right-heading
+hero-right-button-one: $hero-right-button-one
+hero-right-button-two: $hero-right-button-two
+bg-image: $bg-image
+
+
+--- mobile-hero: $title
+if: $is-mobile
+image-hero-left: $image-hero-left
+hero-left-sub-heading: $hero-left-sub-heading
+hero-left-heading: $hero-left-heading
+hero-left-button-one: $hero-left-button-one
+hero-left-button-two: $hero-left-button-two
+image-hero-right: $image-hero-right
+hero-right-sub-heading: $hero-right-sub-heading
+hero-right-heading: $hero-right-heading
+hero-right-button-one: $hero-right-button-one
+hero-right-button-two: $hero-right-button-two
+bg-image: $bg-image
+
+
+
+
+
+-- ftd.column desktop-hero: 
+caption title:
+optional ftd.image-src image-hero-left: 
+optional string hero-left-sub-heading: 
+optional string hero-left-heading: 
+optional string hero-left-button-one: 
+optional string hero-left-button-two: 
+optional ftd.image-src image-hero-right: 
+optional string hero-right-sub-heading: 
+optional string hero-right-heading: 
+optional string hero-right-button-one: 
+optional string hero-right-button-two: 
+optional ftd.image-src bg-image: 
 width: 965
 align: center
 padding-top: 94
@@ -292,6 +342,149 @@ button-bg: $font.cta_secondary_base
 --- button: $hero-right-button-two
 button-bg: $font.cta_primary_base
 
+
+
+
+
+
+
+
+
+-- ftd.column mobile-hero: 
+caption title:
+optional ftd.image-src image-hero-left: 
+optional string hero-left-sub-heading: 
+optional string hero-left-heading: 
+optional string hero-left-button-one: 
+optional string hero-left-button-two: 
+optional ftd.image-src image-hero-right: 
+optional string hero-right-sub-heading: 
+optional string hero-right-heading: 
+optional string hero-right-button-one: 
+optional string hero-right-button-two: 
+optional ftd.image-src bg-image: 
+width: fill
+align: center
+padding-top: 94
+
+
+--- ftd.text: $title 
+role: $font.hero-large
+color: $fpm.color.main.text-strong
+padding-horizontal: 30
+
+
+--- container: ftd.main
+
+
+--- ftd.column:
+width: fill
+align: center
+margin-top: 59
+
+--- ftd.column:
+width: fill
+align: center
+padding-left: 40
+id: hero-image-section
+
+--- ftd.row:
+width: fill
+id: left-section
+
+--- ftd.column:
+align: center
+
+--- ftd.image:
+src: $image-hero-left
+width: fill
+margin-bottom: 10
+
+--- ftd.text: $hero-left-sub-heading
+role: $font.sub-heading-small
+color: $fpm.color.main.text
+text-align: center
+width: fill
+
+--- ftd.text: $hero-left-heading
+role: $font.sub-heading-large
+color: $fpm.color.main.text-strong
+text-align: center
+width: fill
+
+--- ftd.row:
+align: center
+margin-top: 26
+
+--- ftd.row:
+width: fill
+spacing: 16
+
+--- button: $hero-left-button-one
+button-bg: $font.cta_secondary_base
+
+
+--- button: $hero-left-button-two
+button-bg: $font.cta_primary_base
+
+
+--- container: hero-image-section
+
+--- ftd.row:
+width: fill
+align: center
+
+--- ftd.column:
+border-width: 1
+border-right: 1
+border-left: 0
+border-top: 0
+border-bottom: 0
+border-style: dashed
+border-color: $fpm.main.border
+width: 10
+height: fill
+align: center
+
+--- container: hero-image-section
+
+
+--- ftd.row:
+width: fill
+id: right-section
+
+--- ftd.column:
+
+--- ftd.image:
+src: $image-hero-right
+width: fill
+margin-bottom: 10
+
+--- ftd.text: $hero-right-sub-heading
+role: $font.sub-heading-small
+color: $fpm.color.main.text
+text-align: center
+width: fill
+
+--- ftd.text: $hero-right-heading
+role: $font.sub-heading-large
+color: $fpm.color.main.text-strong
+text-align: center
+width: fill
+
+--- ftd.row:
+align: center
+margin-top: 26
+
+--- ftd.row:
+width: fill
+spacing: 16
+
+--- button: $hero-right-button-one
+button-bg: $font.cta_secondary_base
+
+--- button: $hero-right-button-two
+button-bg: $font.cta_primary_base
 
 
 
