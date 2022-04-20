@@ -5,6 +5,8 @@
 
 -- fpm.font-display: $font-assets.fonts.Inter
 
+-- boolean sidebar-open: false
+
 -- boolean is-mobile: false
 
 -- is-mobile: true
@@ -834,6 +836,9 @@ background-color: $header-bg
 width: fill
 
 
+--- mobile-sidebar:
+if: $sidebar-open
+
 --- header-section-left:
 site-logo: $logo
 id: main-row
@@ -1189,3 +1194,21 @@ height: 18
 $on-click$: message-host enable-light-mode
 align: center
 
+
+
+
+
+
+
+
+
+
+-- ftd.column mobile-sidebar:
+anchor: window
+top: 0
+bottom: 0
+left: 0
+right: 0
+background-color:  $fpm.color.main.background.base
+z-index: 1
+$on-click$: toggle $sidebar-open
