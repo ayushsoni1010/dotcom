@@ -118,7 +118,7 @@ width: fill
 
 --- hero-section:
 
---- slideshow-left: Continous Translation
+--- slideshow-left: Continous Documentation 
 list-title-copy: $list-tc
 
 FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation.
@@ -584,13 +584,54 @@ optional string title-copy:
 tc list list-title-copy:
 width: fill
 background-color: $bg-color
+
+
+--- slideshow-left-desktop: $title
+if: not $is-mobile
+image-1: $image-1
+image-2: $image-2
+image-3: $image-3
+body: $body
+bg-color: $bg-color
+title-copy: $title-copy
+list-title-copy: $list-title-copy
+
+
+--- slideshow-left-mobile: $title
+if: $is-mobile
+image-1: $image-1
+image-2: $image-2
+image-3: $image-3
+body: $body
+bg-color: $bg-color
+title-copy: $title-copy
+list-title-copy: $list-title-copy
+
+
+
+
+
+-- ftd.row slideshow-left-desktop: 
+caption title:
+optional ftd.image-src image-1: 
+optional ftd.image-src image-2: 
+optional ftd.image-src image-3: 
+optional body body:
+optional ftd.color bg-color: 
+optional string title-copy:
+tc list list-title-copy:
+width: fill
 padding-vertical: 70
 padding-horizontal: 48
 
---- ftd.column:
-width: percent 35
+
+--- ftd.row:
+width: percent 30
 id: left-section
 padding-right: 45
+
+--- ftd.column:
+width: fill
 
 --- ftd.text: $title
 width: fill
@@ -642,12 +683,135 @@ width: fill
 
 
 
+-- ftd.column slideshow-left-mobile: 
+caption title:
+optional ftd.image-src image-1: 
+optional ftd.image-src image-2: 
+optional ftd.image-src image-3: 
+optional body body:
+optional ftd.color bg-color: 
+optional string title-copy:
+tc list list-title-copy:
+width: fill
+padding-vertical: 24
+padding-horizontal: 16
+margin-bottom: 44
+
+
+--- ftd.column:
+width: fill
+align: center
+
+--- ftd.row:
+width: percent 50
+align: center
+
+--- ftd.text: $title
+width: fill
+text-align: center
+role: $font.section-title
+color: $fpm.color.main.text-strong
+margin-bottom: 16
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+
+--- ftd.image:
+if: $image-hover == 1
+src: $image-1
+width: fill
+margin-bottom: 16
+
+--- ftd.image:
+if: $image-hover == 2
+src: $image-2
+width: fill
+margin-bottom: 16
+
+--- ftd.image:
+if: $image-hover == 3
+src: $image-3
+width: fill
+margin-bottom: 16
+
+--- container: ftd.main
+
+--- ftd.row:
+
+
+--- ftd.text:
+text: $body
+role: $font.list-body
+color: $fpm.color.main.text
+margin-bottom: 16
+
+
+--- container: ftd.main
+
+--- ftd.column:
+
+--- list-loop:
+$loop$: $list-title-copy as $obj
+title: $obj.title
+copy: $obj.body
+index: $obj.index
+is-last: $obj.is-last
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- ftd.row slideshow-right:
 caption title:
 optional ftd.image-src image-1: $assets.files.assets.images.slide-show-image-1.png
 optional ftd.image-src image-2: $assets.files.assets.images.slide-show-image-2.png
 optional ftd.image-src image-3: $assets.files.assets.images.slide-show-image-3.png
+optional body body:
+optional ftd.color bg-color: 
+optional string title-copy:
+tc list list-title-copy:
+width: fill
+background-color: $bg-color
+
+--- slideshow-right-desktop: $title
+if: not $is-mobile
+image-1: $image-1
+image-2: $image-2
+image-3: $image-3
+body: $body
+bg-color: $bg-color
+title-copy: $title-copy
+list-title-copy: $list-title-copy
+
+
+--- slideshow-right-mobile: $title
+if: $is-mobile
+image-1: $image-1
+image-2: $image-2
+image-3: $image-3
+body: $body
+bg-color: $bg-color
+title-copy: $title-copy
+list-title-copy: $list-title-copy
+
+
+-- ftd.row slideshow-right-desktop:
+caption title:
+optional ftd.image-src image-1: 
+optional ftd.image-src image-2: 
+optional ftd.image-src image-3: 
 optional body body:
 optional ftd.color bg-color: 
 optional string title-copy:
@@ -703,6 +867,89 @@ copy: $obj.body
 index: $obj.index
 is-last: $obj.is-last
 
+
+
+
+
+
+
+
+
+-- ftd.column slideshow-right-mobile:
+caption title:
+optional ftd.image-src image-1: 
+optional ftd.image-src image-2: 
+optional ftd.image-src image-3: 
+optional body body:
+optional ftd.color bg-color: 
+optional string title-copy:
+tc list list-title-copy:
+width: fill
+padding-vertical: 24
+padding-horizontal: 16
+margin-bottom: 44
+
+
+--- ftd.column:
+width: fill
+align: center
+
+--- ftd.row:
+width: percent 50
+align: center
+
+--- ftd.text: $title
+width: fill
+text-align: center
+role: $font.section-title
+color: $fpm.color.main.text-strong
+margin-bottom: 16
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+
+--- ftd.image:
+if: $image-hover == 1
+src: $image-1
+width: fill
+margin-bottom: 16
+
+--- ftd.image:
+if: $image-hover == 2
+src: $image-2
+width: fill
+margin-bottom: 16
+
+--- ftd.image:
+if: $image-hover == 3
+src: $image-3
+width: fill
+margin-bottom: 16
+
+--- container: ftd.main
+
+--- ftd.row:
+
+
+--- ftd.text:
+text: $body
+role: $font.list-body
+color: $fpm.color.main.text
+margin-bottom: 16
+
+
+--- container: ftd.main
+
+--- ftd.column:
+
+--- list-loop:
+$loop$: $list-title-copy as $obj
+title: $obj.title
+copy: $obj.body
+index: $obj.index
+is-last: $obj.is-last
 
 
 
