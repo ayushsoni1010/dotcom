@@ -13,16 +13,16 @@ width: fill
 open: true
 append-at: content-container
 
-
 --- header:
 
-
 --- container: ftd.main
-
 
 --- ftd.column:
 id: content-container
 width: fill
+
+
+
 
 
 
@@ -40,9 +40,6 @@ optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.
 fpm.toc-item list main-nav: $config.empty-toc
 width: fill
 
-
-
-
 --- container: ftd.main
 
 --- header-desktop:
@@ -52,7 +49,6 @@ icon-theme-mode: $icon-theme-mode
 icon-language: $icon-language
 icon-github: $icon-github
 header-bg: $header-bg
-
 
 --- header-mobile:
 if: $config.is-mobile
@@ -200,16 +196,24 @@ cursor: pointer
 
 
 
+
+
+
+
+
+
+
+
 -- ftd.column hero-section:
-caption title: Products should reflect their Documentation. We make that a process.
+caption title:
 optional ftd.image-src image-hero-left: $assets.files.assets.images.code-to-doc.png
-optional string hero-left-sub-heading: Solve it with
-optional string hero-left-heading: Continous Documentation
-optional string hero-left-button-one: Get Started
+optional string hero-left-sub-heading:
+optional string hero-left-heading:
+optional string hero-left-button-one:
 optional ftd.image-src image-hero-right: $assets.files.assets.images.doc-to-trans.png
-optional string hero-right-sub-heading: Solve it with
-optional string hero-right-heading: Continous Translation
-optional string hero-right-button-one: Coming Soon
+optional string hero-right-sub-heading:
+optional string hero-right-heading:
+optional string hero-right-button-one:
 optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
 width: fill
 height if not $config.is-mobile: 850
