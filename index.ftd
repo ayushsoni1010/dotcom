@@ -11,8 +11,7 @@
 -- lib.homepage:
 nav-links: $config.main-nav
 
--- lib.hero-section:
-title: Products should reflect their Documentation. We make that a process.
+-- lib.hero-section: Products should reflect their Documentation. We make that a process.
 hero-left-sub-heading: Solve it with
 hero-left-heading: Continuous Documentation
 hero-left-button-one: Get Started
@@ -48,19 +47,40 @@ implement changes to documentation.
 
 -- lib.sign-up-form: FifthTry is in closed beta Sign up today to get lifetime 50% off on pricing
 	
+-- string left-testimony-body:
+
+Our latest enterprise SaaS integration offering has been getting
+significant traction in the last 8-10 months - bringing its own set
+of (good to have :) challenges. I’ve been exploring multiple options
+to ensure that everyone involved - from dev to support - is on the
+same page about what’s in-front of the customer all the time.
+Turned out this is easier said than done, but based on our initial
+investigations {lib.white: Fifthtry looks quite promising to avoid
+these cross-team confusions.}
+
+
+-- string right-testimony-body:
+
+Our latest enterprise SaaS integration offering has been getting
+significant traction in the last 8-10 months - bringing its own set
+of (good to have :) challenges. I’ve been exploring multiple options
+to ensure that everyone involved - from dev to support - is on the
+same page about what’s in-front of the customer all the time.
+Turned out this is easier said than done, but based on our initial
+investigations {lib.white: Fifthtry looks quite promising to avoid
+these cross-team confusions.}
+
 
 -- lib.testimonial: What early users are saying
 left-testimony: Kumar G Varun
 left-designation: Oracle, Ex Splunk
-left-testimony-body: Our latest enterprise SaaS integration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {lib.white: Fifthtry looks quite promising to avoid these cross-team confusions.}
-right-testimony-body:  Our latest enterprise SaaS integration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {lib.white: Fifthtry looks quite promising to avoid these cross-team confusions.}
+left-testimony-body: $left-testimony-body
+right-testimony-body: $right-testimony-body
 right-testimony: Manish Aggarwal
 right-designation: CEO Techment Technology
 bg-image-left: $assets.files.assets.images.testimonial-bg-left.png
 bg-image-right: $assets.files.assets.images.testimonial-bg-right.png
 bg-image: $assets.files.assets.images.testimonial_top_bg-mobile.png
-
-
 
 -- lib.footer:
 copyright: © 2022 FifthTry. All rights reserved
