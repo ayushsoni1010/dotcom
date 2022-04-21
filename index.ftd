@@ -19,8 +19,15 @@ hero-left-button-one: Get Started
 hero-right-sub-heading: Solve it with
 hero-right-heading: Continuous Translation
 hero-right-button-one: Coming Soon
+image-hero-left: $assets.files.assets.images.code-to-doc.png
+image-hero-right: $assets.files.assets.images.doc-to-trans.png
+bg-image: $assets.files.assets.images.homepage-background.png
 
 -- lib.slideshow-left: Continuous Documentation
+image-1: $assets.files.assets.images.slide-show-image-1.png
+image-2: $assets.files.assets.images.slide-show-image-2.png
+image-3: $assets.files.assets.images.slide-show-image-3.png
+bg-color: $fpm.color.main.background.step-1
 list-title-copy: $config.list-tc
 
 FifthTry has a review based workflow for documentation, just like Github Pull Request.
@@ -29,6 +36,9 @@ implement changes to documentation.
 
 
 -- lib.slideshow-right: Continuous Translation
+image-1: $assets.files.assets.images.slide-show-image-1.png
+image-2: $assets.files.assets.images.slide-show-image-2.png
+image-3: $assets.files.assets.images.slide-show-image-3.png
 list-title-copy: $config.list-tc
 
 FifthTry has a review based workflow for documentation, just like Github Pull Request.
@@ -46,6 +56,9 @@ left-testimony-body: Our latest enterprise SaaS integration offering has been ge
 right-testimony-body:  Our latest enterprise SaaS integration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {lib.white: Fifthtry looks quite promising to avoid these cross-team confusions.}
 right-testimony: Manish Aggarwal
 right-designation: CEO Techment Technology
+bg-image-left: $assets.files.assets.images.testimonial-bg-left.png
+bg-image-right: $assets.files.assets.images.testimonial-bg-right.png
+bg-image: $assets.files.assets.images.testimonial_top_bg-mobile.png
 
 
 
