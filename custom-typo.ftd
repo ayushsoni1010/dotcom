@@ -25,7 +25,9 @@ dark: #1C1B1F
 light: #2DD4BF
 dark: #2DD4BF
 
-
+-- ftd.color header-bg:
+light: rgba(45, 212, 143, 0.05)
+dark: rgba(45, 212, 143, 0.05)
 
 -- ftd.color cta_secondary_base:
 light: #4FB2DF

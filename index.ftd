@@ -1148,20 +1148,69 @@ optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
 optional string site-title: 
 optional string fallback-site-title: Logo
 optional string home-url: /
-optional ftd.color header-bg: $fpm.color.glass.background.base
+optional ftd.color header-bg: $font.header-bg
 optional ftd.image-src icon-theme-mode: $assets.files.assets.images.icon-moon.png
 optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
 optional string language-url: /translations/
 fpm.toc-item list main-nav: $empty-toc
-padding-horizontal: 48
-background-color: $header-bg
 width: fill
 
 
 --- mobile-sidebar:
 if: $sidebar-open
+
+--- container: ftd.main
+
+--- mobile-sidebar-menu:
+if: $sidebar-open
+nav-list: $main-nav
+
+--- container: ftd.main
+
+--- header-desktop:
+if: not $is-mobile
+logo: $logo
+main-nav: $main-nav
+icon-theme-mode: $icon-theme-mode
+icon-language: $icon-language
+icon-github: $icon-github
+header-bg: $header-bg
+
+
+--- header-mobile:
+if: $is-mobile
+logo: $logo
+icon-theme-mode: $icon-theme-mode
+icon-language: $icon-language
+icon-github: $icon-github
+header-bg: $header-bg
+main-nav: $main-nav
+
+
+
+
+
+
+
+
+
+-- ftd.column header-desktop:
+optional ftd.image-src logo: 
+optional string site-title: 
+optional string fallback-site-title: Logo
+optional string home-url: /
+optional ftd.color header-bg: 
+optional ftd.image-src icon-theme-mode: 
+optional ftd.image-src icon-github: 
+optional string github-url: 
+optional ftd.image-src icon-language: 
+optional string language-url: 
+fpm.toc-item list main-nav: 
+background-color: $header-bg
+padding-horizontal: 48
+width: fill
 
 --- header-section-left:
 site-logo: $logo
@@ -1181,15 +1230,73 @@ icon-github: $icon-github
 
 
 
+
+
+-- ftd.column header-mobile:
+optional ftd.image-src logo: 
+optional string site-title: 
+optional string fallback-site-title: Logo
+optional string home-url: /
+optional ftd.color header-bg: 
+optional ftd.image-src icon-theme-mode: 
+optional ftd.image-src icon-github: 
+optional string github-url: 
+optional ftd.image-src icon-language: 
+optional string language-url: 
+fpm.toc-item list main-nav: 
+background-color: $header-bg
+padding-horizontal: 16
+width: fill
+
+--- header-section-left:
+site-logo: $logo
+id: main-row
+
+--- container: main-row
+
+--- header-section-right:
+nav-list: $main-nav
+icon-theme-mode: $icon-theme-mode
+icon-language: $icon-language
+icon-github: $icon-github
+
+
+
+
+
+
+
+
+
 -- ftd.row header-section-left:
 width: fill
+padding-vertical: 26
 ftd.image-src site-logo:
 id: main-row
 
 --- ftd.row:
+if: $is-mobile
 width: fill
 id: left-header
-padding-vertical: 26
+padding-top: 26
+
+--- ftd.image:
+src: $assets.files.assets.images.icon-hamburger.png
+margin-right: 24
+$on-click$: toggle $sidebar-open
+
+--- ftd.image: 
+src: $site-logo
+height: 32
+width: 93
+
+--- container: ftd.main
+
+--- ftd.row:
+if: not $is-mobile
+width: fill
+id: left-header
+padding-top: 26
 
 --- ftd.image: 
 src: $site-logo
@@ -1216,9 +1323,11 @@ optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
 optional string language-url: https://github.com/FifthTry
 padding-vertical: 30
+padding-bottom: 20
 spacing: 32
 
 --- nav-items: $obj.title
+if: not $is-mobile
 $loop$: $nav-list as $obj
 children: $obj.children 
 link: $obj.url
@@ -1269,6 +1378,47 @@ cursor: pointer
 
 
 
+
+
+-- ftd.column mobile-sidebar-menu:
+fpm.toc-item list nav-list:
+width: percent 40
+sticky: true
+height: calc 100vh - 0px
+overflow-y: auto
+width: percent 70
+align: top-left
+padding-left: 10
+padding-top: 15
+padding-right: 20
+padding-bottom: 40
+border-right: 1
+border-color: $fpm.color.main.text
+anchor: window
+left: 0
+top: 0
+background-color:  $fpm.color.main.background.base
+shadow-offset-x: 3
+shadow-offset-y: 0
+shadow-size: 1
+shadow-blur: 10
+z-index: 1000
+padding-vertical: 48
+
+
+--- nav-items-mobile: $obj.title
+$loop$: $nav-list as $obj
+children: $obj.children 
+link: $obj.url
+
+
+
+
+
+
+
+
+
 -- ftd.column nav-items:
 caption title:
 optional string link:
@@ -1284,6 +1434,27 @@ role: $fpm.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
+
+
+
+
+-- ftd.column nav-items-mobile:
+caption title:
+optional string link:
+fpm.toc-item list children:
+ftd.color text-color: $fpm.color.glass.text-strong
+
+--- ftd.row: 
+align: center
+
+--- ftd.text: $title
+if: $link is not null
+role: $fpm.type.label-large
+link: $link
+color: $text-color
+white-space: nowrap
+padding-vertical: 10
+padding-left: 10
 
 
 
