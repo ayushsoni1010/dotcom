@@ -1,0 +1,56 @@
+-- import: fpm
+
+
+-- boolean is-mobile: false
+
+-- is-mobile: true
+if: $ftd.device == mobile
+
+-- fpm.toc-item list empty-toc:
+
+-- fpm.toc-item list main-nav:
+$processor$: toc
+
+- Why FTD?: /why/
+- Docs: /docs/
+- News: /news/
+
+-- fpm.toc-item list footer-nav:
+$processor$: toc
+
+- Terms of Use: /Terms of Use/
+- Privacy Policy: /Privacy Policy/
+- News: /News/
+- Team: /Team/
+- Team: /Team/
+
+
+
+-- record tc:
+caption title:
+body body:
+integer index:
+boolean is-last:
+
+-- tc list list-tc:
+
+-- list-tc: Commit to the process
+index: 1
+is-last: false
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation
+
+-- list-tc: Own the changes
+index: 2
+is-last: false
+
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation
+
+-- list-tc: Deploy when everything’s ready
+index: 3
+is-last: true
+
+
+FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation.
+

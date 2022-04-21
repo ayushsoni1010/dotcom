@@ -4,3 +4,6 @@
 zip: github.com/fifthtry/fifthtry.com/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/inter
+
+-- fpm.auto-import: fifthtry.github.io/fifthtry.com/FPM/config
+-- fpm.auto-import: fifthtry.github.io/fifthtry.com/assets
