@@ -16,8 +16,9 @@ nav-links: $config.main-nav
 --- lib.slideshow-left: Continous Documentation
 list-title-copy: $config.list-tc
 
-FifthTry has a review based workflow for documentation, just like Github Pull Request. Instead of directly editing documents, FifthTry users can create change requests to implement changes to documentation.
-
+FifthTry has a review based workflow for documentation, just like Github Pull Request.
+Instead of directly editing documents, FifthTry users can create change requests to
+implement changes to documentation.
 
 
 --- lib.slideshow-right: Continous Translation
@@ -33,8 +34,8 @@ FifthTry has a review based workflow for documentation, just like Github Pull Re
 --- lib.testimonial: What early users are saying
 left-testimony: Kumar G Varun
 left-designation: Oracle, Ex Splunk
-left-testimony-body: Our latest enterprise SaaS integeration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {white: Fifthtry looks quite promising to avoid these cross-team confusions.}
-right-testimony-body:  Our latest enterprise SaaS integeration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {white: Fifthtry looks quite promising to avoid these cross-team confusions.}
+left-testimony-body: Our latest enterprise SaaS integration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {lib.white: Fifthtry looks quite promising to avoid these cross-team confusions.}
+right-testimony-body:  Our latest enterprise SaaS integration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {lib.white: Fifthtry looks quite promising to avoid these cross-team confusions.}
 right-testimony: Manish Aggarwal
 right-designation: CEO Techment Technology
 
