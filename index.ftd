@@ -1,10 +1,5 @@
 -- import: fifthtry.github.io/fifthtry.com/assets
--- import: fpm
--- import: fifthtry.github.io/inter/assets as font-assets
--- import: fifthtry.github.io/fifthtry.com/custom-typo as font
 -- import: fifthtry.github.io/fifthtry.com/library as lib
-
--- fpm.font-display: $font-assets.fonts.Inter
 
 
 
@@ -14,10 +9,10 @@ nav-links: $config.main-nav
 -- lib.hero-section: Products should reflect their Documentation. We make that a process.
 hero-left-sub-heading: Solve it with
 hero-left-heading: Continuous Documentation
-hero-left-button-one: Get Started
+hero-left-cta-one: Get Started
 hero-right-sub-heading: Solve it with
 hero-right-heading: Continuous Translation
-hero-right-button-one: Coming Soon
+hero-right-cta-one: Coming Soon
 image-hero-left: $assets.files.assets.images.code-to-doc.png
 image-hero-right: $assets.files.assets.images.doc-to-trans.png
 
