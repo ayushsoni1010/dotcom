@@ -1612,7 +1612,7 @@ color: $fpm.color.main.text-strong
 
 
 -- ftd.column sign-up-form:
-caption title:
+caption or body title:
 optional ftd.color bg-color: $font.sign-up-bg
 background-color: $bg-color
 width: fill
