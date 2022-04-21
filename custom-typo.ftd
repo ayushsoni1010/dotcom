@@ -5,6 +5,19 @@
 -- fpm.font-display: $font-assets.fonts.Inter
 
 
+
+
+-- ftd.font-size heading-hero-sml:
+line-height: 52
+size: 48
+tracking: 0.5
+
+-- ftd.type heading-hero: $fpm.font-display
+desktop: $heading-hero-sml
+mobile: $heading-hero-sml
+xl: $heading-hero-sml
+weight: 700
+
 -- ftd.font-size sub-heading-sml:
 line-height: 44
 size: 32
@@ -24,6 +37,10 @@ dark: #1C1B1F
 -- ftd.color footer-border-color:
 light: #2DD4BF
 dark: #2DD4BF
+
+-- ftd.color cta-primary-disabled:
+light: rgba(44,201,181,0.1)
+dark: rgba(44,201,181,0.1)
 
 -- ftd.color header-bg:
 light: rgba(45, 212, 143, 0.05)

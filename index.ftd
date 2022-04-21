@@ -21,6 +21,12 @@ hero-right-button-one: Coming Soon
 image-hero-left: $assets.files.assets.images.code-to-doc.png
 image-hero-right: $assets.files.assets.images.doc-to-trans.png
 
+
+-- lib.video-section: How it works
+playtime: In 2 minutes, seriously
+video-logo: $assets.files.assets.images.slide-show-image-1.png
+
+
 -- lib.slideshow-left: Continuous Documentation
 image-1: $assets.files.assets.images.slide-show-image-1.png
 image-2: $assets.files.assets.images.slide-show-image-2.png

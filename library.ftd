@@ -37,8 +37,10 @@ optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
 /optional string language-url: /translations/
-optional string sign-in: Sign-in
-optional string install: Install
+optional string sign-in: Sign up with 
+optional string github-cta: github
+optional string pricing: Pricing
+optional string install: Login
 fpm.toc-item list main-nav: $config.empty-toc
 width: fill
 
@@ -48,6 +50,8 @@ width: fill
 if: not $config.is-mobile
 logo: $logo
 sign-in: $sign-in
+github-cta: $github-cta
+pricing: $pricing
 install: $install
 icon-theme-mode: $icon-theme-mode
 icon-language: $icon-language
@@ -80,6 +84,8 @@ optional string sign-in:
 optional string install: 
 optional string fallback-site-title: Logo
 optional string home-url: /
+optional string github-cta: github
+optional string pricing: Pricing
 optional ftd.color header-bg:
 optional ftd.image-src icon-theme-mode:
 optional ftd.image-src icon-github:
@@ -98,6 +104,8 @@ id: main-row
 
 --- header-section-right:
 sign-in: $sign-in
+pricing: $pricing
+github-cta: $github-cta
 install: $install
 icon-github: $icon-github
 
@@ -196,6 +204,8 @@ width: 93
 id: right-header
 optional string sign-in: 
 optional string install: 
+optional string pricing: 
+optional string github-cta:
 optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
 padding-vertical: 30
@@ -206,7 +216,7 @@ align: center
 
 
 
---- ftd.text: $sign-in
+--- ftd.text: $pricing
 color: $fpm.color.main.text-strong
 white-space: nowrap
 padding-vertical: 8
@@ -215,12 +225,14 @@ padding-vertical: 8
 
 --- ftd.text: $install
 color: $fpm.color.main.text-strong
-border-color: $fpm.color.main.text-strong
-border-width: 1
-border-radius: 8
 padding-vertical: 8
 padding-horizontal: 16
 
+
+--- github-button:
+sign-in: $sign-in
+github-cta: $github-cta
+icon-github: $icon-github
 
 
 --- ftd.image:
@@ -242,10 +254,47 @@ padding-vertical: 4
 
 
 
+-- ftd.row github-button:
+optional string sign-in: 
+optional string github-cta:
+optional ftd.image-src icon-github:
+optional ftd.color button-bg: $font.footer-border-color
+background-color: $button-bg
+padding-horizontal: 24
+padding-vertical: 18
+margin-top: -8
+width: fill
+border-radius: 8
+spacing: 3
+
+
+--- ftd.text: $sign-in
+white-space: nowrap
+color: $fpm.color.main.text-strong
+
+--- ftd.image:
+src: $icon-github
+
+--- ftd.text: $github-cta
+white-space: nowrap
+color: $fpm.color.main.text-strong
+
+
+
+
+
+
+
+
+
+
 
 
 -- ftd.column hero-section:
 caption title:
+optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
+optional string sign-in: Sign up with 
+optional string github-cta: github
 optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
@@ -260,6 +309,9 @@ height if not $config.is-mobile: 850
 
 --- desktop-hero: $title
 if: not $config.is-mobile
+sign-in: $sign-in
+github-cta: $github-cta
+icon-github: $icon-github
 image-hero-left: $image-hero-left
 hero-left-sub-heading: $hero-left-sub-heading
 hero-left-heading: $hero-left-heading
@@ -288,6 +340,9 @@ bg-image: $bg-image
 
 -- ftd.column desktop-hero:
 caption title:
+optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
+optional string sign-in: Sign up with 
+optional string github-cta: github
 optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
@@ -354,8 +409,10 @@ width: fill
 spacing: 16
 align: center
 
---- button: $hero-left-button-one
-button-bg: $font.cta_secondary_base
+--- github-button:
+sign-in: $sign-in
+github-cta: $github-cta
+icon-github: $icon-github
 
 --- container: hero-image-section
 
@@ -386,7 +443,7 @@ id: right-section
 --- ftd.image:
 src: $image-hero-right
 width: fill
-margin-bottom: 10
+margin-bottom: 20
 
 --- ftd.text: $hero-right-sub-heading
 role: $font.sub-heading-small
@@ -410,7 +467,7 @@ spacing: 16
 align: center
 
 --- button: $hero-right-button-one
-button-bg: $font.cta_secondary_base
+button-bg: $font.cta-primary-disabled
 
 
 
@@ -550,6 +607,88 @@ button-bg: $font.cta_secondary_base
 
 
 
+
+
+
+
+
+
+
+
+-- ftd.column video-section:
+caption title:
+optional string playtime:
+optional ftd.image-src video-logo: $assets.files.assets.images.slide-show-image-1.png
+width: fill
+
+
+--- video-section-desktop:
+if: not $config.is-mobile
+title: $title
+playtime: $title
+video-logo: $video-logo
+
+
+
+--- video-section-mobile:
+if: $config.is-mobile
+title: $title
+playtime: $title
+video-logo: $video-logo
+
+-- ftd.column video-section-desktop:
+caption title:
+optional string playtime:
+optional ftd.image-src video-logo: 
+width: fill
+padding-horizontal: 288
+padding-vertical: 155
+
+
+--- ftd.text: $title
+align: center
+role: $font.heading-hero
+color: $fpm.color.main.text-strong
+padding-bottom: 16
+
+--- ftd.text: $playtime
+align: center
+color: $fpm.color.main.text-strong
+padding-bottom: 38
+role: $font.footer-font
+
+--- ftd.row:
+align: center
+
+--- ftd.image:
+src: $video-logo
+width: 944
+
+
+-- ftd.column video-section-mobile:
+caption title:
+optional string playtime:
+optional ftd.image-src video-logo: 
+width: fill
+padding-horizontal: 40
+padding-vertical: 45
+
+
+--- ftd.text: $title
+role: $font.heading-hero
+color: $fpm.color.main.text-strong
+padding-bottom: 16
+
+--- ftd.text: $playtime
+color: $fpm.color.main.text-strong
+padding-bottom: 38
+role: $font.footer-font
+
+--- ftd.row:
+
+--- ftd.image:
+src: $video-logo
+width: 331
 
 
 
