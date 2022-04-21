@@ -254,7 +254,7 @@ optional ftd.image-src image-hero-right:
 optional string hero-right-sub-heading:
 optional string hero-right-heading:
 optional string hero-right-button-one:
-optional ftd.image-src bg-image:
+optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
 width: fill
 height if not $config.is-mobile: 850
 
@@ -839,9 +839,9 @@ padding-left: 10
 
 -- ftd.column testimonial:
 caption title:
-optional ftd.image-src bg-image-left:
-optional ftd.image-src bg-image-right:
-optional ftd.image-src bg-image:
+optional ftd.image-src bg-image-left: $assets.files.assets.images.testimonial-bg-left.png
+optional ftd.image-src bg-image-right: $assets.files.assets.images.testimonial-bg-right.png
+optional ftd.image-src bg-image: $assets.files.assets.images.testimonial_top_bg-mobile.png
 optional string left-testimony-body:
 optional string left-testimony:
 optional string left-designation:
@@ -1315,7 +1315,7 @@ optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
 optional body body:
-optional ftd.color bg-color:
+optional ftd.color bg-color: $fpm.color.main.background.step-1
 optional string title-copy:
 config.tc list list-title-copy:
 width: fill
