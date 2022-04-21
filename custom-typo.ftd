@@ -90,15 +90,15 @@ weight: 700
 
 
 
--- ftd.font-size button-txt:
+-- ftd.font-size cta-txt:
 line-height: 16
 size: 16
 tracking: 0.5
 
--- ftd.type button: $fpm.font-display
-desktop: $button-txt
-mobile: $button-txt
-xl: $button-txt
+-- ftd.type cta: $fpm.font-display
+desktop: $cta-txt
+mobile: $cta-txt
+xl: $cta-txt
 weight: 700
 
 
