@@ -13,16 +13,16 @@ width: fill
 open: true
 append-at: content-container
 
-
 --- header:
 
-
 --- container: ftd.main
-
 
 --- ftd.column:
 id: content-container
 width: fill
+
+
+
 
 
 
@@ -42,9 +42,6 @@ optional string install: Install
 fpm.toc-item list main-nav: $config.empty-toc
 width: fill
 
-
-
-
 --- container: ftd.main
 
 --- header-desktop:
@@ -56,7 +53,6 @@ icon-theme-mode: $icon-theme-mode
 icon-language: $icon-language
 icon-github: $icon-github
 header-bg: $header-bg
-
 
 --- header-mobile:
 if: $config.is-mobile
@@ -240,17 +236,25 @@ padding-vertical: 4
 
 
 
+
+
+
+
+
+
+
+
 -- ftd.column hero-section:
-caption title: Products should reflect their Documentation. We make that a process.
-optional ftd.image-src image-hero-left: $assets.files.assets.images.code-to-doc.png
-optional string hero-left-sub-heading: Solve it with
-optional string hero-left-heading: Continous Documentation
-optional string hero-left-button-one: Get Started
-optional ftd.image-src image-hero-right: $assets.files.assets.images.doc-to-trans.png
-optional string hero-right-sub-heading: Solve it with
-optional string hero-right-heading: Continous Translation
-optional string hero-right-button-one: Coming Soon
-optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
+caption title:
+optional ftd.image-src image-hero-left:
+optional string hero-left-sub-heading:
+optional string hero-left-heading:
+optional string hero-left-button-one:
+optional ftd.image-src image-hero-right:
+optional string hero-right-sub-heading:
+optional string hero-right-heading:
+optional string hero-right-button-one:
+optional ftd.image-src bg-image:
 width: fill
 height if not $config.is-mobile: 850
 
@@ -265,7 +269,6 @@ hero-right-sub-heading: $hero-right-sub-heading
 hero-right-heading: $hero-right-heading
 hero-right-button-one: $hero-right-button-one
 bg-image: $bg-image
-
 
 --- mobile-hero: $title
 if: $config.is-mobile
@@ -298,11 +301,9 @@ width: 965
 align: center
 padding-top: 94
 
-
 --- ftd.text: $title
 role: $font.hero-large
 color: $fpm.color.main.text-strong
-
 
 --- container: ftd.main
 
@@ -355,9 +356,6 @@ align: center
 
 --- button: $hero-left-button-one
 button-bg: $font.cta_secondary_base
-
-
-
 
 --- container: hero-image-section
 
@@ -439,15 +437,12 @@ width: fill
 align: center
 padding-top: 94
 
-
 --- ftd.text: $title
 role: $font.hero-large
 color: $fpm.color.main.text-strong
 padding-horizontal: 30
 
-
 --- container: ftd.main
-
 
 --- ftd.column:
 width: fill
@@ -844,9 +839,9 @@ padding-left: 10
 
 -- ftd.column testimonial:
 caption title:
-optional ftd.image-src bg-image-left: $assets.files.assets.images.testimonial-bg-left.png
-optional ftd.image-src bg-image-right: $assets.files.assets.images.testimonial-bg-right.png
-optional ftd.image-src bg-image: $assets.files.assets.images.testimonial_top_bg-mobile.png
+optional ftd.image-src bg-image-left:
+optional ftd.image-src bg-image-right:
+optional ftd.image-src bg-image:
 optional string left-testimony-body:
 optional string left-testimony:
 optional string left-designation:
@@ -1316,11 +1311,11 @@ $on-click$: toggle $sidebar-open
 
 -- ftd.row slideshow-left:
 caption title:
-optional ftd.image-src image-1: $assets.files.assets.images.slide-show-image-1.png
-optional ftd.image-src image-2: $assets.files.assets.images.slide-show-image-2.png
-optional ftd.image-src image-3: $assets.files.assets.images.slide-show-image-3.png
+optional ftd.image-src image-1:
+optional ftd.image-src image-2:
+optional ftd.image-src image-3:
 optional body body:
-optional ftd.color bg-color: $fpm.color.main.background.step-1
+optional ftd.color bg-color:
 optional string title-copy:
 config.tc list list-title-copy:
 width: fill
@@ -1347,6 +1342,7 @@ body: $body
 bg-color: $bg-color
 title-copy: $title-copy
 list-title-copy: $list-title-copy
+
 
 
 
@@ -1516,9 +1512,9 @@ is-last: $obj.is-last
 
 -- ftd.row slideshow-right:
 caption title:
-optional ftd.image-src image-1: $assets.files.assets.images.slide-show-image-1.png
-optional ftd.image-src image-2: $assets.files.assets.images.slide-show-image-2.png
-optional ftd.image-src image-3: $assets.files.assets.images.slide-show-image-3.png
+optional ftd.image-src image-1:
+optional ftd.image-src image-2:
+optional ftd.image-src image-3:
 optional body body:
 optional ftd.color bg-color:
 optional string title-copy:
