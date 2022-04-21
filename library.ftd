@@ -15,7 +15,7 @@ append-at: content-container
 
 
 --- header:
-main-nav: $nav-links
+
 
 --- container: ftd.main
 
@@ -36,26 +36,18 @@ optional ftd.image-src icon-theme-mode: $assets.files.assets.images.icon-moon.pn
 optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
-optional string language-url: /translations/
+/optional string language-url: /translations/
 fpm.toc-item list main-nav: $config.empty-toc
 width: fill
 
 
---- mobile-sidebar:
-if: $sidebar-open
 
---- container: ftd.main
-
---- mobile-sidebar-menu:
-if: $sidebar-open
-nav-list: $main-nav
 
 --- container: ftd.main
 
 --- header-desktop:
 if: not $config.is-mobile
 logo: $logo
-main-nav: $main-nav
 icon-theme-mode: $icon-theme-mode
 icon-language: $icon-language
 icon-github: $icon-github
@@ -90,7 +82,6 @@ optional ftd.image-src icon-github:
 optional string github-url:
 optional ftd.image-src icon-language:
 optional string language-url:
-fpm.toc-item list main-nav:
 background-color: $header-bg
 padding-horizontal: 48
 width: fill
@@ -102,9 +93,6 @@ id: main-row
 --- container: main-row
 
 --- header-section-right:
-nav-list: $main-nav
-icon-theme-mode: $icon-theme-mode
-icon-language: $icon-language
 icon-github: $icon-github
 
 
@@ -138,9 +126,6 @@ id: main-row
 --- container: main-row
 
 --- header-section-right:
-nav-list: $main-nav
-icon-theme-mode: $icon-theme-mode
-icon-language: $icon-language
 icon-github: $icon-github
 
 
@@ -163,7 +148,7 @@ width: fill
 id: left-header
 padding-top: 26
 
---- ftd.image:
+/--- ftd.image:
 src: $assets.files.assets.images.icon-hamburger.png
 margin-right: 24
 $on-click$: toggle $sidebar-open
@@ -199,55 +184,12 @@ width: 93
 
 -- ftd.row header-section-right:
 id: right-header
-fpm.toc-item list nav-list:
-optional ftd.image-src icon-theme-mode:
-optional ftd.image-src icon-language:
 optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
-optional string language-url: https://github.com/FifthTry
 padding-vertical: 30
 padding-bottom: 20
 spacing: 32
 
---- nav-items: $obj.title
-if: not $config.is-mobile
-$loop$: $nav-list as $obj
-children: $obj.children
-link: $obj.url
-
---- ftd.row:
-padding-left: 16
-
---- ftd.row:
-cursor: pointer
-
---- ftd.image:
-src: $icon-language
-/link: $language-url
-white-space: nowrap
-cursor: pointer
-
---- ftd.text: EN
-color: $fpm.color.main.text-strong
-role: $fpm.type.body-small
-margin-top: 5
-
---- container: ftd.main
-
---- ftd.row:
-spacing: 32
-
---- ftd.image:
-if: not $ftd.dark-mode
-src: $icon-theme-mode
-cursor: pointer
-$on-click$: message-host enable-dark-mode
-
---- ftd.image:
-if: $ftd.dark-mode
-src: $icon-theme-mode
-cursor: pointer
-$on-click$: message-host enable-light-mode
 
 --- ftd.image:
 src: $icon-github
@@ -802,7 +744,6 @@ role: $font.copy-relaxed
 optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
 optional ftd.color footer-bg: $fpm.color.glass.background.base
 optional string copyright:
-fpm.toc-item list footer-nav: $empty-toc
 background-color: $footer-bg
 width: fill
 border-color: $font.footer-border-color
@@ -813,66 +754,43 @@ if: not $config.is-mobile
 logo: $logo
 footer-bg: $footer-bg
 copyright: $copyright
-footer-nav: $footer-nav
+
 
 --- footer-mobile:
 if: $config.is-mobile
 logo: $logo
 footer-bg: $footer-bg
 copyright: $copyright
-footer-nav: $footer-nav
+
 
 
 -- ftd.column footer-desktop:
 optional ftd.image-src logo:
 optional ftd.color footer-bg:
 optional string copyright:
-fpm.toc-item list footer-nav:
 padding-horizontal: 48
 background-color: $footer-bg
 width: fill
 padding-vertical: 61
 
+
 --- ftd.row:
-width: fill
 id: footer-container
-
---- ftd.row:
-padding-top: 5
 width: fill
 
---- footer-section-right:
-nav-list: $footer-nav
-
---- container: footer-container
-
---- ftd.column:
-width: fill
-align: center
-
 --- ftd.row:
-align: center
+width: fill
 
 --- ftd.image:
 src: $logo
-height: 32
-width: 116
 
 --- container: footer-container
 
---- ftd.column:
-width: fill
-align: center
-
-
-
 --- ftd.row:
-width: fill
-align: right
+
 
 --- ftd.text:
 text: $copyright
-width: fill
 text-align: right
 role: $font.footer-font
 color: $fpm.color.main.text
@@ -899,7 +817,6 @@ white-space: nowrap
 optional ftd.image-src logo:
 optional ftd.color footer-bg:
 optional string copyright:
-fpm.toc-item list footer-nav:
 padding-horizontal: 48
 background-color: $footer-bg
 width: fill
@@ -923,8 +840,7 @@ src: $logo
 --- ftd.column:
 width: fill
 
---- footer-section:
-nav-list: $footer-nav
+
 
 --- container: ftd.main
 
@@ -1337,13 +1253,11 @@ caption title: Products should reflect their Documentation. We make that a proce
 optional ftd.image-src image-hero-left: $assets.files.assets.images.code-to-doc.png
 optional string hero-left-sub-heading: Solve it with
 optional string hero-left-heading: Continous Documentation
-optional string hero-left-button-one: How it works
-optional string hero-left-button-two: Join Waitlist
+optional string hero-left-button-one: Get Started
 optional ftd.image-src image-hero-right: $assets.files.assets.images.doc-to-trans.png
 optional string hero-right-sub-heading: Solve it with
 optional string hero-right-heading: Continous Translation
-optional string hero-right-button-one: How it works
-optional string hero-right-button-two: Get Started
+optional string hero-right-button-one: Coming Soon
 optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
 width: fill
 height if not $config.is-mobile: 850
@@ -1354,12 +1268,10 @@ image-hero-left: $image-hero-left
 hero-left-sub-heading: $hero-left-sub-heading
 hero-left-heading: $hero-left-heading
 hero-left-button-one: $hero-left-button-one
-hero-left-button-two: $hero-left-button-two
 image-hero-right: $image-hero-right
 hero-right-sub-heading: $hero-right-sub-heading
 hero-right-heading: $hero-right-heading
 hero-right-button-one: $hero-right-button-one
-hero-right-button-two: $hero-right-button-two
 bg-image: $bg-image
 
 
@@ -1369,12 +1281,10 @@ image-hero-left: $image-hero-left
 hero-left-sub-heading: $hero-left-sub-heading
 hero-left-heading: $hero-left-heading
 hero-left-button-one: $hero-left-button-one
-hero-left-button-two: $hero-left-button-two
 image-hero-right: $image-hero-right
 hero-right-sub-heading: $hero-right-sub-heading
 hero-right-heading: $hero-right-heading
 hero-right-button-one: $hero-right-button-one
-hero-right-button-two: $hero-right-button-two
 bg-image: $bg-image
 
 
@@ -1387,12 +1297,10 @@ optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
 optional string hero-left-button-one:
-optional string hero-left-button-two:
 optional ftd.image-src image-hero-right:
 optional string hero-right-sub-heading:
 optional string hero-right-heading:
 optional string hero-right-button-one:
-optional string hero-right-button-two:
 optional ftd.image-src bg-image:
 width: 965
 align: center
@@ -1451,13 +1359,12 @@ margin-top: 26
 --- ftd.row:
 width: fill
 spacing: 16
+align: center
 
 --- button: $hero-left-button-one
 button-bg: $font.cta_secondary_base
 
 
---- button: $hero-left-button-two
-button-bg: $font.cta_primary_base
 
 
 --- container: hero-image-section
@@ -1510,12 +1417,12 @@ margin-top: 26
 --- ftd.row:
 width: fill
 spacing: 16
+align: center
 
 --- button: $hero-right-button-one
 button-bg: $font.cta_secondary_base
 
---- button: $hero-right-button-two
-button-bg: $font.cta_primary_base
+
 
 
 
@@ -1531,12 +1438,10 @@ optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
 optional string hero-left-button-one:
-optional string hero-left-button-two:
 optional ftd.image-src image-hero-right:
 optional string hero-right-sub-heading:
 optional string hero-right-heading:
 optional string hero-right-button-one:
-optional string hero-right-button-two:
 optional ftd.image-src bg-image:
 width: fill
 align: center
@@ -1599,9 +1504,6 @@ spacing: 16
 button-bg: $font.cta_secondary_base
 
 
---- button: $hero-left-button-two
-button-bg: $font.cta_primary_base
-
 
 --- container: hero-image-section
 
@@ -1659,8 +1561,6 @@ spacing: 16
 --- button: $hero-right-button-one
 button-bg: $font.cta_secondary_base
 
---- button: $hero-right-button-two
-button-bg: $font.cta_primary_base
 
 
 
