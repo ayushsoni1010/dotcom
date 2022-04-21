@@ -141,7 +141,7 @@ FifthTry has a review based workflow for documentation, just like Github Pull Re
 left-testimony: Kumar G Varun
 left-designation: Oracle, Ex Splunk
 left-testimony-body: Our latest enterprise SaaS integeration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {white: Fifthtry looks quite promising to avoid these cross-team confusions.}
-right-testimony-body: {white: FifthTry is a very helpful tool,} most of the time we face the issue of documentation not keeping up with feature changes. With this tool development and documentation will be in sync.
+right-testimony-body:  Our latest enterprise SaaS integeration offering has been getting significant traction in the last 8-10 months - bringing its own set of (good to have :) challenges. I’ve been exploring multiple options to ensure that everyone invovled - from dev to support - is on the same page about what’s in-front of the customer all the time. Turned out this is easier said than done, but based on our initial investigations {white: Fifthtry looks quite promising to avoid these cross-team confusions.}
 right-testimony: Manish Aggarwal
 right-designation: CEO Techment Technology
 
@@ -512,6 +512,26 @@ color: $fpm.color.main.text-strong
 caption title:
 optional ftd.color bg-color: $font.sign-up-bg
 background-color: $bg-color
+width: fill
+
+
+
+--- sign-up-form-desktop: $title
+if: not $is-mobile
+bg-color: $font.sign-up-bg
+
+
+
+--- sign-up-form-mobile: $title
+if: $is-mobile
+bg-color: $font.sign-up-bg
+
+
+
+-- ftd.column sign-up-form-desktop:
+caption title:
+optional ftd.color bg-color: 
+background-color: $bg-color
 padding-vertical: 90
 width: fill
 
@@ -541,12 +561,63 @@ align: center
 spacing: 30
 
 --- sign-up-input: Name:
+width: 300
 
 --- sign-up-input: Email:
+width: 300
 
 --- button: Sign Up
 button-bg: $font.cta_primary_base
 
+
+-- ftd.column sign-up-form-mobile:
+caption title:
+optional ftd.color bg-color: 
+background-color: $bg-color
+width: fill
+padding-horizontal: 16
+padding-vertical: 39
+
+
+--- ftd.row:
+width: fill
+margin-bottom: 29
+
+
+--- ftd.text: $title
+role: $font.sub-heading-large
+color: $fpm.color.main.text-strong
+text-align: center
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+margin-bottom: 16
+
+
+--- sign-up-input: Name:
+width: fill
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+margin-bottom: 16
+
+
+--- sign-up-input: Email:
+width: fill
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+margin-bottom: 16
+
+--- button: Sign Up
+width: fill
+button-bg: $font.cta_primary_base
 
 
 
@@ -561,7 +632,9 @@ button-bg: $font.cta_primary_base
 
 -- ftd.input sign-up-input: 
 caption title: 
-width: 300
+string width:
+width: $width
+/width: 300
 border-radius: 8
 background-color: $fpm.color.main.text-strong
 padding-vertical: 16
@@ -1038,6 +1111,9 @@ width: fill
 
 -- ftd.text button:
 caption title:
+optional string width: 
+text-align: center
+width: $width
 text: $title
 optional ftd.color button-bg: $fpm.color.main.background.base
 optional ftd.color button-color: $fpm.color.main.text-strong
@@ -1225,6 +1301,50 @@ white-space: nowrap
 caption title:
 optional ftd.image-src bg-image-left: $assets.files.assets.images.testimonial-bg-left.png
 optional ftd.image-src bg-image-right: $assets.files.assets.images.testimonial-bg-right.png
+optional ftd.image-src bg-image: $assets.files.assets.images.testimonial_top_bg-mobile.png
+optional string left-testimony-body: 
+optional string left-testimony:
+optional string left-designation:
+optional string right-testimony-body:
+optional string right-testimony:
+optional string right-designation:
+width: fill
+align: center
+
+
+
+--- testimonial-desktop: $title
+if: not $is-mobile
+bg-image-left: $bg-image-left    
+bg-image-right: $bg-image-right
+left-testimony-body: $left-testimony-body
+left-testimony: $left-testimony
+left-designation: $left-designation
+right-testimony-body: $right-testimony-body
+right-testimony: $right-testimony
+right-designation: $right-designation
+
+
+--- testimonial-mobile: $title
+if: $is-mobile
+bg-image: $bg-image   
+left-testimony-body: $left-testimony-body
+left-testimony: $left-testimony
+left-designation: $left-designation
+right-testimony-body: $right-testimony-body
+right-testimony: $right-testimony
+right-designation: $right-designation
+
+
+
+
+
+
+
+-- ftd.column testimonial-desktop:
+caption title:
+optional ftd.image-src bg-image-left: 
+optional ftd.image-src bg-image-right: 
 optional string left-testimony-body: 
 optional string left-testimony:
 optional string left-designation:
@@ -1236,7 +1356,6 @@ padding-horizontal: 50
 padding-bottom: 200
 width: fill
 align: center
-
 --- ftd.text: $title
 role: $font.section-title
 color: $fpm.color.main.text-strong
@@ -1290,8 +1409,8 @@ background-image: $bg-image-right
 background-repeat: false
 min-width: 570
 padding-top: 56
-height: 200
-padding-horizontal: 24
+height: 230
+padding-horizontal: 42
 
 --- ftd.text:
 text: $right-testimony-body
@@ -1299,7 +1418,7 @@ color: $fpm.color.main.text
 role: $font.copy-relaxed
 
 --- ftd.column:
-margin-top: 160
+margin-top: 80
 padding-left: 100
 
 --- ftd.text: $right-testimony
@@ -1319,17 +1438,160 @@ role: $font.copy-relaxed
 
 
 
+
+
+-- ftd.column testimonial-mobile:
+caption title:
+optional ftd.image-src bg-image: 
+optional string left-testimony-body: 
+optional string left-testimony:
+optional string left-designation:
+optional string right-testimony-body:
+optional string right-testimony:
+optional string right-designation:
+padding-vertical: 31
+padding-horizontal: 16
+width: fill
+align: center
+
+--- ftd.text: $title
+role: $font.section-title
+color: $fpm.color.main.text-strong
+width: fill
+text-align: center
+
+
+--- ftd.column:
+id: testimonial-container
+width: fill
+/spacing: 42
+margin-top: 49
+
+--- ftd.column:
+id: left-side
+width: fill
+
+
+
+--- ftd.row:
+background-image: $bg-image
+background-repeat: false
+width: 440
+height: 320
+align: center
+
+
+
+
+--- ftd.text:
+text: $left-testimony-body
+color: $fpm.color.main.text
+role: $font.copy-relaxed
+padding-horizontal:9
+padding-top: 74
+
+
+--- container: left-side
+
+--- ftd.column:
+margin-top: 16
+padding-left: 74
+
+
+--- ftd.text: $left-testimony
+width: fill
+color: $font.cta_primary_base
+role: $font.button
+
+
+--- ftd.text: $left-designation
+width: fill
+color: $fpm.color.main.text-strong
+role: $font.copy-relaxed
+
+--- container: testimonial-container
+
+--- ftd.column:
+width: fill
+id: right-side
+margin-top: 34
+
+
+--- ftd.row:
+background-image: $bg-image
+background-repeat: false
+width: 440
+height: 320
+align: center
+
+
+--- ftd.text:
+text: $right-testimony-body
+color: $fpm.color.main.text
+role: $font.copy-relaxed
+padding-horizontal:9
+padding-top: 54
+
+
+
+--- container: right-side
+
+--- ftd.column:
+margin-top: 16
+padding-left: 74
+
+
+
+--- ftd.text: $right-testimony
+width: fill
+color: $font.cta_primary_base
+role: $font.button
+
+--- ftd.text: $right-designation
+width: fill
+color: $fpm.color.main.text-strong
+role: $font.copy-relaxed
+
+
+
+
+
+
+
 -- ftd.column footer:
 optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
 optional ftd.color footer-bg: $fpm.color.glass.background.base
 optional string copyright:
 fpm.toc-item list footer-nav: $empty-toc
+background-color: $footer-bg
+width: fill
+border-color: $font.footer-border-color
+border-top: 3
+
+--- footer-desktop:
+if: not $is-mobile
+logo: $logo
+footer-bg: $footer-bg
+copyright: $copyright
+footer-nav: $footer-nav
+
+--- footer-mobile:
+if: $is-mobile
+logo: $logo
+footer-bg: $footer-bg
+copyright: $copyright
+footer-nav: $footer-nav
+
+
+-- ftd.column footer-desktop:
+optional ftd.image-src logo: 
+optional ftd.color footer-bg:
+optional string copyright:
+fpm.toc-item list footer-nav: 
 padding-horizontal: 48
 background-color: $footer-bg
 width: fill
 padding-vertical: 61
-border-color: $font.footer-border-color
-border-top: 3
 
 --- ftd.row:
 width: fill
@@ -1358,9 +1620,14 @@ width: 116
 
 --- container: footer-container
 
+--- ftd.column:
+width: fill
+align: center
+
+
+
 --- ftd.row:
 width: fill
-padding-top: 25
 align: right
 
 --- ftd.text:
@@ -1381,6 +1648,63 @@ white-space: nowrap
 
 
 
+
+
+
+
+
+
+
+-- ftd.column footer-mobile:
+optional ftd.image-src logo: 
+optional ftd.color footer-bg:
+optional string copyright:
+fpm.toc-item list footer-nav: 
+padding-horizontal: 48
+background-color: $footer-bg
+width: fill
+padding-vertical: 34
+padding-horizontal:16
+padding-bottom: 16
+spacing: 24
+
+
+--- ftd.row:
+width:fill
+
+--- ftd.image:
+src: $logo
+
+
+--- container: ftd.main
+
+
+
+--- ftd.column:
+width: fill
+
+--- footer-section:
+nav-list: $footer-nav
+
+--- container: ftd.main
+
+
+--- ftd.row:
+width: fill
+
+
+
+--- ftd.text:
+text: $copyright
+width: fill
+role: $font.footer-font
+color: $fpm.color.main.text
+
+
+
+
+
+
 -- ftd.row footer-section-right:
 fpm.toc-item list nav-list:
 padding-vertical: 30
@@ -1395,7 +1719,15 @@ link: $obj.url
 
 
 
+-- ftd.column footer-section:
+fpm.toc-item list nav-list:
+/padding-vertical: 30
+spacing: 16
 
+--- footer-nav-items: $obj.title
+$loop$: $nav-list as $obj
+children: $obj.children 
+link: $obj.url
 
 
 
