@@ -36,7 +36,6 @@ optional ftd.image-src icon-theme-mode: $assets.files.assets.images.icon-moon.pn
 optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
-/optional string language-url: /translations/
 optional string sign-in: Sign-in
 optional string install: Install
 fpm.toc-item list main-nav: $config.empty-toc
@@ -158,11 +157,6 @@ width: fill
 id: left-header
 padding-top: 26
 
-/--- ftd.image:
-src: $assets.files.assets.images.icon-hamburger.png
-margin-right: 24
-$on-click$: toggle $sidebar-open
-
 --- ftd.image:
 src: $site-logo
 height: 32
@@ -225,7 +219,6 @@ padding-horizontal: 16
 
 --- ftd.image:
 src: $icon-github
-/link: $github-url
 white-space: nowrap
 cursor: pointer
 padding-vertical: 4
@@ -249,11 +242,11 @@ caption title:
 optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
-optional string hero-left-button-one:
+optional string hero-left-cta-one:
 optional ftd.image-src image-hero-right:
 optional string hero-right-sub-heading:
 optional string hero-right-heading:
-optional string hero-right-button-one:
+optional string hero-right-cta-one:
 optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
 width: fill
 height if not $config.is-mobile: 850
@@ -263,11 +256,11 @@ if: not $config.is-mobile
 image-hero-left: $image-hero-left
 hero-left-sub-heading: $hero-left-sub-heading
 hero-left-heading: $hero-left-heading
-hero-left-button-one: $hero-left-button-one
+hero-left-cta-one: $hero-left-cta-one
 image-hero-right: $image-hero-right
 hero-right-sub-heading: $hero-right-sub-heading
 hero-right-heading: $hero-right-heading
-hero-right-button-one: $hero-right-button-one
+hero-right-cta-one: $hero-right-cta-one
 bg-image: $bg-image
 
 --- mobile-hero: $title
@@ -275,11 +268,11 @@ if: $config.is-mobile
 image-hero-left: $image-hero-left
 hero-left-sub-heading: $hero-left-sub-heading
 hero-left-heading: $hero-left-heading
-hero-left-button-one: $hero-left-button-one
+hero-left-cta-one: $hero-left-cta-one
 image-hero-right: $image-hero-right
 hero-right-sub-heading: $hero-right-sub-heading
 hero-right-heading: $hero-right-heading
-hero-right-button-one: $hero-right-button-one
+hero-right-cta-one: $hero-right-cta-one
 bg-image: $bg-image
 
 
@@ -291,11 +284,11 @@ caption title:
 optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
-optional string hero-left-button-one:
+optional string hero-left-cta-one:
 optional ftd.image-src image-hero-right:
 optional string hero-right-sub-heading:
 optional string hero-right-heading:
-optional string hero-right-button-one:
+optional string hero-right-cta-one:
 optional ftd.image-src bg-image:
 width: 965
 align: center
@@ -354,8 +347,8 @@ width: fill
 spacing: 16
 align: center
 
---- button: $hero-left-button-one
-button-bg: $font.cta_secondary_base
+--- cta: $hero-left-cta-one
+cta-bg: $font.cta_secondary_base
 
 --- container: hero-image-section
 
@@ -409,8 +402,8 @@ width: fill
 spacing: 16
 align: center
 
---- button: $hero-right-button-one
-button-bg: $font.cta_secondary_base
+--- cta: $hero-right-cta-one
+cta-bg: $font.cta_secondary_base
 
 
 
@@ -427,11 +420,11 @@ caption title:
 optional ftd.image-src image-hero-left:
 optional string hero-left-sub-heading:
 optional string hero-left-heading:
-optional string hero-left-button-one:
+optional string hero-left-cta-one:
 optional ftd.image-src image-hero-right:
 optional string hero-right-sub-heading:
 optional string hero-right-heading:
-optional string hero-right-button-one:
+optional string hero-right-cta-one:
 optional ftd.image-src bg-image:
 width: fill
 align: center
@@ -487,8 +480,8 @@ margin-top: 26
 width: fill
 spacing: 16
 
---- button: $hero-left-button-one
-button-bg: $font.cta_secondary_base
+--- cta: $hero-left-cta-one
+cta-bg: $font.cta_secondary_base
 
 
 
@@ -545,8 +538,8 @@ margin-top: 26
 width: fill
 spacing: 16
 
---- button: $hero-right-button-one
-button-bg: $font.cta_secondary_base
+--- cta: $hero-right-cta-one
+cta-bg: $font.cta_secondary_base
 
 
 
@@ -713,24 +706,20 @@ width: fill
 
 
 
--- ftd.text button:
+-- ftd.text cta:
 caption title:
 optional string width:
 text-align: center
 width: $width
 text: $title
-optional ftd.color button-bg: $fpm.color.main.background.base
-optional ftd.color button-color: $fpm.color.main.text-strong
-/boolean is-mouse-in: false
+optional ftd.color cta-bg: $fpm.color.main.background.base
+optional ftd.color cta-color: $fpm.color.main.text-strong
 padding-vertical: 16
 padding-horizontal: 32
-background-color: $button-bg
+background-color: $cta-bg
 background-color if $MOUSE-IN: $font.cta_hover
-role: $font.button
-color: $button-color
-/color if $is-mouse-in: $button-color
-/$on-mouse-enter$: $is-mouse-in = true
-/$on-mouse-leave$: $is-mouse-in = false
+role: $font.cta
+color: $cta-color
 link: /
 border-radius: 8
 
@@ -896,6 +885,8 @@ padding-horizontal: 50
 padding-bottom: 200
 width: fill
 align: center
+
+
 --- ftd.text: $title
 role: $font.section-title
 color: $fpm.color.main.text-strong
@@ -931,7 +922,7 @@ padding-left: 100
 --- ftd.text: $left-testimony
 width: fill
 color: $font.cta_primary_base
-role: $font.button
+role: $font.cta
 margin-bottom: 8
 
 --- ftd.text: $left-designation
@@ -964,7 +955,7 @@ padding-left: 100
 --- ftd.text: $right-testimony
 width: fill
 color: $font.cta_primary_base
-role: $font.button
+role: $font.cta
 margin-bottom: 8
 
 --- ftd.text: $right-designation
@@ -1004,7 +995,6 @@ text-align: center
 --- ftd.column:
 id: testimonial-container
 width: fill
-/spacing: 42
 margin-top: 49
 
 --- ftd.column:
@@ -1041,7 +1031,7 @@ padding-left: 74
 --- ftd.text: $left-testimony
 width: fill
 color: $font.cta_primary_base
-role: $font.button
+role: $font.cta
 
 
 --- ftd.text: $left-designation
@@ -1085,7 +1075,7 @@ padding-left: 74
 --- ftd.text: $right-testimony
 width: fill
 color: $font.cta_primary_base
-role: $font.button
+role: $font.cta
 
 --- ftd.text: $right-designation
 width: fill
@@ -1235,7 +1225,6 @@ link: $obj.url
 
 -- ftd.column footer-section:
 fpm.toc-item list nav-list:
-/padding-vertical: 30
 spacing: 16
 
 --- footer-nav-items: $obj.title
@@ -1623,7 +1612,7 @@ color: $fpm.color.main.text-strong
 
 
 -- ftd.column sign-up-form:
-caption title:
+caption or body title:
 optional ftd.color bg-color: $font.sign-up-bg
 background-color: $bg-color
 width: fill
@@ -1680,8 +1669,8 @@ width: 300
 --- sign-up-input: Email:
 width: 300
 
---- button: Sign Up
-button-bg: $font.cta_primary_base
+--- cta: Sign Up
+cta-bg: $font.cta_primary_base
 
 
 -- ftd.column sign-up-form-mobile:
@@ -1729,9 +1718,9 @@ width: fill
 width: fill
 margin-bottom: 16
 
---- button: Sign Up
+--- cta: Sign Up
 width: fill
-button-bg: $font.cta_primary_base
+cta-bg: $font.cta_primary_base
 
 
 
@@ -1748,15 +1737,12 @@ button-bg: $font.cta_primary_base
 caption title:
 string width:
 width: $width
-/width: 300
 border-radius: 8
 background-color: $fpm.color.main.text-strong
 padding-vertical: 16
 padding-horizontal: 32
 placeholder: $title
 border-width: 0
-/role: $font.button
-/color: $fpm.color.main.text
 
 
 
