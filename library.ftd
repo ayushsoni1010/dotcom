@@ -484,7 +484,6 @@ spacing: 16
 align: center
 
 --- cta: $hero-right-cta-one
-cta-bg: $font.cta-primary-disabled
 
 
 
@@ -1305,10 +1304,9 @@ width: fill
 width: fill
 id: right-side-footer
 
-
-
 --- ftd.image:
 src: $logo
+link: \
 
 
 --- ftd.row:
@@ -1406,13 +1404,15 @@ width:fill
 
 --- ftd.image:
 src: $logo
-
+link: \
 
 
 --- container: ftd.main
+
 --- ftd.row:
 spacing: 20
 id: backed-section
+link: https://www.ycombinator.com/companies/fifthtry
 
 --- ftd.row:
 padding-top:10
@@ -1868,7 +1868,6 @@ align: center
 margin-top: 30
 
 --- cta: Coming soon
-cta-bg: $font.cta-primary-disabled
 
 
 

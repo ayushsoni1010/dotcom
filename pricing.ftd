@@ -93,10 +93,6 @@ cta-bg: $font.cta_secondary_base
 cta-color: $fpm.color.main.text-strong
 
 
-
--- query-section: Frequently asked questions
-ques-ans : $ques-ans
-
 -- lib.footer:
 copyright: © 2022 FifthTry. All rights reserved
 
@@ -531,6 +527,7 @@ optional string voucher-name:
 optional string voucher-title-name:
 optional string pricing-name:
 width: 1200
+width if $config.is-mobile: fill
 optional string days:
 optional body body:
 optional string payment-mode:
