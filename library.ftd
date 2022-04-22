@@ -475,8 +475,10 @@ width: fill
 spacing: 16
 align: center
 
---- cta: $hero-right-cta-one
-
+--- ftd.text: $hero-right-cta-one
+role: $font.cta
+color:  $fpm.color.main.text
+padding-top: 10
 
 
 
