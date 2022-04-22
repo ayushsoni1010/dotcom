@@ -612,8 +612,10 @@ margin-top: 26
 width: fill
 spacing: 16
 
---- cta: $hero-right-cta-one
-cta-bg: $font.cta_secondary_base
+--- ftd.text: $hero-right-cta-one
+role: $font.cta
+color:  $fpm.color.main.text
+padding-top: 10
 
 
 
