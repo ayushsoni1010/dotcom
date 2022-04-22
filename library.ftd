@@ -266,9 +266,7 @@ optional ftd.image-src icon-github:
 optional ftd.color button-bg: $font.footer-border-color
 background-color: $button-bg
 padding-horizontal: 24
-padding-vertical: 18
-margin-top: -8
-width: fill
+padding-vertical: 14
 border-radius: 8
 spacing: 3
 cursor: pointer
@@ -422,6 +420,9 @@ sign-in: $sign-in
 github-cta: $github-cta
 icon-github: $icon-github
 
+--- cta: Book a demo
+link: https://calendly.com/amitu-fifthtry/30min?month=2022-04
+cta-bg: $font.cta_secondary_base
 
 --- container: hero-image-section
 
@@ -868,6 +869,7 @@ width: fill
 caption title:
 optional string width:
 text-align: center
+optional string link: /
 width: $width
 text: $title
 optional ftd.color cta-bg: $fpm.color.main.background.base
@@ -878,7 +880,7 @@ background-color: $cta-bg
 /background-color if $MOUSE-IN: $font.cta_hover
 role: $font.cta
 color: $cta-color
-link: /
+link: $link
 border-radius: 8
 
 
