@@ -5,6 +5,28 @@
 -- fpm.font-display: $font-assets.fonts.Inter
 
 
+-- ftd.font-size copy-relaxed-medium-desktop:
+line-height: 24
+size: 16
+tracking: 0.5
+
+-- ftd.type copy-relaxed-medium: $fpm.font-display
+desktop: $copy-relaxed-medium-desktop
+mobile: $copy-relaxed-medium-desktop
+xl: $copy-relaxed-medium-desktop
+weight: 700
+
+-- ftd.font-size heading-hero-sml:
+line-height: 52
+size: 48
+tracking: 0.5
+
+-- ftd.type heading-hero: $fpm.font-display
+desktop: $heading-hero-sml
+mobile: $heading-hero-sml
+xl: $heading-hero-sml
+weight: 700
+
 -- ftd.font-size sub-heading-sml:
 line-height: 44
 size: 32
@@ -21,9 +43,22 @@ weight: 300
 light: #FFFBFE
 dark: #1C1B1F
 
+
+-- ftd.color fill-text-color:
+light: #FB651E
+dark: #FB651E
+
 -- ftd.color footer-border-color:
 light: #2DD4BF
 dark: #2DD4BF
+
+-- ftd.color custom-five-bac:
+light: #EB57BE
+dark: #EB57BE
+
+-- ftd.color cta-primary-disabled:
+light: rgba(44,201,181,0.1)
+dark: rgba(44,201,181,0.1)
 
 -- ftd.color header-bg:
 light: rgba(45, 212, 143, 0.05)
@@ -45,6 +80,24 @@ dark: #2DD4BF
 -- ftd.color sign-up-bg:
 light: #118C7C
 dark: #118C7C
+
+
+-- ftd.font-size button-normal-lg:
+line-height: 14
+size: 13
+tracking: 0.5
+
+-- ftd.type buttonjnvj: $fpm.font-display
+desktop: $button-normal-lg
+mobile: $button-normal-lg
+xl: $button-normal-lg
+weight: 700
+
+
+
+
+
+
 
 
 -- ftd.font-size sub-heading-lg:
