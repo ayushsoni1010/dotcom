@@ -5,6 +5,7 @@
 
 -- lib.homepage:
 nav-links: $config.main-nav
+on-pricing: false
 
 -- lib.hero-section: Products should reflect their Documentation. We make that a process.
 hero-left-sub-heading: Solve it with
@@ -44,7 +45,7 @@ Instead of directly editing documents, FifthTry users can create change requests
 implement changes to documentation.
 
 
--- lib.sign-up-form:
+\-- lib.sign-up-form:
 
 FifthTry is in closed beta Sign up today to get lifetime 50% off on pricing
 
@@ -63,14 +64,7 @@ these cross-team confusions.}
 
 -- string right-testimony-body:
 
-Our latest enterprise SaaS integration offering has been getting
-significant traction in the last 8-10 months - bringing its own set
-of (good to have :) challenges. I’ve been exploring multiple options
-to ensure that everyone involved - from dev to support - is on the
-same page about what’s in-front of the customer all the time.
-Turned out this is easier said than done, but based on our initial
-investigations {lib.white: Fifthtry looks quite promising to avoid
-these cross-team confusions.}
+{lib.white:FifthTry is a very helpful tool,} most of the time we face the issue of documentation not keeping up with feature changes. With this tool development and documentation will be in sync.
 
 
 -- lib.testimonial: What early users are saying

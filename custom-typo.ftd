@@ -76,6 +76,14 @@ dark: rgba(79, 178, 223, 0.5)
 light: #2DD4BF
 dark: #2DD4BF
 
+-- ftd.color orange:
+light: #ED753A
+dark: #ED753A
+
+
+-- ftd.color cta_primary_active:
+light: #2CBFAC
+dark: #2CBFAC
 
 -- ftd.color sign-up-bg:
 light: #118C7C

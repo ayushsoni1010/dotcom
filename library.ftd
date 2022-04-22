@@ -12,8 +12,11 @@ fpm.toc-item list nav-links: $empty-nav
 width: fill
 open: true
 append-at: content-container
+boolean on-pricing: false
+
 
 --- header:
+on-pricing: $on-pricing
 
 --- container: ftd.main
 
@@ -43,6 +46,7 @@ optional string pricing: Pricing
 optional string install: Login
 fpm.toc-item list main-nav: $config.empty-toc
 width: fill
+boolean on-pricing: false
 
 --- container: ftd.main
 
@@ -57,6 +61,7 @@ icon-theme-mode: $icon-theme-mode
 icon-language: $icon-language
 icon-github: $icon-github
 header-bg: $header-bg
+on-pricing: $on-pricing
 
 --- header-mobile:
 if: $config.is-mobile
@@ -68,7 +73,7 @@ icon-language: $icon-language
 icon-github: $icon-github
 header-bg: $header-bg
 main-nav: $main-nav
-
+on-pricing: $on-pricing
 
 
 
@@ -95,6 +100,7 @@ optional string language-url:
 background-color: $header-bg
 padding-horizontal: 48
 width: fill
+boolean on-pricing: false
 
 --- header-section-left:
 site-logo: $logo
@@ -108,7 +114,7 @@ pricing: $pricing
 github-cta: $github-cta
 install: $install
 icon-github: $icon-github
-
+on-pricing: $on-pricing
 
 
 
@@ -134,6 +140,7 @@ fpm.toc-item list main-nav:
 background-color: $header-bg
 padding-horizontal: 16
 width: fill
+boolean on-pricing: false
 
 --- header-section-left:
 site-logo: $logo
@@ -170,6 +177,7 @@ padding-top: 26
 src: $site-logo
 height: 32
 width: 93
+link: /
 
 --- container: ftd.main
 
@@ -183,6 +191,7 @@ padding-top: 26
 src: $site-logo
 height: 32
 width: 93
+link: /
 
 --- container: ftd.main
 
@@ -201,6 +210,7 @@ optional string sign-in:
 optional string install: 
 optional string pricing: 
 optional string github-cta:
+boolean on-pricing: false
 optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
 padding-vertical: 30
@@ -208,15 +218,22 @@ padding-bottom: 20
 spacing: 32
 align: center
 
-
-
-
 --- ftd.text: $pricing
+if: not $on-pricing
 color: $fpm.color.main.text-strong
 white-space: nowrap
 padding-vertical: 8
 role: $font.cta
+link: /pricing
 
+
+--- ftd.text: $pricing
+if: $on-pricing
+color: $font.cta_primary_active
+white-space: nowrap
+padding-vertical: 8
+role: $font.cta
+link: /pricing
 
 
 --- ftd.text: $install
@@ -225,12 +242,10 @@ color: $fpm.color.main.text-strong
 padding-vertical: 8
 padding-horizontal: 16
 
-
 --- github-button:
 sign-in: $sign-in
 github-cta: $github-cta
 icon-github: $icon-github
-
 
 --- ftd.image:
 src: $icon-github
@@ -262,11 +277,13 @@ margin-top: -8
 width: fill
 border-radius: 8
 spacing: 3
+cursor: pointer
 
 
 --- ftd.text: $sign-in
 white-space: nowrap
 color: $fpm.color.main.text-strong
+role: $font.cta
 
 --- ftd.image:
 src: $icon-github
@@ -274,6 +291,7 @@ src: $icon-github
 --- ftd.text: $github-cta
 white-space: nowrap
 color: $fpm.color.main.text-strong
+role: $font.cta
 
 
 
@@ -622,7 +640,7 @@ width: fill
 --- video-section-desktop:
 if: not $config.is-mobile
 title: $title
-playtime: $title
+playtime: $playtime
 video-logo: $video-logo
 
 
@@ -630,7 +648,7 @@ video-logo: $video-logo
 --- video-section-mobile:
 if: $config.is-mobile
 title: $title
-playtime: $title
+playtime: $playtime
 video-logo: $video-logo
 
 -- ftd.column video-section-desktop:
@@ -860,7 +878,7 @@ optional ftd.color cta-color: $fpm.color.main.text-strong
 padding-vertical: 16
 padding-horizontal: 32
 background-color: $cta-bg
-background-color if $MOUSE-IN: $font.cta_hover
+/background-color if $MOUSE-IN: $font.cta_hover
 role: $font.cta
 color: $cta-color
 link: /
@@ -1092,7 +1110,7 @@ color: $fpm.color.main.text
 role: $font.copy-relaxed
 
 --- ftd.column:
-margin-top: 80
+margin-top: 158
 padding-left: 100
 
 --- ftd.text: $right-testimony
@@ -1614,6 +1632,16 @@ copy: $obj.body
 index: $obj.index
 is-last: $obj.is-last
 
+--- ftd.row:
+align: center
+margin-top: 30
+
+--- github-button:
+sign-in: Sign up with 
+github-cta: Github
+icon-github: $assets.files.assets.images.icon-github.png
+
+
 --- container: ftd.main
 
 --- ftd.row:
@@ -1829,7 +1857,12 @@ copy: $obj.body
 index: $obj.index
 is-last: $obj.is-last
 
+--- ftd.row:
+align: center
+margin-top: 30
 
+--- cta: Coming soon
+cta-bg: $font.cta-primary-disabled
 
 
 
@@ -1839,6 +1872,8 @@ is-last: $obj.is-last
 -- ftd.text white: yo
 color: $fpm.color.main.text-strong
 
+-- ftd.text orange: yo
+color: $font.orange
 
 
 
