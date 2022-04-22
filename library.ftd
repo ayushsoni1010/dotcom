@@ -219,14 +219,6 @@ spacing: 32
 align: center
 
 --- ftd.text: $pricing
-if: not $on-pricing
-color: $fpm.color.main.text-strong
-white-space: nowrap
-padding-vertical: 8
-role: $font.cta
-link: /pricing/
-
---- ftd.text: $pricing
 if: $on-pricing
 color: $font.cta_primary_active
 white-space: nowrap

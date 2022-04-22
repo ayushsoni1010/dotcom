@@ -144,7 +144,7 @@ cta-color: $fpm.color.main.text-strong
 Our way to give back to the community, Continous-Documentation system will be free forever for individuals and open source projects.
 
 --- pricing: 
-width: percent 35
+width: percent 38
 list-one: false
 list-two: true
 list-three: false
