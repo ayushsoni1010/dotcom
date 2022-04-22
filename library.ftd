@@ -226,8 +226,6 @@ padding-vertical: 8
 role: $font.cta
 link: /pricing/
 
-
-
 --- ftd.text: $pricing
 if: $on-pricing
 color: $font.cta_primary_active
@@ -243,6 +241,7 @@ role: $font.cta
 color: $fpm.color.main.text-strong
 padding-vertical: 8
 padding-horizontal: 16
+link: https://cdoc.fifthtry.com/initiate-github-login/
 
 --- github-button:
 sign-in: $sign-in
@@ -254,6 +253,7 @@ src: $icon-github
 white-space: nowrap
 cursor: pointer
 padding-vertical: 4
+link: https://fifthtry.github.io/cdoc-doc/
 
 
 
@@ -280,7 +280,7 @@ width: fill
 border-radius: 8
 spacing: 3
 cursor: pointer
-
+link: https://github.com/apps/continuous-documentation
 
 --- ftd.text: $sign-in
 white-space: nowrap
@@ -1323,6 +1323,7 @@ margin-left:29
 margin-left: 38
 spacing: 20
 id: backed-section
+link: https://www.ycombinator.com/companies/fifthtry
 
 --- ftd.row:
 padding-top:15
@@ -1347,6 +1348,7 @@ width: 25
 --- ftd.row:
 padding-top:10
 width: fill
+
 --- ftd.image:
 src: $group-logo
 width: 183
@@ -1354,8 +1356,10 @@ width: 183
 
 --- container: footer-container
 
---- ftd.row:
+--- ftd.column:
+align: center
 
+--- ftd.row:
 
 --- ftd.text:
 text: $copyright
