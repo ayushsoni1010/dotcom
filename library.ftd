@@ -215,10 +215,12 @@ align: center
 color: $fpm.color.main.text-strong
 white-space: nowrap
 padding-vertical: 8
+role: $font.cta
 
 
 
 --- ftd.text: $install
+role: $font.cta
 color: $fpm.color.main.text-strong
 padding-vertical: 8
 padding-horizontal: 16
@@ -1232,6 +1234,9 @@ role: $font.copy-relaxed
 -- ftd.column footer:
 optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
 optional ftd.color footer-bg: $fpm.color.glass.background.base
+optional ftd.image-src group-logo: $assets.files.assets.images.group.png
+optional ftd.image-src backed-logo: $assets.files.assets.images.backed-by.png
+optional ftd.image-src fill-logo: $assets.files.assets.images.fill.png
 optional string copyright:
 background-color: $footer-bg
 width: fill
@@ -1241,12 +1246,18 @@ border-top: 3
 --- footer-desktop:
 if: not $config.is-mobile
 logo: $logo
+group-logo: $group-logo
+backed-logo: $backed-logo
+fill-logo: $fill-logo
 footer-bg: $footer-bg
 copyright: $copyright
 
 
 --- footer-mobile:
 if: $config.is-mobile
+group-logo: $group-logo
+backed-logo: $backed-logo
+fill-logo: $fill-logo
 logo: $logo
 footer-bg: $footer-bg
 copyright: $copyright
@@ -1256,6 +1267,9 @@ copyright: $copyright
 -- ftd.column footer-desktop:
 optional ftd.image-src logo:
 optional ftd.color footer-bg:
+optional ftd.image-src group-logo: 
+optional ftd.image-src backed-logo: 
+optional ftd.image-src fill-logo:
 optional string copyright:
 padding-horizontal: 48
 background-color: $footer-bg
@@ -1269,9 +1283,54 @@ width: fill
 
 --- ftd.row:
 width: fill
+id: right-side-footer
+
+
 
 --- ftd.image:
 src: $logo
+
+
+--- ftd.row:
+width: fill
+border-color: $font.footer-border-color
+border-left: 3
+margin-left:29
+/border-width: 3
+
+
+--- ftd.row:
+margin-left: 38
+spacing: 20
+id: backed-section
+
+--- ftd.row:
+padding-top:15
+
+--- ftd.image:
+src: $backed-logo
+width: 118
+
+--- container:  backed-section
+
+--- ftd.row:
+padding-vertical: 12
+padding-horizontal: 12
+background-color: $font.fill-text-color
+
+--- ftd.image:
+src: $fill-logo
+width: 25
+
+--- container:  backed-section
+
+--- ftd.row:
+padding-top:10
+width: fill
+--- ftd.image:
+src: $group-logo
+width: 183
+
 
 --- container: footer-container
 
@@ -1303,6 +1362,9 @@ white-space: nowrap
 
 
 -- ftd.column footer-mobile:
+optional ftd.image-src group-logo: 
+optional ftd.image-src backed-logo: 
+optional ftd.image-src fill-logo:
 optional ftd.image-src logo:
 optional ftd.color footer-bg:
 optional string copyright:
@@ -1321,6 +1383,39 @@ width:fill
 --- ftd.image:
 src: $logo
 
+
+
+--- container: ftd.main
+--- ftd.row:
+spacing: 20
+id: backed-section
+
+--- ftd.row:
+padding-top:10
+
+--- ftd.image:
+src: $backed-logo
+width: 118
+
+--- container:  backed-section
+
+--- ftd.row:
+padding-vertical: 12
+padding-horizontal: 12
+background-color: $font.fill-text-color
+
+--- ftd.image:
+src: $fill-logo
+width: 25
+
+--- container:  backed-section
+
+--- ftd.row:
+padding-top:10
+width: fill
+--- ftd.image:
+src: $group-logo
+width: 183
 
 --- container: ftd.main
 

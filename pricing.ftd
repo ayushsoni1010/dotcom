@@ -1,0 +1,472 @@
+-- import: fifthtry.github.io/fifthtry.com/assets
+-- import: fifthtry.github.io/fifthtry.com/library as lib
+-- import: fifthtry.github.io/fifthtry.com/custom-typo as font
+-- import: fpm
+
+
+
+-- record tc:
+caption question:
+body answer:
+
+
+-- tc list ques-ans:
+
+-- ques-ans: This is my question with a question mark?
+
+Yes. You have a few options. You can add users to your subscription any time during the subscription period. You can log in to your account via the GitLab Customers Portal and add more seats or contact sales for a quote. In either case, the cost will be prorated from the date of quote/purchase through the end of the subscription period. You may also pay for the additional licenses per our true-up model.
+
+
+-- ques-ans: This is my question with a question mark?
+
+Yes. You have a few options. You can add users to your subscription any time during the subscription period. You can log in to your account via the GitLab Customers Portal and add more seats or contact sales for a quote. In either case, the cost will be prorated from the date of quote/purchase through the end of the subscription period. You may also pay for the additional licenses per our true-up model.
+
+
+
+-- ques-ans: This is my question with a question mark?
+
+Yes. You have a few options. You can add users to your subscription any time during the subscription period. You can log in to your account via the GitLab Customers Portal and add more seats or contact sales for a quote. In either case, the cost will be prorated from the date of quote/purchase through the end of the subscription period. You may also pay for the additional licenses per our true-up model.
+
+
+
+-- string list about-list-one:
+
+-- about-list-one: I don’t know what you’re talking about
+-- about-list-one: I am a member of the Imperial Senate
+-- about-list-one: On a diplomatic mission to Alderaan
+-- about-list-one: I find your lack of faith disturbing
+-- about-list-one: I suggest you try it again, Luke
+-- about-list-one: Don’t underestimate the Force
+
+-- string list about-list-two:
+
+-- about-list-two: I don’t know what you’re talking about
+-- about-list-two: I am a member of the Imperial Senate
+-- about-list-two: On a diplomatic mission to Alderaan
+-- about-list-two: I find your lack of faith disturbing
+-- about-list-two: I suggest you try it again, Luke
+-- about-list-two: Don’t underestimate the Force
+
+
+-- string list about-list-three:
+
+-- about-list-three: I don’t know what you’re talking about
+-- about-list-three: I am a member of the Imperial Senate
+-- about-list-three: On a diplomatic mission to Alderaan
+-- about-list-three: I find your lack of faith disturbing
+-- about-list-three: I suggest you try it again, Luke
+-- about-list-three: Don’t underestimate the Force
+
+
+
+
+
+
+
+-- lib.homepage:
+nav-links: $config.main-nav
+
+
+
+-- subscription: Your { green: Better Documentation } journey starts today
+
+
+-- query-section: Frequently asked questions
+ques-ans : $ques-ans
+
+-- lib.footer:
+copyright: © 2022 FifthTry. All rights reserved
+
+
+-- ftd.column subscription:
+caption title:
+width: fill
+padding-horizontal: 48
+padding-vertical: 78
+
+--- desktop-subscription: $title
+if: not $config.is-mobile
+
+
+--- mobile-subscription: $title
+if:$config.is-mobile
+
+-- ftd.column desktop-subscription:
+caption title:
+width: fill
+padding-horizontal: 48
+padding-vertical: 78
+
+--- ftd.text: $title
+align: center
+padding-bottom: 76
+role: $font.hero-large
+color:  $fpm.color.main.text-strong
+
+--- ftd.row:
+spacing: 32
+
+
+--- pricing:
+width: percent 33
+list-one: true
+list-two: false
+list-three: false
+voucher-name: Free Forever
+voucher-title-name: Individuals and Open Source
+pricing-name: `$0`
+days: /month
+payment-mode: No Credit Card Required
+about-list-one: $about-list-one
+cta-text: Select Package
+cta-bg: $font.cta_secondary_base
+cta-color: $fpm.color.main.text-strong
+
+Our way to give back to the community, Continous-Documentation system will be free forever for individuals and open source projects.
+
+--- pricing: 
+width: percent 33
+list-one: false
+list-two: true
+list-three: false
+voucher-name: Most Popular
+voucher-title-name: Premium
+pricing-name: `$9`
+days: /month (per user)
+payment-mode: Fast Secure payments with Stripe
+about-list-two: $about-list-two
+cta-text: Select Package
+cta-bg: $font.footer-border-color
+cta-color: $fpm.color.main.text-strong
+
+Enhanced team producitvity and co-ordination, perfect for small startups and organizations 
+
+--- pricing: 
+width: percent 33
+list-one: false
+list-two: false
+list-three: true
+voucher-name: ULTIMATE
+voucher-title-name: Enterprise 
+pricing-name: `$199`
+days: /month (per user)
+payment-mode: Contact Sales 
+about-list-three: $about-list-three
+cta-text: Select Package
+cta-bg: $font.custom-five-bac
+cta-color: $fpm.color.main.text-strong
+
+Organization wide security, compliance, planning and backup. Comes with workshop and training for employees.
+
+
+-- ftd.column mobile-subscription:
+caption title:
+width: fill
+padding-horizontal: 48
+padding-vertical: 18
+
+--- ftd.text: $title
+align: center
+padding-bottom: 76
+role: $font.hero-large
+color:  $fpm.color.main.text-strong
+
+--- container: ftd.main
+
+--- ftd.row:
+padding-bottom: 32
+
+--- pricing:
+width: fill
+list-one: true
+list-two: false
+list-three: false
+voucher-name: Free Forever
+voucher-title-name: Individuals and Open Source
+pricing-name: `$0`
+days: /month
+payment-mode: No Credit Card Required
+about-list-one: $about-list-one
+cta-text: Select Package
+cta-bg: $font.cta_secondary_base
+cta-color: $fpm.color.main.text-strong
+Our way to give back to the community, Continous-Documentation system will be free forever for individuals and open source projects.
+
+
+--- container: ftd.main
+
+--- ftd.row:
+padding-bottom: 32
+
+--- pricing: 
+width: fill
+list-one: false
+list-two: true
+list-three: false
+voucher-name: Most Popular
+voucher-title-name: Premium
+pricing-name: `$9`
+days: /month (per user)
+payment-mode: Fast Secure payments with Stripe
+about-list-two: $about-list-two
+cta-text: Select Package
+cta-bg: $font.footer-border-color
+cta-color: $fpm.color.main.text-strong
+
+Enhanced team producitvity and co-ordination, perfect for small startups and organizations projects.
+
+--- container: ftd.main
+
+--- ftd.row:
+padding-bottom: 32
+
+--- pricing: 
+width: fill
+list-one: false
+list-two: false
+list-three: true
+voucher-name: ULTIMATE
+voucher-title-name: Enterprise 
+pricing-name: `$199`
+days: /month (per user)
+payment-mode: Contact Sales 
+about-list-three: $about-list-three
+cta-text: Select Package
+cta-bg: $font.custom-five-bac
+cta-color: $fpm.color.main.text-strong
+
+Organization wide security, compliance, planning and backup. Comes with workshop and training for employees.
+
+
+
+
+
+
+-- ftd.column query-section:
+caption title:
+tc list ques-ans:
+width: fill
+
+--- desktop-query-section: $title
+if: not $config.is-mobile
+ques-ans: $ques-ans
+
+
+--- mobile-query-section: $title
+if: $config.is-mobile
+ques-ans: $ques-ans
+
+
+
+-- ftd.column desktop-query-section:
+caption title:
+tc list ques-ans:
+padding-vertical: 140
+padding-horizontal: 303
+width: fill
+
+--- ftd.text: $title
+align: center
+padding-bottom: 76
+role: $font.hero-large
+color:  $fpm.color.main.text-strong
+padding-bottom: 106
+
+
+--- ques-ans-list:
+answer: $answer-list.answer
+question: $answer-list.question
+$loop$: $ques-ans as $answer-list
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.column mobile-query-section:
+caption title:
+tc list ques-ans:
+padding-vertical: 80
+padding-horizontal: 48
+width: fill
+
+--- ftd.text: $title
+align: center
+padding-bottom: 76
+role: $font.hero-large
+color:  $fpm.color.main.text-strong
+padding-bottom: 106
+
+
+--- ques-ans-list:
+answer: $answer-list.answer
+question: $answer-list.question
+$loop$: $ques-ans as $answer-list
+
+
+
+-- ftd.column ques-ans-list:
+caption question:
+body answer:
+margin-bottom: 24
+width: fill
+
+--- ftd.row:
+width: fill
+
+--- ftd.text: $question
+padding-bottom: 16
+role: $font.copy-relaxed-medium
+color: $fpm.color.main.text-strong
+
+--- container: ftd.main
+
+--- ftd.row:
+width: fill
+--- ftd.text:
+text: $answer
+role: $font.copy-relaxed
+color: $fpm.color.main.text
+
+
+
+
+-- ftd.text green: yo
+color: $font.cta_secondary_base
+
+
+-- ftd.column pricing:
+min-height: 765
+string voucher-name:
+optional string voucher-title-name:
+string pricing-name:
+string width:
+optional string days:
+string list about-list-one: $about-list-one
+string list about-list-two: $about-list-two
+string list about-list-three: $about-list-three
+body body:
+string payment-mode:
+optional ftd.color cta-bg: $fpm.color.main.text-strong
+optional ftd.color cta-color: $font.cta_secondary_base
+padding-horizontal: 31
+background-color: $font.cta_secondary_base
+optional ftd.color bg-color: $fpm.color.main.background.step-1
+background-color: $bg-color
+padding-vertical: 54
+width: $width
+string cta-text:
+border-color: $font.cta_hover
+border-radius: 25
+shadow-offset-x: 0
+shadow-offset-y: 8
+shadow-size: 0
+shadow-blur: 16
+border-radius: 24
+border-color: $font.cta_primary_base
+shadow-color if $MOUSE-IN:  $font.cta_primary_base
+boolean list-one: false
+boolean list-two: false
+boolean list-three: false
+
+--- ftd.text: $voucher-name
+color: $cta-color
+background-color:$cta-bg
+border-color: $font.cta_hover
+border-radius: 25
+role: $font.copy-relaxed
+padding-horizontal: 24
+padding-vertical: 6
+
+--- ftd.column:
+id: about-container
+
+
+--- ftd.text: $voucher-title-name
+role: $font.list-title
+color: $fpm.color.main.text-strong
+margin-top: 32
+
+--- container:  about-container
+--- ftd.row:
+id: pricing-id
+spacing: 8
+color: $fpm.color.main.text-strong
+
+--- ftd.row:
+background-color: $fpm.color.main.background.base
+
+--- ftd.text: $pricing-name
+role: $font.heading-hero
+white-space: nowrap
+
+--- container: pricing-id
+
+--- ftd.row:
+
+--- ftd.text: $days
+role: $font.list-title
+padding-vertical: 8
+
+
+
+--- container: ftd.main
+
+--- ftd.text:
+margin-top: 8
+margin-bottom: 32
+text: $body
+role: $font.copy-relaxed
+color: $fpm.color.main.text
+
+--- img-text: $obj
+if: $list-one
+$loop$: $about-list-one as $obj
+
+--- img-text: $obj
+if: $list-two
+$loop$: $about-list-two as $obj
+
+--- img-text: $obj
+if: $list-three
+$loop$: $about-list-three as $obj
+
+--- container: ftd.main
+
+--- ftd.row:
+margin-top: 32
+width: fill
+
+
+--- lib.cta: $cta-text
+width: fill
+cta-bg: $font.cta_secondary_base
+
+--- container: ftd.main
+
+--- ftd.text: 
+text: $payment-mode
+role: $font.copy-relaxed
+color: $fpm.color.main.text
+align: center
+padding-top: 16
+
+
+-- ftd.row img-text:
+caption title:
+spacing: 8
+margin-bottom: 16
+
+--- ftd.image:
+src: $assets.files.assets.images.Circle-Check.png
+
+--- ftd.text: $title
+role: $font.copy-relaxed-medium
+color: $fpm.color.main.text-strong
+
