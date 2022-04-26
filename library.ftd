@@ -948,7 +948,7 @@ align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-large
+role: $fpm.type.label-big
 link: $link
 color: $text-color
 white-space: nowrap
@@ -967,7 +967,7 @@ align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-large
+role: $fpm.type.label-big
 link: $link
 color: $text-color
 white-space: nowrap
@@ -1504,7 +1504,7 @@ align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-large
+role: $fpm.type.label-big
 link: $link
 color: $text-color
 white-space: nowrap
