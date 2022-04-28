@@ -1,0 +1,9 @@
+-- ft.page-with-toc: `ftd`
+toc: $config.development
+
+
+We use [ftd_django](https://fifthtry.github.io/python.ftd.dev/django/template-backend/)
+as our template backend.
+
+We use `fifthtry.github.io/cdoc` as fpm package where templates come from.
+`cdoc-doc` is added as git-submodule in `cdoc-doc` folder in our repo.

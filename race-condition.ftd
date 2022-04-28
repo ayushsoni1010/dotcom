@@ -1,0 +1,46 @@
+-- ft.page-with-toc: PR Description Update Race Condition
+
+To update the PR description, we will first fetch the latest pr description
+and then update it. This can lead to race conditions.
+
+-- ft.h2: Race Condition - We Overwrite Someone Else's Edit
+
+Sequence:
+
+1. PR description editor opened by a user on Github and is being edited.
+2. We read PR description, we have not seen user's changes since its not yet
+   sent to Github.
+3. User hits save and updates the PR.
+4. We modify the content we read in 2, and modify it with our state change, and
+   end send to Github.
+
+In this flow the changes user did we did not discover and we overwrote them.
+
+To solve this we can do a "verify after write". In step 2 we also read the
+latest item in the history. After write we verify that the history has gone
+ahead by only our change. If we detect a change in history, we re-read latest
+change before our and re-apply. And to be sure we do the verify after write once
+again.
+
+-- ft.h2: Race Condition - Someone Overwrites Over Edit
+
+This is the same as previous case, just 3 and 4 are swapped. We can not just
+do "verify after write", but we will have to watch for edits of PR after we have
+successfully conducted "verify after write" step. Since the editor could have
+been open for hours, there is no end to till what time we have to watch for
+changes, we watch all edits of PR.
+
+-- ft.h2: Github API Consideration
+
+Github seems not not expose history as API. We can poll a PR every so often, or
+at least on PR activities, and see if our changes has been overwritten by
+someone else, and bring it back.
+
+The first race condition is not to solve for us without history API, all we can
+do is make the time between 2 and 4 as small as possible to make it less likely.
+
+-- ft.h2: Last Comment Alternative
+
+If due to race conditions are not possible we can switch to last comment
+solution.
+

@@ -1,0 +1,10 @@
+-- ft.page-with-toc: `GithubInstallationToken Model`
+toc: $config.development
+
+-- ft.code:
+lang: py
+
+class GithubInstallationToken(Token):
+    github_app_installation = models.ForeignKey(
+        GithubAppInstallation, on_delete=models.CASCADE, related_name="tokens"
+    )

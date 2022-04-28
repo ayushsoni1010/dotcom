@@ -1,0 +1,46 @@
+-- ft.page-with-toc: Repository Page
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+The repository page is the operational dashboard of a repository. Here you can 
+take the following actions
+- Connect a Documentation Pull Request with the Code Pull Request
+- Approve the Code Pull Request
+- Approve the Code Pull Request without the Documentation Pull Request
+
+
+-- ft.code:
+lang: yml
+
+
+URL: /
+Parameters:
+- q:
+  Description: Search query
+  Required: False
+  Type: string
+
+
+-- ft.h2: Workflow
+
+This page tracks all the open pull request of the repository. A pull request can
+be in one of the following states:
+- **Documentation PR Required**: The pull request requires a documentation pull 
+  request to be attached.
+- **PR Attached, awaiting approval**: The pull request is attached. However the 
+  code needs review and the approval is pending
+- **Code Approved**: The code pull request has been approved.
+- **Manual Approval**: The code pull request was approved without a corresponding 
+  documentation pull request.
+
+
+-- ft.h3: Constraints
+
+- The search query is case insensitive.
+- The search query can be a substring of the repository name.
+
+-- ft.h2: Design
+
+-- ft.image: 
+src: $assets.files.images.product-manual.routes.pages.repository-page.png
+width: fill

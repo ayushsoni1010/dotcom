@@ -1,0 +1,32 @@
+-- ft.page-with-toc: Pull Request States
+
+For a github repo using `cdoc`, every code Pull Request is in one of the
+following states:
+
+-- ft.h1: Unconnected Pull Request
+
+A PR starts in `unconnected-pr` state. As soon as PR is opened we update the
+description of the PR with a message about it not yet being connected. We also
+change the CI status of this PR as failing or queued.
+
+-- ft.image: Unconnected Pull Request On Github
+src: $assets.files.images.unconnected-pr.png
+width: fill
+
+Clicking on the "Connect Now" button takes you to Connect PR Flow. [Read more
+about how we create IU on Github](ui/).
+
+-- ft.h1: Not Approved Pull Request
+
+Once a PR is connected to a doc PR, it goes to Not Approved Pull Request.
+
+In this state someone with right [permission](permissions/) has to review the
+doc PR and approve it.
+
+
+-- ft.h1: Approved Pull Request
+
+Once a PR itself has to be approved on Github first.
+
+Then someone has to certify that the changes implemented in code PR are
+themselves in perfect sync with the requirement PR.

@@ -1,0 +1,5 @@
+-- ft.page-with-toc: Routes: Pages, Widgets, Actions, and APIs
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+This section contains the information about  the pages, actions and  the APIs associated with the documentation.

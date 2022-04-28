@@ -1,0 +1,61 @@
+-- string doc-url: pages/repo/
+-- string name: Repo Page
+
+-- ft.page-with-toc: $name
+
+-- ft.markdown:
+
+For every connected repository this page shows all PRs. On this page there are
+filters to view currently open PRs (default), closed PRs, not connected PRs etc.
+
+
+
+
+-- ft.h1: URL & Params
+
+URL: `<cdoc-base-url>/<repo-name>/query=<>`
+
+
+-- ft.h2: `cdoc-base-url`
+
+For hosted `cdoc` this would be `gh.fifthtry.com` (and `gl.fifthtry.com` in
+future when we support Gitlab and so on). For self-hosted cdoc it would be the
+domain where it is hosted.
+
+
+
+-- ft.h2: `repo-name`
+
+eg `FifthTry/fpm`.
+
+
+
+-- ft.h2: `query`
+
+This optional parameter contains the search term user has entered in the search
+box.
+
+
+
+
+
+
+
+
+-- ft.h1: Design
+
+
+-- ft.image:
+src: $assets.files.images.repo-page.png
+width: fill
+
+
+
+
+
+
+
+
+-- ft.h1: Data
+
+TODO

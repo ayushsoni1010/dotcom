@@ -1,5 +1,119 @@
 -- import: fpm
+-- import: ft
 
+-- ft.github: https://github.com/fifthtry/cdoc/
+
+-- ft.site-name: FifthTry
+
+-- ft.sections:
+$processor$: toc
+
+- Why CDOC?: why/
+- User Manual: user-manual/
+- Development: dev/
+- Github: https://github.com/fifthtry/cdoc/
+
+-- ft.toc:
+$processor$: toc
+
+- Flow: flow/
+  - Permissions: permissions/
+  - Three Approvals: approvals/
+- Github UI: github-ui/
+  - PR Description: pr-description/
+  - Race Condition: race-condition/
+  - Last Comment UI: last-comment/
+- PR States: pr-states/
+- Pages:
+  - PR Page: pages/pr/
+  - Repo Page: pages/repo/
+  - `ftd` Page: pages/ftd/
+
+
+-- fpm.toc-item list user-manual:
+$processor$: toc
+
+- product
+- self hosting
+
+-- fpm.toc-item list development:
+$processor$: toc
+
+- Overview: dev/
+- FTD Templates: dev/ftd/
+- Using `ftd_django.static()`: dev/static/
+- Data Models: dev/models/
+  - App Models: dev/models/app
+    - GithubUser Model: dev/models/app/githubuser
+    - GithubUserAccessToken Model: dev/models/app/githubuseraccesstoken
+    - GithubUserRefreshToken Model: dev/models/app/githubuserrefreshtoken
+    - GithubAppInstallation Model: dev/models/app/githubappinstallation
+    - GithubAppUser Model: dev/models/app/githubappuser
+    - GithubInstallationToken Model: dev/models/app/githubinstallationtoken
+    - GithubRepository Model: dev/models/app/githubrepository
+    - GithubRepoMap Model: dev/models/app/githubrepomap
+    - GithubPullRequest Model: dev/models/app/githubpullreques
+    - MonitoredPullRequest Model: dev/models/app/monitoredpullreques
+    - PrApproval Model: dev/models/app/prapproval
+    - GithubCheckRun Model: dev/models/app/githubcheckrun
+    - GithubLoginState Model: dev/models/app/githubloginstate
+
+-- fpm.toc-item list why-toc:
+$processor$: toc
+
+- Why `CDOC`?: why/
+- Document Drive Development
+- Documentation ROI
+- Improving Developer Onboarding
+- Remote Work Needs Better Documentation
+
+
+-- fpm.toc-item list why-header:
+$processor$: toc
+
+- Overview: why/
+- Alternatives
+
+
+-- fpm.toc-item list user-manual-overview-toc:
+$processor$: toc
+
+- Why `CDOC`?: why/
+- Document Drive Development
+- Documentation ROI
+- Improving Developer Onboarding
+- Remote Work Needs Better Documentation
+
+
+-- fpm.toc-item list user-manual-header:
+$processor$: toc
+
+- Overview: user-manual/
+- Features: user-manual/features/
+- Journeys
+- Pages, Actions and APIs: user-manual/routes/
+- Learning | How To: user-manual/how-to/
+
+
+-- fpm.toc-item list user-manual-pages-toc:
+$processor$: toc
+
+- Pages: user-manual/routes/pages/
+  - Login Page: user-manual/routes/pages/login/
+  - Dashboard Page: user-manual/routes/pages/dashboard/
+    - Repo Connection Dialog: user-manual/routes/pages/dashboard/repo-connection-dialog/
+  - Repository Page: user-manual/routes/pages/repo/
+    - PR Mapping Dialog: user-manual/routes/pages/repo/pr-mapping-dialog/
+    - PR Approval Dialog: user-manual/routes/pages/repo/pr-approval-dialog/
+- Widgets: user-manual/routes/widgets/
+- Actions: user-manual/routes/actions/
+  - Repo Connection Dialog: user-manual/routes/pages/dashboard/repo-connection-dialog/
+  - PR Mapping Dialog: user-manual/routes/pages/repo/pr-mapping-dialog/
+  - PR Approval Dialog: user-manual/routes/pages/repo/pr-approval-dialog/
+- APIs: user-manual/routes/apis/
+- Notifications: user-manual/routes/notifications/
+  - Documentation Attached Notification: user-manual/routes/notifications/documentation-attached-notification/
+  - PR Approval Notification: user-manual/routes/notifications/pull-request-approved-notification/
 
 -- boolean is-mobile: false
 

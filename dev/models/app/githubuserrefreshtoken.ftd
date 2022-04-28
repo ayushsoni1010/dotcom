@@ -1,0 +1,10 @@
+-- ft.page-with-toc: `GithubUserRefreshToken Model`
+toc: $config.development
+
+-- ft.code:
+lang: py
+
+class GithubUserRefreshToken(Token):
+    github_user = models.ForeignKey(
+        GithubUser, on_delete=models.CASCADE, related_name="refresh_tokens"
+    )

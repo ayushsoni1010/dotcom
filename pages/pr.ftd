@@ -1,0 +1,104 @@
+-- string doc-url: pages/pr/
+-- string name: PR Page
+
+-- ft.page-with-toc: $name
+
+-- ft.markdown:
+
+This page exists for every PR in a repository connected with `cdoc`.
+
+
+
+
+-- ft.h1: URL & Params
+
+URL: `<cdoc-base-url>/<repo-name>/pulls/<pr-number>/?query=<>`
+
+
+-- ft.h2: `cdoc-base-url`
+
+For hosted `cdoc` this would be `gh.fifthtry.com` (and `gl.fifthtry.com` in
+future when we support Gitlab and so on). For self-hosted cdoc it would be the
+domain where it is hosted.
+
+
+
+-- ft.h2: `repo-name`, `pr-number`
+
+`repo-name`, eg `FifthTry/fpm` and `pr-number` identy the pull request.
+
+
+
+-- ft.h2: `query`
+
+This optional parameter contains the search term user has entered in the search
+box.
+
+
+
+
+
+
+
+
+-- ft.h1: Design
+
+
+
+-- ft.h2: Not Connected State
+
+In this we show all PRs in the corresponding documentation repository, and next
+to each show a "connect" button.
+
+-- ft.image:
+src: $assets.files.images.pr-status-page-unconnected.png
+width: fill
+
+
+
+-- ft.h2: Unapproved State
+
+-- ft.image:
+src: $assets.files.images.pr-status-page.png
+width: fill
+
+
+
+-- ft.h2: Approved State
+
+TODO
+
+
+
+
+
+
+
+
+
+-- ft.h1: Data
+
+-- ft.code:
+lang: ftd
+
+\-- record result:
+string pr-number:
+string pr-title:
+string pr-url:
+
+\-- record data:
+string account-name:
+string account-url:
+string repo-name:
+string repo-url:
+string pr-number:
+string pr-title:
+string pr-body:
+string pr-url:
+optional string query:
+result list result:
+
+
+
+-- ftd.text page: $name
+link: $doc-url

@@ -1,0 +1,38 @@
+-- import: fifthtry.github.io/fifthtry.com/pages/pr
+
+-- ft.page-with-toc: UI On Github
+
+We want `cdoc` to be as usable without leaving Github as possible. For every
+PR we will have one main page on FifthTry: {pr.page}
+
+Since we are going to update Pull Request with our messages and different teams
+may want different levels of "messing with PR UI", we would in future support
+multiple UI modes, for now we have just one mode, which we consider the ideal
+mode and want to use for our projects.
+
+
+
+
+-- ft.h1: PR Check
+
+This is the main UI for us.
+
+-- ft.image:
+src: $assets.files.images.pr-checks.png
+width: fill
+
+We will have a check named "cdoc" which will show up here, like we currently see
+"Rust Checks / Rust Checks (pull_request)". It will show passing or failing
+message. We will explore if "Details" link can directly to {pr-status.page}.
+
+
+
+-- ft.h1: Status Summary
+
+We want to try using `PR Description` for status, but it has some race condition
+issues. If the race condition mitigations are not considered acceptable we can
+switch to last comment for status.
+
+
+
+

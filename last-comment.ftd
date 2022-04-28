@@ -1,0 +1,14 @@
+-- ft.page-with-toc: Status In Last Comment
+
+We want to put the `cdoc` status in the description of the PR as that is the
+most visible area of the UI. If that doesnt work due to race conditions we will
+use this status in last comment approach.
+
+tldr: the status would be part of a comment that `cdoc` has created. If the
+comment is not the last comment, it will be deleted and a new comment would be
+created.
+
+We are deleting comments to not have comment noice in pull request.
+
+It is assumed that a comment by `cdoc` would never be edited by anyone other
+than `cdoc` so race conditions go away.

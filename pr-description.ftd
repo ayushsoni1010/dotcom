@@ -1,0 +1,21 @@
+-- ft.page-with-toc: Pull Request Description
+
+In Github PRs, there is an area which includes the description of the Pull
+Request:
+
+-- ft.image: Pull Request Description
+src: $assets.files.images.pr.png
+width: fill
+
+The content of the description is editable using the Github's [Update a pull
+request](https://docs.github.com/en/rest/reference/pulls#update-a-pull-request)
+API, using the `body` field mentioned there.
+
+We will append our UI at the bottom of the PR description. Since the description
+will change over time, we will put a marker in the PR description body, and
+anything after that marker would be assumed to be our content, and we would
+keep overwriting the content.
+
+This can cause [two race conditions](race-conditions/), which if we can not
+mitigate we will not use pull request description approach, and fall back to
+[last comment approach](last-comment/).

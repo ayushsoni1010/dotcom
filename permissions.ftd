@@ -1,0 +1,4 @@
+-- ft.page-with-toc: Permissions
+
+Only people who have merge rights to documentation PR can do the "cdoc
+approval".

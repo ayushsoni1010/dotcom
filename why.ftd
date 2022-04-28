@@ -1,0 +1,6 @@
+-- ft.page-with-toc: Why `cdoc`?
+toc: $config.why-toc
+sub-sections: $config.why-header
+
+CDOC helps you implement a workflow that ensures documentation stays up to date
+with code changes.
