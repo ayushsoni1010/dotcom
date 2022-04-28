@@ -1,5 +1,6 @@
 -- import: fifthtry.github.io/fifthtry.com/custom-typo as font
 -- import: fpm
+-- import: fbs
 
 -- boolean sidebar-open: false
 
@@ -172,12 +173,14 @@ if: $config.is-mobile
 width: fill
 id: left-header
 padding-top: 26
+spacing: 10
 
 --- ftd.image:
 src: $site-logo
 height: 32
 width: 93
 link: /
+
 
 --- container: ftd.main
 
@@ -186,6 +189,7 @@ if: not $config.is-mobile
 width: fill
 id: left-header
 padding-top: 26
+spacing: 20
 
 --- ftd.image:
 src: $site-logo
@@ -193,7 +197,13 @@ height: 32
 width: 93
 link: /
 
+--- container: left-header
+
+--- fbs.fifthtry-brand-switcher:
+
 --- container: ftd.main
+
+
 
 
 
@@ -213,7 +223,7 @@ optional string github-cta:
 boolean on-pricing: false
 optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
-padding-vertical: 30
+padding-vertical: 26
 padding-bottom: 20
 spacing: 32
 align: center
