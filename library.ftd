@@ -164,7 +164,7 @@ icon-github: $icon-github
 
 -- ftd.row header-section-left:
 width: fill
-padding-vertical: 26
+padding-vertical: 16
 ftd.image-src site-logo:
 id: main-row
 
@@ -223,7 +223,7 @@ optional string github-cta:
 boolean on-pricing: false
 optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
-padding-vertical: 26
+padding-vertical: 16
 padding-bottom: 20
 spacing: 32
 align: center
@@ -241,9 +241,10 @@ link: /pricing/
 --- ftd.text: $install
 role: $font.cta
 color: $fpm.color.main.text-strong
-padding-vertical: 8
+padding-vertical: 16
 padding-horizontal: 16
 link: https://cdoc.fifthtry.com/initiate-github-login/
+
 
 --- github-button:
 sign-in: $sign-in
@@ -1315,6 +1316,7 @@ id: right-side-footer
 --- ftd.image:
 src: $logo
 link: \
+margin-top: 10
 
 
 --- ftd.row:
