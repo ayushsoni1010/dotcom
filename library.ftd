@@ -41,7 +41,7 @@ optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
 /optional string language-url: /translations/
-optional string sign-in: Sign up
+optional string sign-in: Sign in
 optional string github-cta: 
 optional string pricing: Pricing
 optional string install: Login
