@@ -183,6 +183,13 @@ link: /
 
 --- container: left-header
 
+--- ftd.row:
+width: fill
+border-left: 1
+padding-left: $fpm.space.space-4
+margin-left: $fpm.space.space-4
+border-color: $fpm.color.main.border
+
 --- fbs.fifthtry-brand-switcher:
 
 --- container: ftd.main
@@ -201,6 +208,13 @@ width: 93
 link: /
 
 --- container: left-header
+
+--- ftd.row:
+width: fill
+border-left: 1
+padding-left: $fpm.space.space-4
+margin-left: $fpm.space.space-4
+border-color: $fpm.color.main.border
 
 --- fbs.fifthtry-brand-switcher:
 
