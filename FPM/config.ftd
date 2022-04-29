@@ -10,7 +10,7 @@
 light: $assets.files.assets.images.fifthtry-logo.png.light
 dark: $assets.files.assets.images.fifthtry-logo.png.dark
 
--- ds.site-name: FifthTry
+/-- ds.site-name: FifthTry
 
 -- ds.sections:
 $processor$: toc
