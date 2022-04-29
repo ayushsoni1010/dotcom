@@ -1,7 +1,36 @@
--- import: fifthtry.com/assets
 -- import: fifthtry.com/library as lib
--- import: fbs
 
+
+
+-- lib.list-tc: Poor Documentation is Costing you
+index: 1
+
+Onboarding new team members take time, lack of docs means calendar full of
+meetings, critical employee leaving.
+
+
+
+-- lib.list-tc: Gate the changes
+index: 2
+
+
+FifthTry integrates with Github and blocks Pull Requests from getting merged
+till documentation is written and approved.
+
+
+
+-- lib.list-tc: Write the Docs
+index: 3
+
+Store documentation in Github repo, and write documentation in a PR against that
+repo. Connect the doc PR with code PR on FifthTry.
+
+-- lib.list-tc: Verify The Docs
+index: 4
+is-last: true
+
+Once documentation PR is ready and approve and someone has verified code
+is exactly as per docs merge both code and doc PRs.
 
 
 -- lib.homepage:
@@ -23,15 +52,11 @@ image-hero-right: $assets.files.assets.images.doc-to-trans.png
 image-1: $assets.files.assets.images.slide-show-image-1.png
 image-2: $assets.files.assets.images.slide-show-image-2.png
 image-3: $assets.files.assets.images.slide-show-image-3.png
-list-title-copy: $config.list-tc
+image-4: $assets.files.assets.images.slide-show-image-4.png
+list-title-copy: $lib.list-tc
 
-FifthTry solves out of date and incomplete documentation problems -  we
-integrate with GitHub and block code changes from getting deployed till
-documentation has been updated and approved. We call this Continuous
-Documentation.
-
-
-
+FifthTry helps you solve out of date and incomplete documentation problem by
+using what we call *Continuous Documentation*.
 
 
 

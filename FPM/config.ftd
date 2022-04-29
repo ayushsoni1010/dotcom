@@ -128,40 +128,5 @@ $processor$: toc
 
 
 
--- record tc:
-caption title:
-body body:
-integer index:
-boolean is-last:
 
--- tc list list-tc:
-
--- list-tc: Poor Documentation is Costing you
-index: 1
-is-last: false
-
-Onboarding, Calendar full of meetings, Critical Employees leaving, business
-continuity issue etc.
-
-
-
-
-
--- list-tc: Own the changes
-index: 2
-is-last: false
-
-
-FifthTry integrates with Github and blocks Pull Requests from getting merged
-till documentation is written and approved.
-
-
-
--- list-tc: Deploy when everything’s ready
-index: 3
-is-last: true
-
-
-You have to connect code PR with doc PR on fifthtry.com and then approve it.
-Once approved the PR can be merged.
 

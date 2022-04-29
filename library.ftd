@@ -1,6 +1,16 @@
 -- import: fifthtry.com/custom-types as font
--- import: fpm
 -- import: fbs
+-- import: fpm
+
+
+-- record tc:
+caption title:
+body body:
+integer index:
+boolean is-last: false
+
+-- tc list list-tc:
+
 
 -- boolean sidebar-open: false
 
@@ -41,7 +51,7 @@ optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
 /optional string language-url: /translations/
-optional string sign-in: Sign in
+optional string sign-in: Sign up
 optional string github-cta: 
 optional string pricing: Pricing
 optional string install: Login
@@ -339,7 +349,7 @@ optional string hero-right-heading:
 optional string hero-right-cta-one:
 optional ftd.image-src bg-image: $assets.files.assets.images.homepage-background.png
 width: fill
-height if not $config.is-mobile: 850
+height if not $config.is-mobile: 750
 
 --- desktop-hero: $title
 if: not $config.is-mobile
@@ -740,10 +750,11 @@ caption title:
 optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
+optional ftd.image-src image-4:
 optional body body:
 optional ftd.color bg-color:
 optional string title-copy:
-config.tc list list-title-copy:
+tc list list-title-copy:
 width: fill
 padding-vertical: 24
 padding-horizontal: 16
@@ -785,6 +796,12 @@ margin-bottom: 16
 --- ftd.image:
 if: $image-hover == 3
 src: $image-3
+width: fill
+margin-bottom: 16
+
+--- ftd.image:
+if: $image-hover == 4
+src: $image-4
 width: fill
 margin-bottom: 16
 
@@ -1590,10 +1607,11 @@ caption title:
 optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
+optional ftd.image-src image-4:
 optional body body:
 optional ftd.color bg-color: $fpm.color.main.background.step-1
 optional string title-copy:
-config.tc list list-title-copy:
+tc list list-title-copy:
 width: fill
 background-color: $bg-color
 
@@ -1603,6 +1621,7 @@ if: not $config.is-mobile
 image-1: $image-1
 image-2: $image-2
 image-3: $image-3
+image-4: $image-4
 body: $body
 bg-color: $bg-color
 title-copy: $title-copy
@@ -1614,6 +1633,7 @@ if: $config.is-mobile
 image-1: $image-1
 image-2: $image-2
 image-3: $image-3
+image-4: $image-4
 body: $body
 bg-color: $bg-color
 title-copy: $title-copy
@@ -1629,10 +1649,11 @@ caption title:
 optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
+optional ftd.image-src image-4:
 optional body body:
 optional ftd.color bg-color:
 optional string title-copy:
-config.tc list list-title-copy:
+tc list list-title-copy:
 width: fill
 padding-vertical: 70
 padding-horizontal: 48
@@ -1697,6 +1718,10 @@ if: $image-hover == 3
 src: $image-3
 width: fill
 
+--- ftd.image:
+if: $image-hover == 4
+src: $image-4
+width: fill
 
 
 
@@ -1711,10 +1736,11 @@ caption title:
 optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
+optional ftd.image-src image-4:
 optional body body:
 optional ftd.color bg-color:
 optional string title-copy:
-config.tc list list-title-copy:
+tc list list-title-copy:
 width: fill
 padding-vertical: 24
 padding-horizontal: 16
@@ -1756,6 +1782,12 @@ margin-bottom: 16
 --- ftd.image:
 if: $image-hover == 3
 src: $image-3
+width: fill
+margin-bottom: 16
+
+--- ftd.image:
+if: $image-hover == 4
+src: $image-4
 width: fill
 margin-bottom: 16
 
@@ -1801,10 +1833,11 @@ caption title:
 optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
+optional ftd.image-src image-4:
 optional body body:
 optional ftd.color bg-color:
 optional string title-copy:
-config.tc list list-title-copy:
+tc list list-title-copy:
 width: fill
 background-color: $bg-color
 
@@ -1813,6 +1846,7 @@ if: not $config.is-mobile
 image-1: $image-1
 image-2: $image-2
 image-3: $image-3
+image-4: $image-4
 body: $body
 bg-color: $bg-color
 title-copy: $title-copy
@@ -1824,6 +1858,7 @@ if: $config.is-mobile
 image-1: $image-1
 image-2: $image-2
 image-3: $image-3
+image-4: $image-4
 body: $body
 bg-color: $bg-color
 title-copy: $title-copy
@@ -1835,10 +1870,11 @@ caption title:
 optional ftd.image-src image-1:
 optional ftd.image-src image-2:
 optional ftd.image-src image-3:
+optional ftd.image-src image-4:
 optional body body:
 optional ftd.color bg-color:
 optional string title-copy:
-config.tc list list-title-copy:
+tc list list-title-copy:
 width: fill
 background-color: $bg-color
 padding-vertical: 70
@@ -1862,6 +1898,11 @@ width: fill
 --- ftd.image:
 if: $image-hover == 3
 src: $image-3
+width: fill
+
+--- ftd.image:
+if: $image-hover == 4
+src: $image-4
 width: fill
 
 --- container: ftd.main
