@@ -109,7 +109,8 @@ optional string github-url:
 optional ftd.image-src icon-language:
 optional string language-url:
 background-color: $header-bg
-padding-horizontal: 48
+padding-horizontal: 16
+padding-vertical: 20
 width: fill
 boolean on-pricing: false
 
@@ -147,6 +148,7 @@ optional string language-url:
 fpm.toc-item list main-nav:
 background-color: $header-bg
 padding-horizontal: 16
+padding-vertical: 10
 width: fill
 boolean on-pricing: false
 
@@ -168,7 +170,6 @@ icon-github: $icon-github
 
 -- ftd.row header-section-left:
 width: fill
-padding-vertical: 16
 ftd.image-src site-logo:
 open: true
 
@@ -176,14 +177,18 @@ open: true
 if: $config.is-mobile
 width: fill
 id: left-header
-padding-top: 26
+padding-top: 8
 spacing: 10
+
+--- ftd.row:
+min-width: 110
+height: 38
+link: /
 
 --- ftd.image:
 src: $site-logo
-height: 32
-width: 93
-link: /
+height: fill
+width: fill
 
 --- container: left-header
 
@@ -202,14 +207,18 @@ border-color: $fpm.color.main.border
 if: not $config.is-mobile
 width: fill
 id: left-header
-padding-top: 26
+padding-top: 8
 spacing: 20
+
+--- ftd.row:
+min-width: 110
+height: 38
+link: /
 
 --- ftd.image:
 src: $site-logo
-height: 32
-width: 93
-link: /
+height: fill
+width: fill
 
 --- container: left-header
 
@@ -222,7 +231,6 @@ border-color: $fpm.color.main.border
 
 --- fbs.fifthtry-brand-switcher:
 
---- container: ftd.main
 
 
 
@@ -244,8 +252,6 @@ optional string github-cta:
 boolean on-pricing: false
 optional ftd.image-src icon-github:
 optional string github-url: https://github.com/FifthTry
-padding-vertical: 16
-padding-bottom: 20
 spacing: 32
 align: center
 
@@ -300,7 +306,7 @@ background-color: $button-bg
 padding-horizontal: 24
 padding-vertical: 14
 border-radius: 8
-spacing: 3
+spacing: 5
 cursor: pointer
 link: https://github.com/apps/continuous-documentation
 
