@@ -41,8 +41,8 @@ optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
 optional string github-url: https://github.com/FifthTry/dotcom
 optional ftd.image-src icon-language: $assets.files.assets.images.icon-language.png
 /optional string language-url: /translations/
-optional string sign-in: Sign up with 
-optional string github-cta: github
+optional string sign-in: Sign up
+optional string github-cta: 
 optional string pricing: Pricing
 optional string install: Login
 fpm.toc-item list main-nav: $config.empty-toc
@@ -181,6 +181,9 @@ height: 32
 width: 93
 link: /
 
+--- container: left-header
+
+--- fbs.fifthtry-brand-switcher:
 
 --- container: ftd.main
 
@@ -251,7 +254,7 @@ sign-in: $sign-in
 github-cta: $github-cta
 icon-github: $icon-github
 
---- ftd.image:
+/--- ftd.image:
 src: $icon-github
 white-space: nowrap
 cursor: pointer
