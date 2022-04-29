@@ -115,9 +115,6 @@ boolean on-pricing: false
 
 --- header-section-left:
 site-logo: $logo
-id: main-row
-
---- container: main-row
 
 --- header-section-right:
 sign-in: $sign-in
@@ -155,9 +152,6 @@ boolean on-pricing: false
 
 --- header-section-left:
 site-logo: $logo
-id: main-row
-
---- container: main-row
 
 --- header-section-right:
 sign-in: $sign-in
@@ -176,7 +170,7 @@ icon-github: $icon-github
 width: fill
 padding-vertical: 16
 ftd.image-src site-logo:
-id: main-row
+open: true
 
 --- ftd.row:
 if: $config.is-mobile
