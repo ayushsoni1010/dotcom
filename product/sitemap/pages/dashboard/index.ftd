@@ -1,4 +1,4 @@
--- ft.page-with-toc: Dashboard Page
+-- ds.page-with-toc: Dashboard Page
 toc: $config.user-manual-pages-toc
 sub-sections: $config.user-manual-header
 
@@ -14,7 +14,7 @@ the code repository mapping. The page is divided in two sections
 Along with this, the page also carries a search box which can be used to filter 
 the results.
 
--- ft.h2: URL and Parameters
+-- ds.h2: URL and Parameters
 
 URL: `/`
 For the unauthenticated user, refer to login page
@@ -29,7 +29,7 @@ Parameters:
   Type: string
 
 
--- ft.h3: Constraints
+-- ds.h3: Constraints
 
 - The page is accessible only to authenticated users
 - The search query is case insensitive.
@@ -38,8 +38,8 @@ Parameters:
   pagination, if you can't find your repository, please filter the results in 
   the search box.
 
--- ft.h2: Design
+-- ds.h2: Design
 
--- ft.image: 
+-- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-page.png
 width: fill

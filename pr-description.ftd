@@ -1,9 +1,9 @@
--- ft.page-with-toc: Pull Request Description
+-- ds.page-with-toc: Pull Request Description
 
 In Github PRs, there is an area which includes the description of the Pull
 Request:
 
--- ft.image: Pull Request Description
+-- ds.image: Pull Request Description
 src: $assets.files.images.pr.png
 width: fill
 

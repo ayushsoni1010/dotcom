@@ -1,4 +1,4 @@
--- ft.page-with-toc: All Actions
+-- ds.page-with-toc: All Actions
 toc: $config.user-manual-pages-toc
 sub-sections: $config.user-manual-header
 

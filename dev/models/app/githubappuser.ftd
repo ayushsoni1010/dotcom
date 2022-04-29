@@ -1,7 +1,7 @@
--- ft.page-with-toc: `GithubAppUser Model`
+-- ds.page-with-toc: `GithubAppUser Model`
 toc: $config.development
 
--- ft.code:
+-- ds.code:
 lang: py
 
 class GithubAppUser(models.Model):

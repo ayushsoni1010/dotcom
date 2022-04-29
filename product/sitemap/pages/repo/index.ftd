@@ -1,4 +1,4 @@
--- ft.page-with-toc: Repository Page
+-- ds.page-with-toc: Repository Page
 toc: $config.user-manual-pages-toc
 sub-sections: $config.user-manual-header
 
@@ -9,7 +9,7 @@ take the following actions
 - Approve the Code Pull Request without the Documentation Pull Request
 
 
--- ft.code:
+-- ds.code:
 lang: yml
 
 
@@ -21,7 +21,7 @@ Parameters:
   Type: string
 
 
--- ft.h2: Workflow
+-- ds.h2: Workflow
 
 This page tracks all the open pull request of the repository. A pull request can
 be in one of the following states:
@@ -34,13 +34,13 @@ be in one of the following states:
   documentation pull request.
 
 
--- ft.h3: Constraints
+-- ds.h3: Constraints
 
 - The search query is case insensitive.
 - The search query can be a substring of the repository name.
 
--- ft.h2: Design
+-- ds.h2: Design
 
--- ft.image: 
+-- ds.image:
 src: $assets.files.images.product-manual.routes.pages.repository-page.png
 width: fill

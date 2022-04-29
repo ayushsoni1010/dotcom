@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/fifthtry.com/pages/pr
+-- import: fifthtry.com/pages/pr
 
--- ft.page-with-toc: Approvals When Using `cdoc`
+-- ds.page-with-toc: Approvals When Using `cdoc`
 
 `cdoc` works with two repositories, a repository for code and another for
 documentation.
@@ -14,7 +14,7 @@ A change only goes from PR once it is done and deployed.
 
 
 
--- ft.h1: Requirement Approval
+-- ds.h1: Requirement Approval
 
 Ideally, before work starts, requirements should be written and approved by
 respective stakeholders, e.g. design/engineering/QA team, business stakeholders
@@ -28,7 +28,7 @@ This is the first aprpoval. At this point developers can start work.
 
 
 
--- ft.h1: Code Approval
+-- ds.h1: Code Approval
 
 Once requirement PR is ready, development can begin, and when code is ready
 the code itself must be approved by the engineering team. At this point the
@@ -41,7 +41,7 @@ Code PRs are approved on Github PR UI for the code repository.
 
 
 
--- ft.h1: `cdoc` Approval
+-- ds.h1: `cdoc` Approval
 
 At this point we have a approved requirement PR, and a corresponding code PR.
 Now someone has to visit {pr.page}, or the PR Description UI or Last Comment UI
@@ -63,7 +63,7 @@ perfectly with the requirements in the docs PR.
 
 
 
--- ft.h1: The Final Step
+-- ds.h1: The Final Step
 
 The code changes will go to production by some sort of continuous delivery
 setup, and that step must merge the documentation PR as well.
@@ -79,11 +79,11 @@ not be able to fully trust the documentation.
 
 
 
--- ft.h1: Frequently Asked Questions
+-- ds.h1: Frequently Asked Questions
 
 
 
--- ft.h2: What About PRs With No Documentation Need, Like A Bug Fix/Hot Fix?
+-- ds.h2: What About PRs With No Documentation Need, Like A Bug Fix/Hot Fix?
 
 The decision that a PR needs no documentation itself is a decision that someone
 has to take, and stand behind.
@@ -96,7 +96,7 @@ merge.
 
 
 
--- ft.h2: What Happens When A PR Only Partially Implements Requirements?
+-- ds.h2: What Happens When A PR Only Partially Implements Requirements?
 
 If the entire requirement is not met, a new requirement PR should be created
 which only talks about the stuff that is actually implemented.

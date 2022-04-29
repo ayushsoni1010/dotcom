@@ -1,4 +1,4 @@
--- ft.page-with-toc: `app Models`
+-- ds.page-with-toc: `app Models`
 toc: $config.development
 
 - GithubUser Model: dev/models/app/githubuser

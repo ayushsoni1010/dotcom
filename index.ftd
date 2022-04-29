@@ -1,5 +1,5 @@
--- import: fifthtry.github.io/fifthtry.com/assets
--- import: fifthtry.github.io/fifthtry.com/library as lib
+-- import: fifthtry.com/assets
+-- import: fifthtry.com/library as lib
 -- import: fbs
 
 
@@ -25,7 +25,10 @@ image-2: $assets.files.assets.images.slide-show-image-2.png
 image-3: $assets.files.assets.images.slide-show-image-3.png
 list-title-copy: $config.list-tc
 
-FifthTry solves out of date and incomplete documentation problems -  we integrate with GitHub and block code changes from getting deployed till documentation has been updated and approved. We call this Continuous Documentation.
+FifthTry solves out of date and incomplete documentation problems -  we
+integrate with GitHub and block code changes from getting deployed till
+documentation has been updated and approved. We call this Continuous
+Documentation.
 
 
 

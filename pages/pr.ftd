@@ -1,21 +1,21 @@
 -- string doc-url: pages/pr/
 -- string name: PR Page
 
--- ft.page-with-toc: $name
+-- ds.page-with-toc: $name
 
--- ft.markdown:
+-- ds.markdown:
 
 This page exists for every PR in a repository connected with `cdoc`.
 
 
 
 
--- ft.h1: URL & Params
+-- ds.h1: URL & Params
 
 URL: `<cdoc-base-url>/<repo-name>/pulls/<pr-number>/?query=<>`
 
 
--- ft.h2: `cdoc-base-url`
+-- ds.h2: `cdoc-base-url`
 
 For hosted `cdoc` this would be `gh.fifthtry.com` (and `gl.fifthtry.com` in
 future when we support Gitlab and so on). For self-hosted cdoc it would be the
@@ -23,13 +23,13 @@ domain where it is hosted.
 
 
 
--- ft.h2: `repo-name`, `pr-number`
+-- ds.h2: `repo-name`, `pr-number`
 
 `repo-name`, eg `FifthTry/fpm` and `pr-number` identy the pull request.
 
 
 
--- ft.h2: `query`
+-- ds.h2: `query`
 
 This optional parameter contains the search term user has entered in the search
 box.
@@ -41,30 +41,30 @@ box.
 
 
 
--- ft.h1: Design
+-- ds.h1: Design
 
 
 
--- ft.h2: Not Connected State
+-- ds.h2: Not Connected State
 
 In this we show all PRs in the corresponding documentation repository, and next
 to each show a "connect" button.
 
--- ft.image:
+-- ds.image:
 src: $assets.files.images.pr-status-page-unconnected.png
 width: fill
 
 
 
--- ft.h2: Unapproved State
+-- ds.h2: Unapproved State
 
--- ft.image:
+-- ds.image:
 src: $assets.files.images.pr-status-page.png
 width: fill
 
 
 
--- ft.h2: Approved State
+-- ds.h2: Approved State
 
 TODO
 
@@ -76,9 +76,9 @@ TODO
 
 
 
--- ft.h1: Data
+-- ds.h1: Data
 
--- ft.code:
+-- ds.code:
 lang: ftd
 
 \-- record result:

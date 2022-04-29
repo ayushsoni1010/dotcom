@@ -1,18 +1,18 @@
 -- import: fpm
--- import: ft
--- import: fifthtry.github.io/fifthtry.com/assets
+-- import: ds
+-- import: fifthtry.com/assets
 
--- ft.github: https://github.com/fifthtry/cdoc/
+-- ds.github: https://github.com/fifthtry/cdoc/
 
--- ft.show-brand: true
+-- ds.show-brand: true
 
-/-- ft.site-name: FifthTry
-
--- ft.site-logo:
+-- ds.site-logo:
 light: $assets.files.assets.images.fifthtry-logo.png.light
 dark: $assets.files.assets.images.fifthtry-logo.png.dark
 
--- ft.sections:
+-- ds.site-name: FifthTry
+
+-- ds.sections:
 $processor$: toc
 
 - Why CDOC?: why/
@@ -20,7 +20,7 @@ $processor$: toc
 - Development: dev/
 - Github: https://github.com/fifthtry/cdoc/
 
--- ft.toc:
+-- ds.toc:
 $processor$: toc
 
 - Flow: flow/
@@ -140,7 +140,8 @@ boolean is-last:
 index: 1
 is-last: false
 
-Onboarding, Calendar full of meetings, Critical Employees leaving, business continuity issue etc.
+Onboarding, Calendar full of meetings, Critical Employees leaving, business
+continuity issue etc.
 
 
 
@@ -151,7 +152,8 @@ index: 2
 is-last: false
 
 
-FifthTry integrates with Github and blocks Pull Requests from getting merged till documentation is written and approved.
+FifthTry integrates with Github and blocks Pull Requests from getting merged
+till documentation is written and approved.
 
 
 
@@ -160,5 +162,6 @@ index: 3
 is-last: true
 
 
-You have to connect code PR with doc PR on fifthtry.com and then approve it. Once approved the PR can be merged.
+You have to connect code PR with doc PR on fifthtry.com and then approve it.
+Once approved the PR can be merged.
 

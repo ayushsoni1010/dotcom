@@ -1,4 +1,4 @@
--- ft.page: Product Manual
+-- ds.page: Product Manual
 sub-sections: $config.user-manual-header
 
 `cDoc` helps you implement a workflow that ensures documentation stays up to

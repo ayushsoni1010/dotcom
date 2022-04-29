@@ -1,9 +1,9 @@
--- ft.page-with-toc: PR Description Update Race Condition
+-- ds.page-with-toc: PR Description Update Race Condition
 
 To update the PR description, we will first fetch the latest pr description
 and then update it. This can lead to race conditions.
 
--- ft.h2: Race Condition - We Overwrite Someone Else's Edit
+-- ds.h2: Race Condition - We Overwrite Someone Else's Edit
 
 Sequence:
 
@@ -22,7 +22,7 @@ ahead by only our change. If we detect a change in history, we re-read latest
 change before our and re-apply. And to be sure we do the verify after write once
 again.
 
--- ft.h2: Race Condition - Someone Overwrites Over Edit
+-- ds.h2: Race Condition - Someone Overwrites Over Edit
 
 This is the same as previous case, just 3 and 4 are swapped. We can not just
 do "verify after write", but we will have to watch for edits of PR after we have
@@ -30,7 +30,7 @@ successfully conducted "verify after write" step. Since the editor could have
 been open for hours, there is no end to till what time we have to watch for
 changes, we watch all edits of PR.
 
--- ft.h2: Github API Consideration
+-- ds.h2: Github API Consideration
 
 Github seems not not expose history as API. We can poll a PR every so often, or
 at least on PR activities, and see if our changes has been overwritten by
@@ -39,7 +39,7 @@ someone else, and bring it back.
 The first race condition is not to solve for us without history API, all we can
 do is make the time between 2 and 4 as small as possible to make it less likely.
 
--- ft.h2: Last Comment Alternative
+-- ds.h2: Last Comment Alternative
 
 If due to race conditions are not possible we can switch to last comment
 solution.

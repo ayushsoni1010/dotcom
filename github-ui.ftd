@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/fifthtry.com/pages/pr
+-- import: fifthtry.com/pages/pr
 
--- ft.page-with-toc: UI On Github
+-- ds.page-with-toc: UI On Github
 
 We want `cdoc` to be as usable without leaving Github as possible. For every
 PR we will have one main page on FifthTry: {pr.page}
@@ -13,11 +13,11 @@ mode and want to use for our projects.
 
 
 
--- ft.h1: PR Check
+-- ds.h1: PR Check
 
 This is the main UI for us.
 
--- ft.image:
+-- ds.image:
 src: $assets.files.images.pr-checks.png
 width: fill
 
@@ -27,7 +27,7 @@ message. We will explore if "Details" link can directly to {pr-status.page}.
 
 
 
--- ft.h1: Status Summary
+-- ds.h1: Status Summary
 
 We want to try using `PR Description` for status, but it has some race condition
 issues. If the race condition mitigations are not considered acceptable we can

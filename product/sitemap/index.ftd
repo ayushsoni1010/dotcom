@@ -1,4 +1,4 @@
--- ft.page-with-toc: Routes: Pages, Widgets, Actions, and APIs
+-- ds.page-with-toc: Routes: Pages, Widgets, Actions, and APIs
 toc: $config.user-manual-pages-toc
 sub-sections: $config.user-manual-header
 

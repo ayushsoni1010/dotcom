@@ -1,12 +1,12 @@
 -- import: fpm
 
--- fpm.package: fifthtry.github.io/fifthtry.com
-zip: github.com/fifthtry/fifthtry.com/archive/refs/heads/main.zip
+-- fpm.package: fifthtry.com
+zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/inter
--- fpm.dependency: fifthtry.github.io/doc-site as ft
+-- fpm.dependency: fifthtry.github.io/doc-site as ds
 -- fpm.dependency: fifthtry.github.io/fifthtry-brand-switcher as fbs
 
--- fpm.auto-import: ft
--- fpm.auto-import: fifthtry.github.io/fifthtry.com/FPM/config
--- fpm.auto-import: fifthtry.github.io/fifthtry.com/assets
+-- fpm.auto-import: ds
+-- fpm.auto-import: fifthtry.com/FPM/config
+-- fpm.auto-import: fifthtry.com/assets

@@ -1,4 +1,4 @@
--- ft.page-with-toc: Features
+-- ds.page-with-toc: Features
 toc: $config.user-manual-overview-toc
 sub-sections: $config.user-manual-header
 

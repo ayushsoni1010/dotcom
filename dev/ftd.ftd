@@ -1,4 +1,4 @@
--- ft.page-with-toc: `ftd`
+-- ds.page-with-toc: `ftd`
 toc: $config.development
 
 

@@ -1,6 +1,6 @@
--- import: fifthtry.github.io/fifthtry.com/assets
--- import: fifthtry.github.io/fifthtry.com/library as lib
--- import: fifthtry.github.io/fifthtry.com/custom-types as font
+-- import: fifthtry.com/assets
+-- import: fifthtry.com/library as lib
+-- import: fifthtry.com/custom-types as font
 -- import: fpm
 
 
@@ -14,18 +14,33 @@ body answer:
 
 -- ques-ans: This is my question with a question mark?
 
-Yes. You have a few options. You can add users to your subscription any time during the subscription period. You can log in to your account via the GitLab Customers Portal and add more seats or contact sales for a quote. In either case, the cost will be prorated from the date of quote/purchase through the end of the subscription period. You may also pay for the additional licenses per our true-up model.
+Yes. You have a few options. You can add users to your subscription any time
+during the subscription period. You can log in to your account via the GitLab
+Customers Portal and add more seats or contact sales for a quote. In either
+case, the cost will be prorated from the date of quote/purchase through the end
+of the subscription period. You may also pay for the additional licenses per
+our true-up model.
 
 
 -- ques-ans: This is my question with a question mark?
 
-Yes. You have a few options. You can add users to your subscription any time during the subscription period. You can log in to your account via the GitLab Customers Portal and add more seats or contact sales for a quote. In either case, the cost will be prorated from the date of quote/purchase through the end of the subscription period. You may also pay for the additional licenses per our true-up model.
+Yes. You have a few options. You can add users to your subscription any time
+during the subscription period. You can log in to your account via the GitLab
+Customers Portal and add more seats or contact sales for a quote. In either
+case, the cost will be prorated from the date of quote/purchase through the
+end of the subscription period. You may also pay for the additional licenses
+per our true-up model.
 
 
 
 -- ques-ans: This is my question with a question mark?
 
-Yes. You have a few options. You can add users to your subscription any time during the subscription period. You can log in to your account via the GitLab Customers Portal and add more seats or contact sales for a quote. In either case, the cost will be prorated from the date of quote/purchase through the end of the subscription period. You may also pay for the additional licenses per our true-up model.
+Yes. You have a few options. You can add users to your subscription any time
+during the subscription period. You can log in to your account via the GitLab
+Customers Portal and add more seats or contact sales for a quote. In either
+case, the cost will be prorated from the date of quote/purchase through the end
+of the subscription period. You may also pay for the additional licenses per
+our true-up model.
 
 
 

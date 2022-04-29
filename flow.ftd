@@ -1,4 +1,4 @@
--- ft.page-with-toc: Flows
+-- ds.page-with-toc: Flows
 
 We have two main flows, the initial setup flow, which is triggered when someone
 installs `cdoc` integration with their Github Repo, and the PR workflow, which is
@@ -6,7 +6,7 @@ triggered on every pull request in a Github Repo which is connected with `cdoc`.
 
 
 
--- ft.h1: Initial Setup Flow
+-- ds.h1: Initial Setup Flow
 
 For `cdoc` to work correctly `cdoc` has to be installed on Github Repo.
 
@@ -16,13 +16,13 @@ differ, but the subsequent flow remain the same.
 
 
 
--- ft.h2: Self Hosted Flow
+-- ds.h2: Self Hosted Flow
 
 TODO
 
 
 
--- ft.h2: FifthTry Hosted `cdoc` Flow
+-- ds.h2: FifthTry Hosted `cdoc` Flow
 
 FifthTry hosted `cdoc` is available on Github Marketplace by the name:
 [Continuous Documentation by
@@ -30,24 +30,24 @@ FifthTry](https://github.com/apps/continuous-documentation).
 
 
 
--- ft.h3: How To Check If `codc` Is Installed For Your Repo?
+-- ds.h3: How To Check If `codc` Is Installed For Your Repo?
 
 
 
--- ft.h3: First Time Install
+-- ds.h3: First Time Install
 
 
 
--- ft.h2: Self Hosted `cdoc`
+-- ds.h2: Self Hosted `cdoc`
 
-Install `codc` on Heroku following `cdoc` self hosting guide. {ft.highlight:
+Install `codc` on Heroku following `cdoc` self hosting guide. {ds.highlight:
 create guide and link to it}.
 
 
 
 
 
--- ft.h1: PR Work Flow
+-- ds.h1: PR Work Flow
 
 Once `cdoc` has been activated for any repo, all existing open PRs and all new
 PRs opened will have the description updated with information about the
