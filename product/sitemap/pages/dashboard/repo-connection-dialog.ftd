@@ -1,0 +1,33 @@
+-- ft.page-with-toc: Repository Connection Dialog
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+You can access the repository connection dialog by clicking on the `Connect` 
+button corresponding to the repository listed in the `Available Repositories` 
+section.
+
+Connection of the repository is a two step process. First you select the function
+a repository serves in the framework.
+
+A repository can be either a `Code repository` or a `documentation repository` 
+as described in the design #1.
+
+Once the category of the repository is selected, another modal opens up where 
+the user can select the corresponding repository for the mapping.
+
+-- ft.h3: Constraints
+
+- A repository can only be mapped once. Either as a documentation repository or a code repository.
+- Repository connection is an irreversible process. Once the connection is made, the repository is locked and cannot be changed.
+
+-- ft.h2: Design
+
+-- ft.image: 
+src: $assets.files.images.product-manual.routes.pages.repo-function-selection-dialog.png
+width: fill
+caption: "#1: Repository function selection dialog"
+
+-- ft.image: 
+src: $assets.files.images.product-manual.routes.pages.repo-connection-dialog.png
+width: fill
+caption: "#2: Repository Connection Dialog"

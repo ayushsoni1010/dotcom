@@ -1,4 +1,4 @@
--- ft.page-with-toc: `cdoc`: FifthTry Continuous Documentation
+-- ft.page: `cdoc`: FifthTry Continuous Documentation
 
 `cdoc` is an open source web application that integrates with Github and works
 like continuous integration, but for ensuring documentation is being written

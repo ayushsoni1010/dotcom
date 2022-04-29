@@ -82,30 +82,21 @@ $processor$: toc
 $processor$: toc
 
 - Overview: product/
-- Feature & Journies: product/features/
+- 🚧 Feature & Journies: product/features/
 - Pages, Actions and APIs: product/sitemap/
-- Learning | How To: product/how-to/
 
 
 -- fpm.toc-item list user-manual-pages-toc:
 $processor$: toc
 
-- Pages: product/sitemap/pages/
-  - Login Page: product/sitemap/pages/login/
-  - Dashboard Page: product/sitemap/pages/dashboard/
-    - Repo Connection Dialog: product/sitemap/pages/dashboard/repo-connection-dialog/
-  - Repository Page: product/sitemap/pages/repo/
-    - PR Mapping Dialog: product/sitemap/pages/repo/pr-mapping-dialog/
-    - PR Approval Dialog: product/sitemap/pages/repo/pr-approval-dialog/
-- Widgets: product/sitemap/widgets/
-- Actions: product/sitemap/actions/
-  - Repo Connection Dialog: product/sitemap/pages/dashboard/repo-connection-dialog/
-  - PR Mapping Dialog: product/sitemap/pages/repo/pr-mapping-dialog/
-  - PR Approval Dialog: product/sitemap/pages/repo/pr-approval-dialog/
-- APIs: product/sitemap/apis/
-- Notifications: product/sitemap/notifications/
-  - Documentation Attached Notification: product/sitemap/notifications/documentation-attached-notification/
-  - PR Approval Notification: product/sitemap/notifications/pull-request-approved-notification/
+- Login Page: product/sitemap/pages/login/
+- Dashboard Page: product/sitemap/pages/dashboard/
+  - Repo Connection Widget: product/sitemap/pages/dashboard/repo-connection-dialog/
+- Repository Page: product/sitemap/pages/repo/
+  - PR Mapping Widget: product/sitemap/pages/repo/pr-mapping-dialog/
+    - Documentation Attached Github Comment: product/sitemap/notifications/documentation-attached-notification/
+  - PR Approval Widget: product/sitemap/pages/repo/pr-approval-dialog/
+    - PR Approval Github Comment: product/sitemap/notifications/pull-request-approved-notification/
 
 -- boolean is-mobile: false
 

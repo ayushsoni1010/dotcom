@@ -1,0 +1,12 @@
+-- ft.page-with-toc: Documentation Attached Notification
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+Whenever a documentation pull request is attached to the code pull request, a 
+comment is posted on the Github Pull Request on behalf of the current user.
+
+-- ft.h2: Design
+
+-- ft.image: 
+src: $assets.files.images.product-manual.routes.notifications.documentation-attached-notification.png
+width: fill

@@ -1,0 +1,6 @@
+-- ft.page-with-toc: All Pages
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+- Documentation Attached Notification
+- Pull Request Approved Notification

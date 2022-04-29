@@ -1,0 +1,12 @@
+-- ft.page-with-toc: Pull Request Approved Notification
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+Once a Pull request has been approved on cdoc, we post a comment on behalf of the 
+user who approved the pull request.
+
+-- ft.h2: Design
+
+-- ft.image: 
+src: $assets.files.images.product-manual.routes.notifications.pull-request-approved-notification.png
+width: fill

@@ -1,0 +1,35 @@
+-- ft.page-with-toc: Login Page
+toc: $config.user-manual-pages-toc
+sub-sections: $config.user-manual-header
+
+The login page is the entry point for the end user to log into the system. 
+
+The login widget is used to log in to the system. You can login via Github.
+The login widget redirects the user to the GitHub OAuth2 login page from where 
+the user can authenticate and authorize the access to the repositories.
+
+
+-- ft.h2: URL and Parameters
+
+The page is available on the `/` URL.
+
+Along with this the parameters the URL accepts are:
+- `next`: Used to store the post login redirect URL
+  
+  Required: False
+  
+  Type: string
+
+
+-- ft.h3: Constraints
+
+- Right now only GitHub is the allowed means of authentication.
+- An Admin user can access the django admin panel by creating a user through the
+  command line.
+
+
+-- ft.h2: Design
+
+-- ft.image: 
+src: $assets.files.images.product-manual.routes.pages.login-page.png
+width: fill
