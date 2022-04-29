@@ -1,6 +1,0 @@
--- ft.page-with-toc: User Manual
-toc: $config.user-manual-overview-toc
-sub-sections: $config.user-manual-header
-
-CDOC helps you implement a workflow that ensures documentation stays up to date
-with code changes.

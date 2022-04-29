@@ -1,6 +1,0 @@
--- ft.page-with-toc: All APIs
-toc: $config.user-manual-pages-toc
-sub-sections: $config.user-manual-header
-
-- Dashboard Page
-- Repository Page
