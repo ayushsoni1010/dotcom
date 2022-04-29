@@ -1,11 +1,16 @@
 -- import: fpm
 -- import: ft
+-- import: fifthtry.github.io/fifthtry.com/assets
 
 -- ft.github: https://github.com/fifthtry/cdoc/
 
 -- ft.show-brand: true
 
--- ft.site-name: FifthTry
+/-- ft.site-name: FifthTry
+
+-- ft.site-logo:
+light: $assets.files.assets.images.fifthtry-logo.png.light
+dark: $assets.files.assets.images.fifthtry-logo.png.dark
 
 -- ft.sections:
 $processor$: toc
