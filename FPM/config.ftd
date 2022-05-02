@@ -23,6 +23,7 @@ $processor$: toc
 -- fpm.toc-item list blog-toc:
 $processor$: toc
 
+- Lack Of Documentation Is Costing You: blog/cost.ftd
 - Does Writing Documentation Slow You Down?: blog/slow.ftd
 
 
