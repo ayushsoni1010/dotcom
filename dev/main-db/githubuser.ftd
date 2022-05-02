@@ -1,5 +1,6 @@
 -- ds.page-with-toc: `GithubUser Model`
-toc: $config.development
+toc: $config.db
+sub-sections: $config.dev-section
 
 -- ds.code:
 lang: py
