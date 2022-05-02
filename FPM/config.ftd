@@ -20,6 +20,12 @@ $processor$: toc
 - Development: dev/
 - Github: https://github.com/fifthtry/cdoc/
 
+-- fpm.toc-item list blog-toc:
+$processor$: toc
+
+- Does Writing Documentation Slow You Down?: blog/slow.ftd
+
+
 -- ds.toc:
 $processor$: toc
 
