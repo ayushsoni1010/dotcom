@@ -23,8 +23,10 @@ $processor$: toc
 -- fpm.toc-item list blog-toc:
 $processor$: toc
 
-- Lack Of Documentation Is Costing You: blog/cost.ftd
-- Does Writing Documentation Slow You Down?: blog/slow.ftd
+- Introducing `cDoc`: Continuous Documentation
+  url: blog/cdoc/
+- Lack Of Documentation Is Costing You: blog/cost/
+- Does Writing Documentation Slow You Down?: blog/slow/
 
 
 -- ds.toc:
@@ -94,7 +96,7 @@ $processor$: toc
 $processor$: toc
 
 - Overview: product/
-- 🚧 Feature & Journies: product/features/
+- 🚧 Features & Journies: product/features/
 - Pages, Actions and APIs: product/sitemap/
 
 
