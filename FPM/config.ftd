@@ -7,8 +7,8 @@
 -- ds.show-brand: true
 
 -- ds.site-logo:
-light: $assets.files.assets.images.fifthtry-logo.png.light
-dark: $assets.files.assets.images.fifthtry-logo.png.dark
+light: $assets.files.assets.images.logo-fifthtry-dark.svg.light
+dark: $assets.files.assets.images.logo-fifthtry-dark.svg.dark
 
 /-- ds.site-name: FifthTry
 
@@ -118,12 +118,15 @@ $processor$: toc
 
 - Login Page: product/sitemap/pages/login/
 - Dashboard Page: product/sitemap/pages/dashboard/
-  - Repo Connection Widget: product/sitemap/pages/dashboard/repo-connection-dialog/
+  - Repo Connection Widget:
+    url: product/sitemap/pages/dashboard/repo-connection-dialog/
 - Repository Page: product/sitemap/pages/repo/
   - PR Mapping Widget: product/sitemap/pages/repo/pr-mapping-dialog/
-    - Documentation Attached Github Comment: product/sitemap/notifications/documentation-attached-notification/
+    - Documentation Attached Github Comment:
+      url: product/sitemap/notifications/documentation-attached-notification/
   - PR Approval Widget: product/sitemap/pages/repo/pr-approval-dialog/
-    - PR Approval Github Comment: product/sitemap/notifications/pull-request-approved-notification/
+    - PR Approval Github Comment
+      url: product/sitemap/notifications/pull-request-approved-notification/
 
 -- boolean is-mobile: false
 

@@ -22,7 +22,7 @@ long run, it slows things down.
 src: $assets.files.images.blog.traffic.jpg
 width: fill
 
-[Image Credit: Unspash](https://unsplash.com/photos/omRFB9rakQo)
+Image License: Public Domain
 
 We went through the same discussions with continuous integration, or test driven
 development. Now sure, not all software teams may be “test driven”, in the sense
