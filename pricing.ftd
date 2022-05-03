@@ -46,31 +46,16 @@ our true-up model.
 
 -- string list about-list-one:
 
--- about-list-one: I don’t know what you’re talking about
--- about-list-one: I am a member of the Imperial Senate
--- about-list-one: On a diplomatic mission to Alderaan
--- about-list-one: I find your lack of faith disturbing
--- about-list-one: I suggest you try it again, Luke
--- about-list-one: Don’t underestimate the Force
+-- about-list-one: Upto 20 PRs per month
 
 -- string list about-list-two:
 
--- about-list-two: I don’t know what you’re talking about
--- about-list-two: I am a member of the Imperial Senate
--- about-list-two: On a diplomatic mission to Alderaan
--- about-list-two: I find your lack of faith disturbing
--- about-list-two: I suggest you try it again, Luke
--- about-list-two: Don’t underestimate the Force
+-- about-list-two: Upto 100 PRs per month
 
 
 -- string list about-list-three:
 
--- about-list-three: I don’t know what you’re talking about
--- about-list-three: I am a member of the Imperial Senate
--- about-list-three: On a diplomatic mission to Alderaan
--- about-list-three: I find your lack of faith disturbing
--- about-list-three: I suggest you try it again, Luke
--- about-list-three: Don’t underestimate the Force
+-- about-list-three: Upto 500 PRs per month
 
 
 
@@ -115,7 +100,7 @@ copyright: © 2022 FifthTry. All rights reserved
 -- ftd.column subscription:
 caption title:
 width: fill
-padding-horizontal: 48
+padding-horizontal: 30
 padding-vertical: 78
 
 --- desktop-subscription: $title
@@ -128,7 +113,7 @@ if:$config.is-mobile
 -- ftd.column desktop-subscription:
 caption title:
 width: fill
-padding-horizontal: 48
+padding-horizontal: 30
 padding-vertical: 78
 
 --- ftd.text: $title
@@ -147,16 +132,16 @@ list-one: true
 list-two: false
 list-three: false
 voucher-name: Free Forever
-voucher-title-name: Individuals and Open Source
-pricing-name: `$`0
+voucher-title-name: Personal Plan
+pricing-name: `$` 0
 days: /month
 payment-mode: No Credit Card Required
 about-list-one: $about-list-one
-cta-text: Select Package
+cta-text: Sign up
 cta-bg: $font.cta_secondary_base
 cta-color: $fpm.color.main.text-strong
 
-Our way to give back to the community, Continous-Documentation system will be free forever for individuals and open source projects.
+With Personal Plan you can use Continuous Documentation for small projects.
 
 --- pricing: 
 width: percent 38
@@ -164,16 +149,16 @@ list-one: false
 list-two: true
 list-three: false
 voucher-name: Most Popular
-voucher-title-name: Premium
+voucher-title-name: Pro Plan
 pricing-name: `$`{$lib.orange: 19} 9
 days: /month (per user)
-payment-mode: Fast Secure payments with Stripe
+payment-mode: Fast Secure payments with Github
 about-list-two: $about-list-two
-cta-text: Select Package
+cta-text: Sign up
 cta-bg: $font.footer-border-color
 cta-color: $fpm.color.main.text-strong
 
-Enhanced team producitvity and co-ordination, perfect for small startups and organizations 
+With Pro Plan you can start using Continuous Documentation for a medium team.
 
 --- pricing: 
 width: percent 33
@@ -181,26 +166,26 @@ list-one: false
 list-two: false
 list-three: true
 voucher-name: ULTIMATE
-voucher-title-name: Enterprise 
-pricing-name: `$`199
+voucher-title-name: Scale Plan 
+pricing-name: `$` 99
 days: /month (per user)
-payment-mode: Contact Sales 
+payment-mode: Fast Secure payments with Github
 about-list-three: $about-list-three
-cta-text: Select Package
+cta-text: Sign up
 cta-bg: $font.custom-five-bac
 cta-color: $fpm.color.main.text-strong
 
-Organization wide security, compliance, planning and backup. Comes with workshop and training for employees.
+Scale plan helps your team when scaling!
 
 
 -- ftd.column mobile-subscription:
 caption title:
 width: fill
-padding-horizontal: 48
+padding-horizontal: 30
 padding-vertical: 18
 
 --- ftd.text: $title
-align: center
+text-align: center
 padding-bottom: 76
 role: $font.hero-large
 color:  $fpm.color.main.text-strong
@@ -216,15 +201,16 @@ list-one: true
 list-two: false
 list-three: false
 voucher-name: Free Forever
-voucher-title-name: Individuals and Open Source
-pricing-name: `$`0
+voucher-title-name: Personal Plan
+pricing-name: `$` 0
 days: /month
 payment-mode: No Credit Card Required
 about-list-one: $about-list-one
-cta-text: Select Package
+cta-text: Sign up
 cta-bg: $font.cta_secondary_base
 cta-color: $fpm.color.main.text-strong
-Our way to give back to the community, Continous-Documentation system will be free forever for individuals and open source projects.
+
+With Personal Plan you can use Continuous Documentation for small projects.
 
 
 --- container: ftd.main
@@ -238,16 +224,16 @@ list-one: false
 list-two: true
 list-three: false
 voucher-name: Most Popular
-voucher-title-name: Premium
+voucher-title-name: Pro Plan
 pricing-name: `$`{$lib.orange: 19} 9
 days: /month (per user)
-payment-mode: Fast Secure payments with Stripe
+payment-mode: Fast Secure payments with Github
 about-list-two: $about-list-two
-cta-text: Select Package
+cta-text: Sign up
 cta-bg: $font.footer-border-color
 cta-color: $fpm.color.main.text-strong
 
-Enhanced team producitvity and co-ordination, perfect for small startups and organizations projects.
+With Pro Plan you can start using Continuous Documentation for a medium team.
 
 --- container: ftd.main
 
@@ -260,16 +246,16 @@ list-one: false
 list-two: false
 list-three: true
 voucher-name: ULTIMATE
-voucher-title-name: Enterprise 
-pricing-name: `$`199
+voucher-title-name: Scale Plan 
+pricing-name: `$` 99
 days: /month (per user)
-payment-mode: Contact Sales 
+payment-mode: Fast Secure payments with Github
 about-list-three: $about-list-three
-cta-text: Select Package
+cta-text: Sign up
 cta-bg: $font.custom-five-bac
 cta-color: $fpm.color.main.text-strong
 
-Organization wide security, compliance, planning and backup. Comes with workshop and training for employees.
+Scale plan helps your team when scaling!
 
 
 
@@ -376,11 +362,11 @@ color: $font.cta_primary_active
 
 
 -- ftd.column pricing:
-min-height: 765
+min-height: 500
 string voucher-name:
 optional string voucher-title-name:
 string pricing-name:
-string width:
+string width: fill
 optional string days:
 string list about-list-one: $about-list-one
 string list about-list-two: $about-list-two
@@ -451,9 +437,9 @@ background-color: $fpm.color.main.background.base
 --- ftd.row:
 if: $list-two
 anchor: parent
-width: 58
+width: 48
 height: 3
-left: 58
+left: 40
 top: 25
 background-color: $font.orange
 open: false
@@ -503,6 +489,7 @@ width: fill
 
 
 --- lib.cta: $cta-text
+link: https://cdoc.fifthtry.com/initiate-github-login/
 width: fill
 cta-bg: $font.cta_secondary_base
 
@@ -514,7 +501,6 @@ role: $font.copy-relaxed
 color: $fpm.color.main.text
 align: center
 padding-top: 16
-link: mailto: enterprises@fifthtry.com
 
 
 -- ftd.row img-text:
