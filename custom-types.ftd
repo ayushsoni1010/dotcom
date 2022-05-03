@@ -103,6 +103,16 @@ weight: 700
 
 
 
+-- ftd.font-size copyright-font-small:
+line-height: 14
+size: 12
+letter-spacing: 0
+
+-- ftd.type copyright-small: $fpm.font-display
+desktop: $copyright-font-small
+mobile: $copyright-font-small
+xl: $copyright-font-small
+weight: 400
 
 
 

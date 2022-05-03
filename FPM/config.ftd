@@ -146,10 +146,16 @@ $processor$: toc
 $processor$: toc
 
 
-- About Us: /About Us/
-- Terms of Use : /Terms of Use /
-- Privacy Policy: /Privacy Policy/
+- About: /About Us/
+- Terms: /Terms of Use /
+- Privacy: /Privacy Policy/
 
 
+-- fpm.toc-item list main-mobile-nav:
+$processor$: toc
+
+- Why: /why/
+- Blog: /blog/cdoc/
+- Docs: /cdoc/
 
 

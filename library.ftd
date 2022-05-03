@@ -65,6 +65,16 @@ fpm.toc-item list main-nav: $config.empty-toc
 width: fill
 boolean on-pricing: false
 
+--- mobile-sidebar:
+ if: $sidebar-open
+
+--- container: ftd.main
+
+--- mobile-sidebar-menu:
+if: $sidebar-open
+nav-list: $config.main-mobile-nav
+footer-list: $config.footer-nav
+
 --- container: ftd.main
 
 --- header-desktop:
@@ -186,6 +196,15 @@ id: left-header
 padding-top: 8
 spacing: 8
 
+--- ftd.image:
+src: $assets.files.assets.images.hamburger.png
+margin-right: 24
+$on-click$: toggle $sidebar-open
+width: 24
+height: auto
+margin-top: 6
+
+
 --- ftd.row:
 min-width: 110
 height: 38
@@ -262,6 +281,21 @@ spacing: 16
 align: center
 padding-top: 8
 
+
+--- ftd.row:
+if: not $config.is-mobile
+spacing: 20
+width: fill
+
+--- ftd.text: Why
+color: $font.cta_primary_active
+white-space: nowrap
+padding-vertical: 10
+padding-right: 8
+role: $font.cta
+link: why/
+
+
 --- ftd.text: Blog
 color: $font.cta_primary_active
 white-space: nowrap
@@ -294,7 +328,6 @@ border-left: 1
 padding-left: $fpm.space.space-5
 margin-left: $fpm.space.space-5
 border-color: $fpm.color.main.border
-
 
 --- ftd.text: $install
 role: $font.cta
@@ -991,11 +1024,12 @@ border-radius: 4
 
 -- ftd.column mobile-sidebar-menu:
 fpm.toc-item list nav-list:
-width: percent 40
+fpm.toc-item list footer-list:
 sticky: true
 height: calc 100vh - 0px
 overflow-y: auto
-width: percent 70
+width: 0
+width if $sidebar-open: percent 75
 align: top-left
 padding-left: 10
 padding-top: 15
@@ -1013,12 +1047,88 @@ shadow-size: 1
 shadow-blur: 10
 z-index: 1000
 padding-vertical: 48
+id: sidemenu
 
+--- ftd.column:
+width: fill
 
 --- nav-items-mobile: $obj.title
 $loop$: $nav-list as $obj
 children: $obj.children
 link: $obj.url
+
+--- ftd.column:
+border-top: 1
+border-color: $fpm.color.main.text
+width: fill
+margin-top: 330
+
+--- ftd.row:
+width: fill
+margin-top: 20
+padding-left: 10
+padding-right: 10
+
+--- ftd.image:
+src: $assets.files.assets.images.logo-fifthtry-dark.svg
+
+--- ftd.row:
+align: right
+width: fill
+id: backedbyrow
+spacing: 20
+
+--- ftd.column:
+align: right
+width: fill
+
+--- ftd.text:
+text: Backed by
+role: $fpm.type.label-small
+color: $fpm.color.main.text
+text-align: right
+width: fill
+
+--- ftd.text:
+text: YCombinator
+role: $fpm.type.label-big
+color: $font.orange
+width: fill
+text-align: right
+
+--- container: backedbyrow
+
+--- ftd.image:
+src: $assets.files.assets.images.y-combinator-logo.svg
+link: https://www.ycombinator.com/companies/fifthtry
+
+--- container: ftd.main
+
+--- ftd.row:
+align: center
+spacing: 20
+margin-top: 40
+
+--- nav-one-line-mobile: $obj.title
+$loop$: $footer-list as $obj
+children: $obj.children
+link: $obj.url
+
+--- container: ftd.main
+
+--- ftd.column:
+margin-top: 20
+width: fill
+
+--- ftd.row:
+align: center
+
+--- ftd.text:
+text: Copyright: © 2022 FifthTry. All rights reserved
+role: $font.copyright-small
+color: $fpm.color.main.text
+
+
 
 
 
@@ -1065,6 +1175,24 @@ white-space: nowrap
 padding-vertical: 10
 padding-left: 10
 
+
+-- ftd.row nav-one-line-mobile:
+caption title:
+optional string link:
+fpm.toc-item list children:
+ftd.color text-color: $fpm.color.glass.text-strong
+
+--- ftd.row:
+align: center
+
+--- ftd.text: $title
+if: $link is not null
+role: $fpm.type.label-big
+link: $link
+color: $text-color
+white-space: nowrap
+padding-vertical: 10
+padding-left: 10
 
 
 
@@ -1436,8 +1564,11 @@ width: auto
 --- footer-section-right:
 footer-nav: $footer-nav
 
+--- container: ftd.main
+
+
 --- ftd.column:
-align: center
+align: right
 margin-top: 16
 
 --- ftd.text:
@@ -1482,70 +1613,80 @@ padding-bottom: 16
 spacing: 24
 
 
---- ftd.row:
-width:fill
-
---- ftd.image:
-src: $logo
-link: \
-
-
---- container: ftd.main
-
---- ftd.row:
-spacing: 20
-id: backed-section
-link: https://www.ycombinator.com/companies/fifthtry
-
---- ftd.row:
-padding-top:10
-
---- ftd.image:
-src: $backed-logo
-width: 118
-
---- container:  backed-section
-
---- ftd.row:
-padding-vertical: 12
-padding-horizontal: 12
-background-color: $font.fill-text-color
-
---- ftd.image:
-src: $fill-logo
-width: 25
-
---- container:  backed-section
-
---- ftd.row:
-padding-top:10
-width: fill
---- ftd.image:
-src: $group-logo
-width: 183
-
---- container: ftd.main
-
-
-
 --- ftd.column:
 width: fill
-
-
-
---- container: ftd.main
-
+margin-top: 10
 
 --- ftd.row:
 width: fill
+margin-top: 20
+padding-left: 10
+padding-right: 10
 
+--- ftd.image:
+src: $assets.files.assets.images.logo-fifthtry-dark.svg
 
+--- ftd.row:
+align: right
+width: fill
+id: backedbyrow
+spacing: 20
+
+--- ftd.column:
+align: right
+width: fill
 
 --- ftd.text:
-text: $copyright
-width: fill
-role: $font.footer-font
+text: Backed by
+role: $fpm.type.label-small
 color: $fpm.color.main.text
+text-align: right
+width: fill
+
+--- ftd.text:
+text: YCombinator
+role: $fpm.type.label-big
+color: $font.orange
+width: fill
+text-align: right
+
+--- container: backedbyrow
+
+--- ftd.image:
+src: $assets.files.assets.images.y-combinator-logo.svg
+link: https://www.ycombinator.com/companies/fifthtry
+
+--- container: ftd.main
+
+--- ftd.row:
+align: center
+spacing: 20
+margin-top: 40
+
+--- nav-one-line-mobile: $obj.title
+$loop$: $footer-nav as $obj
+children: $obj.children
+link: $obj.url
+
+--- container: ftd.main
+
+--- ftd.column:
+margin-top: 20
+width: fill
+
+--- ftd.row:
+align: center
+
+--- ftd.text:
+text: © 2022 FifthTry. All rights reserved
+role: $font.copyright-small
+color: $fpm.color.main.text
+
+
+
+
+
+
 
 
 
@@ -1567,6 +1708,16 @@ link: $obj.url
 
 
 
+
+
+
+
+
+
+
+
+
+
 -- ftd.column footer-section:
 fpm.toc-item list footer-nav:
 spacing: 16
@@ -1579,14 +1730,21 @@ link: $obj.url
 
 
 
+
+
+
+
+
+
+
+
+
+
 -- ftd.column footer-nav-items:
 caption title:
 optional string link:
 fpm.toc-item list children:
 ftd.color text-color: $fpm.color.glass.text-strong
-
-
-
 
 --- ftd.row:
 width: fill
@@ -1595,12 +1753,12 @@ padding-left: $fpm.space.space-5
 margin-left: $fpm.space.space-5
 border-color: $fpm.color.main.border-strong
 
-
 --- ftd.text: $title
 if: $link is not null
 link: $link
 color: $text-color
 white-space: nowrap
+role: $fpm.type.label-big
 
 
 
@@ -1643,7 +1801,6 @@ top: 0
 bottom: 0
 left: 0
 right: 0
-background-color:  $fpm.color.main.background.base
 z-index: 1
 $on-click$: toggle $sidebar-open
 
