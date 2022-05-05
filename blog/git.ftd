@@ -1,2 +1,32 @@
--- ds.page-with-toc: 🚧 Doc in Git
+-- ds.page-with-toc: Doc in Git™
 toc: $config.blog-toc
+
+For using continuous documentation effectively you have to store your
+documentation in `git`. In this blog post we will compare the documentation
+workflow used when storing documentaiton in Notion/Confluence/Google Docs vs the
+workflow when using Git.
+
+
+-- ds.h1: Requirement Document Workflow
+
+A typical way many product teams work is by creating requirement documents.
+Depending on companies, there may be one ore more requirement documents, they
+may have PRFAQ, A "One Pager", Business Requirement Document (BRD), Product
+Requirement Document (PRD), Engineering Requirement Document (ERD),
+["Shaped Up Document"](https://basecamp.com/shapeup) and so on.
+
+For each logical feature, requirement, ticket, whatever goes for development,
+there is a set of such documents. For a feature, there is set of requirement
+document, lets call them requirement document as a whole.
+
+Teams typically store these documents in Notion, Confluence, Google Docs and
+so on. They create a new requirement document for the feature or the product
+change / enhancement under consideration. This requirement document goes through
+some sort of review, approval, consensus building process, and once finalied and
+approved the requirement goes to engineering team for implementation.
+
+Engineering team then further enhances the requirement documents, with
+engineering considerations and those also go through a review / consensus
+process.
+
+In the end we have somehting that goes for engineering development.
