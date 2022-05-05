@@ -6,6 +6,10 @@ thing to improve your team's happiness](blog/cdoc/), and you have already [set
 it for your repositories](blog/setup/), and are now *eager to start using it*.
 You are in the right place!
 
+-- ds.youtube:
+id: aFMfnjauZRc
+
+
 -- ds.h1: `cdoc` is About Blocking Your PR
 
 Once `cdoc` is activated on your repo, all pull requests in that repo would have
