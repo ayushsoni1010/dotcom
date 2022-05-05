@@ -3,10 +3,20 @@ toc: $config.blog-toc
 
 [Continuous Documentation](cdoc/), `cdoc` helps you keep your documentation up
 to date with your changing code by blocking pull requests from getting merged
-till  documentation has been written and approved.
+till documentation has been written and approved.
 
-`cdoc` can be used via FifthTry, a SAAS offering, or you can download the open
-source `cdoc` source code and deploy it on your infrastructure. The easiest way
+Congratulations on taking a step towards better documentation for your team!
+**Improving documentation is the highest return on investment activity you can
+do to make you team more productive and happy!** [If you are trying to be remote
+company, documentation is one of most crucial factors in success as a remote
+company, if you belive Gitlab!](https://about.gitlab.com/company/culture/all-remote/management/#handbook-goals-and-documentation)
+
+In this post we will help you configure it for your repositories so you can
+start using it right away.
+
+`cdoc` can be used via FifthTry, a SAAS offering, or you can [download the open
+source `cdoc` source code and deploy it on your infrastructure from
+`github.com/FifthTry/cdoc`](https://github.com/FifthTry/cdoc). The easiest way
 to try out `cdoc` to see if it good for your team, is to use our SAAS offering,
 which is FREE, no credit card required till you have crossed a certain usage
 threshold. You can checkout [continuous documentation pricing page](pricing/)
