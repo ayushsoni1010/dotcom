@@ -56,11 +56,11 @@ product, you create and give the `diff` to your engineering team, and they
 So far so good, now what happens to those requirement documents once the feature
 is live? Can someone go through those documents after 6 months, and understand
 your current product? Of course not, you did not go through this "diff"/"apply"
-phase just onces, you must have a lot of similar cycles play out.
+phase just once, you must have a lot of similar cycles play out.
 
 Imagine if the goal of the documentation was for someone to understand how your
-product works. Of course once can understand how the product works by going
-through the product. But thats tedious. There are too many roles and journies
+product works. Of course, one can understand how the product works by going
+through the product. But that's tedious. There are too many roles and journeys
 and edge cases. Product is the most accurate documentation of the product,
 followed closely by the source code. But if your goal is to understand how your
 product works, going through the live product or source code is really
@@ -161,7 +161,7 @@ what are you talking about?
 
 This is where [continuous documentation](blog/cdoc/) comes in. The idea is to
 pick the documentation framework, and your static site generator, set things up,
-write some minimal skepetal document, document one or two pages, one or two
+write some minimal skeletal document, document one or two pages, one or two
 communications, one or two microservices etc, and then call it a day. You do not
 have to document the whole thing in one go.
 
@@ -179,7 +179,3 @@ rots with time. With the approach described here your documentation will start
 out light, and with time it will grow more accurate and comprehensive.
 
 And there you go! You have on your hands a documentation nirvana playbook.
-
-
-
-
