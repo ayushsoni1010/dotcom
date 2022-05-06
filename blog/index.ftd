@@ -36,13 +36,56 @@ optional string author:
 optional string timestamp:
 string link:
 width: fill
-background-color: $fpm.color.main.background.step-1
+background-color if not $ds.is-mobile: $fpm.color.main.background.step-1
 padding-vertical: $fpm.space.space-5
-padding-horizontal: $fpm.space.space-5
+padding-horizontal if not $ds.is-mobile: $fpm.space.space-5
 border-radius: $fpm.space.space-3
-margin-left: -20
+margin-left if not $ds.is-mobile: -20
 
 --- ftd.row:
+if: not $ds.is-mobile
+width: fill
+id: article
+spacing: 30
+link: $link
+
+
+--- ftd.row:
+id: left-content
+align: left
+width: fill
+
+--- ftd.column:
+width: fill
+
+--- ds.h2: $title
+
+--- ds.markdown:
+
+$body
+
+
+--- container: article
+
+--- ftd.row:
+if: $thumbnail is not null
+id: right-content
+align: right
+width: percent 50
+
+--- ftd.column:
+align: center
+width: fill
+
+--- ftd.image:
+src: $thumbnail
+width: fill
+
+
+--- container: ftd.main
+
+--- ftd.column:
+if: $ds.is-mobile
 width: fill
 id: article
 spacing: 30
@@ -69,7 +112,7 @@ $body
 if: $thumbnail is not null
 id: right-content
 align: right
-width: percent 50
+width: fill
 
 --- ftd.column:
 align: center
@@ -127,11 +170,11 @@ white-space: nowrap
 -- ftd.row posts-list:
 posts list list-of-posts:
 width: fill
-wrap: true
 margin-top: 30
-background-color: $fpm.color.main.background.step-1
-margin-left: -20
+background-color if not $ds.is-mobile: $fpm.color.main.background.step-1
+margin-left if not $ds.is-mobile: -20
 border-radius: $fpm.space.space-3
+wrap: true
 
 --- post:
 $loop$: $list-of-posts as $obj
@@ -160,13 +203,18 @@ ftd.image-src thumbnail:
 string link:
 /integer index:
 boolean is-left: 
-width: percent 50
+width if not $ds.is-mobile: percent 50
+width if $ds.is-mobile: fill
 id: article
 
 
 --- ftd.column:
 width: fill
-padding: 30
+padding-horizontal if not $ds.is-mobile: 30
+padding-vertical: 30
+border-bottom: 1
+border-color: $fpm.color.main.cta-tertiary.pressed
+
 
 
 --- ftd.column:
