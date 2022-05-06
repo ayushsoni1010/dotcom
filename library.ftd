@@ -292,7 +292,7 @@ white-space: nowrap
 padding-vertical: 10
 padding-right: 8
 role: $font.cta
-link: blog/cdoc/
+link: blog/
 
 /--- ftd.text: $pricing
 /if: $on-pricing

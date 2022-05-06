@@ -34,10 +34,10 @@ $processor$: toc
 -- ds.sections:
 $processor$: toc
 
-- Why CDOC?: why/
+- Why: why/
+- Blog: Blog/
 - Product Manual: product/
 - Development: dev/
-- Github: https://github.com/fifthtry/cdoc/
 
 
 -- fpm.toc-item list blog-toc:
@@ -179,7 +179,7 @@ $processor$: toc
 $processor$: toc
 
 - Why: /why/
-- Blog: /blog/cdoc/
+- Blog: /blog/
 - Docs: /cdoc/
 
 
