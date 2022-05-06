@@ -1,5 +1,9 @@
 -- ds.page-with-toc: Lack Of Documentation Is Costing You
 toc: $config.blog-toc
+nav-title: Blog
+nav-title-url: blog/
+nav-sub-title: Lack Of Documentation Is Costing You
+nav-sub-title-url: blog/cost/
 
 2nd May 2022
 

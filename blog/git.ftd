@@ -1,5 +1,9 @@
 -- ds.page-with-toc: Doc in Git™
 toc: $config.blog-toc
+nav-title: Blog
+nav-title-url: blog/
+nav-sub-title: Doc in Git™
+nav-sub-title-url: blog/git/
 
 For using continuous documentation effectively you have to store your
 documentation in `git`. In this blog post we will compare the documentation
