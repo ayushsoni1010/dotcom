@@ -4,6 +4,7 @@ nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: How to setup continuous documentation for your Github Repo
 nav-sub-title-url: blog/setup/
+login-button: true
 
 [Continuous Documentation](cdoc/), `cdoc` helps you keep your documentation up
 to date with your changing code by blocking pull requests from getting merged
