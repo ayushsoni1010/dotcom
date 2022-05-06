@@ -215,16 +215,6 @@ src: $site-logo
 height: fill
 width: fill
 
---- container: left-header
-
---- ftd.row:
-width: fill
-border-left: 1
-padding-left: $fpm.space.space-5
-margin-left: $fpm.space.space-5
-border-color: $fpm.color.main.border
-
---- fbs.fifthtry-brand-switcher:
 
 --- container: ftd.main
 
@@ -365,27 +355,31 @@ link: https://fifthtry.com/
 -- ftd.row github-button:
 optional string sign-in: 
 optional string github-cta:
-optional ftd.image-src icon-github: 
+optional string width:
+optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.svg
+optional string link: https://github.com/apps/continuous-documentation
 padding-horizontal: $fpm.space.space-4
 padding-vertical: $fpm.space.space-2
 color: $fpm.color.main.background.step-1
 background-color: $fpm.color.main.cta-primary.base
 border-radius: 4
+width: $width
 spacing: 4
 cursor: pointer
-link: https://github.com/apps/continuous-documentation
+link: $link
+align: center
 
 --- ftd.text: $sign-in
 white-space: nowrap
 role: $bold-small-title
+align: center
+text-align: center
 padding-top: 2
 color: $fpm.color.main.background.step-1
 
 --- ftd.image:
 src: $icon-github
 
-
---- container: ftd.main
 
 --- ftd.text: $github-cta
 padding-top: 2
@@ -995,9 +989,10 @@ text-align: center
 optional string link: /
 width: $width
 text: $title
+white-space: nowrap
 optional ftd.color cta-bg: $fpm.color.main.background.base
 optional ftd.color cta-color: $fpm.color.main.text-strong
-padding-vertical: 10
+padding-vertical: 8
 padding-horizontal: 16
 background-color: $cta-bg
 /background-color if $MOUSE-IN: $font.cta_hover
@@ -1031,8 +1026,8 @@ overflow-y: auto
 width: 0
 width if $sidebar-open: percent 75
 align: top-left
-padding-left: 10
-padding-top: 15
+padding-left: 32
+padding-top: 32
 padding-right: 20
 padding-bottom: 40
 border-right: 1
@@ -1048,6 +1043,11 @@ shadow-blur: 10
 z-index: 1000
 padding-vertical: 48
 id: sidemenu
+
+
+
+
+--- fbs.fifthtry-brand-switcher:
 
 --- ftd.column:
 width: fill
@@ -1465,6 +1465,121 @@ role: $font.copy-relaxed
 
 
 
+-- ftd.row info:
+caption right-title:
+caption left-title:
+optional ftd.image-src right-logo:
+optional ftd.image-src left-logo:
+string left-body:
+string right-body:
+
+
+
+--- info-desktop:
+if: not $config.is-mobile
+right-title: $right-title
+left-title: $left-title
+right-logo: $right-logo
+left-logo: $left-logo
+left-body: $left-body
+right-body: $right-body
+
+
+
+--- info-mobile:
+if:$config.is-mobile
+right-title: $right-title
+left-title: $left-title
+right-logo: $right-logo
+left-logo: $left-logo
+left-body: $left-body
+right-body: $right-body
+
+
+
+
+
+
+
+
+
+
+-- ftd.row info-desktop:
+caption right-title:
+caption left-title:
+optional ftd.image-src right-logo:
+optional ftd.image-src left-logo:
+string left-body:
+string right-body:
+padding-horizontal: 64
+padding-vertical : 64
+width: fill
+spacing: 64
+
+
+--- ftd.row:
+width: fill
+
+--- info-card: $left-title
+sites-logo: $left-logo
+body: $left-body
+
+--- container: ftd.main
+
+
+--- ftd.row:
+width: fill
+
+--- info-card: $right-title
+body: $right-body
+sites-logo: $right-logo
+
+
+
+
+
+
+
+
+
+
+-- ftd.column info-mobile:
+caption right-title:
+caption left-title:
+optional ftd.image-src right-logo:
+optional ftd.image-src left-logo:
+string left-body:
+string right-body:
+padding-horizontal: 64
+padding-vertical : 64
+width: fill
+spacing: 64
+
+
+--- ftd.row:
+width: fill
+
+--- info-card: $left-title
+sites-logo: $left-logo
+body: $left-body
+
+--- container: ftd.main
+
+
+--- ftd.row:
+width: fill
+
+--- info-card: $right-title
+body: $right-body
+sites-logo: $right-logo
+
+
+
+
+
+
+
+
 
 
 -- ftd.column footer:
@@ -1746,12 +1861,12 @@ optional string link:
 fpm.toc-item list children:
 ftd.color text-color: $fpm.color.glass.text-strong
 
---- ftd.row:
+/--- ftd.row:
 width: fill
 border-left: 3
 padding-left: $fpm.space.space-5
 margin-left: $fpm.space.space-5
-border-color: $fpm.color.main.border-strong
+border-color: $fpm.color.main.text-strong
 
 --- ftd.text: $title
 if: $link is not null
@@ -2295,3 +2410,36 @@ border-width: 0
 
 
 
+
+
+
+-- ftd.row info-card:
+caption title:
+body body: 
+padding-horizontal: 32
+padding-vertical: 32
+optional ftd.image-src sites-logo:
+optional ftd.color bg-color: $fpm.color.main.background.step-1
+background-color: $bg-color
+spacing: 32
+border-radius: 8
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: $title
+role: $fpm.type.heading-medium
+color: $fpm.color.main.text-strong
+margin- bottom: 16
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text
+
+--- container: ftd.main
+
+--- ftd.image:
+src: $sites-logo
+width: 81
+height: auto
