@@ -130,6 +130,8 @@ width: fill
 wrap: true
 margin-top: 30
 background-color: $fpm.color.main.background.step-1
+margin-left: -20
+border-radius: $fpm.space.space-3
 
 --- post:
 $loop$: $list-of-posts as $obj
