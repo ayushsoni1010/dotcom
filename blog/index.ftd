@@ -211,8 +211,8 @@ id: article
 --- ftd.column:
 width: fill
 padding-horizontal if not $ds.is-mobile: 30
-padding-vertical: 30
-border-bottom: 1
+padding-top: 30
+border-bottom if $ds.is-mobile: 1
 border-color: $fpm.color.main.cta-tertiary.pressed
 
 
