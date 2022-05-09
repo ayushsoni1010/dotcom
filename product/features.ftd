@@ -1,5 +1,76 @@
--- ds.page-with-toc: Features
-toc: $config.user-manual-overview-toc
+-- ds.page-with-toc: Feature Highlights
+toc: $config.features-toc
 sub-sections: $config.user-manual-header
+nav-title: Product
+nav-title-url: product/
+login-button: true
 
-This section contains the information about the product and its features.
+`cDoc` supports the following main features.
+
+-- ds.h1: Github Support
+
+Currently `cDoc` supports repositories stored on Github. Support for `Gitlab`,
+`BitBucket` are on our roadmap.
+
+-- ds.h2: Github Login
+
+People can login on `cDoc` using their Github account.
+
+-- ds.h2: Github PR Check
+
+`cDoc` acts a PR Check on Github. PRs can not be merged if checks do not pass.
+
+-- ds.h2: Post Connect PR Comment
+
+`cDoc` adds a comment to a PR when someone connects `code PR` with `doc PR` so
+the people working on the PR are informed about what is happening. The comment
+is posted on behalf of the Github user who connected the two PRs.
+
+-- ds.image: Comment on PR So All Collaborators Are Updated
+src: $assets.files.images.blog.day-7.png
+width: fill
+
+-- ds.h2: Post Approval PR Comment
+
+Once a `doc PR` is approved to be good enough for `code PR`, a comment is posted
+on the code PR on the behalf of the person who approved it.
+
+-- ds.image: A Comment Is Posted On Github When PR Docs Are Approved
+src: $assets.files.images.blog.day-10.png
+width: fill
+
+-- ds.h1: Approval Requires Signature
+
+We require the approvar to sign their name while approving.
+
+-- ds.image: Approve Has To Sign Their Name
+src: $assets.files.images.blog.day-9.png
+width: fill
+
+-- ds.h1: Code PR Without Docs
+
+Sometimes for a bug fix or some minor change, refactor, documentation is not
+required. We support that as well.
+
+-- ds.image: In Case You Don't Need Docs! Use It Judiciously!
+src: $assets.files.images.blog.day-11.png
+width: fill
+
+You will still have to put your name behind it, and soon only people with right
+permission will be able to perform this action.
+
+-- ds.image: Sign Your Name To Confirm This PR Does Not Need Documentation
+src: $assets.files.images.blog.day-12.png
+width: 500
+align: center
+
+-- ds.h1: One To One Code Repo to Doc Repo Connection
+
+Currently `cDoc` only allows `one to one` mapping between `code repo` and `doc
+repo`. For each `code repo` there must exist a `doc repo`.
+
+Checkout [glossary](product/glossary/) for meaning of some of these terms.
+
+-- ds.h1: TODO: Disconnect PR
+
+Currently there is no way to disconnect a PR after it has been connected.

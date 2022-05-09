@@ -1,5 +1,9 @@
 -- ds.page-with-toc: Routes: Pages, Widgets, Actions, and APIs
 toc: $config.user-manual-pages-toc
 sub-sections: $config.user-manual-header
+nav-title: Product
+nav-title-url: product/
+login-button: true
 
-This section contains the information about  the pages, actions and  the APIs associated with the documentation.
+This section contains the information about the pages, actions and the APIs
+that are part of `cDoc`.

@@ -1,0 +1,26 @@
+-- ds.page-with-toc: Allowing A PR To Go Through Without Documentation
+toc: $config.features-toc
+sub-sections: $config.user-manual-header
+nav-title: Product
+nav-title-url: product/
+login-button: true
+
+One frequent question we are asked is what if the code change is a minor bug
+fix, a minor refactor or such that it does not need any documentation?
+
+We allow such case as well, in the UI where you were trying to connect
+documentation PR with your code PR, in this case you will not have any doc PR,
+so you can click on this link:
+
+-- ds.image: In Case You Don't Need Docs! Use It Judiciously!
+src: $assets.files.images.blog.day-11.png
+width: fill
+
+You will still have to put your name behind it, and soon only people with right
+permission will be able to perform this action.
+
+-- ds.image: Sign Your Name To Confirm This PR Does Not Need Documentation
+src: $assets.files.images.blog.day-12.png
+width: 500
+align: center
+

@@ -168,7 +168,7 @@ documentation standard followed by your team.
 We post on Github a comment on approver's behalf that documentation has been
 approved and the PR can be merged now.
 
--- ds.image: Enter Your Name To Accept The Documentation
+-- ds.image: A Comment Is Posted On Github When PR Docs Are Approved
 src: $assets.files.images.blog.day-10.png
 width: fill
 

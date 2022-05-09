@@ -1,10 +1,7 @@
--- ds.page-with-toc: Why `cdoc`?
+-- ds.page-with-toc: Why `cDoc`?
 toc: $config.why-toc
-sub-sections: $config.why-header
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: How to setup continuous documentation for your Github Repo
-nav-sub-title-url: blog/setup/
+nav-title: Why `cDoc`?
+nav-title-url: why/
 login-button: true
 
 CDOC helps you implement a workflow that ensures documentation stays up to date

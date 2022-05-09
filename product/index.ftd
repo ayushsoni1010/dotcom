@@ -1,6 +1,9 @@
 -- ds.page-with-toc: About `cDoc`
 sub-sections: $config.user-manual-header
 toc: $config.about-product-toc
+nav-title: Product
+nav-title-url: product/
+login-button: true
 
 `cDoc` helps you implement a workflow that ensures documentation stays up to
 date with code changes. `cDoc` is a Github App that blocks pull requests from

@@ -1,0 +1,9 @@
+-- ds.page-with-toc: PR Life-cycle
+toc: $config.features-toc
+sub-sections: $config.user-manual-header
+nav-title: Product
+nav-title-url: product/
+login-button: true
+
+The Repo Connection is described in [Setup continuous documentation for your
+Github Repo](blog/setup/) post.

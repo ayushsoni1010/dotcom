@@ -1,0 +1,9 @@
+-- ds.page-with-toc: PR Life-cycle
+toc: $config.features-toc
+sub-sections: $config.user-manual-header
+nav-title: Product
+nav-title-url: product/
+login-button: true
+
+The PR lifecycle is described in [Taste Of `cdoc` on Day To
+Day](blog/day-to-day/) post.

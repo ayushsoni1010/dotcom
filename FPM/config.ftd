@@ -57,6 +57,7 @@ $processor$: toc
 
 - About `cDoc`: product/
 - How Is Life Before `cDoc`?: product/before/
+- Glossary: product/glossary/
 
 
 -- ds.toc:
@@ -121,6 +122,7 @@ $processor$: toc
 $processor$: toc
 
 - Why `CDOC`?: why/
+- How Is Life Before `cDoc`?: product/before/
 
 
 -- fpm.toc-item list why-header:
@@ -135,19 +137,29 @@ $processor$: toc
 - Why `CDOC`?: why/
 
 
+-- fpm.toc-item list features-toc:
+$processor$: toc
+
+- Feature Highlight: product/features/
+- Personas: product/personas/
+- Installing `cDoc` On Your Repo: product/repo-connection/
+- Life Cycle Of A PR: product/pr-life-cycle/
+- Allowing A PR To Go Through Without Documentation: product/pr-without-doc/
+
 -- fpm.toc-item list user-manual-header:
 $processor$: toc
 
 - Overview: product/
-- 🚧 Features & Journies: product/features/
+- Features & Journeys: product/features/
 - Pages, Actions and APIs: product/sitemap/
 
 
 -- fpm.toc-item list user-manual-pages-toc:
 $processor$: toc
 
-- Login Page: product/sitemap/pages/login/
-- Dashboard Page: product/sitemap/pages/dashboard/
+- Sitemap: product/sitemap/
+- Login Page: product/sitemap/login/
+- Dashboard Page: product/sitemap/dashboard/
   - Repo Connection Widget:
     url: product/sitemap/pages/dashboard/repo-connection-dialog/
 - Repository Page: product/sitemap/pages/repo/

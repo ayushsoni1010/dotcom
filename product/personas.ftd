@@ -1,0 +1,27 @@
+-- ds.page-with-toc: Personas
+toc: $config.features-toc
+sub-sections: $config.user-manual-header
+nav-title: Product
+nav-title-url: product/
+login-button: true
+
+When using `cDoc` a user can belong to following categories:
+
+-- ds.h1: `developer`
+
+This is the person who writes the code and documentation. The is created by
+the developer and connected with each other on `cDoc` by the `developer`.
+
+`developer` primarily participate in [`Life Cycle Of A PR`
+journey](product/pr-lifecycle/).
+
+-- ds.h1: `approver`
+
+This is the person who has the authority to approve documentation created by
+`developer`s.
+
+-- ds.h1: `account admin`
+
+Only `account admin` can connect a code repo with a documentation repo. `account
+admin` also is responsible for granting access to the repo to `cDoc`.
+
