@@ -52,6 +52,12 @@ $processor$: toc
 - Lack Of Documentation Is Costing You: blog/cost/
 - Does Writing Documentation Slow You Down?: blog/slow/
 
+-- fpm.toc-item list about-product-toc:
+$processor$: toc
+
+- About `cDoc`: product/
+- How Is Life Before `cDoc`?: product/before/
+
 
 -- ds.toc:
 $processor$: toc
@@ -180,6 +186,6 @@ $processor$: toc
 
 - Why: /why/
 - Blog: /blog/
-- Docs: /cdoc/
+- Docs: /product/
 
 

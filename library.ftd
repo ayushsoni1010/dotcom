@@ -310,7 +310,7 @@ white-space: nowrap
 padding-vertical: 10
 padding-right: $fpm.space.space-1
 role: $font.cta
-link: cdoc/
+link: product/
 
 --- ftd.row:
 width: fill

@@ -1,5 +1,92 @@
--- ds.page: Product Manual
+-- ds.page-with-toc: About `cDoc`
 sub-sections: $config.user-manual-header
+toc: $config.about-product-toc
 
 `cDoc` helps you implement a workflow that ensures documentation stays up to
-date with code changes.
+date with code changes. `cDoc` is a Github App that blocks pull requests from
+getting merged till documentaiton is written and approved.
+
+-- ds.image: What `cDoc` Does In A Nutshell
+src: $assets.files.images.blog.process.png
+width: fill
+
+-- ds.h1: Who is `cDoc` For?
+
+`cDoc` is for software development teams, especially teams who realise the
+[importance of documentation](blog/cost/), want to maintain documentation of
+their product and ensure that documentation stays up to date with constantly
+changing software.
+
+Since our product requires people putting their documentation in Git, it is
+further only useful for people are willing to switch to [doc in git
+workflow](blog/git/).
+
+-- ds.h1: Why Was The Product Created?
+
+We at FifthTry believe improving quality of documentation is the highest return
+on investment activity a software development team can do to increase their
+productivity and developer happiness.
+
+We believe the [lack of documentation is costing software teams](blog/cost/).
+It's harder to onboard new developers. On day to day basis if there is not
+enough documentation people have to ask each other a lot of questions or
+discover how things work by ineffecient trial and error way. And finally when
+employees exit organisation they take with them valuable information.
+
+-- ds.image: Developer Waste A Lot Of Time Understanding Software
+src: $assets.files.images.blog.developer-time.png
+width: fill
+
+We believe the documentation is not adequate in many software teams despite them
+knowing the advantage of upto date documentation because of a lack of process.
+Code quality is acceptable in most teams because it goes through a code review
+and continuous integration process, in some teams it every PR also goes through
+manual testing. Without this process code would suffer.
+
+Today there is no such process for documentaiton. Documentation quality depends
+on the will and effort of some team members, but due to lack of a process the
+documentaiton keeps going out of date as software keeps changing.
+
+-- ds.h1: How Does `cDoc` Work?
+
+`cDoc` is a Github App that you can install on your Github Repositories. You
+can follow this [setup guide](blog/setup) for detailed instructions on how to
+do it.
+
+Once it is installed `cDoc` blocks the pull requests. To merge Pull Request now
+your team has to write the documentation in another PR, and then someone has to
+"connect" the code PR with documentation PR. Eventually someone has to review
+the code PR and verify that the doc PR is documenting the code PR as per your
+teams documentation standards.
+
+The documentation is stored in a separate repository from code.
+
+
+-- ds.image: Connect Documentation PR With Code PR
+src: $assets.files.images.blog.day-5.png
+width: fill
+
+To connect the code PR with doc PR one has to go to `fifthtry.com`. Similarly
+to approce the PRs one has to go `fifthtry.com`.
+
+-- ds.image: Approve That Documentation And Code Are In Sync
+src: $assets.files.images.blog.day-9.png
+width: fill
+
+`cDoc` also post the status on Github PR so everyone working on the feature can
+be informed:
+
+-- ds.image: Comment on PR So All Collaborators Are Updated
+src: $assets.files.images.blog.day-10.png
+width: fill
+
+The process is described in detail in the [Taste Of `cDoc` on Day To
+Day](blog/day-to-day/) blog post.
+
+-- ds.h1: Open Source
+
+`cDoc` is fully open source. It is developed openly on Github, with it's code
+and roadmap, all issues etc publicly available to anyone under BSD license.
+Anyone can install `cDoc` and create their of Github App to use it if they want
+to. We offer paid SAAS solution for those who want to outsource the day to day
+operations to us.

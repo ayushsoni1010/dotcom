@@ -1,0 +1,26 @@
+-- ds.page-with-toc: `cDoc` Glossary
+sub-sections: $config.web-product-header
+toc: $config.product-manual-toc
+
+When using `cDoc` on a day to day basis we use some common terms whose
+definition is given here.
+
+
+-- ds.h1: `Code Repo` and `Doc Repo`
+
+`cDoc` works with software stored in Github Repositories. Also [code and
+documentation should be stored in their own repositories](blog/git/). The code
+is stored in `code repo` and documentation in `doc repo`.
+
+-- ds.h1: `Connected Repos`
+
+A `doc repo` and `code repo` may exist in Github, but may not yet be "connected
+repo" as per `cDoc`. To connect a `code repo` with corresponding `doc repo` one
+has to install the `cDoc` Github App, grant access to the repositories and then
+follow the ["connect journey" as described in the setup blog post](blog/setup/).
+
+After the `doc repo` and `code repo` are considered `connected repos`.
+
+-- ds.h1: `Code PR` and `Doc PR`
+
+
