@@ -15,7 +15,8 @@ link: blog/cdoc/
 
 After much wait we are launching “Continuous Documentation” today!
 
-One common problem that many tech companies face is that their documentation is not up to date. Be it small teams or large, a 2 person startup or the Big Tech.
+One common problem that many tech companies face is that their documentation is
+not up to date. Be it small teams or large, a 2 person startup or the Big Tech.
 
 
 
@@ -256,7 +257,7 @@ $body
 
 
 
--- record posts:
+-- record post-data:
 caption title:
 body body:
 optional ftd.image-src thumbnail:
@@ -265,23 +266,23 @@ boolean is-left:
 string link:
 
 
--- posts list list-of-posts:
+-- post-data list post:
 
--- list-of-posts: How to setup continuous documentation for your Github Repo
+-- post: How to setup continuous documentation for your Github Repo
 index: 1
 is-left: true
 thumbnail: $assets.files.images.blog.setup-2.png
 link: blog/setup/
 
-[Continuous Documentation](cdoc/), `cdoc` helps you keep your documentation up
+[Continuous Documentation](cdoc/), `cDoc` helps you keep your documentation up
 to date with your changing code by blocking pull requests from getting merged
 till documentation has been written and approved.
 
 
--- list-of-posts: Taste Of `cdoc` on Day To Day
+-- post: Taste Of `cDoc` on Day To Day
 index: 2
 is-left: false
-thumbnail: $assets.files.images.blog.process.png
+thumbnail: $assets.files.images.blog.day-9.png
 link: blog/day-to-day/
 
 Yo Hello There! So you have [understood why continuous documentation is right
@@ -290,7 +291,7 @@ it for your repositories](blog/setup/), and are now *eager to start using it*.
 You are in the right place!
 
 
--- list-of-posts: Lack Of Documentation Is Costing You
+-- post: Lack Of Documentation Is Costing You
 index: 3
 is-left: true
 thumbnail: $assets.files.images.blog.developer-time.png
@@ -304,7 +305,7 @@ Tech](https://en.wikipedia.org/wiki/Big_Tech), a person moving from one team to
 another and becoming productive takes 3 months.
 
 
--- list-of-posts: Does Writing Documentation Slow You Down?
+-- post: Does Writing Documentation Slow You Down?
 index: 4
 is-left: false
 thumbnail: $assets.files.images.blog.traffic.jpg
