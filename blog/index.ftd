@@ -19,12 +19,80 @@ One common problem that many tech companies face is that their documentation is
 not up to date. Be it small teams or large, a 2 person startup or the Big Tech.
 
 
+-- post-data list post:
+
+-- post: How to setup continuous documentation for your Github Repo
+index: 1
+is-left: true
+thumbnail: $assets.files.images.blog.setup-2.png
+link: blog/setup/
+
+[Continuous Documentation](cdoc/), `cDoc` helps you keep your documentation up
+to date with your changing code by blocking pull requests from getting merged
+till documentation has been written and approved.
+
+
+-- post: Taste Of `cDoc` on Day To Day
+index: 2
+is-left: false
+thumbnail: $assets.files.images.blog.day-9.png
+link: blog/day-to-day/
+
+Yo Hello There! So you have [understood why continuous documentation is right
+thing to improve your team's happiness](blog/cdoc/), and you have already [set
+it for your repositories](blog/setup/), and are now *eager to start using it*.
+You are in the right place!
+
+
+-- post: Lack Of Documentation Is Costing You
+index: 3
+is-left: true
+thumbnail: $assets.files.images.blog.developer-time.png
+link: blog/cost/
+
+
+Lack of documentation is causing problems for you. If you do not have proper
+documentation, onboarding a new team member is slow. It takes a lot of time for
+that person to become productive. In at least one of the [Big
+Tech](https://en.wikipedia.org/wiki/Big_Tech), a person moving from one team to
+another and becoming productive takes 3 months.
+
+
+-- post: Does Writing Documentation Slow You Down?
+index: 4
+is-left: false
+thumbnail: $assets.files.images.blog.traffic.jpg
+link: blog/slow/
+
+So documentation is important. And developers do understand the importance of
+the documentation. So why do developers not write documentation? Is this
+because writing documentation is extra work, and this extra work slows you down?
+
+
+
+
+
+
+
+-- record post-data:
+caption title:
+body body:
+optional ftd.image-src thumbnail:
+integer index:
+boolean is-left:
+string link:
+
+
+
+
+
+
 
 
 
 
 -- posts-list:
-list-of-posts: $list-of-posts
+list-of-posts: $post
 
 
 
@@ -169,7 +237,7 @@ white-space: nowrap
 
 
 -- ftd.row posts-list:
-posts list list-of-posts:
+post-data list list-of-posts:
 width: fill
 margin-top: 30
 background-color if not $ds.is-mobile: $fpm.color.main.background.step-1
@@ -177,7 +245,7 @@ margin-left if not $ds.is-mobile: -20
 border-radius: $fpm.space.space-3
 wrap: true
 
---- post:
+--- post-view:
 $loop$: $list-of-posts as $obj
 title: $obj.title
 body: $obj.body
@@ -197,7 +265,7 @@ link: $obj.link
 
 
 
--- ftd.row post:
+-- ftd.row post-view:
 string title:
 string body:
 ftd.image-src thumbnail:
@@ -253,67 +321,6 @@ $body
 
 
 
-
-
-
-
--- record post-data:
-caption title:
-body body:
-optional ftd.image-src thumbnail:
-integer index:
-boolean is-left:
-string link:
-
-
--- post-data list post:
-
--- post: How to setup continuous documentation for your Github Repo
-index: 1
-is-left: true
-thumbnail: $assets.files.images.blog.setup-2.png
-link: blog/setup/
-
-[Continuous Documentation](cdoc/), `cDoc` helps you keep your documentation up
-to date with your changing code by blocking pull requests from getting merged
-till documentation has been written and approved.
-
-
--- post: Taste Of `cDoc` on Day To Day
-index: 2
-is-left: false
-thumbnail: $assets.files.images.blog.day-9.png
-link: blog/day-to-day/
-
-Yo Hello There! So you have [understood why continuous documentation is right
-thing to improve your team's happiness](blog/cdoc/), and you have already [set
-it for your repositories](blog/setup/), and are now *eager to start using it*.
-You are in the right place!
-
-
--- post: Lack Of Documentation Is Costing You
-index: 3
-is-left: true
-thumbnail: $assets.files.images.blog.developer-time.png
-link: blog/cost/
-
-
-Lack of documentation is causing problems for you. If you do not have proper
-documentation, onboarding a new team member is slow. It takes a lot of time for
-that person to become productive. In at least one of the [Big
-Tech](https://en.wikipedia.org/wiki/Big_Tech), a person moving from one team to
-another and becoming productive takes 3 months.
-
-
--- post: Does Writing Documentation Slow You Down?
-index: 4
-is-left: false
-thumbnail: $assets.files.images.blog.traffic.jpg
-link: blog/slow/
-
-So documentation is important. And developers do understand the importance of
-the documentation. So why do developers not write documentation? Is this
-because writing documentation is extra work, and this extra work slows you down?
 
 
 
