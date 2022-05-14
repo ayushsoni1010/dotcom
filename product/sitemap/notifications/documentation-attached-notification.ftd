@@ -1,9 +1,6 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: Documentation Attached Notification
-toc: $sitemap.toc
-sub-sections: $sitemap.subsections
+toc: $config.sitemap.toc
+sub-sections: $config.sitemap.subsections
 
 Whenever a documentation pull request is attached to the code pull request, a 
 comment is posted on the Github Pull Request on behalf of the current user.

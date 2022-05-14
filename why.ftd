@@ -1,8 +1,5 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: Why `cDoc`?
-toc: $sitemap.toc
+toc: $config.sitemap.toc
 nav-title: Why `cDoc`?
 nav-title-url: why/
 login-button: true

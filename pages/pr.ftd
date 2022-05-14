@@ -1,9 +1,6 @@
 -- string doc-url: pages/pr/
 -- string name: PR Page
 
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: $name
 
 -- ds.markdown:

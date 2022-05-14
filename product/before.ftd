@@ -1,9 +1,6 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: How Is Life Before`cDoc`?
-sub-sections: $sitemap.subsections
-toc: $sitemap.toc
+sub-sections: $config.sitemap.subsections
+toc: $config.sitemap.toc
 nav-title: Product
 nav-title-url: product/
 login-button: true

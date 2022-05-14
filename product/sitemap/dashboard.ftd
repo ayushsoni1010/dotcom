@@ -1,9 +1,6 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: Dashboard Page
-toc: $sitemap.toc
-sub-sections: $sitemap.subsections
+toc: $config.sitemap.toc
+sub-sections: $config.sitemap.subsections
 
 For an authenticated user, the `/` page renders the user's dashboard. The 
 dashboard gives you a complete overview of the various documentation and 

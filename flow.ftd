@@ -1,6 +1,3 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: Flows
 
 We have two main flows, the initial setup flow, which is triggered when someone

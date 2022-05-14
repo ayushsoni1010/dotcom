@@ -1,8 +1,5 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: Introducing `cDoc`: Continuous Documentation
-toc: $sitemap.toc
+toc: $config.sitemap.toc
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: Introducing `cDoc`: Continuous Documentation

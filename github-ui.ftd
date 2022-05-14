@@ -1,8 +1,5 @@
 -- import: fifthtry.com/pages/pr
 
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: UI On Github
 
 We want `cdoc` to be as usable without leaving Github as possible. For every

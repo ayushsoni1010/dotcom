@@ -1,8 +1,5 @@
--- fpm.sitemap-data sitemap:
-$processor$: get-sitemap
-
 -- ds.page-with-toc: Doc in Git™
-toc: $sitemap.toc
+toc: $config.sitemap.toc
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: Doc in Git™

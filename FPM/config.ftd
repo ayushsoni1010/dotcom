@@ -2,6 +2,10 @@
 -- import: ds
 -- import: fifthtry.com/assets
 
+
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.github: https://github.com/fifthtry/cdoc/
 
 -- ds.show-brand: true
