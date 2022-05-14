@@ -1,6 +1,9 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Repository Page
-toc: $config.user-manual-pages-toc
-sub-sections: $config.user-manual-header
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
 
 The repository page is the operational dashboard of a repository. Here you can 
 take the following actions

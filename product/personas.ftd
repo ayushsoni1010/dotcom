@@ -1,6 +1,9 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Personas
-toc: $config.features-toc
-sub-sections: $config.user-manual-header
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
 nav-title: Product
 nav-title-url: product/
 login-button: true

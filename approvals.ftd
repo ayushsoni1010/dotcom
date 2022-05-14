@@ -1,5 +1,8 @@
 -- import: fifthtry.com/pages/pr
 
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Approvals When Using `cdoc`
 
 `cdoc` works with two repositories, a repository for code and another for

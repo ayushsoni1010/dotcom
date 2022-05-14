@@ -1,3 +1,6 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: `/ftd/` page
 
 We have a dummy page `/ftd/` to test out [ftd template stuff](dev/ftd/).

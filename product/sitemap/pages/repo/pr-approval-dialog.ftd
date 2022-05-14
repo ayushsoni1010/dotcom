@@ -1,6 +1,9 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Pull Request Approval Dialog
-toc: $config.user-manual-pages-toc
-sub-sections: $config.user-manual-header
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
 
 Pull request approval dialog is a simple explicit approval dialog box.
 

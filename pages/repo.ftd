@@ -1,6 +1,9 @@
 -- string doc-url: pages/repo/
 -- string name: Repo Page
 
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: $name
 
 -- ds.markdown:

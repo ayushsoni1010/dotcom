@@ -1,6 +1,9 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Repository Connection Dialog
-toc: $config.user-manual-pages-toc
-sub-sections: $config.user-manual-header
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
 
 You can access the repository connection dialog by clicking on the `Connect` 
 button corresponding to the repository listed in the `Available Repositories` 

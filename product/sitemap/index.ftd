@@ -1,6 +1,9 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Routes: Pages, Widgets, Actions, and APIs
-toc: $config.user-manual-pages-toc
-sub-sections: $config.user-manual-header
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
 nav-title: Product
 nav-title-url: product/
 login-button: true

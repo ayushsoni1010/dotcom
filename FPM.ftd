@@ -10,3 +10,86 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 -- fpm.auto-import: ds
 -- fpm.auto-import: fifthtry.com/FPM/config
 -- fpm.auto-import: fifthtry.com/assets
+
+-- fpm.sitemap:
+
+# Home: /
+
+
+# Why: /why/
+
+- Why `CDOC`?: why/
+- How Is Life Before `cDoc`?: product/before/-/why
+
+
+
+
+# Blog: /blog/
+
+
+
+# Product Manual: product/
+
+## Overview: product/
+
+- About `cDoc`: product/
+- How Is Life Before `cDoc`?: product/before/
+- Glossary: product/glossary/
+
+## Features & Journeys: product/features/
+
+- Feature Highlight: product/features/
+- Personas: product/personas/
+- Installing `cDoc` On Your Repo: product/repo-connection/
+- Life Cycle Of A PR: product/pr-life-cycle/
+- Allowing A PR To Go Through Without Documentation: product/pr-without-doc/
+
+## Pages, Actions and APIs: product/sitemap/
+
+- Sitemap: product/sitemap/
+- Login Page: product/sitemap/login/
+- Dashboard Page: product/sitemap/dashboard/
+  - Repo Connection Widget:
+    url: product/sitemap/pages/dashboard/repo-connection-dialog/
+- Repository Page: product/sitemap/pages/repo/
+  - PR Mapping Widget: product/sitemap/pages/repo/pr-mapping-dialog/
+    - Documentation Attached Github Comment:
+      url: product/sitemap/notifications/documentation-attached-notification/
+  - PR Approval Widget: product/sitemap/pages/repo/pr-approval-dialog/
+    - PR Approval Github Comment
+      url: product/sitemap/notifications/pull-request-approved-notification/
+
+
+
+
+# Development: dev/
+
+## Overview: dev/
+
+- Overview: dev/
+- FTD Templates: dev/ftd/
+- Using `ftd_django.static()`: dev/static/
+- Decorators: dev/decorators/
+- Activity Framework: dev/activity/
+- Tracker Framework: dev/tracker/
+- Visit Framework: dev/visit/
+- Setup: dev/setup/
+
+## Databases: dev/databases/
+
+- Main Database: dev/main-db/
+  - GithubUser Table: dev/main-db/githubuser/
+  - GithubUserAccessToken Table: dev/main-db/githubuseraccesstoken/
+  - GithubUserRefreshToken Table: dev/main-db/githubuserrefreshtoken/
+  - GithubAppInstallation Table: dev/main-db/githubappinstallation/
+  - GithubAppUser Table: dev/main-db/githubappuser/
+  - GithubInstallationToken Table: dev/main-db/githubinstallationtoken/
+  - GithubRepository Table: dev/main-db/githubrepository/
+  - GithubRepoMap Table: dev/main-db/githubrepomap/
+  - GithubPullRequest Table: dev/main-db/githubpullrequest/
+  - MonitoredPullRequest Table: dev/main-db/monitoredpullrequest/
+  - PrApproval Table: dev/main-db/prapproval/
+  - GithubCheckRun Table: dev/main-db/githubcheckrun/
+  - GithubLoginState Table: dev/main-db/githubloginstate/
+
+

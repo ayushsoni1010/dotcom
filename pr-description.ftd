@@ -1,3 +1,6 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Pull Request Description
 
 In Github PRs, there is an area which includes the description of the Pull

@@ -1,3 +1,6 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Pull Request States
 
 For a github repo using `cdoc`, every code Pull Request is in one of the

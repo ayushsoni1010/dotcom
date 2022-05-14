@@ -1,5 +1,8 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Taste Of `cdoc` on Day To Day
-toc: $config.blog-toc
+toc: $sitemap.toc
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: Taste Of `cdoc` on Day To Day

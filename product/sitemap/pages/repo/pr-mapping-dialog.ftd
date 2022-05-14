@@ -1,6 +1,9 @@
+-- fpm.sitemap-data sitemap:
+$processor$: get-sitemap
+
 -- ds.page-with-toc: Pull Request Mapping Dialog
-toc: $config.user-manual-pages-toc
-sub-sections: $config.user-manual-header
+toc: $sitemap.toc
+sub-sections: $sitemap.subsections
 
 Whenever a pull request is opened for a code repository, the `cDoc` check run
 is invoked which keeps a track of the documentation changes.
