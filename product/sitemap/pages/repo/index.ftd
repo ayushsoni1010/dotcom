@@ -1,6 +1,4 @@
--- ds.page-with-toc: Repository Page
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Repository Page
 
 The repository page is the operational dashboard of a repository. Here you can 
 take the following actions

@@ -1,6 +1,4 @@
--- ds.page-with-toc: Routes: Pages, Widgets, Actions, and APIs
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Routes: Pages, Widgets, Actions, and APIs
 nav-title: Product
 nav-title-url: product/
 login-button: true

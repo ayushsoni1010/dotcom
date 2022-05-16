@@ -1,6 +1,4 @@
--- ds.page-with-toc: All Actions
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: All Actions
 
 - Dashboard Page
 - Repository Page

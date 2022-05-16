@@ -1,6 +1,4 @@
--- ds.page-with-toc: PR Life-cycle
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: PR Life-cycle
 nav-title: Product
 nav-title-url: product/
 login-button: true

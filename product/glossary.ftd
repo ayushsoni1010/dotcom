@@ -1,6 +1,4 @@
--- ds.page-with-toc: `cDoc` Glossary
-sub-sections: $config.sitemap.subsections
-toc: $config.sitemap.toc
+-- ds.page: `cDoc` Glossary
 nav-title: Product
 nav-title-url: product/
 login-button: true

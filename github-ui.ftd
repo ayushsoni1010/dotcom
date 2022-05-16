@@ -1,6 +1,6 @@
 -- import: fifthtry.com/pages/pr
 
--- ds.page-with-toc: UI On Github
+-- ds.page: UI On Github
 
 We want `cdoc` to be as usable without leaving Github as possible. For every
 PR we will have one main page on FifthTry: {pr.page}

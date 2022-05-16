@@ -1,6 +1,4 @@
--- ds.page-with-toc: All APIs
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: All APIs
 
 - Dashboard Page
 - Repository Page

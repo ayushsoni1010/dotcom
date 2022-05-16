@@ -1,6 +1,4 @@
--- ds.page-with-toc: Personas
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Personas
 nav-title: Product
 nav-title-url: product/
 login-button: true

@@ -1,4 +1,4 @@
--- ds.page-with-toc: Flows
+-- ds.page: Flows
 
 We have two main flows, the initial setup flow, which is triggered when someone
 installs `cdoc` integration with their Github Repo, and the PR workflow, which is

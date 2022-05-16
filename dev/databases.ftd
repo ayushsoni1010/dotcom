@@ -1,6 +1,4 @@
--- ds.page-with-toc: `cDoc` Databases
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: `cDoc` Databases
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: How to setup continuous documentation for your Github Repo

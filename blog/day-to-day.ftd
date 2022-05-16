@@ -1,5 +1,4 @@
--- ds.page-with-toc: Taste Of `cdoc` on Day To Day
-toc: $config.sitemap.toc
+-- ds.page: Taste Of `cdoc` on Day To Day
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: Taste Of `cdoc` on Day To Day

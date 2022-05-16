@@ -1,7 +1,7 @@
 -- string doc-url: pages/repo/
 -- string name: Repo Page
 
--- ds.page-with-toc: $name
+-- ds.page: $name
 
 -- ds.markdown:
 

@@ -1,6 +1,6 @@
 -- import: fifthtry.com/pages/pr
 
--- ds.page-with-toc: Approvals When Using `cdoc`
+-- ds.page: Approvals When Using `cdoc`
 
 `cdoc` works with two repositories, a repository for code and another for
 documentation.

@@ -3,6 +3,7 @@
 
 
 -- ds.page:
+toc: $config.empty-toc
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: All Blog

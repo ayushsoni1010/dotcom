@@ -1,5 +1,4 @@
--- ds.page-with-toc: Introducing `cDoc`: Continuous Documentation
-toc: $config.sitemap.toc
+-- ds.page: Introducing `cDoc`: Continuous Documentation
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: Introducing `cDoc`: Continuous Documentation

@@ -1,6 +1,4 @@
--- ds.page-with-toc: Documentation Attached Notification
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Documentation Attached Notification
 
 Whenever a documentation pull request is attached to the code pull request, a 
 comment is posted on the Github Pull Request on behalf of the current user.

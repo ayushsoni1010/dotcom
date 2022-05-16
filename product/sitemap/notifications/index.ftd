@@ -1,6 +1,4 @@
--- ds.page-with-toc: All Pages
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: All Pages
 
 - Documentation Attached Notification
 - Pull Request Approved Notification

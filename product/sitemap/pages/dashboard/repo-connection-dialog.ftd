@@ -1,6 +1,4 @@
--- ds.page-with-toc: Repository Connection Dialog
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Repository Connection Dialog
 
 You can access the repository connection dialog by clicking on the `Connect` 
 button corresponding to the repository listed in the `Available Repositories` 

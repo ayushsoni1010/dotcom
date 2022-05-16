@@ -1,6 +1,4 @@
--- ds.page-with-toc: Pull Request Mapping Dialog
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Pull Request Mapping Dialog
 
 Whenever a pull request is opened for a code repository, the `cDoc` check run
 is invoked which keeps a track of the documentation changes.

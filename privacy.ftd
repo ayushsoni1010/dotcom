@@ -4,6 +4,7 @@ src: $assets.files.assets.images.privacy-icon.svg
 
 
 -- ds.page: Privacy Policy – FifthTry Inc.
+toc: $config.empty-toc
 
 -- ds.h2: Last updated: May 04, 2022
 

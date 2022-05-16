@@ -1,4 +1,4 @@
--- ds.page-with-toc: Permissions
+-- ds.page: Permissions
 
 Only people who have merge rights to documentation PR can do the "cdoc
 approval".

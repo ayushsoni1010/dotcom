@@ -1,4 +1,4 @@
--- ds.page-with-toc: Pull Request States
+-- ds.page: Pull Request States
 
 For a github repo using `cdoc`, every code Pull Request is in one of the
 following states:

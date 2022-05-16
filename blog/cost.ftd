@@ -1,5 +1,4 @@
--- ds.page-with-toc: Lack Of Documentation Is Costing You
-toc: $config.sitemap.toc
+-- ds.page: Lack Of Documentation Is Costing You
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: Lack Of Documentation Is Costing You

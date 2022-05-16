@@ -1,5 +1,4 @@
--- ds.page-with-toc: Why `cDoc`?
-toc: $config.sitemap.toc
+-- ds.page: Why `cDoc`?
 nav-title: Why `cDoc`?
 nav-title-url: why/
 login-button: true

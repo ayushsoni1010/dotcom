@@ -1,6 +1,4 @@
--- ds.page-with-toc: Feature Highlights
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Feature Highlights
 nav-title: Product
 nav-title-url: product/
 login-button: true

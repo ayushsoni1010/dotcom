@@ -1,6 +1,4 @@
--- ds.page-with-toc: Login Page
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Login Page
 nav-title: Product
 nav-title-url: product/
 login-button: true

@@ -1,6 +1,4 @@
--- ds.page-with-toc: Allowing A PR To Go Through Without Documentation
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Allowing A PR To Go Through Without Documentation
 nav-title: Product
 nav-title-url: product/
 login-button: true

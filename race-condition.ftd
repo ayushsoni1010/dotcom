@@ -1,4 +1,4 @@
--- ds.page-with-toc: PR Description Update Race Condition
+-- ds.page: PR Description Update Race Condition
 
 To update the PR description, we will first fetch the latest pr description
 and then update it. This can lead to race conditions.

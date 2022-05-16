@@ -1,6 +1,4 @@
--- ds.page-with-toc: About Us
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: About Us
 nav-title: Blog
 nav-title-url: blog/
 nav-sub-title: How to setup continuous documentation for your Github Repo

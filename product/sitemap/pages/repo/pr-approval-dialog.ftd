@@ -1,6 +1,4 @@
--- ds.page-with-toc: Pull Request Approval Dialog
-toc: $config.sitemap.toc
-sub-sections: $config.sitemap.subsections
+-- ds.page: Pull Request Approval Dialog
 
 Pull request approval dialog is a simple explicit approval dialog box.
 
