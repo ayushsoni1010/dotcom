@@ -14,8 +14,6 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 
 -- fpm.sitemap:
 
-# Home: /
-
 
 # Why: /why/
 
