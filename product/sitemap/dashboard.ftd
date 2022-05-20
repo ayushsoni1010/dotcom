@@ -32,11 +32,56 @@ Parameters:
 
 
 -- ds.h1: Design
-- The page is accessible only to authenticated users.
-- The page displays 10 results in each category. We currently don't support
-  pagination, if you can't find your repository, please filter the results in
-  the search box.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-page.png
 width: fill
+
+-- ds.h3: Component: Mapped repository row
+
+-- ds.image:
+src: $assets.files.images.product-manual.routes.components.dashboard-mapped-repository.png
+width: fill
+
+- The component displays the name of the documentation and the code repositories. 
+  Clicking on either of them takes you to the respective repository on GitHub.
+- Clicking on the `>` button on the right takes you to the mapped repository page
+
+-- ds.h3: Component: Available repository row
+
+-- ds.image:
+src: $assets.files.images.product-manual.routes.components.dashboard-unmapped-repository.png
+width: fill
+
+- Clicking on the `Connect` button on the right opens the Repository categorization modal.
+
+-- ds.h3: Component: Repository Categorization modal
+
+-- ds.image:
+src: $assets.files.images.product-manual.routes.components.dashboard-repository-categorization-modal.png
+width: fill
+
+In order to activate Continuous Documentation for a repository, you'll need to define the role of the repository in the mapping. A repository can either be a documentation or a code repository. 
+
+-- ds.h3: Component: Repository Connection modal
+
+-- ds.image:
+src: $assets.files.images.product-manual.routes.components.dashboard-repository-connection-modal.png
+width: fill
+
+
+-- ds.h3: State: Search with results
+
+-- ds.image:
+src: $assets.files.images.product-manual.routes.pages.dashboard-page-with-results.png
+width: fill
+
+
+-- ds.h3: State: Search with empty results
+
+-- ds.image:
+src: $assets.files.images.product-manual.routes.pages.dashboard-page-no-results.png
+width: fill
+
+
+
