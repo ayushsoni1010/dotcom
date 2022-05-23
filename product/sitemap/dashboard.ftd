@@ -18,17 +18,16 @@ URL: `/`
 For the unauthenticated user, refer to login page
 
 Parameters:
-- `q`:
-  
-  Description: Search query
-  
-  Required: False
-  
-  Type: string
 
-  The search query is case insensitive.
+-- ds.h3: Search Query: `q`
 
-  The search query can be a substring of the repository name.
+Required: False
+
+Type: String
+
+The search query is case insensitive.
+
+The search query can be a substring of the repository name.
 
 
 -- ds.h1: Design
@@ -37,36 +36,10 @@ Parameters:
 src: $assets.files.images.product-manual.routes.pages.dashboard-page.png
 width: fill
 
--- ds.h3: Component: Mapped repository row
+-- ds.h3: State: New installation without any mapping
 
 -- ds.image:
-src: $assets.files.images.product-manual.routes.components.dashboard-mapped-repository.png
-width: fill
-
-- The component displays the name of the documentation and the code repositories. 
-  Clicking on either of them takes you to the respective repository on GitHub.
-- Clicking on the `>` button on the right takes you to the mapped repository page
-
--- ds.h3: Component: Available repository row
-
--- ds.image:
-src: $assets.files.images.product-manual.routes.components.dashboard-unmapped-repository.png
-width: fill
-
-- Clicking on the `Connect` button on the right opens the Repository categorization modal.
-
--- ds.h3: Component: Repository Categorization modal
-
--- ds.image:
-src: $assets.files.images.product-manual.routes.components.dashboard-repository-categorization-modal.png
-width: fill
-
-In order to activate Continuous Documentation for a repository, you'll need to define the role of the repository in the mapping. A repository can either be a documentation or a code repository. 
-
--- ds.h3: Component: Repository Connection modal
-
--- ds.image:
-src: $assets.files.images.product-manual.routes.components.dashboard-repository-connection-modal.png
+src: $assets.files.images.product-manual.routes.pages.dashboard-no-connections.png
 width: fill
 
 

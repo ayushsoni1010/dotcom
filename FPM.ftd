@@ -61,8 +61,7 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 - Sitemap: product/sitemap/
 - Login Page: product/sitemap/login/
 - Dashboard Page: product/sitemap/dashboard/
-  - Repo Connection Widget:
-    url: product/sitemap/pages/dashboard/repo-connection-dialog/
+  - Repo Connection Journey: product/sitemap/pages/dashboard/repo-connection-journey/
 - Repository Page: product/sitemap/pages/repo/
   - PR Mapping Widget: product/sitemap/pages/repo/pr-mapping-dialog/
     - Documentation Attached Github Comment:
