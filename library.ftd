@@ -585,6 +585,7 @@ width: fill
 id: left-section
 
 --- ftd.column:
+width: fill
 align: center
 
 --- ftd.image:
@@ -644,6 +645,8 @@ padding-vertical: 100
 id: right-section
 
 --- ftd.column:
+width: fill
+align: center
 
 --- ftd.image:
 src: $image-hero-right
