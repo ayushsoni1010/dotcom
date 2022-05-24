@@ -137,7 +137,6 @@ our true-up model.
 
 
 -- lib.homepage:
-sections: $config.main-nav
 
 
 

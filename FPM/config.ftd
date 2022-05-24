@@ -68,13 +68,6 @@ $processor$: toc
 - Docs: /product/
 
 
--- fpm.toc-item list main-nav:
-$processor$: toc
-
-- Why FTD?: /why/
-- Blog: /blog/
-- Docs: /product/
-
 
 
 -- blg.post-data list post:

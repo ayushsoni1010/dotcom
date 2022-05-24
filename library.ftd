@@ -37,8 +37,6 @@ boolean is-last: false
 
 
 -- ds.page homepage:
-fpm.toc-item list sections:
-sections: $config.main-nav
 login-button: true
 widthfill: true
 

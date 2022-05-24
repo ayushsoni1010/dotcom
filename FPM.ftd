@@ -78,6 +78,7 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 ## Overview: dev/
 
 - Overview: dev/
+  nav-title: Developing `cdoc`
 - FTD Templates: dev/ftd/
 - Using `ftd_django.static()`: dev/static/
 - Decorators: dev/decorators/

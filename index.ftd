@@ -57,7 +57,6 @@ is exactly as per docs merge both code and doc PRs.
 
 
 -- lib.homepage:
-sections: $config.main-nav
 
 -- lib.hero-section: Products should reflect their Documentation. We make that a {lib.green:process.}
 hero-left-sub-heading: Solve it with
