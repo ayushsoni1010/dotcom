@@ -137,8 +137,7 @@ our true-up model.
 
 
 -- lib.homepage:
-nav-links: $config.main-nav
-on-pricing: true
+sections: $config.main-nav
 
 
 
