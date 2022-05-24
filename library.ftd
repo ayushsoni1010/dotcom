@@ -564,6 +564,7 @@ padding-top: 94
 role: $font.hero-large
 color: $fpm.color.main.text-strong
 padding-horizontal: 30
+text-align: center
 
 --- container: ftd.main
 
@@ -575,7 +576,8 @@ margin-top: 59
 --- ftd.column:
 width: fill
 align: center
-padding-left: 40
+padding-left: 30
+padding-right: 30
 id: hero-image-section
 
 --- ftd.row:
