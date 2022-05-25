@@ -39,7 +39,7 @@ boolean is-last: false
 -- ds.page homepage:
 login-button: true
 widthfill: true
-pricing-cta: true
+/pricing-cta: true
 
 
 
