@@ -1684,7 +1684,7 @@ width: fill
 align: center
 
 --- ftd.row:
-width: percent 50
+width: fill
 align: center
 
 --- ftd.text: $title
