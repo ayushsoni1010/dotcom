@@ -642,6 +642,7 @@ integer index:
 boolean is-last:
 width: fill
 boolean mouse-in: false
+z-index: 0
 
 --- ftd.row:
 width: 36
