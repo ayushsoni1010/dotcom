@@ -132,7 +132,7 @@ weight: 700
 
 
 -- ftd.font-size hero-lg:
-line-height: 52
+line-height: 60
 size: 48
 letter-spacing: 0
 
@@ -142,6 +142,16 @@ mobile: $hero-lg
 xl: $hero-lg
 weight: 700
 
+-- ftd.font-size hero-lg-mobile:
+line-height: 44
+size: 36
+letter-spacing: 0
+
+-- ftd.type hero-large-mobile: $fpm.font-display
+desktop: $hero-lg-mobile
+mobile: $hero-lg-mobile
+xl: $hero-lg-mobile
+weight: 700
 
 
 -- ftd.font-size cta-txt:

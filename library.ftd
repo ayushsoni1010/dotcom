@@ -334,7 +334,7 @@ align: center
 padding-top: 94
 
 --- ftd.text: $title
-role: $font.hero-large
+role: $font.hero-large-mobile
 color: $fpm.color.main.text-strong
 padding-horizontal: 30
 text-align: center
@@ -2087,6 +2087,7 @@ if: $link-text is not null
 text: $link-text
 color: $fpm.color.main.cta-primary.base
 link: https://www.ycombinator.com/companies/fifthtry
+role: $fpm.type.label-small
 
 --- container: ftd.main
 
@@ -2100,15 +2101,14 @@ height: auto
 caption title:
 body body: 
 optional string link-text:
-padding-horizontal: $fpm.space.space-4
-padding-vertical: $fpm.space.space-5
 optional ftd.image-src sites-logo:
 optional ftd.color bg-color: $fpm.color.main.background.step-1
 background-color: $bg-color
 spacing: 8
 border-radius: 8
 width: fill
-
+padding-horizontal: $fpm.space.space-4
+padding-vertical: $fpm.space.space-5
 
 --- ftd.image:
 src: $sites-logo
@@ -2119,8 +2119,6 @@ height: auto
 --- ftd.text: $title
 role: $fpm.type.heading-medium
 color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-6
-white-space: nowrap
 
 --- ftd.text:
 text: $body
@@ -2133,4 +2131,6 @@ if: $link-text is not null
 text: $link-text
 color: $fpm.color.main.cta-primary.base
 link: https://www.ycombinator.com/companies/fifthtry
+role: $fpm.type.label-small
+
 
