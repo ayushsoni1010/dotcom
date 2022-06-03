@@ -73,7 +73,7 @@ $processor$: toc
 
 -- blg.post-data list post:
 
--- post: How to setup continuous documentation for your Github Repo
+-- post: How to setup continuous documentation for your Gitlab Repo
 index: 1
 is-left: true
 thumbnail: $assets.files.images.blog.setup-gitlab.1.png
@@ -84,7 +84,7 @@ to date with your changing code by blocking pull requests from getting merged
 till documentation has been written and approved.
 
 
--- post: How to setup continuous documentation for your Gitlab Repository
+-- post: How to setup continuous documentation for your Github Repository
 index: 2
 is-left: false
 thumbnail: $assets.files.images.blog.setup-2.png
