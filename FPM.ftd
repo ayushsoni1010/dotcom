@@ -33,8 +33,6 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
   url: blog/cdoc/
 - Setup continuous documentation for your Github Repo in *under 2 mins!*
   url: blog/setup/
-- Setup continuous documentation for your Gitlab Repo in *under 2 mins!*
-  url: blog/setup-gitlab/
 - Taste Of `cdoc` on Day To Day: blog/day-to-day/
 - Doc in Git™: blog/git/
 - Lack Of Documentation Is Costing You: blog/cost/
