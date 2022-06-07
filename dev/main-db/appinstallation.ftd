@@ -1,0 +1,43 @@
+-- ds.page: `GithubAppInstallation Model`
+nav-title: Blog
+nav-title-url: blog/
+nav-sub-title: How to setup continuous documentation for your Github Repo
+nav-sub-title-url: blog/setup/
+login-button: true
+
+-- ds.code:
+lang: py
+
+
+
+class AppInstallation(models.Model):
+    """
+    This model takes care of the Github installations.
+    """
+
+    class InstallationState(models.TextChoices):
+        INSTALLED = "INSTALLED", "Installed"
+        UNINSTALLED = "UNINSTALLED", "Uninstalled"
+        SUSPENDED = "SUSPENDED", "Suspended"
+
+    social_app = models.ForeignKey(social_models.SocialApp, on_delete=models.PROTECT)
+    installation_id = models.BigIntegerField(unique=True, db_index=True)
+    creator = models.ForeignKey(get_user_model(), on_delete=models.PROTECT)
+    state = models.CharField(max_length=20, choices=InstallationState.choices)
+    account_name = models.CharField(max_length=200)
+    account_id = models.BigIntegerField()
+    account_type = models.CharField(max_length=20)
+    avatar_url = models.CharField(max_length=200)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("social_app", "installation_id")
+
+    def __str__(self) -> str:
+        return f"{self.account_name}[{self.installation_id}] Owner: {self.creator.username}"
+
+    def get_app_token(self):
+        if self.social_app.provider == "github":
+            return self.app_token.token
+        return None
+

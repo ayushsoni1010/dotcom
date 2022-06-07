@@ -1,0 +1,29 @@
+-- ds.page: `GithubRepoMap Model`
+nav-title: Blog
+nav-title-url: blog/
+nav-sub-title: How to setup continuous documentation for your Github Repo
+nav-sub-title-url: blog/setup/
+login-button: true
+
+-- ds.code:
+lang: py
+
+class UserRepoAccess(models.Model):
+    class AccessLevel(models.TextChoices):
+        OWNER = 50, "Owner"
+        MAINTAINER = 40, "Maintainer"
+        DEVELOPER = 30, "Developer"
+        REPORTER = 20, "Reporter"
+        GUEST = 10, "Guest"
+        MINIMAL = 5, "Minimal"
+        NO_ACCESS = 0, "No Access"
+
+    repository = models.ForeignKey(Repository, on_delete=models.CASCADE)
+    social_account = models.ForeignKey(
+        social_models.SocialAccount, on_delete=models.CASCADE
+    )
+    access = models.IntegerField(choices=AccessLevel.choices)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("repository", "social_account")
