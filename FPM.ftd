@@ -97,7 +97,6 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
   - Activity Table: dev/main-db/activity/
   - AppInstallation Table: dev/main-db/appinstallation/
   - AppUser Table: dev/main-db/appuser/
-  - dev/main-db/index/
   - MonitoredPullRequest Table: dev/main-db/monitoredpullrequest/
   - Monitored Repository Map: dev/main-db/monitoredrepositorymap/
   - PR Approval Table: dev/main-db/prapproval/
