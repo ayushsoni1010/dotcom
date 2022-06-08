@@ -63,3 +63,27 @@ class PullRequestCheck(models.Model):
             )
             self.run_id = check_run_instance.id
         super().save(*args, **kwargs)
+
+-- ds.h2: `run_id`
+
+`Run id` at the provider's end
+
+-- ds.h2: `unique_id`
+
+Unique identifier for the check run.
+
+-- ds.h2: `run_sha`
+
+`SHA` of the head commit when the check was run.
+
+
+-- ds.h2: `ref_pull_request`
+
+Foreign key to the `MonitoredPullRequest` model.
+
+
+-- ds.h2: `force_approve` [Deprecated]
+
+Maintains the state of the approval action.
+- None: If the documentation_pr exists and pr has been approved(i.e. webhook for approval received)
+- True: The documentation_pr does not exist and the action was invoked manually

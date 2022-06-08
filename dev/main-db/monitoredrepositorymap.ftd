@@ -30,3 +30,26 @@ class MonitoredRepositoryMap(models.Model):
 
     class Meta:
         unique_together = ("code_repo", "documentation_repo")
+
+-- ds.h2: `code_repo`
+
+Foreign Key to the [Repository Table](/dev/main-db/repository). Represents the
+Code repository for the Repository mapping
+
+
+-- ds.h2: `documentation_repo`
+
+Foreign Key to the [Repository Table](/dev/main-db/repository). Represents the
+Documentation repository for the Repository mapping
+
+
+-- ds.h2: `integration_type` [Deprecated]
+
+Represents the type of integration to be performed.
+- FULL: restricts the PRs to process only after the related PR is merged
+- PARTIAL: check is not restrictive
+
+
+-- ds.h2: `created_at`
+
+Timestamp of the creation of the mapping

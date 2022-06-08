@@ -85,3 +85,21 @@ class MonitoredPullRequest(models.Model):
             return self.prapproval_set.latest("created_on")
         except:
             return None
+
+-- ds.h2: `code_pull_request`
+
+Unique Foreign key to the [PullRequest](/dev/main-db/monitoredpullrequest/)
+
+-- ds.h2: `documentation_pull_request`
+
+Foreign key to the documentation pull request.
+
+-- ds.h2: `pull_request_status`
+
+State management of the status on the cdoc platform. Can be one of the following:
+- Not Connected
+- Approval Pending
+- Stale Code
+- Stale Approval
+- Approved
+- Manual Approval

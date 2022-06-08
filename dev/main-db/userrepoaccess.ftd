@@ -27,3 +27,28 @@ class UserRepoAccess(models.Model):
 
     class Meta:
         unique_together = ("repository", "social_account")
+
+
+-- ds.h2: `repository`
+
+Foreign key to the `Repository` model.
+
+
+-- ds.h2: `social_account`
+
+Foriegn key to the `allauth.social.SocialAccount` model.
+
+-- ds.h2: `access`
+
+Integer choice field. Access scope can be one of the following:
+- 50: Owner
+- 40: Maintainer
+- 30: Developer
+- 20: Reporter
+- 10: Guest
+- 5: Minimal
+- 0: No Access
+
+-- ds.h2: `created_at`
+
+Timestamp of when the `UserRepoAccess` row was created on cdoc platform.

@@ -26,3 +26,29 @@ class Repository(models.Model):
 
     def get_url(self):
         return f"https://{self.app.provider}.com/{self.repo_full_name}/"
+
+
+-- ds.h2: `repo_id`
+
+Unique identifier for the repository at the provider's end.
+
+
+-- ds.h2: `repo_name`
+
+Name of the repository at the provider's end.
+
+-- ds.h2: `repo_full_name`
+
+Name of the repository along with the full namespace. For example,
+- `fifthtry/cdoc`
+- `fifthtry/ftd`
+- `fifthtry/fpm`
+
+-- ds.h2: `app`
+
+Foreign key reference to the `allauth.social.SocialApp` model.
+
+
+-- ds.h2: `created_at`
+
+Timestamp when the repository row was created on cdoc platform.
