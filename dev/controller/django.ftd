@@ -1,0 +1,4 @@
+-- ft.page: FPM Controller DJango Service
+
+FPM `controller` is a django service that launches [`fpm
+instances`](/dev/controller/instance/).

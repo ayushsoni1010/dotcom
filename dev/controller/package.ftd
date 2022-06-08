@@ -1,0 +1,39 @@
+-- ft.page: `packages table`
+
+This table contains information about all the packages that we are serving.
+
+-- ft.code:
+lang: py
+
+class Package(models.Model):
+    name = models.TextField()
+    git = models.TextField()
+    hash = models.TextField(null=True)
+    plan = models.TextField()
+    hours = models.IntegerField()
+    status = models.TextField()
+
+-- ft.h1: `hash`
+
+This is the commit hash that is currently deployed.
+
+-- ft.h1: `git`
+
+The git URL that we can clone from.
+
+-- ft.h1: `plan`
+
+We have the following plans for now:
+
+-- ft.h2: `free`
+
+These plans would be cleaned up every hr if they are idle. Also they will get
+18 hrs per day max.
+
+-- ft.h2: `paid`
+
+These plans will not be cleaned up when idle.
+
+
+-- ft.h2: `status`
+

@@ -1,0 +1,29 @@
+-- ds.page: FPM Controller Service
+
+FPM Controller Machine is the entry point, all domains being served by us point
+to this machine. For now we have a dedicated single instance, in future we will
+make it load balanced etc.
+
+This service runs [nginx](/dev/controller/nginx/) and
+[django](/dev/controller/django/).
+
+-- ds.image:
+src: $assets.images.controller.png
+
+FPM Controller Server
+
+
+-- ds.code: packages table
+lang: txt
+
+select * from packages;
+| amitu.com       | github.com/amitu/amitu/main.zip | dc123123123 | 123.123.123.123 | <last request timestamp> | running |
+| amitu.com/blog/ | github.com/amitu/blog/main.zip  | 3e3e3e      | 123.123.123.124 |
+| abrark.com       | github.com/amitu/amitu/main.zip | dc123123123 | 123.123.123.123 |
+
+
+-- ds.markdown:
+
+IP is nullable.
+
+-- h1: Nginx
