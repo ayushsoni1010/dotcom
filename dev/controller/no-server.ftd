@@ -1,7 +1,8 @@
 -- ft.page: No Server View
 
-Nginx sends traffic to django when there is not `fpm instance` correspnding to
-any package. This django view is responsible for serving all such requests.
+Nginx sends traffic to django when there is not [`fpm
+instance`](/dev/controller/instance/) correspnding to some package. This django
+view is responsible for serving all such requests.
 
 This view shows the info "hey we are not yet ready, this is the state". This is
 like how heroku returns a non configured or server down page.

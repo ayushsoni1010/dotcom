@@ -16,3 +16,11 @@ The logic of cleanup is in the django serice, cronjob will simply call
 /hourly-cleanup/ on django.
 
 When cleaning up it will first call `/terminate/` API to django.
+
+-- ft.h1: How would we detect if a machine was idle?
+
+1. We can ask each `fpm server` if they got any request in last 1 hrs.
+2. We can also ask each fpm server to notify us if they have not received any
+   request in last 1 hr.
+
+Option 2 has an advantage that we do not need any polling.

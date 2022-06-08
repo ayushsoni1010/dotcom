@@ -3,6 +3,9 @@
 `/get-git/` API receieves the `ec2_reservation` or `ec2_instance_id` from the
 fpm instance, and returns the zip file of the package.
 
+This API is implemented by [`fpm controller django
+service`](/dev/controller/django/).
+
 NOTE: Shobhit will check and find out when an EC2 starts do they have access to
 both `ec2_reservation` and `ec2_instance_id`, in which case, the intial null
 `ec2_instance_id` column of the [`dedicated instance`

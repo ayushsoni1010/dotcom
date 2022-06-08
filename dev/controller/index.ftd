@@ -10,20 +10,9 @@ This service runs [nginx](/dev/controller/nginx/) and
 -- ds.image:
 src: $assets.images.controller.png
 
-FPM Controller Server
+The main operations are:
 
-
--- ds.code: packages table
-lang: txt
-
-select * from packages;
-| amitu.com       | github.com/amitu/amitu/main.zip | dc123123123 | 123.123.123.123 | <last request timestamp> | running |
-| amitu.com/blog/ | github.com/amitu/blog/main.zip  | 3e3e3e      | 123.123.123.124 |
-| abrark.com       | github.com/amitu/amitu/main.zip | dc123123123 | 123.123.123.123 |
-
-
--- ds.markdown:
-
-IP is nullable.
-
--- h1: Nginx
+- [adding a new package](/dev/controller/add-package/)
+- [hourly cleanup of idle machines on free plan](/dev/controller/hourly-cleanup/)
+- [handing no server for idle machines on free plan](/dev/controller/no-server/)
+- [updating a package](/dev/controller/updating-package/)

@@ -2,6 +2,9 @@
 
 A new package would be added by `/add-package/` api.
 
+This API is implemented by [`fpm controller django
+service`](/dev/controller/django/).
+
 -- ft.h1: Input
 
 -- ft.h2: `name`
