@@ -899,7 +899,7 @@ padding-left: 10
 
 -- ftd.column testimonial:
 caption title:
-optional ftd.image-src bg-image-left: $assets.files.assets.images.testimonial-bg-leds.png
+optional ftd.image-src bg-image-left: $assets.files.assets.images.testimonial-bg-left.png
 optional ftd.image-src bg-image-right: $assets.files.assets.images.testimonial-bg-right.png
 optional ftd.image-src bg-image: $assets.files.assets.images.testimonial_top_bg-mobile.png
 optional string left-testimony-body:
