@@ -10,10 +10,16 @@ We have decided to pick EC2 for now.
 lang: py
 
 class DedicatedInstance(models.Model):
-    package = models.ForeignKey(Package)
-    ec2_reservation = models.TextField()
-    ec2_instance_id = models.TextField(null=True)
-    status = models.TextField()
+    package = models.ForeignKey(Package, on_delete=models.CASCADE)
+    ec2_reservation = models.CharField(db_index=True, max_length=255)
+    ec2_instance_id = models.CharField(null=True, blank=True, max_length=255)
+    status = models.CharField(
+        help_text="status of EC2 instance, ready, initializing, ect...",
+        max_length=127,
+        choices=instance_status,
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
 -- ft.h1: `ec2_reservation`
 

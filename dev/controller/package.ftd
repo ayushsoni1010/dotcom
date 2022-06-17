@@ -6,20 +6,32 @@ This table contains information about all the packages that we are serving.
 lang: py
 
 class Package(models.Model):
-    name = models.TextField()
-    git = models.TextField()
-    hash = models.TextField(null=True)
-    plan = models.TextField()
-    hours = models.IntegerField()
-    status = models.TextField()
+    name = models.CharField(
+        unique=True, help_text="name of the FPM package", max_length=255
+    )
+    base = models.CharField(help_text="git url of FPM package", max_length=1023)
+    hash = models.CharField(
+        null=True, blank=True, help_text="latest deployed hash of git", max_length=512
+    )
+    plan = models.CharField(
+        help_text="We have different plans like free, paid for serving FPM package",
+        max_length=255,
+    )
+    hours = models.IntegerField(default=0)
+    status = models.CharField(
+        help_text="status of the package", max_length=255, choices=package_status
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
 -- ft.h1: `hash`
 
 This is the commit hash that is currently deployed.
 
--- ft.h1: `git`
+-- ft.h1: `base`
 
-The git URL that we can clone from.
+The github, gitlab or bit buket URL that we can clone from or can download
+individual files.
 
 -- ft.h1: `plan`
 
@@ -36,4 +48,3 @@ These plans will not be cleaned up when idle.
 
 
 -- ft.h2: `status`
-
