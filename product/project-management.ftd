@@ -1,15 +1,15 @@
--- ft.page: Project Management
+-- ds.page: Project Management
 
 At FifthTry we follow a project management practice that takes a project from
 initial conception stage till publishing updates about it for all stakeholders.
 
--- ft.h1: Work In Progress
+-- ds.h1: Work In Progress
 
 We use Github Issues to manage projects. For each project there is a Github
 Issue, which keeps a summary of the project, and status of the project. Issues
 are created against respective repositories.
 
--- ft.h2: Where Do Issues Live?
+-- ds.h2: Where Do Issues Live?
 
 Most of our work is related to some software project, and the issue for that is
 created against the repository of that project. Some of our tasks are not
@@ -17,7 +17,7 @@ related to any specific project, in that case we have two repositories,
 `FifthTry/handbook` and `FifthTry/fti`, for public and private stuff
 respectively, and we create the issue against one of these.
 
--- ft.h2: `<Sprint Project>`
+-- ds.h2: `<Sprint Project>`
 
 We work in 2-week sprints. For every sprint we create a Github Project, and all
 the issues that we want to work on in that sprint to that Project. Project name
@@ -25,7 +25,7 @@ for Sprint starts with "Sprint-<number>: <sprint title>".
 
 Sprint Projects are private.
 
--- ft.h2: Project Tracking: `/current/`
+-- ds.h2: Project Tracking: `/current/`
 
 `fifthtry.com/current/` shows the status of all the tasks in the current sprint
 by fetching the tasks from Sprint project, and show all non-fti-tasks here.
@@ -41,7 +41,7 @@ Accepted", "In Progress", "Code Done", "Finished". Each task moves forward
 through these statuses in Github Project. We also use other labels like "Stuck",
 "On Track" etc to indicate project status.
 
--- ft.h1: News Updates
+-- ds.h1: News Updates
 
 Once a task is done we have to publish it for public consumption in the news
 section of respective project, eg `ftd.dev/news/` so people who are interested
@@ -55,7 +55,7 @@ We also store this information on `fifthtry.com/people/<person>/`, and on
 `i.fifthtry.com/people/<person>/`, so people can what someone specifically is
 doing.
 
--- ft.h2: `<task.ftd>`
+-- ds.h2: `<task.ftd>`
 
 Once a task is done, our `gpm` service generates an FTD file containing all
 information about that task, which is stored in the `news` folder of respective
@@ -78,7 +78,38 @@ In future we will automate this, for now this is done manually.
 -------
 
 
--- ft.h1: Some Note Points
+-- ds.h1: Project Statuses
+
+We have different status to track for each task
+
+-- ds.h2: Prioritised
+
+Project has been prioritised, means it has picked by someone in the team and
+discussion started.
+
+
+-- ds.h2: Requirement Communicated
+
+After prioritised the task, we have to discuss requirements about the project,
+so there will be a video and documentation about the task, after that been
+communicated we will update status to `Requirement Communicated`
+
+-- ds.h2: In Progress
+
+After requirement communicated, someone from team will pick that task to start
+work, before start the work, person has to updated the status to `In Progress`
+
+-- ds.h2: Code Ready
+
+Task will be moved to `Code Ready` status, when branch is ready to merge.
+
+-- ds.h2: Finished
+
+Task will moved to `Finished` status when everything is done, like code merged
+and documentation is also merged, demo video is ready.
+
+
+-- ds.h1: Some Note Points
 
 fti will have a page current.ftd, It will only contain current on going tasks
 and it will also contain issue description
