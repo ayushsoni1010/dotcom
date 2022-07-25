@@ -13,13 +13,13 @@ discussion started.
 
 -- ds.h2: Requirement Accepted
 
-After prioritised the task, we have to discuss requirements about the project,
-so there will be a video and documentation about the task, after that been
-communicated we will update status to `Requirement Communicated`
+After prioritised the task, people have to discuss requirements about the
+project, so there will be a documentation/video about the task, after that has
+been communicated we will update status to `Requirement Accepted`
 
 -- ds.h2: In Progress
 
-After requirement communicated, someone from team will pick that task to start
+After requirement accepted, someone from team will pick that task to start
 work, before start the work, person has to updated the status to `In Progress`
 
 -- ds.h2: Code Ready
