@@ -78,12 +78,7 @@ In future we will automate this, for now this is done manually.
 -------
 
 
--- ft.h1: `ftd record update`
-
-
-
--- ft.h1: Django API
-
+-- ft.h1: Some Note Points
 
 fti will have a page current.ftd, It will only contain current on going tasks
 and it will also contain issue description
