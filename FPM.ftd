@@ -78,6 +78,7 @@ base: https://raw.githubusercontent.com/fifthtry/dotcom/main
 ## Project Management: /product/project-management
 
 - FifthTry Project Management: /product/project-management
+- GitHub Statuses: /product/project-management/status
 
 
 # Development: dev/
