@@ -1420,7 +1420,7 @@ fpm.toc-item list footer-nav:
 padding-horizontal: 48
 background-color: $footer-bg
 width: fill
-padding-vertical: 34
+padding-top: 34
 padding-horizontal:16
 padding-bottom: 16
 spacing: 24
@@ -2130,7 +2130,7 @@ text: $link-text
 role: $fpm.type.label-small
 color: $fpm.color.main.cta-primary.base
 link: https://www.ycombinator.com/companies/fifthtry
-role: $fpm.type.label-small
+
 
 --- container: ftd.main
 
@@ -2176,6 +2176,6 @@ text: $link-text
 role: $fpm.type.label-small
 color: $fpm.color.main.cta-primary.base
 link: https://www.ycombinator.com/companies/fifthtry
-role: $fpm.type.label-small
+
 
 
