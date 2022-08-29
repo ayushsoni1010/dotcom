@@ -1417,7 +1417,6 @@ optional ftd.image-src logo:
 optional ftd.color footer-bg:
 optional string copyright:
 fpm.toc-item list footer-nav: 
-padding-horizontal: 48
 background-color: $footer-bg
 width: fill
 padding-top: 34
