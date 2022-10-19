@@ -11,8 +11,12 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fpm.dependency: fifthtry.github.io/blog-components as blg
 -- fpm.dependency: fifthtry.github.io/octicon
 -- fpm.dependency: fifthtry.github.io/roboto-mono as mono
+-- fpm.dependency: fifthtry.github.io/event as event
+-- fpm.dependency: fifthtry.github.io/common as common
 
 
+
+-- fpm.auto-import: event
 -- fpm.auto-import: ds
 -- fpm.auto-import: fifthtry.com/FPM/config
 -- fpm.auto-import: fifthtry.com/assets
@@ -41,6 +45,12 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 - Lack Of Documentation Is Costing You: blog/cost/
 - Does Writing Documentation Slow You Down?: blog/slow/
 
+
+# Events: /events/
+
+- FTD Workshop on Todo App 21st Oct: /events/
+- FifthTry Demo Day #5: /events/demo5/
+- FifthTry Demo Day #6: /events/demo6/
 
 
 # Product Manual: product/

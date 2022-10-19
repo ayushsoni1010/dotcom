@@ -1,0 +1,56 @@
+-- import: fpm
+
+-- common.host amitu: Amit Upadhyay
+title: CEO, FifthTry, Inc
+email: amitu@fifthtry.com
+website: www.fifthtry.com
+avatar: $assets.files.images.events.amitu.jpg
+
+-- common.venue venue:
+name: Zoom
+location: Zoo
+website: will-be-updated-soon
+link: will-be-updated-soon
+
+-- ds.page:
+
+; create new event package - add host details into common-
+-- event.event: FTD Workshop on Todo App
+src: $assets.files.images.events.workshop-21st-oct.png
+host: $amitu
+venue: $venue
+month: Oct
+date: 21
+day: Friday
+timestamp: Fri, 21 Oct 2022, 12:00 noon
+presence: In Person
+share-title: Share this event
+share-link: buttonlink
+form-active: false
+
+--- ds.h3: Registration
+
+--- registration:
+
+
+--- ds.h3: Event Information
+
+FifthTry founders and developers are going to tech how to build the kameri todo 
+frontend in FTD using existing django service.
+
+
+
+
+
+
+
+
+
+-- ftd.text registration: Click here to Register
+role: $fpm.type.copy-tight
+color: $fpm.color.main.cta-primary.base
+open-in-new-tab: true
+link: https://forms.gle/EAKcwRAQWQ259Xds9
+padding-bottom: 1
+border-bottom: 1
+ margin-top: -12
