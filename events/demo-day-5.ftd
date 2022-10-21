@@ -1,0 +1,23 @@
+-- ds.page: FifthTry Demo Day #5
+
+Date: 7th Oct 2022
+
+-- ds.youtube:
+v: BwWbsVe-8XE
+
+
+-- ds.markdown:
+
+In this demo day Amit Upadhyay did a recap of what we did in Sept 2022.
+
+Arpita Jaiswal showed the progress she has made in FTD 0.3 syntax.
+
+Abrar Khan has built a todo app, the UI is in FTD and the backend is in Django.
+
+Rithik Seth has built support for intra page linking, so you can add table of
+content for headings in the current document.
+
+Aditi Rai and Aviral Verma showed the progress they have made in the movie db
+app that is going to be used for our upcoming workshop.
+
+And finally Ganesh Salunke showed the slideshow support in FTD.

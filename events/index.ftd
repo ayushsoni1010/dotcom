@@ -14,8 +14,7 @@ link: https://us02web.zoom.us/j/89979537826?pwd=TkVVSk9ORDlzY2NnWTJSRHpyd29JUT09
 
 -- ds.page:
 
-; create new event package - add host details into common-
--- event.event: FTD Workshop on Todo App
+-- event.event: FTD Workshop
 src: $assets.files.images.events.workshop-22nd-oct.png
 host: $amitu
 venue: $venue
@@ -23,7 +22,7 @@ month: Oct
 date: 22
 day: Saturday
 timestamp: Fri, 22 Oct 2022, 11:30am
-presence: In Person
+presence: Online
 form-active: false
 
 --- ds.h3: Registration
@@ -33,9 +32,15 @@ form-active: false
 
 --- ds.h3: Event Information
 
-FifthTry founders and developers are going to tech how to build the kameri todo 
-frontend in FTD using existing django service.
+FTD is possible replacement for React for building frontends. In this workshop
+you will learn the basics of ftd and build a web app that talks to existing
+web service. We will build a todo application from scratch.
 
+Basic knowledge of HTTP api is needed, but no prior knowledge of frontend is
+required.
+
+The workshop is taught by the creators of the FTD language, and you will learn
+about the motivation and design decisions for FTD language as well.
 
 
 
