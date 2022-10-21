@@ -8,24 +8,22 @@ avatar: $assets.files.images.events.amitu.jpg
 
 -- common.venue venue:
 name: Zoom
-location: Zoo
-website: will-be-updated-soon
-link: will-be-updated-soon
+location: Zoom
+website: https://bit.ly/3ShsyTH
+link: https://us02web.zoom.us/j/89979537826?pwd=TkVVSk9ORDlzY2NnWTJSRHpyd29JUT09
 
 -- ds.page:
 
 ; create new event package - add host details into common-
 -- event.event: FTD Workshop on Todo App
-src: $assets.files.images.events.workshop-21st-oct.png
+src: $assets.files.images.events.workshop-22nd-oct.png
 host: $amitu
 venue: $venue
 month: Oct
-date: 21
-day: Friday
-timestamp: Fri, 21 Oct 2022, 12:00 noon
+date: 22
+day: Saturday
+timestamp: Fri, 22 Oct 2022, 11:30am
 presence: In Person
-share-title: Share this event
-share-link: buttonlink
 form-active: false
 
 --- ds.h3: Registration
