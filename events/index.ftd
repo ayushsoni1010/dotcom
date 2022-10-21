@@ -14,7 +14,7 @@ link: https://us02web.zoom.us/j/89979537826?pwd=TkVVSk9ORDlzY2NnWTJSRHpyd29JUT09
 
 -- ds.page:
 
--- event.event: FTD Workshop
+-- event.event: FTD Hands-On Workshop
 src: $assets.files.images.events.workshop-22nd-oct.png
 host: $amitu
 venue: $venue
