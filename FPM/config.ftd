@@ -14,6 +14,9 @@ light: $assets.files.assets.images.logo-fifthtry-dark.svg.light
 dark: $assets.files.assets.images.logo-fifthtry-dark.svg.dark
 
 
+-- ds.site-name:
+
+
 -- boolean is-mobile: false
 
 -- is-mobile: true

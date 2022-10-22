@@ -15,7 +15,7 @@ link: https://us02web.zoom.us/j/89979537826?pwd=TkVVSk9ORDlzY2NnWTJSRHpyd29JUT09
 -- ds.page:
 
 -- event.event: FTD Hands-On Workshop (Beta)
-src: $assets.files.images.events.workshop-22nd-oct.png
+src: $assets.files.images.events.ftd-hands-on-workshop-beta-22nd-oct-2022.png
 host: $amitu
 venue: $venue
 month: Oct
