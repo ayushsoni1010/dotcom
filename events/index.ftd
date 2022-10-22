@@ -53,11 +53,24 @@ decent computer, but there is no need to install any software before hand
 
 
 
--- ftd.text registration: Click here to Register
+-- ftd.column registration:
+width: fill
+
+--- ftd.row:
+spacing: 10
+
+--- ftd.image:
+src: $assets.files.images.events.talk-bubble-icon.svg
+width: 22
+height: 22
+align: center
+
+--- ftd.text: Join Workshop On Discord
 role: $fpm.type.copy-tight
 color: $fpm.color.main.cta-primary.base
 open-in-new-tab: true
-link: https://forms.gle/EAKcwRAQWQ259Xds9
+link: https://discord.gg/d2MgKBybEQ
 padding-bottom: 1
 border-bottom: 1
+align: center
  margin-top: -12
