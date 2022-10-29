@@ -6,71 +6,23 @@ email: amitu@fifthtry.com
 website: www.fifthtry.com
 avatar: $assets.files.images.events.amitu.jpg
 
--- common.venue venue:
-name: Zoom
-location: Zoom
-website: https://bit.ly/3ShsyTH
-link: https://us02web.zoom.us/j/89979537826?pwd=TkVVSk9ORDlzY2NnWTJSRHpyd29JUT09
 
--- ds.page:
+-- ds.page: FifthTry Events
 
--- event.event: FTD Hands-On Workshop (Beta)
-src: $assets.files.images.events.ftd-hands-on-workshop-beta-22nd-oct-2022.png
-host: $amitu
-venue: $venue
-month: Oct
-date: 22
-day: Saturday
-timestamp: Fri, 22 Oct 2022, 11:30am
-presence: Online
-form-active: false
+On this page you will find past and upcoming events at FifthTry. Subscribe us
+on [Discord](https://discord.gg/d2MgKBybEQ), [Twitter](https://twitter.com/FifthTryHQ),
+or [LinkedIn](https://www.linkedin.com/company/69613898/) to get notifications
+about new events.
 
---- ds.h3: Registration
+-- ds.h1: Upcoming: Demo Day #9
 
---- registration:
+Our 9th event Demo Day will happen on 4th Nov 2022.
 
+-- ds.h1: Past Events
 
---- ds.h3: Workshop Details
+- [Demo Day #8](/events/demo-day-8/)
+- [FTD Hands-On Workshop (Beta) 1C1](/events/c1w1/)
+- [Demo Day #7](/events/demo-day-7/)
+- [Demo Day #6](/events/demo-day-6/)
+- [Demo Day #5](/events/demo-day-5/)
 
-FTD language is a possible replacement for JavaScript/React to build web
-front-ends. In this workshop you will learn the basics of FTD and build a web
-app that talks to existing web services. We will build an application for
-managing to-do lists from scratch.
-
-Basic knowledge of HTTP API is needed, but no prior knowledge of front-end is
-required.
-
-The workshop is taught by the creators of FTD, and you will learn about the
-motivation and design decisions that shaped FTD as well.
-
-In this hands-on workshop we will go through a series of exercises in stages and
-write code to get the application working. Participants are required to have a
-decent computer, but there is no need to install any software before hand
-(other than your favorite editor).
-
-
-
-
-
-
--- ftd.column registration:
-width: fill
-
---- ftd.row:
-spacing: 10
-
---- ftd.image:
-src: $assets.files.images.events.talk-bubble-icon.svg
-width: 22
-height: 22
-align: center
-
---- ftd.text: Join Workshop On Discord
-role: $fpm.type.copy-tight
-color: $fpm.color.main.cta-primary.base
-open-in-new-tab: true
-link: https://discord.gg/d2MgKBybEQ
-padding-bottom: 1
-border-bottom: 1
-align: center
- margin-top: -12

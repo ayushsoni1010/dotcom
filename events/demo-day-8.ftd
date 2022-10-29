@@ -1,0 +1,134 @@
+-- ds.page: FifthTry Demo Day #8
+
+Our 8th weekly demo event happened on 28st Oct 2022. We show case what people in
+FifthTry have built in this week. This is an important part of our, how to do
+remote right initiative, we are now fully remote company.
+
+
+-- ds.youtube:
+v: X4DKoyUDHUQ
+
+
+-- ds.h1: Overview of Last Workshop
+
+Amit Upadhyay speaks about the last workshop we conducted, attended by 10 non
+FifthTry people. In this workshop we only managed to cover a third of the
+content we planned to cover, so it is now part 1 or three part workshop.
+
+The people who attended this workshop are now called cohort 1 (C1), we will be
+conducting more workshops, W2 and W3 for C1, namely C1W2 and C1W3.
+
+We also plan to create a new cohort of another 10 or so people, C2, and start
+their workshops soon.
+
+-- ds.h1: Workshop Page On FifthTry.com
+
+We have created these pages now on FifthTry. As you [workshop page](/events/c1w1/)
+looks a bit like `lu.ma` page, but we do not have to rely on another SAAS. This
+demonstrates the power of FTD. Workshop page is powered by
+[fifthtry.github.io/event](https://fifthtry.github.io/event/) that Ganesh demod
+in our last demo day, and can be used by anyone to create event page for their
+site.
+
+-- ds.h1: Workshop Content On FTD.dev
+
+I also demod how we moved our workshop content from [Github](https://github.com/ftd-lang/ftd-workshop)
+to [ftd.dev/workshop/](https://ftd.dev/workshop/), as you can see the its lot
+easier to navigate the workshop content on `ftd.dev` compared to Github.
+
+All of this also emphasises that people should be concentrating on their main
+domain for such stuff, and not use an dozens of SAAS for different things.
+
+We plan to add localstorage based read tracking in the workshop soon, so you will
+be able to mark tasks as done, and resume the workshop when you come back, making
+FPM/ftd way of storing workshop content significanlty better than using Github.
+
+-- ds.h1: WASM Based App On Heroku
+
+Shobhit showed [kameri.herokuapp.com](https://kameri.herokuapp.com/demo/) running
+https://github.com/FifthTry/kameri, our WASM powered todo application. WASM
+support in [FPM](https://fpm.dev) is taking shape now.
+
+Unlike the same [todo app implemented using Django](https://github.com/FifthTry/kameri-app),
+where we had to deploy both FPM dyno and a dyno running Django, the one with WASM
+only has one dyno running.
+
+This is the future of backend development I believe. We can have dozens of such
+apps on your domain now, and with WASM only one server would be needed, and the
+apps may not share anything else other than being written in WASM. Where as if
+you follow the current state of art, you have to either hope that each of those
+apps are written in same technology and somehow can be made to run in same
+process, or end up having dozens of servers running, and deal with Kubernetes and
+all shorts of Devops knowledge heavy stuff to deply.
+
+With FPM/WASM anyone can deploy apps, no devops or even programming knowledge
+needed, look at [how easy it is to add this wasm APP to your existing FPM
+site](https://kameri.herokuapp.com/existing-package/).
+
+Shobhit has written an early draft of a [how-to on
+WASM](https://github.com/ftd-lang/fpm.dev/pull/90/files). We are going to add a
+fourth part to our workshop, W4, where we would learn how to write WASM app.
+
+-- ds.h1: FPM Heroku Buildpack
+
+Heroku has a concept of [buildpacks](https://devcenter.heroku.com/articles/buildpacks),
+Shobhit has written a buildpack for FPM apps:
+[fpm-heroku-buildpack](https://github.com/ftd-lang/fpm-heroku-buildpack).
+
+Heroku has a [marketplace for such buildpacks](https://elements.heroku.com/buildpacks),
+we will be submitting our buildpack there shortly. This will help us in
+distribution, one of the biggest challenges for a startup.
+
+-- ds.h1: Event Support In FTD
+
+Arpita has been relentlessly working on FTD 0.3, and has just added support for
+event handling. We have a way to write custom functions in FTD, which we demoed
+in the [demo day #7](/events/demo-day-7/), these functions used to run on serve
+during page generation phase.
+
+In this Arpita has added transpilation support to this language, so these custom
+FTD functions can be called from event handlers in the frontend as well. This is
+the most exciting feature added to FTD to date!
+
+You can checkout a [counter she has written](https://ftd-lang.github.io/ftd/8-counter.html),
+[source code](https://github.com/ftd-lang/ftd/blob/main/t/html/8-counter.ftd).
+
+One of the charms of using Node on server side, so your code can work both in
+frontend and on backend. With functions working on both server side and on
+client side, we have managed to capture this advantage, if you write your
+backend in django etc, you are going to still have to re-write same functions
+in JavaScript to make them work on frontend. With FTD/FPM you do not have to
+repeat yourself.
+
+With this change, trickiest portions of FTD 0.3 is done, we have to add a lot
+of styling support, and small things to make FTD 0.3 a full replacement for 0.2,
+we hope to finish this in another 7-10 days, and get doc-site working asap using
+0.3.
+
+
+-- ds.h1: WIP Mount Point Support
+
+Abrar has been working on mount point support, and it is starting to get ready,
+he showed the work in progress demo of it.
+
+When using FPM, a site, say `abrark.com` can use any number of FPM packages, say
+`fifthtry.github.io/kameri-app`. Without `mount-point`, the full URL of
+`kameri-app` would be `https://abrark.com/-/fifthtry.github.io/kameri-app/`. As
+you can see this is not a very clean URL. We need such namespaced URL scheme as
+we expect end users to deply any number of such applications. But if say Abrar
+is going to use this todo app daily, he would want a clean URL, which he can do
+by adding one line to `fpm.depdency`, and get clean URL `https://abrark.com/todos/`.
+
+
+-- ds.h1: Search in Movie DB App
+
+Aviral and Aditi demothe search feature to the [Movie DB
+app](https://github.com/FifthTry/movie-db), a full stack FPM app with frontend
+written in FTD and backend in Django.
+
+-- ds.h1: That's All Folks!
+
+See you on the next event on 4th Nov! Subscribe us
+on [Discord](https://discord.gg/d2MgKBybEQ), [Twitter](https://twitter.com/FifthTryHQ),
+or [LinkedIn](https://www.linkedin.com/company/69613898/) to get learn more
+about what's up with FifthTry.
