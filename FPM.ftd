@@ -33,18 +33,14 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 
 
-# Handbook: /handbook/
-skip: true
-document: h/index.ftd
+# Handbook: /h/
+  skip: true
 
 ## How We Work: /h/work/
 
-- What Are We Building?: /roadmap/
-  document: h/roadmap.ftd
-- Demo Day: /dd/
-  document: h/dd.ftd
-- One On Ones: /ooo/
-  document: h/ooo.ftd
+- What Are We Building?: /h/roadmap/
+- Demo Day: /h/dd/
+- One On Ones: /h/ooo/
 
 ## How We Think: /h/think/
 
