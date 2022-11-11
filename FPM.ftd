@@ -13,6 +13,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fpm.dependency: fifthtry.github.io/roboto-mono as mono
 -- fpm.dependency: fifthtry.github.io/event as event
 -- fpm.dependency: fifthtry.github.io/common as common
+-- fpm.dependency: fifthtry.github.io/admonitions as cbox
 
 
 
@@ -30,6 +31,22 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 - Why `CDOC`?: why/
 - How Is Life Before `cDoc`?: product/before/-/why
 
+
+
+# Handbook: /handbook/
+skip: true
+document: h/index.ftd
+
+## How We Work: /h/work/
+
+- What Are We Building?: /roadmap/
+  document: h/roadmap.ftd
+- Demo Day: /dd/
+  document: h/dd.ftd
+- One On Ones: /ooo/
+  document: h/ooo.ftd
+
+## How We Think: /h/think/
 
 
 
