@@ -46,7 +46,7 @@ Who: Arpita
 
 We have to launch apps, auth, wasm.
 
-Who: Abrar
+Who: AbrarK
 
 -- ds.h2: Component Library
 
@@ -56,10 +56,9 @@ Who: Ganesh
 
 
 
-
-
-
 -- ds.h1: Q: What Do We Want To Do By Jan 2023 End?
+
+We must have at least 100 domains (outside us). (not sub domains).
 
 This is our quarterly goal. We will update this every month or so.
 
@@ -84,6 +83,8 @@ Importers:
 
 
 -- ds.h1: Y: What Do We Want To Do By 2023 End?
+
+We must have 10K domains (not sub domains) using FTD/FPM.
 
 This is our rolling annual goal. We will update it every quarter or so.
 

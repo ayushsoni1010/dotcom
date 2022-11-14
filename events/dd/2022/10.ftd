@@ -11,6 +11,60 @@ our "how to do remote right" initiative, we are now fully remote company.
 -- ds.youtube:
 v: yZID38Zjwoo
 
+-- ds.h1: Employee Handbook
+
+We have created our handbook now, anyone can view it on
+[fifthtry.com/h/](https://fifthtry.com/h/).
+
+We are quite inspired by Gitlab, and We want our handbook public like [they
+have](https://about.gitlab.com/handbook/) (we have better URL because we use
+superior technology than them of course).
+
+-- ds.h2: One On Ones
+
+We have started [one-on-ones now](/h/ooo/). A weekly, 30-mins-meeting with
+everyone directly reporting to me where we discuss how you can help make
+FifthTry best company ever, and how to make FifthTry best company for you. Or
+whatever else strikes your fancy.
+
+-- ds.h2: Demo Day Tips
+
+Have compiled a bunch of thoughts and tips on [demo day](/h/dd/).
+
+-- ds.h1: Revamp Of The Sites
+
+Me and Harsh has been thinking about how to revamp/position ftd.dev, fpm.dev and
+FifthTry.com.
+
+We have identified web services companies, WSCs as our primary audiance. We can
+not directly go to Fortune 500s, but if we can convince the agencies that are
+servicing those companies already, to consider using FPM in the projects they
+are doing, then we have a chance.
+
+WSCs typically build microsites, one or two pager websites, portfolios, startup
+homepages, coming soon pages etc. These are often short durating, high
+impact projects, and about specific activities. They will need blogs, landing
+page components, email signups, survey forms and so on.
+
+WSCs also create a lot of templates, email to be sent, designing PDFs, invoices,
+handouts, and so forth.
+
+For these two use cases we are a decent contender right now, and want to
+highlight that.
+
+WSCs also build web and mobile applications, and ecommerce sites frequently, and
+we are not ready for these usecases, but we want them to know that these things
+are coming soon as well.
+
+Within the Audiance, we have identified CMOs, as proxy for site owners, who
+contract the WSCs, as our primary audiance. CMOs do not know much about
+technology, but they do want to understand what kind of things you want to do
+with FPM. They would have to be wowed that so much can be done with us, and that
+how good looking our templates etc are.
+
+We then have identified CTOs of WSCs as our other primary audiance. These people
+have to be told how capable FPM is technically, how little effort they will
+have to invest to meet the various requirements
 
 -- container: dd-10.wrapper.right-sidebar
 -- events.sidebar:

@@ -8,6 +8,11 @@ Our 11th weekly [demo event](/h/dd/) will happen on 18th Nov 2022. We show case 
 people in FifthTry have built in this week. This is an important part of our,
 how to do remote right initiative, we are now fully remote company.
 
+-- ds.h1: Demo Day Planning Meeting
+
+-- ds.youtube:
+v: -zC52jk29sY
+
 -- ds.h1: Move FifthTry.com to Heroku
 
 Owner: AbrarK
@@ -16,19 +21,21 @@ Currently we are using github pages, now lets switch to Heroku so we can start
 using fpm's auth feature.
 
 This document will become the "coming soon page" for others, and for
-FifthTry employees it would act as planning document.
+FifthTry employees it would act as planning document. Also implement auth with
+following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 -- ds.h1: End to End FPM App + Doc Site Support
 
 Onwer: Ganesh, AbrarK
 
-We have built both app switcher, the processor etc, we need to see the whole thing
-end to end. Lets ensure tha app icons are working.
+We have built both app switcher, the processor etc, we need to see the whole
+thing end to end. Lets ensure tha app icons are working. `.icon` support in
+`fpm.package` record.
 
 
 -- ds.h1: WASM: Subscription App With Doc Site Support
 
-Onwer: Ganesh, AbrarK
+Onwer: Ganesh, AbrarK(Primary)
 
 We will show a subscriber dialog on abrark.com. It will be backed by supabase.
 
@@ -55,17 +62,13 @@ per page basis, eg for this page show this reason to subscribe to me.
 The global variables should have default side wide value in `FPM/config.ftd`,
 or overwrite them in the current documents ftd file.
 
-We will have variables called `ds.subscription-dialog`, which will contain:
+We will have variables called `-- subscription-app.dialog-data
+subscription-dialog`, which will contain:
 
 -- ds.code:
 lang: ftd
 
-\-- record subscription-app.dialog-data:
-boolean visible: false
-string title: Subscribe to my mailing list
-string cta: Sign Me Up
-caption body:
-string legal: We won't send you spam. Unsubscribe at any time.
+\-- string subscription-about:
 
 Sign up here to experience how our forms work
 and learn how you can use them to build
@@ -74,9 +77,21 @@ your business.
 
 PLUS! Grab our Essential Creators Toolkit.
 
+
+\-- record subscription-app.dialog-data:
+boolean visible: false
+string title: Subscribe to my mailing list
+string cta: Sign Me Up
+caption body: $subscription-about
+string cta-maximise: Subscribe
+string legal: We won't send you spam. Unsubscribe at any time.
+
+
 -- ds.markdown:
 
 [Excalidraw UI Mock](https://app.excalidraw.com/s/2xFnk4q86Ix/2LIKW8Kyy8h)
+
+`/-/fifthtry.github.io/subscription-app/subscribe/`
 
 Based on the dialog UI we will add some fields here. Tomorrow we will create
 a form framework which will allow site authors to describe the form, and the
@@ -89,6 +104,10 @@ to this package.
 Lets also add an entry in `fpm.dev/featured/` for this app. We will create a new
 section called "featured apps", after "Documentation Sites", and it will only
 contain this for now.
+
+We will also need a blog post to install subscription app. It will have to
+describe how to create supabase account and database there, and how the create
+the emails table where emails are getting stored. Also the keys.
 
 Note: we are not doing any email validation (this is not [double opt
 in](https://en.wikipedia.org/wiki/Opt-in_email)) in this release. To do opt-in
@@ -114,6 +133,36 @@ show pages to only people who are subscribed to us.
 What if they come from a different browser? They will have to enter their email
 address again in the new browser.
 
+-- ds.h1: Wall Support in Sitemap
+
+Owner: Ganesh(Primary), AbrarK
+
+And doc-site should only show page title and a `-- string ds.wall-message:
+please login`, and `-- string ds.login-url`.
+
+We have to create a processor: `is-reader`:
+
+-- ds.code:
+lang: ftd
+
+\-- boolean is-reader:
+$processor$: is-reader
+
+-- ds.markdown:
+
+If `is-reader` is true then show whole page, else who only the page title and
+show `ds.wall-message`.
+
+[Refernce drawing](https://app.excalidraw.com/s/2xFnk4q86Ix/8Sx8MfYb0Vj)
+
+-- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
+
+Owner: AmitU
+
+Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
+on just the workshop.
+
+
 -- ds.h1: Proper WASM Internal
 
 Owner: AmitU
@@ -121,6 +170,7 @@ Owner: AmitU
 Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
 custom api.
+
 
 -- ds.h1: Auth: More Providers
 
@@ -143,7 +193,8 @@ Slack.
 
 Owner: Ganesh
 
-We have to add support for this in doc-site. And in then update docs etc.
+We have to add support for this in doc-site. And in then update docs etc. Also
+in dash-dash-ds.
 
 
 -- ds.h1: Workshop Page
@@ -151,7 +202,45 @@ We have to add support for this in doc-site. And in then update docs etc.
 Owner: Ganesh
 
 We have created some workshop page enhancements, it's time to finish it, and
-show ftd.dev/workshop, with proper content using the latest work done by Ganesh.
+show `ftd.dev/workshop`, with proper content using the latest work done by
+Ganesh.
+
+-- ds.h1: Font Documentation Improvement
+
+Owner: Ganesh
+
+
+-- ds.h1: Spider Book DS
+
+Owner: Ganesh
+
+-- ds.h1: Demo Day Page
+
+Owner: Ganesh
+
+Like we created proper modelling for workshop page, we have `ws.chapter`, `ws.lesson`
+etc, can we create `demo-day`, and `dd.demo-day` and `dd.presentation`.
+
+-- ds.code:
+lang: ftd
+
+\-- ds.demo-day:
+number: 11th
+date: 18th Nov 2022
+in-future: true
+
+\-- dd.presentation: Move FifthTry.com to Heroku
+owner: @ft-zens.abrark
+helper: @ft-zens.priyanka
+helper: @ft-zens.arpita
+
+Currently we are using github pages, now lets switch to Heroku so we
+can start using fpm's auth feature.
+
+This document will become the "coming soon page" for others, and for
+FifthTry employees it would act as planning document. Also implement
+auth with following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
+
 
 -- ds.h1: More ftd 0.3
 
@@ -161,7 +250,7 @@ Let see if we can get doc-site working this week.
 
 -- ds.h1: Payment Improvements
 
-Owner: Rithik
+Owner: Rithik, Ganesh
 
 In last demo we saw one time payment integration. We have to switch to monthly
 subscription API integration.
@@ -170,6 +259,8 @@ Also the UI that I saw last time had buttons for developers etc, we have to
 create UI for our end users. The goal is to make this live asap, that end users
 can use.
 
+It will be deployed on `fifthtry.com/hosting/`. Ganesh will find the UI that
+Thakkar created.
 
 -- container: dd-11.wrapper.right-sidebar
 -- events.sidebar:
