@@ -1,6 +1,10 @@
--- ds.page: FifthTry Demo Day #8
+-- import: fifthtry.com/events
 
-Our 8th weekly [demo event](/dd/) happened on 28st Oct 2022. We show case what
+-- ds.page: FifthTry Demo Day #8
+id: dd-8
+sidebar: true
+
+Our 8th weekly [demo event](/dd/) happened on 28th Oct 2022. We show case what
 people in FifthTry have built in this week. This is an important part of our,
 how to do remote right initiative, we are now fully remote company.
 
@@ -132,3 +136,7 @@ See you on the next event on 4th Nov! Subscribe us
 on [Discord](https://discord.gg/d2MgKBybEQ), [Twitter](https://twitter.com/FifthTryHQ),
 or [LinkedIn](https://www.linkedin.com/company/69613898/) to get learn more
 about what's up with FifthTry.
+
+
+-- container: dd-8.wrapper.right-sidebar
+-- events.sidebar:

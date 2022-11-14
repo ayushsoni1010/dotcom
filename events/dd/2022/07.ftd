@@ -1,4 +1,8 @@
+-- import: fifthtry.com/events
+
 -- ds.page: FifthTry Demo Day #7
+id: dd-7
+sidebar: true
 
 Date: 21st Oct 2022
 
@@ -16,3 +20,7 @@ https://abrark-app.fly.dev/
 https://ftd-lang.github.io/ftd/6-function.html
 
 https://github.com/ftd-lang/ftd/blob/main/t/html/6-function.ftd
+
+
+-- container: dd-7.wrapper.right-sidebar
+-- events.sidebar:

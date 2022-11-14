@@ -1,0 +1,310 @@
+-- import: fifthtry.com/events
+
+-- ds.page: FifthTry Demo Day #9
+id: dd-9
+sidebar: true
+
+Our 8th weekly [demo event](/dd/) happened on 4th Nov 2022. We show case what
+people in FifthTry have built in this week. This is an important part of our,
+how to do remote right initiative, we are now fully remote company.
+
+-- ds.youtube:
+v: gxAfeuOm_Wo
+
+-- ds.h1: Welcome Meenu and Harish!
+
+We have hired Meenu Kumari as a "FTD Developer" for the "FTD Design and
+Development" team. She will be joining us in a few weeks, and will be working
+with Ganesh and Priyanka to help deliver more [FTD component
+libraries](https://fpm.dev/all/) for our end users. Excited to have a new
+co-consiprator, help us change the world.
+
+We are also working with [Harish Shankaran](https://www.linkedin.com/in/harishshankaran/)
+as a consultant. Harish will help us redesign ftd.dev, fpm.dev, fifthtry.com etc
+websites.
+
+-- ds.h1: FifthTry Repositioning: DXP?
+
+In the last few days working with Harish we realise calling a documentation
+product and thinking of docusaurus/notion etc as a competitor is doing a
+dis-service to us.
+
+We generally love the way Gitlab works, and we want to be like them, their open
+source culture, their open handbook, openly talking about competition, strategy
+etc, we want all that for us as well.
+
+Gitlab is not a single product or service, but a company who is solving all the
+devops problems. So FifthTry is a company that is trying to solve problems of
+anyone who is building content centric websites.
+
+DXP, Digital eXperience Platform, is a suit of product, that big companies
+use to connect with their customers. Like in case of Github, the buying decision
+comes from low level tech people, compared to CEO, Github after all is just one
+of the myraid of services that tech team uses, and CEO can't be bothered with
+each such service. Where-as the buying decision for Gitlab kind of comes from
+the top, as despite it being loved by developers, Gitlab messages to CEO that
+we solve your devops teams problems.
+
+CEOs are used to this kind of pitches, you have a sales team, buy SalesForce,
+you have an Insurance company, buy a policy administration system, you have call
+center team, buy such and such. CEOs want full solutions for departments,
+instead of picking individual bits and creating the whole, figuring out what
+works together etc.
+
+So if CEOs have to build pages, they think of Adobe DXP and Sitecore etc.
+
+Another interesting thing about such deep solutions is that the team using the
+solution, like Sitecore, can not customise it. I mean Sitecore will sell it as
+fully customizable etc, but to actually do it you require a lot of training,
+a lot of features are built become some CEO asked "Can you do X with sitecore"
+and Sitecore sales has to say "YES of course", and they go to dev team to quickly
+build it, even though the sales team should have told the CEO, no you see, you
+understanding is incorrect, and you do not want to do X, it does not scale etc,
+so feature X exists but it may not be great idea to use X if you are doing A,
+and you need deeper understanding of sitecore to know that.
+
+So such solutions are customised by outside teams, digital agencies, consultants
+and so on. In fact a lot of sale itself happens through such agencies, CEO goes
+to agency, tells them they want to do something, agency tells them there are
+these solutions like Sitecore etc.
+
+So this is what we want to do. Go to the agencies. Tell them they can push
+Sitecore, or they can push FPM. It will then become a simple question of "Is
+FPM solving problems of agencies, the kind of projects CEO wants to execute, can
+the agency deliver it faster and better using FPM than using Sitecore?". If we
+make the answer yes, we have done it. Us being text based means we have full
+power of version control, Pull Requests, history, merge, conflict etc. We being
+fully programmable language, and nothing else, no massive "engine" you have to
+understand means, people can understand FPM end to end in a weekend, where as
+Sitecore etc takes months and months. And since we are build it yourself, here
+are the lowest level building blocks, we are like React at some level, so there
+is no quesiton of what you can not do with FPM, where as in case of Sitecore you
+have to rely on features that sitecore team has built. We are librally open
+source so digital agencies get to keep larger share of revenues, deploying fpm
+in a new company is lot easier etc.
+
+So lets not compare ourselves with Notions and Wix, lets solve digital agencies
+problems. Lets be a full solution company, instead of a feature company.
+
+
+-- ds.h1: Sidebar Support In Doc-Site
+
+In the doc site we so far had left sidebar, which shows the table of content,
+and the main content area, the right sidebar area was provisioned but left
+empty so far.
+
+-- ds.image:
+src: $assets.files.images.blog.right-sidebar.jpg
+width: fill
+
+Ganesh showed how we can easily configure the sidebar. He also showed how the
+sidebar works on mobile, where the sidebar comes as a "info" icon next to the
+page title, and slides out from the right when someone clicks on it.
+
+Ganesh also showed the [admonitions](https://fifthtry.github.io/admonitions/)
+package, which contains notes and warning. The package already existed but
+recently we added a few more components to be used in sidebar.
+
+-- ds.h1: Course Component, Sneak Peek
+
+Ganesh also gave a sneek preview of the course page that he is working on.
+
+-- ds.image:
+src: $assets.files.images.blog.course-sneek-peek.jpg
+width: fill
+
+It will keep track of what all have you done so far so when you come back on
+the course page, you can resume from where you left off.
+
+There is a nice, "you finished the chapter" celebration thing he put there. I
+think we should revive our comic stuff, and chat message etc, visual stuff to
+make content more interesting than just text blocks.
+
+-- ds.h1: Auth Support In FPM
+
+Wasif showed off preliminary auth support in FPM. Earlier we implemented the
+auth support using Django, but that required people who run FPM to run the fpm
+binary, as well as configure Django, and a database (PostgreSQL). This was too
+much dependencies, so we are now implementing support for authentication
+directly in FPM binary itself, and further doing it in such a way to avoid
+database altogether (storing stuff in cookies).
+
+So far Wasif has implemented login with Github, and it just shows the user's
+Github username on the page. Wasif has also implemented an API which will be
+called from internals of FPM, to test if currently logged in user has starred
+some github repository or not.
+
+-- ds.image:
+src: $assets.files.images.blog.auth-initial.png
+width: fill
+
+We call this feature "gating". NYTimes etc gate on money. They say if you want
+to read this article you have to pay. We allow site authors to gate on anything,
+you want to read this article, follow me on Instagram, or sponsor me on Github,
+or retweet this tweet I wrote etc etc.
+
+Also we can also do gating on features, so for example if you are on the workshop
+page, you will get the vanilla version without tracking unless you star our repo
+on Github, then you have the full feature available.
+
+Maybe we will also support NFT tomorrow, want to read this blog post, buy our
+NFT first.
+
+Another thing is currently we have implemented this feature in FPM directly, we
+modified the FPM code. But when we start building dozens of integrations it will
+start bloating fpm binary. So we will soon finish our WASM support and move the
+gating code to WASM, so you only pay for (meaning download code of) the
+integration you care about. This will allow anyone to create any integration,
+and we will not have to worry about questions like should FPM really support
+crypto.
+
+-- ds.h1: Using FPM Applications As Dependencies
+
+So far we have create a bunch of component libraries, doc-site, resume,
+slideshows, bling, etc. These are static components, mostly displaying some
+content in aesthetically pleasing manner. If you want to use any of these
+packages, you just have to add a `fpm.dependency` clause in your `FPM.ftd` and
+we take care of the rest.
+
+Over last few months we have been building support for packaging full
+applications as FPM package. Now adding a full working reusable backend
+application is also a matter of addings `fpm.dependency` in your `FPM.ftd`.
+
+Abrar shows how he can "install" the [kameri app (a todo
+application)](https://github.com/FifthTry/kameri-app/) in `abrark.com`. The WIP
+mount-point support he showed in last demo is now ready, and site owner can
+decide on what URL should the re-usable app be mounted.
+
+In this demo, there were two parts of the app, the actual API backend written
+in Django, and the "frontend code", written in FTD, which calls the Django API,
+and is responsible for UI. We only deployed the second part in the demo. The
+Django service was already deployed.
+
+In future when we offer our hosting, we will make it such that Django app will
+automatically be deployed, the Django app will have to provide a Dockerfile and
+we take care of rest.
+
+Also as soon as WASM effort takes shape we will move the logic in Django to WASM
+so you do not need Django service at all, and WASM will run inside FPM binary
+itself. Once this is done, the ease of deploying a fully working applicaiton
+would be unmatched with anything out there as an option to site owners.
+
+And as soon as the these infrastructural pieces are done we will build a team
+like FTD Builders we have, that will churn out lots and lots of re-usable apps.
+Application Tracking System, HRMS, Payroll, Task/Project management, Forms,
+Event and Scheduling etc etc. All of these will be available to site owners,
+for free, open source, to use with their sites.
+
+We will also create a marketplace, so indipendent developers can create their
+apps, which any FPM site owner can install. The apps can be free or even paid,
+so indipendent developers can make a living making FPM apps. What Apple and
+Android did to mobile apps, we will do to web apps.
+
+-- ds.h1: Icon Support In Sitemap
+
+We have a concept of a sitemap, which lets site owners organise their site's
+content. Rhitik has added support for attaching icons to sitemap data, so now
+you can have logos for different sections of your site if you wanted to.
+
+Currently these are not supported by doc-site, but soon Ganesh and his team will
+be doing that.
+
+We have to implement error checking, if icon file does not exist, it should not
+lead to 404 in browser that you site visitors will see, rather the entire FPM
+server should come down crashing, so you can quickly identify the problem and
+fix it.
+
+Further we have to add support for picking icons from dependencies. Most people
+do not create their own icons, and use one of the popular icon libraries, so
+we have to make that use case easy as well.
+
+We have also to do dark/light mode support, so site authors can optionally
+provide different icons for the two modes, and switch mode all the icons are
+switched.
+
+-- ds.h1: External Children Support in FTD 0.3
+
+One of the main feature missing in ftd 0.3 that we have in 0.2, is the external
+children support. This allows a component to pass other components as children.
+
+Basically now you can do:
+
+-- ds.code: Passing External Children As Unnamed Parameter
+lang: ftd
+
+\-- page:
+
+\-- ftd.text: Hello
+
+\-- end: page
+
+-- ds.markdown:
+
+We have called a component named `page` and inside the invocation we have passed
+an "external child", `ftd.text: Hello` to it. `page` gets the children in
+variable of special type `children`:
+
+-- ds.code: Definition of `page`
+lang: ftd
+
+\-- component page:
+ftd.ui list extra-headers:
+children children:
+
+... body omitted ...
+\-- end: page
+
+-- ds.markdown:
+
+We have a variable called `children`, whose type is `children` (only type
+matters, component author can give the variable any name). And the `ftd.text:
+Hello` is available to the `page` in the `children` variable.
+
+As we see we also have another parameter, `extra-headers` of type `ftd.ui list`.
+BTW `children` type is an alias to `ftd.ui list` as children is a `list` of
+`ftd.ui` components.
+
+We can pass both children and extra-header using:
+
+-- ds.code: Passing Multiple Sets Of Children
+lang: ftd
+
+\-- page:
+
+\-- page.extra-headers:
+
+\-- ftd.text: Header 1
+
+\-- ftd.text: Header 2
+
+\-- end: page.extra-headers
+
+\-- ftd.text: Hello
+
+\-- end: page
+
+-- ds.markdown:
+
+We have called `page` with two UI elements as `extra-headers` and one as
+`children`.
+
+We have eliminated the concept of "container management" with this change now.
+Container management was one of the hardest to understand concept in ftd. The
+language is now simpler, easier to understand, and innards are cleaner too.
+
+-- ds.h1: Better Attribute Support
+
+So far in FTD 0.2, for every attribute, when we had to make them conditional,
+we had to add explicit support for it. Similarly we could only make attributes
+of kernel component conditional, not for user defined components. These were
+major annoyances, but now Arpita has made all attributes properly conditional,
+and it does not matter if it is a kernel component or regular component.
+
+This is one of the advantages of re-writes, ftd 0.2 is years of evolutionary
+code, where we went back and forther on design decisions, built things in
+patchwork, where as in 0.3 we have a clear design when we started, so everything
+is much more thought through.
+
+
+-- container: dd-9.wrapper.right-sidebar
+-- events.sidebar:

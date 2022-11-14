@@ -1,4 +1,8 @@
+-- import: fifthtry.com/events
+
 -- ds.page: FifthTry Demo Day #5
+id: dd-5
+sidebar: true
 
 Date: 7th Oct 2022
 
@@ -21,3 +25,7 @@ Aditi Rai and Aviral Verma showed the progress they have made in the movie db
 app that is going to be used for our upcoming workshop.
 
 And finally Ganesh Salunke showed the slideshow support in FTD.
+
+
+-- container: dd-5.wrapper.right-sidebar
+-- events.sidebar:

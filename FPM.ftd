@@ -44,7 +44,9 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 ## How We Think: /h/think/
 
-
+- Start Here: /h/think/
+- Domain For Everyone Manifesto: /h/own-your-domain/
+- Data Overlay: /h/data-overlay/
 
 # Blog: /blog/
 
@@ -62,11 +64,13 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 # Events: /events/
 
 - Upcoming Events: /events/
-- Demo Day #8: /events/demo-day-8/
-- FTD Hands-On Workshop (C1W1): /events/c1w1/
-- Demo Day #7: /events/demo-day-7/
-- Demo Day #6: /events/demo-day-6/
-- Demo Day #5: /events/demo-day-5/
+- Demo Day #10 (10th Nov): /events/dd/2022/10/
+- Demo Day #9 (4th Nov): /events/dd/2022/09/
+- Demo Day #8 (28th Oct): /events/dd/2022/08/
+- FTD Hands-On Workshop (C1W1, 22nd Oct): /events/c1w1/
+- Demo Day #7 (21st Oct): /events/dd/2022/07/
+- Demo Day #6 (14th Oct): /events/dd/2022/06/
+- Demo Day #5 (7th Oct): /events/dd/2022/05/
 
 
 # Product Manual: product/
