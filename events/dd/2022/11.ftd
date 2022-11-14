@@ -8,10 +8,19 @@ Our 11th weekly [demo event](/dd/) will happen on 18th Nov 2022. We show case wh
 people in FifthTry have built in this week. This is an important part of our,
 how to do remote right initiative, we are now fully remote company.
 
+-- ds.h1: Move FifthTry.com to Heroku
+
+Owner: AbrarK
+
+Currently we are using github pages, now lets switch to Heroku so we can start
+using fpm's auth feature.
+
+This document will become the "coming soon page" for others, and for
+FifthTry employees it would act as planning document.
 
 -- ds.h1: End to End FPM App + Doc Site Support
 
-Onwer: Ganesh, Abrar
+Onwer: Ganesh, AbrarK
 
 We have built both app switcher, the processor etc, we need to see the whole thing
 end to end. Lets ensure tha app icons are working.
@@ -19,7 +28,7 @@ end to end. Lets ensure tha app icons are working.
 
 -- ds.h1: WASM: Subscription App With Doc Site Support
 
-Onwer: Ganesh, Abrar
+Onwer: Ganesh, AbrarK
 
 We will show a subscriber dialog on abrark.com. It will be backed by supabase.
 
@@ -115,7 +124,7 @@ custom api.
 
 -- ds.h1: Auth: more providers
 
-Owner: Abrar
+Owner: AbrarK
 
 We should implement github-follows, github-watches, github-team,
 github-sponsors, github-contributor=<repo>.
