@@ -113,6 +113,23 @@ Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
 custom api.
 
+-- ds.h1: Auth: more providers
+
+Owner: Abrar
+
+We should implement github-follows, github-watches, github-team,
+github-sponsors, github-contributor=<repo>.
+
+Telegram.
+
+Optional:
+
+Discord.
+
+Slack.
+
+
+
 -- ds.h1: Icon Support In Doc Site
 
 Owner: Ganesh
