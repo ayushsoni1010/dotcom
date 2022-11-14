@@ -44,10 +44,8 @@ are doing, then we have a chance.
 WSCs typically build microsites, one or two pager websites, portfolios, startup
 homepages, coming soon pages etc. These are often short durating, high
 impact projects, and about specific activities. They will need blogs, landing
-page components, email signups, survey forms and so on.
-
-WSCs also create a lot of templates, email to be sent, designing PDFs, invoices,
-handouts, and so forth.
+page components, email signups, survey forms and so on. WSCs also create a lot
+of templates, email to be sent, designing PDFs, invoices, handouts, and so forth.
 
 For these two use cases we are a decent contender right now, and want to
 highlight that.
@@ -56,15 +54,211 @@ WSCs also build web and mobile applications, and ecommerce sites frequently, and
 we are not ready for these usecases, but we want them to know that these things
 are coming soon as well.
 
-Within the Audiance, we have identified CMOs, as proxy for site owners, who
-contract the WSCs, as our primary audiance. CMOs do not know much about
-technology, but they do want to understand what kind of things you want to do
-with FPM. They would have to be wowed that so much can be done with us, and that
-how good looking our templates etc are.
+Within the Audiance, we have identified "Garima", she is a CMOs, as proxy for
+site owners, who contract the WSCs, as our primary audiance. Garima do not know
+much about technology, but they do want to understand what kind of things you
+want to do with FPM. They would have to be wowed that so much can be done with
+us, and that how good looking our templates etc are.
 
-We then have identified CTOs of WSCs as our other primary audiance. These people
-have to be told how capable FPM is technically, how little effort they will
-have to invest to meet the various requirements
+We then have identified "Gaurav", CTOs of WSCs as our second audiance. Gaurav
+has to be told how capable FPM is technically, how little effort they will
+have to invest to meet the various requirements of Garima.
+
+Finally we have "Swapnil", a software developer, builds frontends, or maybe
+fullstack, may contribute to open source, wants to create a site for himself,
+or for a project. He has to be told that FTD is an alternative to React etc,
+and how easy his life will be if he picked FPM/FTD.
+
+Finally we have some notion of the structure of the site, we are going to have
+a home page, which showcases what all can you build with FPM, how nice they
+look, mentions the key features.
+
+Then we are going to have Features heading, which will categorise features into
+three sections, "Front End Infrastructure", basically design library, component
+library etc, dark mode support etc. Then "Building Web Apps", which emphasises
+authentication, WASM, endpoint, easy deployment, domain, CLI, APIs etc. And
+finally we have "Authoring" features, editing content, change request,
+translation, continuous documentation etc.
+
+We are then going to have "gallery" or "templates" and "app galleries" section,
+which will show all every kind of website you can build, with screenshots,
+showing off over versatilites.
+
+For each feature class we will have more landing pages, which will highlight
+key features in that class, and then finally a landing page for every feature.
+The final feature page will have documentation on how to use that feature.
+
+-- ds.h1: Wasif Asks About Wix And Elementor
+
+Wasif asks [Wix](https://wix.com) and [Elementor](https://elementor.com) etc
+exists, so why FPM?
+
+Most startups, especially ones successful are not using these tools. Wix and
+Elementor etc have a ceiling. They are designed for very specific use cases, and
+the moment you start going out of them you start fighting with the tools.
+
+FPM on the other hand is more comparable to React. Instead of creating your next
+site in React, (at least for non app pages, eg content pages, landing pages,
+home page etc). You can build anything you want using React. Same with FTD. Of
+course React is much more mature than FTD, but we are in same category.
+
+And if you compare FTD with React, we are much more, FTD is optimised for
+building content first websites. With React you have to make many technology
+choices, have lot of pieces, where as FTD/FPM takes care of website creators
+needs end to end. We have dark mode support to change request built in. You pick
+FPM/FTD and you get from CSS to Git, App marketplace to template repositories,
+all working together, and you just create your site by putting things together,
+in as few lines of glue code as possible.
+
+
+-- ds.h1: Github Auth Works With FPM
+
+Abrar and Waseem have finished implementing end to end auth support with Github.
+Abrar created a site that can be only be viewed by someone who has liked
+[ftd-lang/fpm](https://github.com/ftd-lang/fpm) repo on Github. This we call
+"page gating", putting your pages selectively behind different kind of gates,
+here we have "Github Star Gating".
+
+Marketers etc would love this as this allows them to nudge their web audiance
+to other platforms like Discord or Instagram or even increase their mailing
+list followers etc.
+
+In the demo we also see how you can either block the entire page, or show
+different content of same page based on access level of the person viewing the
+site.
+
+Abrar also put refresh content API behind auth, so only authorised people can
+call refresh content. This was just to showcase that internal machinery of FPM
+now can start using auth.
+
+-- ds.h1: FPM Apps Have Arrived!
+
+In the last demo we saw how to use FPM apps as dependencies. We have further
+revamped it to allow you create more than one installation of an application,
+and to possibly pass different configuration to each installation.
+
+Applications also support authentication now. And you can configure applications
+using `FPM.ftd` or using environment variables (for sensitive information like
+credentials).
+
+-- ds.h1: Internet OS: Domains For Everyone Manifesto
+
+We have started writing a manifesto [domains for everyone](/h/own-your-domain/).
+
+Everyone should own their domain. And like when you own an mobile phone, you
+install apps on it, we believe the fpm apps we are building are like those apps
+that one can install on their websites/domains. We call it "Internet OS" (we)
+
+Everything from email, to photos, files, to todos, to social media should be on
+your domain, you should not create dozens accounts of random websites, but
+instead install the apps you need on your domain.
+
+FPM Apps make this one step closer to reality. Everything should be open source,
+you and only you should have access to the database behind your domain. All you
+need is a server, you can own one in a data center (we may sell this to you one
+day), or rent servers from us (or any hosting provider, we are just going to do
+a better job than others because we work on the whole stack, from the language
+to devops orchestration).
+
+We have taken inspiration from Mobile Phone home screens for it. You are already
+quite familiar with internet OS! We want end users to be very comfortable, we
+are very much how your desktop or mobile operating system works.
+
+One day you will be able to lose all your devices, and as long as you a have
+access to internet you have all your photos, apps etc. In fact we or other may
+even create shim OS, like Chrome Book, just a browser, and all it does it let
+you access your domain, and all your apps are installed there. We will also
+give you sync feature (Arpita has already implemented rudimentary two way sync
+support in fpm), so your data would be synced on your phone, and you can access
+it offline as well.
+
+-- ds.h1: FPM App Switcher
+
+Ganesh showed the UI he has built for switching between the "fpm apps" you have
+installed on your site. It acts like Cmd-Tab (Mac) or Alt-Tab (Windows), we have
+used `Shift-Shift` as the shortcut.
+
+-- ds.image: App Switcher UI
+src: $assets.files.images.blog.app-switcher.png
+width: fill
+
+
+The app switcher that Ganesh has built is not yet integrated with fpm app
+backend that Abrar demod, in the next demo we will have them integrated.
+
+-- ds.h1: Workshop Page
+
+Ganesh also showed the progress in workshop page, which keeps track of your
+progress. Here is a [sample page](https://fifthtry.github.io/workshop-page/hello-world/).
+
+-- ds.image: Workshop Page
+src: $assets.files.images.blog.workshop-page.png
+width: fill
+
+When you mark a lesson understood or task done it gets grayed out. We store your
+progress in local store so when you come back to the site it remembers where you
+left off. There is a nice firework when you finish a chapter.
+
+Another point to emphasise is this is a static site, deployed on Github Pages,
+so this entire thing works without need backend, database etc.
+
+Some hurdles still remain in this, which we hope to finish in next demo day.
+
+The way we have coded, the code that site authors have to write is still not
+ideal, and ftd 0.3 will take care of that.
+
+-- ds.h1: Who Owns Data?
+
+The normal way to build websites is to pick a database, create a bunch of tables,
+write the backend and ask every user to sign up, and when you are interacting
+with the website the data in database is updated.
+
+Problem with this approach that if that the site owner owns all the data,
+including your data like your progress etc. Which means they can cut you off
+from your data at whim, or sell your data to highest bidder, or generally
+exploit your natural weaknesses by mining your data and expoit you for profit.
+
+You must own your data. The site owner should not have access to your data. The
+site owner may get statistical data, ideally on an opt in basis, and you should
+keep your data.
+
+When designing FPM, internet OS etc, we are very mindful of this, and designing
+to make this kind of building stuff obsolete. Currently the data sits in
+localstore and is "loaned" to the site. It is true that the site can indeed
+take such loaned data make illegal copies of it on their server, but it would
+be very easy to prove in court that they did it.
+
+Currently sites keep data on their servers, as "there is no other way" TM. But
+once a way is created, and sites start saying they honour users preferences, it
+would be difficult to start stealing data without looking like they are
+obviously pirating data from you.
+
+The details of how we plan to "loan" data to web sites for "augmenting" the
+content, as we have shown in the case of workshop, we will disclose in upcoming
+demos.
+
+-- ds.h1: Stripe Integration With FPM Controller
+
+FPM Controller is our web service that allows end users to come to our site and
+buy website hosting from us. Normally you do it from AWS/Google Cloud/ etc, or
+Heroku/Fly etc. Or maybe you have your own servers in datacenters.
+
+With FPM controller you can rent servers from us. We will only run your FPM
+website, so we are not general purpose hosting provider, but if you need FPM
+hosting, we are the best out there.
+
+Till now FPM controller did not charge you for getting server. FPM controller
+is only internally accessible right now.
+
+Ritik has implemented Stripe integration to FPM controller this week, which he
+demod. It has a lot of pending stuff, we are just getting started, but the
+picture is starting take shape.
+
+-- ds.h1: This is all for now!
+
+Do checkout our [next demo day's planning page](/events/dd/2022/11/) to checkout
+what to expect in the next one. See you on 18th Nov 2022!
+
 
 -- container: dd-10.wrapper.right-sidebar
 -- events.sidebar:
