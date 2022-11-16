@@ -23,8 +23,10 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fpm.auto-import: fifthtry.com/assets
 
 
--- fpm.user-group: ft-zens
-github-team: admins
+;; Test Purpose
+-- fpm.user-group: fpm-fans
+github-starred: ftd-lang/fpm
+
 
 
 -- fpm.sitemap:
@@ -32,7 +34,7 @@ github-team: admins
 
 # Why: /why/
 
-- Why `CDOC`?: why/
+- Why `CDOC`?: /why/
 - How Is Life Before `cDoc`?: product/before/-/why
 
 
@@ -154,4 +156,8 @@ github-team: admins
   - GithubCheckRun Table: dev/main-db/githubcheckrun/
   - GithubLoginState Table: dev/main-db/githubloginstate/
 
+## Test: /test/login/
 
+- Login: /test/login/
+- Test Login: /test/test-login/
+  readers: fpm-fans
