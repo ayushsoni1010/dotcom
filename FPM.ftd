@@ -23,6 +23,10 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fpm.auto-import: fifthtry.com/assets
 
 
+-- fpm.user-group: ft-zens
+github-team: admins
+
+
 -- fpm.sitemap:
 
 

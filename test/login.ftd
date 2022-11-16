@@ -1,0 +1,30 @@
+-- import: fpm
+
+-- ds.page: Github Login Testing
+
+-- record user-details:
+boolean is-login:
+$always-include$: true
+
+-- user-details ud:
+$processor$: user-details
+is-login: false
+;; todo: is-logged-in
+;; todo rename mount-point to url
+
+-- ftd.color white-color:
+dark: white
+light: white
+
+-- ftd.column:
+background-color: $white-color
+
+--- ftd.text: Login With GitHub
+if: not $ud.is-login
+link: /auth/login/?platform=github
+role: $fpm.type.heading-large
+
+--- ftd.text: Logout
+if: $ud.is-login
+link: /auth/logout/
+role: $fpm.type.heading-large
