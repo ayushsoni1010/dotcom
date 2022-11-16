@@ -28,3 +28,8 @@ role: $fpm.type.heading-large
 if: $ud.is-login
 link: /auth/logout/
 role: $fpm.type.heading-large
+
+--- ftd.text: Refresh Content
+if: $ud.is-login
+link: /-/clear-cache/?package=main&all-dependencies=true
+role: $fpm.type.heading-large
