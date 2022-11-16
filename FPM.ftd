@@ -159,5 +159,5 @@ github-starred: ftd-lang/fpm
 ## Test: /test/login/
 
 - Login: /test/login/
-- Test Login: /test/test-login/
+- Test Login: /test/fpm-fans/
   readers: fpm-fans
