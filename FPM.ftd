@@ -42,12 +42,22 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 - Regular Meetings: /h/meetings/
 - Demo Day: /h/dd/
 - One On Ones: /h/ooo/
+- Shared Calendar: /h/shared-calendar/
+- Joining Formalities: /h/joining/
+- We Are Remote: /h/remote/
+- Communication Advice:
+  - No DMs: /h/no-dms/
+  - Tandem: /h/tandem/
+
+
 
 ## How We Think: /h/think/
 
 - Start Here: /h/think/
 - Domain For Everyone Manifesto: /h/own-your-domain/
 - Data Overlay: /h/data-overlay/
+- Meta Guidelines: /h/meta-guidelines/
+- App Interface: /h/app-interface/
 
 # Blog: /blog/
 
