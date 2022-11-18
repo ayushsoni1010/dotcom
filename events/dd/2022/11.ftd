@@ -17,6 +17,8 @@ v: -zC52jk29sY
 
 Owner: AbrarK
 
+Status: On Track
+
 Currently we are using github pages, now lets switch to Heroku so we can start
 using fpm's auth feature.
 
@@ -28,6 +30,8 @@ following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 Onwer: Ganesh, AbrarK
 
+Status: .icon done, need to be image-src.
+
 We have built both app switcher, the processor etc, we need to see the whole
 thing end to end. Lets ensure tha app icons are working. `.icon` support in
 `fpm.package` record.
@@ -36,6 +40,8 @@ thing end to end. Lets ensure tha app icons are working. `.icon` support in
 -- ds.h1: WASM: Subscription App With Doc Site Support
 
 Onwer: Ganesh, AbrarK(Primary)
+
+Status: Abrar to start tomorrow. Ganesh: To try frontend only
 
 We will show a subscriber dialog on abrark.com. It will be backed by supabase.
 
@@ -117,6 +123,8 @@ we need email capability, which we do not yet have.
 
 Owner: AbrarK
 
+Status: Can not start till above
+
 Can we use the fact that user is subscribed or not to create a wall.
 
 -- ds.code: defining a user-group using cookie
@@ -137,6 +145,8 @@ address again in the new browser.
 
 Owner: Ganesh(Primary), AbrarK
 
+Status: Is Reader (abrark). Ganesh:
+
 And doc-site should only show page title and a `-- string ds.wall-message:
 please login`, and `-- string ds.login-url`.
 
@@ -145,7 +155,7 @@ We have to create a processor: `is-reader`:
 -- ds.code:
 lang: ftd
 
-\-- boolean is-reader:
+\-- boolean is-reader: true
 $processor$: is-reader
 
 -- ds.markdown:
@@ -159,6 +169,8 @@ show `ds.wall-message`.
 
 Owner: AmitU
 
+Status: Not much work done, but will try
+
 Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
 on just the workshop.
 
@@ -166,6 +178,8 @@ on just the workshop.
 -- ds.h1: Proper WASM Internal
 
 Owner: AmitU
+
+Status: Not possible by this demo day
 
 Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
@@ -175,6 +189,8 @@ custom api.
 -- ds.h1: Auth: More Providers
 
 Owner: AbrarK
+
+Status: Github stuff are imeplemented
 
 We should implement `github-follows`, `github-watches`, `github-team`,
 `github-sponsors`, `github-contributor=<repo>`.
@@ -193,6 +209,8 @@ Slack.
 
 Owner: Ganesh
 
+Status: some issue with image, abrar/arpita have fixed it, pr to be merged
+
 We have to add support for this in doc-site. And in then update docs etc. Also
 in dash-dash-ds.
 
@@ -200,6 +218,8 @@ in dash-dash-ds.
 -- ds.h1: Workshop Page
 
 Owner: Ganesh
+
+Status: ready, in testing
 
 We have created some workshop page enhancements, it's time to finish it, and
 show `ftd.dev/workshop`, with proper content using the latest work done by
@@ -209,14 +229,21 @@ Ganesh.
 
 Owner: Ganesh
 
+Status: New fonts fixed. Existing fonts are pending.
+
+Follow the standard in all font sites.
 
 -- ds.h1: Spider Book DS
 
 Owner: Ganesh
 
+Status: is in demo-able state
+
 -- ds.h1: Demo Day Page
 
 Owner: Ganesh
+
+Status: not possible
 
 Like we created proper modelling for workshop page, we have `ws.chapter`, `ws.lesson`
 etc, can we create `demo-day`, and `dd.demo-day` and `dd.presentation`.
@@ -246,11 +273,15 @@ auth with following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 Owner: Arpita
 
+Status: 0.3 would work with fpm. edition?
+
 Let see if we can get doc-site working this week.
 
 -- ds.h1: Payment Improvements
 
 Owner: Rithik, Ganesh
+
+Status: subscription api done.
 
 In last demo we saw one time payment integration. We have to switch to monthly
 subscription API integration.
