@@ -4,9 +4,10 @@
 id: dd-11
 sidebar: true
 
-Our 11th weekly [demo event](/h/dd/) will happen on 18th Nov 2022. We show case what
-people in FifthTry have built in this week. This is an important part of our,
-how to do remote right initiative, we are now fully remote company.
+Our 11th weekly [demo event](/h/dd/) will happen on 18th Nov 2022. We showcase
+what people in FifthTry have built in this week. This is an important part of
+our, [how to do remote right initiative](/h/remote/), we are now fully remote
+company.
 
 -- ds.h1: Demo Day Planning Meeting
 
@@ -164,26 +165,6 @@ If `is-reader` is true then show whole page, else who only the page title and
 show `ds.wall-message`.
 
 [Refernce drawing](https://app.excalidraw.com/s/2xFnk4q86Ix/8Sx8MfYb0Vj)
-
--- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
-
-Owner: AmitU
-
-Status: Not much work done, but will try
-
-Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
-on just the workshop.
-
-
--- ds.h1: Proper WASM Internal
-
-Owner: AmitU
-
-Status: Not possible by this demo day
-
-Lets try to see if new way of doing wasm (without wit dependency) can be
-implemented. Also lets see if we can expose actix web api instead of our
-custom api.
 
 
 -- ds.h1: Auth: More Providers
