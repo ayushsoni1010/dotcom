@@ -21,7 +21,6 @@ started-on: 1 year ago
 twitter-url: https://twitter.com/amitu
 linkedin-url: https://in.linkedin.com/in/amitu
 designation: CEO
-profile-photo: $assets.files.images.amitu.jpg
 
 
 -- team devs: Developers
@@ -34,7 +33,6 @@ started-on: 1 year ago
 twitter-url: https://twitter.com/abrark_asahi
 linkedin-url: https://www.linkedin.com/in/abrar-khan-815305100/
 designation: Senior Software Developer
-profile-photo: $assets.files.images.abrar.jpg
 team: $devs
 
 
@@ -44,6 +42,5 @@ started-on: 1 month ago
 twitter-url: https://twitter.com/GaneshS05739912
 linkedin-url: https://www.linkedin.com/in/ganesh-s-891174ab/
 designation: Senior Manager Frontend
-profile-photo: $assets.files.images.ganesh.jpg
 team: $ftd-devs
 
