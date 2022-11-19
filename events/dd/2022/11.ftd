@@ -1,18 +1,59 @@
 -- import: fifthtry.com/events
+-- import: fifthtry.github.io/bling/detail
 
 -- ds.page: FifthTry's 11th Demo Day
 id: dd-11
 sidebar: true
 
-Our 11th weekly [demo event](/h/dd/) will happen on 18th Nov 2022. We showcase
+Our 11th weekly [demo event](/h/dd/) happened on 18th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
--- ds.h1: Demo Day Planning Meeting
+-- ds.youtube:
+v: vOEO7hxvSSw
+
+
+
+
+-- ds.h1: One Week Of One on Ones
+
+We did a week of one on ones. I am quite liking it.
+
+- We write and review guidelines.
+  - communication redundancy: write things, talk to people one on one, and then
+    have monthly group sessions
+- I learnt that we have talk more like friends and removing formality is very
+  important.
+- Everyone has to understand the philosophy of the product and the "company
+  building"
+
+-- ds.h1: First Week Of Demo Day Meetings
+
+
+We had our planning meeting on 14th Nov 2022.
 
 -- ds.youtube:
 v: -zC52jk29sY
+
+-- ds.markdown:
+
+Review meeting on 16th Nov 2022.
+
+-- ds.youtube:
+v: XDQTz4kvhCw
+
+-- ds.h1: Project Brief Is Ready
+
+https://squareboat.com
+
+Project Brief: [Shared/Marketing/FifthTry Project
+Brief.pptx](https://docs.google.com/presentation/d/1CHWKFM1kA5XOv2cig3pQ3NbmoMS6wf3g/edit#slide=id.p1)
+
+-- ds.h1: Tandem
+
+We started using tandem.
+
 
 -- ds.h1: Move FifthTry.com to Heroku
 
@@ -220,34 +261,6 @@ Owner: Ganesh
 
 Status: is in demo-able state
 
--- ds.h1: Demo Day Page
-
-Owner: Ganesh
-
-Status: not possible
-
-Like we created proper modelling for workshop page, we have `ws.chapter`, `ws.lesson`
-etc, can we create `demo-day`, and `dd.demo-day` and `dd.presentation`.
-
--- ds.code:
-lang: ftd
-
-\-- ds.demo-day:
-number: 11th
-date: 18th Nov 2022
-in-future: true
-
-\-- dd.presentation: Move FifthTry.com to Heroku
-owner: @ft-zens.abrark
-helper: @ft-zens.priyanka
-helper: @ft-zens.arpita
-
-Currently we are using github pages, now lets switch to Heroku so we
-can start using fpm's auth feature.
-
-This document will become the "coming soon page" for others, and for
-FifthTry employees it would act as planning document. Also implement
-auth with following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 
 -- ds.h1: More ftd 0.3

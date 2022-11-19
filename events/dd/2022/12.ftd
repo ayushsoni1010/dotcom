@@ -1,7 +1,7 @@
 -- import: fifthtry.com/events
 
 -- ds.page: FifthTry's 12th Demo Day
-id: dd-11
+id: dd-12
 sidebar: true
 
 Our 11th weekly [demo event](/h/dd/) will happen on 25th Nov 2022. We showcase
@@ -28,3 +28,33 @@ Status: Carry over from dd11
 Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
 custom api.
+
+
+-- ds.h1: Demo Day Page
+
+Owner: Ganesh
+
+Status: Carry over from dd11
+
+Like we created proper modelling for workshop page, we have `ws.chapter`, `ws.lesson`
+etc, can we create `demo-day`, and `dd.demo-day` and `dd.presentation`.
+
+-- ds.code:
+lang: ftd
+
+\-- ds.demo-day:
+number: 11th
+date: 18th Nov 2022
+in-future: true
+
+\-- dd.presentation: Move FifthTry.com to Heroku
+owner: @ft-zens.abrark
+helper: @ft-zens.priyanka
+helper: @ft-zens.arpita
+
+Currently we are using github pages, now lets switch to Heroku so we
+can start using fpm's auth feature.
+
+This document will become the "coming soon page" for others, and for
+FifthTry employees it would act as planning document. Also implement
+auth with following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
