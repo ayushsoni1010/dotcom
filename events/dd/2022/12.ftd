@@ -4,7 +4,7 @@
 id: dd-12
 sidebar: true
 
-Our 11th weekly [demo event](/h/dd/) will happen on 25th Nov 2022. We showcase
+Our 12th weekly [demo event](/h/dd/) will happen on 25th Nov 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
@@ -12,6 +12,8 @@ company.
 -- ds.h1: FTD 0.3
 
 Owner: Arpita
+
+Can we do doc-site?
 
 -- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
 
@@ -28,11 +30,15 @@ We are giving this to an agency (growisto).
 
 Owner: Rithik
 
+Lets create wireframe flow.
+
+
 -- ds.h1: Subscription App - WASM Backend
 
 Owner: AbrarK
 
--- ds.h1: Personal Website Theme
+
+-- ds.h1: Personal/Everyone Website Website Theme
 
 Owner: Ganesh
 
@@ -41,7 +47,7 @@ should have more template specific to needs, eg personal-site.
 
 -- ds.h1: Proper WASM Internal
 
-Owner: AmitU
+Owner: AbrarK
 
 Status: Carry over from dd11
 
@@ -53,9 +59,13 @@ custom api.
 
 Owner: Ganesh
 
+All buries must be contigeous and at the end of any list.
+
 -- ds.h1: Tutorial: GoDaddy To Github Pages
 
 End to end tutorial, with video.
+
+Owner: Ganesh
 
 -- ds.h1: Demo Day Page
 
@@ -93,3 +103,5 @@ Owner: AbrarK
 Telegram Support
 
 Discord Support
+
+

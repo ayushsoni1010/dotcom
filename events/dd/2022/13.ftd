@@ -1,0 +1,19 @@
+-- import: fifthtry.com/events
+
+-- ds.page: FifthTry's 13th Demo Day
+id: dd-12
+sidebar: true
+
+Our 13th weekly [demo event](/h/dd/) will happen on 2nd Dec 2022. We showcase
+what people in FifthTry have built in this week. This is an important part of
+our, [how to do remote right initiative](/h/remote/), we are now fully remote
+company.
+
+-- ds.h1: Auth Provider Packages
+
+Owner: AbrarK
+
+We will convert each auth provider code, like github, telegram etc, into WASM
+and will add provider by adding `-- fpm.dependency` instead of modifying `fpm`
+codebase.
+
