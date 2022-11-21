@@ -9,6 +9,15 @@ what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
+-- ds.h1: Demo Day Planning Meeting
+
+Demo Day planning committee, "dd-com", met at 11AM, 21st Nov 2022 to plan the
+upcoming demo day.
+
+-- ds.youtube:
+v: huNWsabPBV8
+
+
 -- ds.h1: FTD 0.3
 
 Owner: Arpita
@@ -32,6 +41,8 @@ Owner: Rithik
 
 Lets create wireframe flow.
 
+-- ds.youtube:
+v: sT4Bjl2g2BE
 
 -- ds.h1: Subscription App - WASM Backend
 
@@ -89,12 +100,13 @@ owner: @ft-zens.abrark
 helper: @ft-zens.priyanka
 helper: @ft-zens.arpita
 
-Currently we are using github pages, now lets switch to Heroku so we
-can start using fpm's auth feature.
+Currently we are using github pages, now lets switch to
+Heroku so we can start using fpm's auth feature.
 
-This document will become the "coming soon page" for others, and for
-FifthTry employees it would act as planning document. Also implement
-auth with following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
+This document will become the "coming soon page" for
+others, and for FifthTry employees it would act as
+planning document. Also implement auth with following
+groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 -- ds.h1: FPM Auth
 
@@ -105,3 +117,5 @@ Telegram Support
 Discord Support
 
 
+-- container: dd-12.wrapper.right-sidebar
+-- events.sidebar:
