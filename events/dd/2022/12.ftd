@@ -9,6 +9,9 @@ what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
+
+
+
 -- ds.h1: Demo Day Planning Meeting
 
 Demo Day planning committee, "dd-com", met at 11AM, 21st Nov 2022 to plan the
@@ -18,17 +21,24 @@ upcoming demo day.
 v: huNWsabPBV8
 
 
+
+
+
+
 -- ds.h1: FTD 0.3
 
 Owner: Arpita
 
 Can we do doc-site?
 
+
+
+
 -- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
 
 Owner: AmitU
 
-Status: Carry over from dd11
+Status: Carry over from dd-11
 
 Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
 on just the workshop.
@@ -39,14 +49,25 @@ We are giving this to an agency (growisto).
 
 Owner: Rithik
 
-Lets create wireframe flow.
+Let's create wireframe flow.
 
 -- ds.youtube:
 v: sT4Bjl2g2BE
 
+
+
+
+
+
+
 -- ds.h1: Subscription App - WASM Backend
 
 Owner: AbrarK
+
+
+
+
+
 
 
 -- ds.h1: Personal/Everyone Website Website Theme
@@ -84,8 +105,9 @@ Owner: Ganesh
 
 Status: Carry over from dd11
 
-Like we created proper modelling for workshop page, we have `ws.chapter`, `ws.lesson`
-etc, can we create `demo-day`, and `dd.demo-day` and `dd.presentation`.
+Like we created proper modelling for workshop page, we have `ws.chapter`,
+`ws.lesson` etc, can we create `demo-day`, and `dd.demo-day` and
+`dd.presentation`.
 
 -- ds.code:
 lang: ftd
@@ -107,6 +129,7 @@ This document will become the "coming soon page" for
 others, and for FifthTry employees it would act as
 planning document. Also implement auth with following
 groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
+
 
 -- ds.h1: FPM Auth
 
