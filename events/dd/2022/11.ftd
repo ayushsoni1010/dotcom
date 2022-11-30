@@ -17,30 +17,116 @@ v: vOEO7hxvSSw
 
 -- ds.h1: One Week Of One on Ones
 
-We did a week of one on ones. I am quite liking it.
+We mentioned last week we have started our weekly demo day with everyone. We
+have finished our second week with one on one with everyone and I am quite
+liking it.
 
-- We write and review guidelines.
-  - communication redundancy: write things, talk to people one on one, and then
-    have monthly group sessions
-- I learnt that we have talk more like friends and removing formality is very
-  important.
-- Everyone has to understand the philosophy of the product and the "company
-  building"
+-- ds.h2: Guidelines Review
+
+We have scheduled 30 mins calls with everyone, and in the call we write and
+review guidelines. We go through different sections of our handbook and ask
+ourselves if we are following the guidelines, if the guidelines is clear, is it
+something we want to really enforce, is it worth the effort to contraint people
+or to ask people to remember one more thing? Every guideline hopes to improve
+us as a company, but does every guideline we have laid out is achieving that
+goal? If not can we rewrite or update the guidelines somehow? Maybe slash it
+altogether?
+
+-- ds.h2: Communication Redundancy
+
+One of the things we believe in, when it comes to instilling changes in a
+company, when it comes to getting a company as a whole to adopt a new practice,
+it's not easy, a single mail/memo/talk is not going to cut it. People will
+remember very little of that communication after a few months.
+
+So if a change is to happen it must be communicated and discussed again and
+again. So each guideline we hope to go with every individual in a one on one
+fashion. We have to write the guideline in writing, but also discuss it in one
+on one. We then have to "publish" the guideline, inform the team that we believe
+so and so, and invite feedback etc as a group. And then maybe we should do
+periodic, monthly or so workshops on how do we work well together in which we
+again review the outstanding guidelines, and which ones are being followed and
+which ones aren't.
+
+This is a lot of duplciation. And it's a good thing. There is not other way to
+make it work.
+
+-- ds.h2: Informal Communication
+
+One interesting learning that came out is that we should speak in the language
+we prefer in these talks. In the first round I did it in English, I usually
+speak in English with everyone. But some people opened up more when we switched
+to speaking in Hindi.
+
+Also effort has to be made to try to speak like you are speaking with a friend,
+instead of the usualy "I am speaking with my boss" setup. It takes a lot of work
+as the heirarchy, and the grey hair is not easy to ignore.
+
+-- ds.h2: Philosophy Of Product And Of Company
+
+For us to succeed we have to both think about, and develop a consensus on
+philosophy about our product, as well as about our company. We can not each of
+not think about the product we are building all the time, nor can we each not
+think about how we work as a company. Company means us. The internals. A place
+we love. A place we feel like improving daily and weekly.
+
+It's really hard for a bunch of people to come together and walk in step. But
+magic happens when they do.
 
 -- ds.h1: First Week Of Demo Day Meetings
 
+Till our last demo day we largely "winged it". We had a decent idea of what we
+are building at large, but the specifics of what we are going to present in the
+coming demo day was largely decided by individuals.
 
-We had our planning meeting on 14th Nov 2022.
+While this is good, better than no demo day, we believe a little bit of planning
+can help improve thing even further. This is what we believe in btw, doing small
+changes incrementally, and evolving with team to try to make everything a little
+bit better on a regular basis, instead of doing planning for months or querter
+etc. A general consensus on the north-start and small measurable improvement
+continusouly is the way to go.
+
+
+-- ds.h2: Planning Meeting
+
+For demo day we are doing three meetings, a planning meeting that happened on
+14th Nov 2022, you can see the recording below.
 
 -- ds.youtube:
 v: -zC52jk29sY
 
+
 -- ds.markdown:
 
-Review meeting on 16th Nov 2022.
+We will be uploading recordings of upcoming demo day plannings as well. Planning
+meeting happens on Monday, start of the week where we find what we are going
+to try to demo this week. In this meeting we are ambitous, try to put as much
+on our plate as much.
+
+What we decided to do on that day is updated in this page itself. The page keeps
+changing over the week, so if you really want to see the history after the fact,
+and are not following us on a live fashion you will have to look at [Github
+History](https://github.com/FifthTry/dotcom/commits/main/events/dd/2022/12.ftd).
+
+PS: When our Change Request feature is live we will have a better history page,
+for now manage with the slightly crappy version offered by Github.
+
+-- ds.h2: Review Meetings
+
+We do a review meeting mid week, which happened on 16th Nov 2022.
 
 -- ds.youtube:
 v: XDQTz4kvhCw
+
+-- ds.markdown:
+
+We do a reality check and course correction in this meeting. We take a look at
+projects, and some we move to the next demo day if we can not do it, or delete
+if it's no longer
+
+-- ds.h2: Ganesh's Suggestion
+
+Ganesh suggested that we do our planning on Friday and Demo on Monday.
 
 -- ds.h1: Project Brief Is Ready
 

@@ -9,13 +9,95 @@ what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
--- ds.h1: Auth Provider Packages
+
+-- ds.h1: FTD 0.3
+
+Owner: Arpita
+
+- or-type
+- layout stuff
+  - flexbox
+  - autolayout figma (simplified flexbox subset)
+- styles
+- doc-site
+
+Can we do doc-site?
+
+
+-- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
+
+Owner: AmitU
+
+Status: Carry over from dd-11
+
+Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
+on just the workshop.
+
+We are giving this to an agency (growisto).
+
+
+-- ds.h1: FPM Controller
+
+Owner: Rithik
+
+Login pages. Show it working with fifthtry.com. Do db only backend without
+integration with fly and stripe.
+
+
+
+-- ds.h1: Subscription App - WASM Backend
 
 Owner: AbrarK
 
-We will convert each auth provider code, like github, telegram etc, into WASM
-and will add provider by adding `-- fpm.dependency` instead of modifying `fpm`
-codebase.
+
+
+-- ds.h1: Personal/Everyone Website Website Theme
+
+Owner: Ganesh
+
+Sublime like Design.
+
+
+
+-- ds.h1: Proper WASM Internal
+
+Owner: AbrarK
+
+Status: Carry over from dd11
+
+Lets try to see if new way of doing wasm (without wit dependency) can be
+implemented. Also lets see if we can expose actix web api instead of our
+custom api.
+
+
+-- ds.h1: Sitemap: Bury Support
+
+Owner: Ganesh
+
+All buries must be contigeous and at the end of any list.
+
+
+-- ds.h1: Tutorial: GoDaddy To Github Pages
+
+End to end tutorial, with video.
+
+Owner: Ganesh
+
+
+-- ds.h1: Demo Day Page
+
+Owner: Ganesh
+
+
+-- ds.h1: FPM Auth
+
+Owner: AbrarK
+
+Telegram Support
+
+Discord Support
+
+
 
 -- ds.h1: Style Guide
 
@@ -23,9 +105,6 @@ https://design.squareboat.com/
 
 Only for FPM projects. Should honour current color-schemes, widgets etc.
 
--- ds.h1: API Documentation Components
-
-https://www.twilio.com/blog/three-reasons-openapi-best-documentation-platform-api
 
 -- container: dd-13.wrapper.right-sidebar
 -- events.sidebar:

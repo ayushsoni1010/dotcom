@@ -25,25 +25,10 @@ v: huNWsabPBV8
 
 
 
--- ds.h1: FTD 0.3
-
-Owner: Arpita
-
-Can we do doc-site?
 
 
 
 
--- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
-
-Owner: AmitU
-
-Status: Carry over from dd-11
-
-Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
-on just the workshop.
-
-We are giving this to an agency (growisto).
 
 -- ds.h1: FPM Controller
 
@@ -60,10 +45,6 @@ v: sT4Bjl2g2BE
 
 
 
--- ds.h1: Subscription App - WASM Backend
-
-Owner: AbrarK
-
 
 
 
@@ -77,21 +58,9 @@ Owner: Ganesh
 And template. People should stop using `fpm-template`, it is too basic, we
 should have more template specific to needs, eg personal-site.
 
--- ds.h1: Proper WASM Internal
+Johny-PS
 
-Owner: AbrarK
 
-Status: Carry over from dd11
-
-Lets try to see if new way of doing wasm (without wit dependency) can be
-implemented. Also lets see if we can expose actix web api instead of our
-custom api.
-
--- ds.h1: Sitemap: Bury Support
-
-Owner: Ganesh
-
-All buries must be contigeous and at the end of any list.
 
 -- ds.h1: Tutorial: GoDaddy To Github Pages
 
@@ -131,13 +100,6 @@ planning document. Also implement auth with following
 groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 
--- ds.h1: FPM Auth
-
-Owner: AbrarK
-
-Telegram Support
-
-Discord Support
 
 
 -- container: dd-12.wrapper.right-sidebar
