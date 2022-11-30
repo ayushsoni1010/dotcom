@@ -14,9 +14,10 @@ company.
 
 Owner: Arpita
 
+Status: we are hopeful that this will be done
+
 - or-type
 - layout stuff
-  - flexbox
   - autolayout figma (simplified flexbox subset)
 - styles
 - doc-site
@@ -28,7 +29,7 @@ Can we do doc-site?
 
 Owner: AmitU
 
-Status: Carry over from dd-11
+Status: growisto contract is signed
 
 Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
 on just the workshop.
@@ -40,41 +41,34 @@ We are giving this to an agency (growisto).
 
 Owner: Rithik
 
+Status: Done: Models & APIs. Pending: Integration with dotcom, UI Polish.
+
 Login pages. Show it working with fifthtry.com. Do db only backend without
 integration with fly and stripe.
 
 
 
--- ds.h1: Subscription App - WASM Backend
+-- ds.h1: WASM Support in FPM
 
 Owner: AbrarK
 
-
-
--- ds.h1: Personal/Everyone Website Website Theme
-
-Owner: Ganesh
-
-Sublime like Design.
-
-
-
--- ds.h1: Proper WASM Internal
-
-Owner: AbrarK
-
-Status: Carry over from dd11
+Status: Still experiements on proper wasm internal - tricky
 
 Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
 custom api.
 
 
--- ds.h1: Sitemap: Bury Support
+-- ds.h1: Personal/Everyone Website Website Theme
 
 Owner: Ganesh
 
-All buries must be contigeous and at the end of any list.
+Status: on track.
+
+Johny-PS: rename pending. Usage pending.
+
+Sublime like Design.
+
 
 
 -- ds.h1: Tutorial: GoDaddy To Github Pages
@@ -83,23 +77,32 @@ End to end tutorial, with video.
 
 Owner: Ganesh
 
+Status: Will be done (video may not be possible)
+
+To be added to [FPM.dev -> Author Manual ->
+How-To](https://fpm.dev/how-to/install/).
+
 
 -- ds.h1: Demo Day Page
 
 Owner: Ganesh
+
+Status: On track
 
 
 -- ds.h1: FPM Auth
 
 Owner: AbrarK
 
-Telegram Support
-
-Discord Support
+Status: Telegram Support - on the way
 
 
 
--- ds.h1: Style Guide
+-- ds.h1: Style Guide - Colors
+
+Owner: Ganesh
+
+Status: Done
 
 https://design.squareboat.com/
 

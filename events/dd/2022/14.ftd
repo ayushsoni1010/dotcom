@@ -25,5 +25,30 @@ https://www.twilio.com/blog/three-reasons-openapi-best-documentation-platform-ap
 Let's take this as inspiration: https://elements-demo.stoplight.io/
 
 
+-- ds.h1: Proper Authentication For FPM Controller
+
+-- ds.h1: Style Guide - Typography
+
+Owner: Ganesh
+
+-- ds.h1: Auth Support
+
+Discord Support
+
+
+-- ds.h1: Subscription App - With Proper WASM Internal
+
+Owner: AbrarK
+
+
+-- ds.h1: Sitemap: Bury Support
+
+Owner: Ganesh
+
+Status: Not sure.
+
+All buries must be contigeous and at the end of any list.
+
+
 -- container: dd-14.wrapper.right-sidebar
 -- events.sidebar:
