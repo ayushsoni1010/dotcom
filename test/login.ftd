@@ -2,6 +2,8 @@
 
 -- ds.page: Github Login Testing
 
+Test: If update content is working
+
 -- record user-details:
 boolean is-login:
 $always-include$: true
