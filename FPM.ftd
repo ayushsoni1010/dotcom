@@ -14,6 +14,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fpm.dependency: fifthtry.github.io/event as event
 -- fpm.dependency: fifthtry.github.io/common as common
 -- fpm.dependency: fifthtry.github.io/admonitions as cbox
+-- fpm.dependency: fifthtry.github.io/bling
 
 
 
@@ -21,7 +22,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fpm.auto-import: ds
 -- fpm.auto-import: fifthtry.com/FPM/config
 -- fpm.auto-import: fifthtry.com/assets
-
+-- fpm.auto-import: fifthtry.github.io/bling/chat
 
 ;; Test Purpose
 -- fpm.user-group: fpm-fans
