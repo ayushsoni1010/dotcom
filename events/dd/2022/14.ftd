@@ -26,6 +26,19 @@ Owner: AmitU
 - upgrade workshop source files to 0.3 syntax
 
 
+-- ds.h2: Module planning
+
+1. data modelling
+2. ui & components
+3. functions & event handling (without http support)
+4. fpm, hosting/deployment, sitemap, remixing, auth
+5. full stack apps (frontend http, dynamic URLs, parameters), reusable apps | api-integrations
+6. full stack apps, reusable apps | wasm
+
+Each module is 1hr or so, with 1 hr of exercise extra. Broken into 5 mins
+"sections".
+
+
 -- ds.h1: Subscription App - With Proper WASM Internal
 
 Owner: AbrarK
