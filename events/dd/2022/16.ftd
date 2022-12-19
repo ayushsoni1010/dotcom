@@ -1,0 +1,44 @@
+-- import: fifthtry.com/events
+
+-- ds.page: FifthTry's 16th Demo Day
+id: dd-16
+sidebar: true
+
+Our 16th weekly [demo event](/h/dd/) will happen on 30th Dec 2022. We showcase
+what people in FifthTry have built in this week. This is an important part of
+our, [how to do remote right initiative](/h/remote/), we are now fully remote
+company.
+
+
+
+-- ds.h1: Subscription App - Using Django
+
+Owner: AbrarK
+
+Let's implement this as django app for now. Shared. API Key.
+
+
+
+-- ds.h1: API Documentation Components
+
+Owner: Ganesh
+
+https://www.twilio.com/blog/three-reasons-openapi-best-documentation-platform-api
+
+Let's take this as inspiration: https://elements-demo.stoplight.io/
+
+We need yml to ftd record parser for openapi files.
+
+
+-- ds.h1: Better Error Messages in FTD
+
+Owner: Arpita
+
+Status: Mehmet is still studying, not looking very likely right now.
+
+mehmet is working on this.
+
+
+
+-- container: dd-16.wrapper.right-sidebar
+-- events.sidebar:

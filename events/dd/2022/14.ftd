@@ -4,24 +4,27 @@
 id: dd-14
 sidebar: true
 
-Our 14th weekly [demo event](/h/dd/) will happen on 9th Dec 2022. We showcase
+Our 14th weekly [demo event](/h/dd/) happened on 9th Dec 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
+-- ds.h1: Meetings
 
--- ds.h1: Old Stuff
+Demo day planning meeting.
 
-- fifthtry.com is still not powered by fpm
-- telegram testing
-- texty-ps to be used by rithik
-- d-day page to be used
+-- ds.youtube:
+v: -whhhABOWSs
+
+
 
 
 -- ds.h1: Workshop
 
 Owner: AmitU
+
+Status: on track
 
 - upgrade workshop source files to 0.3 syntax
 
@@ -39,77 +42,15 @@ Each module is 1hr or so, with 1 hr of exercise extra. Broken into 5 mins
 "sections".
 
 
--- ds.h1: Subscription App - With Proper WASM Internal
-
-Owner: AbrarK
 
 
 
--- ds.h1: FTD 0.3: doc site
-
-Owner: Arpita
 
 
 
--- ds.h1: Auth Provider Packages
-
-Owner: AbrarK
-
-We will convert each auth provider code, like github, telegram etc, into WASM
-and will add provider by adding `-- fpm.dependency` instead of modifying `fpm`
-codebase.
-
-
--- ds.h1: API Documentation Components
-
-Owner: Ganesh
-
-https://www.twilio.com/blog/three-reasons-openapi-best-documentation-platform-api
-
-Let's take this as inspiration: https://elements-demo.stoplight.io/
-
-We need yml to ftd record parser for openapi files.
-
-
--- ds.h1: Better Error Messages in FTD
-
-Owner: Arpita
-
-mehmet is working on this.
-
-
--- ds.h1: Auth Support
-
-Owner: AbrarK
-
-Discord Support
-
-
--- ds.h1: Proper Authentication For FPM Controller
-
-Owner: Rithik
-
-Who/what is going to be the provider? Github. One strong reason to use github,
-why we can not use gmail etc is because site content would still be managed by
-github.
-
-We need to implement X-FPM-USER-ID header support. Earlier we discussed hashing
-based user-id, here we will need non-hashing "original" user-id, github username
-in this case.
-
-How do we invite team mates? Github Username.
-
-Deploy on FifthTry.
-
-https://hostn.io
 
 
 
--- ds.code:
-lang: ftd
-
-\-- fpm.app:
-user-id: <github-username>
 
 
 -- ds.h1: FPM Controller: Deploy Using FifthTry Button
@@ -119,17 +60,22 @@ Owner: Rithik
 Button will redirect to fpm with github repo name embedded in it. We want a clean
 add site flow, with user entering nothing in best case.
 
+fastn.io/deploy/?github-repo=abrark/my-repo&branch=master (authenticate and then
+show the prepopulated form, ensure repo is not lost during auth journey, use
+proper `next` to redirect back to /deploy/?github-repo=abrark/my-repo after
+successful login).
+
+Deploy page should ask you to select/change team while deploying.
+
+Deploy page will not have team dropdown in header. It will show a form
+containing:
+
+- team drop down
+- text name of package: pre populated by `my-repo` (extra the repo name without
+  account name, abrark/my-repo, so show my-repo)
 
 
--- ds.h1: FPM Controller: Fly Support
-
-
-Owner: Rithik
-
-We have to bring back fly integration.
-
-Download Base URL should be just `abrark/foo` (not the full URL, which is also
-accepted).
+We will show the link to abrark/my-repo repo.
 
 
 
