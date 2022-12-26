@@ -1,16 +1,24 @@
 -- import: fifthtry.com/events
+-- fpm.dependency: fifthtry.github.io/demo-day as dd
 
--- ds.page: FifthTry Demo Day #5
-id: dd-5
+
+
+
+
+
+
+-- dd.past-demo-day:  Fifthtry
+number: #5
+date: 07 Oct 
+year: 2022
+demo-video: BwWbsVe-8XE
 sidebar: true
+id: dd-5
 
 Our 5th weekly [demo event](/h/dd/) happened on 7th Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
-
--- ds.youtube:
-v: BwWbsVe-8XE
 
 
 -- ds.markdown:
@@ -29,6 +37,8 @@ app that is going to be used for our upcoming workshop.
 
 And finally Ganesh Salunke showed the slideshow support in FTD.
 
+-- container: dd-5.demo-container.right-sidebar
 
--- container: dd-5.wrapper.right-sidebar
 -- events.sidebar:
+
+

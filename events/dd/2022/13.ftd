@@ -1,8 +1,14 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry's 13th Demo Day
-id: dd-13
+
+
+-- dd.past-demo-day:  Fifthtry
+number: #13
+date: 02 Dec 
+year: 2022
+demo-video: vOEO7hxvSSw
 sidebar: true
+id: dd-13
 
 Our 13th weekly [demo event](/h/dd/) happened on 2nd Dec 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
@@ -10,16 +16,13 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
-Planning meeting.
 
--- ds.youtube:
-v:
-
--- ds.h1: FTD 0.3
-
-Owner: Arpita
-
-Status: we are hopeful that this will be done
+-- dd.presentation: FTD 0.3
+owner: @ft-zens.Arpita
+owner-avatar: $assets.files.images.events.arpita.jpg
+helper: @ft-zens.Arpita
+helper-avatar: $assets.files.images.events.arpita.jpg
+status: Pending
 
 - or-type
 - layout stuff
@@ -29,90 +32,108 @@ Status: we are hopeful that this will be done
 
 Can we do doc-site?
 
+-- container: dd-13
 
--- ds.h1: FTD Workshop Parts 2 & 3, FPM Part 1
+-- dd.presentation: FTD Workshop Parts 2 & 3, FPM Part 1
+owner: @ft-zens.AmitU
+owner-avatar: $assets.files.images.events.amitu.jpg
+helper: @ft-zens.AmitU
+helper-avatar: $assets.files.images.events.amitu.jpg
+status: Done
 
-Owner: AmitU
 
-Status: growisto contract is signed
 
 Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
 on just the workshop.
 
 We are giving this to an agency (growisto).
 
+-- container: dd-13
 
--- ds.h1: FPM Controller
-
-Owner: Rithik
-
-Status: Done: Models & APIs. Pending: Integration with dotcom, UI Polish.
+-- dd.presentation: FPM Controller
+owner: @ft-zens.Rithik
+helper: @ft-zens.Rithik
+status: Half Done
 
 Login pages. Show it working with fifthtry.com. Do db only backend without
 integration with fly and stripe.
 
 
+-- container: dd-13
 
--- ds.h1: WASM Support in FPM
-
-Owner: AbrarK
-
-Status: Still experiements on proper wasm internal - tricky
+-- dd.presentation: WASM Support in FPM
+owner: @ft-zens.AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @ft-zens.AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: Experimenting
 
 Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
 custom api.
 
+-- container: dd-13
 
--- ds.h1: Personal/Everyone Website Website Theme
-
-Owner: Ganesh
-
-Status: on track.
+-- dd.presentation: Personal/Everyone Website Website Theme
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: On Track
 
 Johny-PS: rename pending. Usage pending.
 
 Sublime like Design.
 
 
+-- container: dd-13
 
--- ds.h1: Tutorial: GoDaddy To Github Pages
+-- dd.presentation: Tutorial: GoDaddy To Github Pages
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Done
+
 
 End to end tutorial, with video.
-
-Owner: Ganesh
-
-Status: Will be done (video may not be possible)
 
 To be added to [FPM.dev -> Author Manual ->
 How-To](https://fpm.dev/how-to/install/).
 
 
--- ds.h1: Demo Day Page
+-- container: dd-13
 
-Owner: Ganesh
-
-Status: On track
-
-
--- ds.h1: FPM Auth
-
-Owner: AbrarK
-
-Status: Telegram Support - on the way
+-- dd.presentation: Demo Day Page
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: On Track
 
 
+-- container: dd-13
 
--- ds.h1: Style Guide - Colors
+-- dd.presentation: FPM Auth
+owner: @ft-zens.AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @ft-zens.AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: On Track
 
-Owner: Ganesh
+-- container: dd-13
 
-Status: Done
+-- dd.presentation: Style Guide - Colors
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Done
 
 https://design.squareboat.com/
 
 Only for FPM projects. Should honour current color-schemes, widgets etc.
 
 
--- container: dd-13.wrapper.right-sidebar
+-- container: dd-13.demo-container.right-sidebar
 -- events.sidebar:

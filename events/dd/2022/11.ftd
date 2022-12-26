@@ -1,19 +1,23 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry's 11th Demo Day
-id: dd-11
+-- dd.past-demo-day:  Fifthtry
+number: #11
+date: 18 Nov 
+year: 2022
+demo-video: vOEO7hxvSSw
+planning-video: -zC52jk29sY
+review-video: XDQTz4kvhCw
+planning-date: 14th Nov 2022
+review-date: 16th Nov 2022
 sidebar: true
+id: dd-11
 
 Our 11th weekly [demo event](/h/dd/) happened on 18th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
--- ds.youtube:
-v: vOEO7hxvSSw
-
-
-
+-- container: dd-11
 
 -- ds.h1: One Week Of One on Ones
 
@@ -92,9 +96,6 @@ continusouly is the way to go.
 For demo day we are doing three meetings, a planning meeting that happened on
 14th Nov 2022, you can see the recording below.
 
--- ds.youtube:
-v: -zC52jk29sY
-
 
 -- ds.markdown:
 
@@ -115,8 +116,7 @@ for now manage with the slightly crappy version offered by Github.
 
 We do a review meeting mid week, which happened on 16th Nov 2022.
 
--- ds.youtube:
-v: XDQTz4kvhCw
+
 
 -- ds.markdown:
 
@@ -139,12 +139,13 @@ Brief.pptx](https://docs.google.com/presentation/d/1CHWKFM1kA5XOv2cig3pQ3NbmoMS6
 
 We started using tandem.
 
+-- container: dd-11
 
--- ds.h1: Move FifthTry.com to Heroku
-
-Owner: AbrarK
-
-Status: On Track
+-- dd.presentation: Move FifthTry.com to Heroku
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: AbrarK
+status: On Track
 
 Currently we are using github pages, now lets switch to Heroku so we can start
 using fpm's auth feature.
@@ -153,22 +154,30 @@ This document will become the "coming soon page" for others, and for
 FifthTry employees it would act as planning document. Also implement auth with
 following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
--- ds.h1: End to End FPM App + Doc Site Support
+-- container: dd-11
 
-Onwer: Ganesh, AbrarK
+-- dd.presentation: End to End FPM App + Doc Site Support
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Done
 
-Status: .icon done, need to be image-src.
 
 We have built both app switcher, the processor etc, we need to see the whole
 thing end to end. Lets ensure tha app icons are working. `.icon` support in
 `fpm.package` record.
 
+-- container: dd-11
 
--- ds.h1: WASM: Subscription App With Doc Site Support
 
-Onwer: Ganesh, AbrarK(Primary)
+-- dd.presentation: WASM: Subscription App With Doc Site Support
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: In Progress
 
-Status: Abrar to start tomorrow. Ganesh: To try frontend only
 
 We will show a subscriber dialog on abrark.com. It will be backed by supabase.
 
@@ -246,11 +255,15 @@ Note: we are not doing any email validation (this is not [double opt
 in](https://en.wikipedia.org/wiki/Opt-in_email)) in this release. To do opt-in
 we need email capability, which we do not yet have.
 
--- ds.h1: Subscription Walling
+-- container: dd-11
 
-Owner: AbrarK
+-- dd.presentation: Subscription Walling
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: Not Sure
 
-Status: Can not start till above
 
 Can we use the fact that user is subscribed or not to create a wall.
 
@@ -268,11 +281,15 @@ show pages to only people who are subscribed to us.
 What if they come from a different browser? They will have to enter their email
 address again in the new browser.
 
--- ds.h1: Wall Support in Sitemap
+-- container: dd-11
 
-Owner: Ganesh(Primary), AbrarK
+-- dd.presentation: Wall Support in Sitemap
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Done
 
-Status: Is Reader (abrark). Ganesh:
 
 And doc-site should only show page title and a `-- string ds.wall-message:
 please login`, and `-- string ds.login-url`.
@@ -292,12 +309,15 @@ show `ds.wall-message`.
 
 [Refernce drawing](https://app.excalidraw.com/s/2xFnk4q86Ix/8Sx8MfYb0Vj)
 
+-- container: dd-11
 
--- ds.h1: Auth: More Providers
+-- dd.presentation: Auth: More Providers
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: Done
 
-Owner: AbrarK
-
-Status: Github stuff are imeplemented
 
 We should implement `github-follows`, `github-watches`, `github-team`,
 `github-sponsors`, `github-contributor=<repo>`.
@@ -311,56 +331,76 @@ Discord.
 Slack.
 
 
+-- container: dd-11
 
--- ds.h1: Icon Support In Doc Site
-
-Owner: Ganesh
-
-Status: some issue with image, abrar/arpita have fixed it, pr to be merged
+-- dd.presentation: Icon Support In Doc Site
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: On Track
 
 We have to add support for this in doc-site. And in then update docs etc. Also
 in dash-dash-ds.
 
 
--- ds.h1: Workshop Page
 
-Owner: Ganesh
+-- container: dd-11
 
-Status: ready, in testing
+-- dd.presentation: Workshop Page
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: On Track
+
 
 We have created some workshop page enhancements, it's time to finish it, and
 show `ftd.dev/workshop`, with proper content using the latest work done by
 Ganesh.
 
--- ds.h1: Font Documentation Improvement
 
-Owner: Ganesh
+-- container: dd-11
 
-Status: New fonts fixed. Existing fonts are pending.
+-- dd.presentation: Font Documentation Improvement
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Half Done
 
 Follow the standard in all font sites.
 
--- ds.h1: Spider Book DS
+-- container: dd-11
 
-Owner: Ganesh
+-- dd.presentation: Spider Book DS
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Experimenting
 
-Status: is in demo-able state
+-- container: dd-11
 
 
 
--- ds.h1: More ftd 0.3
-
-Owner: Arpita
-
-Status: 0.3 would work with fpm. edition?
+-- dd.presentation: More ftd 0.3
+owner: Arpita
+owner-avatar: $assets.files.images.events.arpita.jpg
+helper: Arpita
+helper-avatar: $assets.files.images.events.arpita.jpg
+status: Not Sure
 
 Let see if we can get doc-site working this week.
 
--- ds.h1: Payment Improvements
+-- container: dd-11
 
-Owner: Rithik, Ganesh
+-- dd.presentation: Payment Improvements
+owner: Rithik
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Done
 
-Status: subscription api done.
 
 In last demo we saw one time payment integration. We have to switch to monthly
 subscription API integration.
@@ -372,5 +412,6 @@ can use.
 It will be deployed on `fifthtry.com/hosting/`. Ganesh will find the UI that
 Thakkar created.
 
--- container: dd-11.wrapper.right-sidebar
+-- container: dd-11.demo-container.right-sidebar
+
 -- events.sidebar:

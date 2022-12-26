@@ -1,18 +1,18 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry Demo Day #7
-id: dd-7
+
+-- dd.past-demo-day:  Fifthtry
+number: #7
+date: 21 Oct 
+year: 2022
+demo-video: 9X6yYZNIDV0
 sidebar: true
+id: dd-7
 
 Our 7th weekly [demo event](/h/dd/) happened on 21st Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
-
-
-
--- ds.youtube:
-v: 9X6yYZNIDV0
 
 
 -- ds.markdown:
@@ -26,5 +26,6 @@ https://ftd-lang.github.io/ftd/6-function.html
 https://github.com/ftd-lang/ftd/blob/main/t/html/6-function.ftd
 
 
--- container: dd-7.wrapper.right-sidebar
+-- container: dd-7.demo-container.right-sidebar
+
 -- events.sidebar:

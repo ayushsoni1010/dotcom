@@ -1,8 +1,12 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry Demo Day #9
-id: dd-9
+-- dd.past-demo-day:  Fifthtry
+number: #9
+date: 04 Nov 
+year: 2022
+demo-video: gxAfeuOm_Wo
 sidebar: true
+id: dd-9
 
 Our 9th weekly [demo event](/h/dd/) happened on 4th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -10,8 +14,6 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
--- ds.youtube:
-v: gxAfeuOm_Wo
 
 -- ds.h1: Welcome Meenu and Harish!
 
@@ -308,5 +310,6 @@ patchwork, where as in 0.3 we have a clear design when we started, so everything
 is much more thought through.
 
 
--- container: dd-9.wrapper.right-sidebar
+-- container: dd-9.demo-container.right-sidebar
+
 -- events.sidebar:

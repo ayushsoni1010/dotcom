@@ -1,19 +1,27 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry's 15th Demo Day
-id: dd-15
+
+-- dd.past-demo-day:  Fifthtry
+number: #15
+date: 23 Dec 
+year: 2022
+demo-video: vOEO7hxvSSw
 sidebar: true
+id: dd-15
 
 Our 15th weekly [demo event](/h/dd/) will happen on 23rd Dec 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
+-- container:  dd-15
 
--- ds.h1: Marketing: Finish Up Developer Messaging
-
-
-Owner: AbrarK (Ajit will work)
+-- dd.presentation: Marketing: Finish Up Developer Messaging
+owner: @ft-zens.AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @ft-zens.Ajit
+helper-avatar: $assets.files.images.events.ajit.jpg
+status: Pending
 
 In /m/ we will add senior and junior developer.ftd files. We will compile the
 talking points, objections.
@@ -33,56 +41,75 @@ talking points, objections.
 
 -- ds.h3: Full Stack App
 
+-- container:  dd-15
 
--- ds.h1: Marketing: Engineering College
-
-Onwer: AbrarK (Ajit will work)
+-- dd.presentation: Engineering College
+owner: @AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @Ajit
+helper-avatar: $assets.files.images.events.ajit.jpg
+status: Pending
 
 Talking points, etc. And 5 calls with 5 diff colleges. Actual event in week to
 10 days.
 
 
-
 -- ds.h2: Initial Conversation
 
 
+-- container:  dd-15
 
--- ds.h1: Marketing: 5 Hrs or video
+-- dd.presentation: Marketing: 5 Hrs or video
+owner: @AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: On Track
 
 Ajit to learn and record FTD. Calls with AmitU, Arpita etc.
 
-Owner: AbrarK
 
 
 
+-- container:  dd-15
 
--- ds.h1: texty-ps to be used by rithik
+-- dd.presentation: texty-ps to be used by rithik
+owner: @Rithik
+helper: @Rithik
+status: On Track
 
 
+-- container:  dd-15
 
-
-
-
-
--- ds.h1: Old Stuff
+-- dd.presentation: Old Stuff
+owner: @AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: On Track
 
 - abrark: telegram, twitter, discord testing: pending
 - fifthtry.com is still not powered by fpm: github app pending
 - d-day page to be used
 
+-- container:  dd-15
 
+-- dd.presentation: Rename fpm.dev to fastn.io
+owner: @ft-zens.Abrar
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: On Track
 
--- ds.h1: Rename fpm.dev to fastn.io
-
-Owner: Abrar, Ganesh
 
 Github repo, CLI binary name, code.
 
+-- container:  dd-15
 
-
--- ds.h1: Proper Authentication For FPM Controller
-
-Owner: Rithik
+-- dd.presentation: Proper Authentication For FPM Controller
+owner: @ft-zens.Rithik
+helper: @ft-zens.Rithik
+status: On Track
 
 Who/what is going to be the provider? Github. One strong reason to use github,
 why we can not use gmail etc is because site content would still be managed by
@@ -103,38 +130,48 @@ lang: ftd
 \-- fpm.app:
 user-id: <github-username>
 
+-- container:  dd-15
 
--- ds.h1: FPM Controller: Fly Support
-
-
-Owner: Rithik
+-- dd.presentation: FPM Controller: Fly Support
+owner: @ft-zens.Rithik
+helper: @ft-zens.Rithik
+status: On Track
 
 We have to bring back fly integration.
-
 Download Base URL should be just `abrark/foo` (not the full URL, which is also
 accepted).
 
--- ds.h1: Auth On Some Site & Docs
-
-Owner: AbrarK
-
-Status: on track
+-- container:  dd-15
+-- dd.presentation: Auth On Some Site & Docs
+owner: @ft-zens.AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @ft-zens.AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: On Track
 
 Let's ensure there is auth implemented on some site.
 
+-- container:  dd-15
 
--- ds.h1: All Demos
-
-Owner: AbrarK
-
+-- dd.presentation: All Demos
+owner: @ft-zens.AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: @ft-zens.AbrarK
+helper-avatar: $assets.files.images.events.abrar.jpg
+status: Pending
 
 Lets list down all the main features we have, lets have a repo, and a website to
 demo that feature.
 
+-- container:  dd-15
 
--- ds.h1: FTD 0.3: doc site
+-- dd.presentation: FTD 0.3: doc site
+owner: @ft-zens.Arpita
+owner-avatar: $assets.files.images.events.arpita.jpg
+helper: @ft-zens.Arpita
+helper-avatar: $assets.files.images.events.arpita.jpg
+status: In Progress
 
-Owner: Arpita
 
 Status: Entire companies priority now
 
@@ -147,5 +184,5 @@ Status: Entire companies priority now
 
 
 
--- container: dd-15.wrapper.right-sidebar
+-- container: dd-15.demo-container.right-sidebar
 -- events.sidebar:

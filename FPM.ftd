@@ -5,6 +5,7 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 -- fpm.dependency: fifthtry.github.io/inter
+-- fpm.dependency: fifthtry.github.io/demo-day as dd
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
 -- fpm.dependency: fifthtry.github.io/product-switcher as ps
 -- fpm.dependency: fifthtry.github.io/fifthtry-brand-switcher as fbs
@@ -20,6 +21,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 -- fpm.auto-import: event
 -- fpm.auto-import: ds
+-- fpm.auto-import: dd
 -- fpm.auto-import: fifthtry.com/FPM/config
 -- fpm.auto-import: fifthtry.com/assets
 -- fpm.auto-import: fifthtry.github.io/bling/chat
@@ -82,6 +84,8 @@ github-starred: ftd-lang/fpm
 # Events: /events/
 
 - Upcoming Events: /events/
+- Demo Day #16 (9th Dec): /events/dd/2022/16/
+- Demo Day #15 (9th Dec): /events/dd/2022/15/
 - Demo Day #14 (9th Dec): /events/dd/2022/14/
 - Demo Day #13 (2nd Dec): /events/dd/2022/13/
 - Demo Day #12 (25th Nov): /events/dd/2022/12/

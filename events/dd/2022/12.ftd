@@ -1,78 +1,74 @@
 -- import: fifthtry.com/events
+-- fpm.dependency: fifthtry.github.io/demo-day as dd
 
--- ds.page: FifthTry's 12th Demo Day
-id: dd-12
+
+
+
+
+
+
+-- dd.past-demo-day:  Fifthtry
+number: #5
+date: 25 Nov 
+year: 2022
+demo-video: BwWbsVe-8XE
+planning-video: huNWsabPBV8
 sidebar: true
+id: dd-12
 
 Our 12th weekly [demo event](/h/dd/) happened on 25th Nov 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
-
-
-
--- ds.h1: Demo Day Planning Meeting
-
-Demo Day planning committee, "dd-com", met at 11AM, 21st Nov 2022 to plan the
-upcoming demo day.
-
--- ds.youtube:
-v: huNWsabPBV8
-
-
-
-
-
-
-
-
-
-
-
--- ds.h1: FPM Controller
-
-Owner: Rithik
+-- dd.presentation: FPM Controller
+owner: @ft-zens.Rithik
+helper: @ft-zens.Rithik
+status: Pending
 
 Let's create wireframe flow.
+
 
 -- ds.youtube:
 v: sT4Bjl2g2BE
 
 
+-- container:  dd-12
 
+-- dd.presentation: Personal/Everyone Website Website Theme
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Pending
 
-
-
-
-
-
-
-
-
-
--- ds.h1: Personal/Everyone Website Website Theme
-
-Owner: Ganesh
 
 And template. People should stop using `fpm-template`, it is too basic, we
 should have more template specific to needs, eg personal-site.
 
 Johny-PS
 
+-- container:  dd-12
 
+-- dd.presentation: Tutorial: GoDaddy To Github Pages
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Pending
 
--- ds.h1: Tutorial: GoDaddy To Github Pages
 
 End to end tutorial, with video.
 
-Owner: Ganesh
 
--- ds.h1: Demo Day Page
+-- container:  dd-12
 
-Owner: Ganesh
-
-Status: Carry over from dd11
+-- dd.presentation: Demo Day Page
+owner: @ft-zens.Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-zens.Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Carry Over
 
 Like we created proper modelling for workshop page, we have `ws.chapter`,
 `ws.lesson` etc, can we create `demo-day`, and `dd.demo-day` and
@@ -88,8 +84,10 @@ in-future: true
 
 \-- dd.presentation: Move FifthTry.com to Heroku
 owner: @ft-zens.abrark
+owner-avatar: $assets.files.images.events.abrar.jpg
 helper: @ft-zens.priyanka
 helper: @ft-zens.arpita
+helper-avatar: $assets.files.images.events.arpita.jpg
 
 Currently we are using github pages, now lets switch to
 Heroku so we can start using fpm's auth feature.
@@ -100,7 +98,5 @@ planning document. Also implement auth with following
 groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 
-
-
--- container: dd-12.wrapper.right-sidebar
+-- container: dd-12.demo-container.right-sidebar
 -- events.sidebar:

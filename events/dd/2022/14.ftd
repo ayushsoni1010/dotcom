@@ -1,8 +1,13 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry's 14th Demo Day
-id: dd-14
+-- dd.past-demo-day:  Fifthtry
+number: #14
+date: 09 Dec 
+year: 2022
+demo-video: vOEO7hxvSSw
+planning-video: -whhhABOWSs
 sidebar: true
+id: dd-14
 
 Our 14th weekly [demo event](/h/dd/) happened on 9th Dec 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -10,24 +15,13 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
--- ds.h1: Meetings
 
-Demo day planning meeting.
-
--- ds.youtube:
-v: -whhhABOWSs
-
-
-
-
--- ds.h1: Workshop
-
-Owner: AmitU
-
-Status: on track
+-- dd.presentation: Workshop
+owner: AmitU
+helper: AmitU
+status: On Track
 
 - upgrade workshop source files to 0.3 syntax
-
 
 -- ds.h2: Module planning
 
@@ -50,12 +44,12 @@ Each module is 1hr or so, with 1 hr of exercise extra. Broken into 5 mins
 
 
 
+-- container: dd-14
 
-
-
--- ds.h1: FPM Controller: Deploy Using FifthTry Button
-
-Owner: Rithik
+-- dd.presentation: FPM Controller: Deploy Using FifthTry Button
+owner: Rithik
+helper: Rithik
+status: Pending
 
 Button will redirect to fpm with github repo name embedded in it. We want a clean
 add site flow, with user entering nothing in best case.
@@ -78,22 +72,26 @@ containing:
 We will show the link to abrark/my-repo repo.
 
 
+-- container: dd-14
 
--- ds.h1: Style Guide - Typography
+-- dd.presentation: Style Guide - Typography
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Pending
 
-Owner: Ganesh
+-- container: dd-14
 
-
-
-
--- ds.h1: Sitemap: Bury Support
-
-Owner: Ganesh
-
-Status: Not sure.
+-- dd.presentation: Sitemap: Bury Support
+owner: Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+helper: Ganesh
+helper-avatar: $assets.files.images.events.ganesh.jpg
+status: Not Sure
 
 All buries must be contigeous and at the end of any list.
 
 
--- container: dd-14.wrapper.right-sidebar
+-- container: dd-14.demo-container.right-sidebar
 -- events.sidebar:

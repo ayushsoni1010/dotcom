@@ -1,17 +1,20 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry Demo Day #10
-id: dd-10
-sidebar: true
 
-Our 10th weekly [demo event](/h/dd/) happened on 11th Oct 2022. We showcased
+
+-- dd.past-demo-day:  Fifthtry
+number: #10
+date: 11 Nov 
+year: 2022
+demo-video: yZID38Zjwoo
+sidebar: true
+id: dd-10
+
+Our 10th weekly [demo event](/h/dd/) happened on 11th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
-
--- ds.youtube:
-v: yZID38Zjwoo
 
 -- ds.h1: Employee Handbook
 
@@ -262,5 +265,5 @@ Do checkout our [next demo day's planning page](/events/dd/2022/11/) to checkout
 what to expect in the next one. See you on 18th Nov 2022!
 
 
--- container: dd-10.wrapper.right-sidebar
+-- container: dd-10.demo-container.right-sidebar
 -- events.sidebar:

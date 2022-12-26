@@ -1,8 +1,12 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry Demo Day #8
-id: dd-8
+-- dd.past-demo-day:  Fifthtry
+number: #8
+date: 28 Oct 
+year: 2022
+demo-video: X4DKoyUDHUQ
 sidebar: true
+id: dd-8
 
 Our 8th weekly [demo event](/h/dd/) happened on 28th Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -10,8 +14,6 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
--- ds.youtube:
-v: X4DKoyUDHUQ
 
 
 -- ds.h1: Overview of Last Workshop
@@ -139,5 +141,5 @@ or [LinkedIn](https://www.linkedin.com/company/69613898/) to get learn more
 about what's up with FifthTry.
 
 
--- container: dd-8.wrapper.right-sidebar
+-- container: dd-8.demo-container.right-sidebar
 -- events.sidebar:
