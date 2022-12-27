@@ -20,7 +20,6 @@ helper: AbrarK
 helper-avatar: $assets.files.images.events.abrar.jpg
 status: Pending
 
-
 Let's implement this as django app for now. Shared. API Key.
 
 -- container: dd-16
@@ -48,7 +47,6 @@ status: Not Sure
 
 
 mehmet is working on this.
-
 
 
 -- container: dd-16.upcoming-demo-container.right-sidebar
