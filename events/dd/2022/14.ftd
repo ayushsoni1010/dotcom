@@ -19,7 +19,7 @@ company.
 -- dd.presentation: Workshop
 owner: AmitU
 owner-avatar: $assets.files.images.events.amitu.jpg
-helper: @ft-devs
+helper: Ajit
 status: On Track
 
 - upgrade workshop source files to 0.3 syntax
@@ -86,7 +86,7 @@ We will show the link to abrark/my-repo repo.
 -- dd.presentation: Style Guide - Typography
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: @ft-builders
+helper: Meenu
 status: Pending
 
 -- container: dd-14
@@ -94,7 +94,7 @@ status: Pending
 -- dd.presentation: Sitemap: Bury Support
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: @ft-builders
+helper: Priyanka
 status: Not Sure
 
 All buries must be contigeous and at the end of any list.
