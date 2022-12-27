@@ -3,7 +3,6 @@
 -- dd.past-demo-day:  Fifthtry
 number: #16
 date: 30 Dec 
-year: 2022
 sidebar: true
 id: dd-16
 
@@ -17,8 +16,7 @@ company.
 -- dd.presentation: Subscription App - Using Django
 owner: AmitU
 owner-avatar: $assets.files.images.events.amitu.jpg
-helper: AmitU
-helper-avatar: $assets.files.images.events.amitu.jpg
+helper: @ft-devs
 status: Pending
 
 
@@ -29,8 +27,7 @@ Let's implement this as django app for now. Shared. API Key.
 -- dd.presentation: API Documentation Components
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-builders
 status: Pending
 
 
@@ -45,7 +42,6 @@ We need yml to ftd record parser for openapi files.
 -- dd.presentation: Better Error Messages in FTD
 owner: Arpita
 owner-avatar: $assets.files.images.events.arpita.jpg
-helper: Arpita
 helper-avatar: $assets.files.images.events.arpita.jpg
 status: Not Sure
 
@@ -55,4 +51,5 @@ mehmet is working on this.
 
 
 -- container: dd-16.demo-container.right-sidebar
+
 -- events.sidebar:

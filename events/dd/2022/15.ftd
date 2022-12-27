@@ -17,9 +17,9 @@ company.
 -- container:  dd-15
 
 -- dd.presentation: Marketing: Finish Up Developer Messaging
-owner: @ft-zens.AbrarK
+owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @ft-zens.Ajit
+helper: Ajit
 helper-avatar: $assets.files.images.events.ajit.jpg
 status: Pending
 
@@ -44,9 +44,9 @@ talking points, objections.
 -- container:  dd-15
 
 -- dd.presentation: Engineering College
-owner: @AbrarK
+owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @Ajit
+helper: Ajit
 helper-avatar: $assets.files.images.events.ajit.jpg
 status: Pending
 
@@ -60,10 +60,8 @@ Talking points, etc. And 5 calls with 5 diff colleges. Actual event in week to
 -- container:  dd-15
 
 -- dd.presentation: Marketing: 5 Hrs or video
-owner: @AbrarK
+owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @AbrarK
-helper-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 Ajit to learn and record FTD. Calls with AmitU, Arpita etc.
@@ -74,18 +72,15 @@ Ajit to learn and record FTD. Calls with AmitU, Arpita etc.
 -- container:  dd-15
 
 -- dd.presentation: texty-ps to be used by rithik
-owner: @Rithik
-helper: @Rithik
+owner: Rithik
 status: On Track
 
 
 -- container:  dd-15
 
 -- dd.presentation: Old Stuff
-owner: @AbrarK
+owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @AbrarK
-helper-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 - abrark: telegram, twitter, discord testing: pending
@@ -95,9 +90,9 @@ status: On Track
 -- container:  dd-15
 
 -- dd.presentation: Rename fpm.dev to fastn.io
-owner: @ft-zens.Abrar
+owner: Abrar
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @ft-zens.Ganesh
+helper: Ganesh
 helper-avatar: $assets.files.images.events.ganesh.jpg
 status: On Track
 
@@ -107,8 +102,7 @@ Github repo, CLI binary name, code.
 -- container:  dd-15
 
 -- dd.presentation: Proper Authentication For FPM Controller
-owner: @ft-zens.Rithik
-helper: @ft-zens.Rithik
+owner: Rithik
 status: On Track
 
 Who/what is going to be the provider? Github. One strong reason to use github,
@@ -133,8 +127,7 @@ user-id: <github-username>
 -- container:  dd-15
 
 -- dd.presentation: FPM Controller: Fly Support
-owner: @ft-zens.Rithik
-helper: @ft-zens.Rithik
+owner: Rithik
 status: On Track
 
 We have to bring back fly integration.
@@ -143,10 +136,8 @@ accepted).
 
 -- container:  dd-15
 -- dd.presentation: Auth On Some Site & Docs
-owner: @ft-zens.AbrarK
+owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @ft-zens.AbrarK
-helper-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 Let's ensure there is auth implemented on some site.
@@ -154,10 +145,8 @@ Let's ensure there is auth implemented on some site.
 -- container:  dd-15
 
 -- dd.presentation: All Demos
-owner: @ft-zens.AbrarK
+owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @ft-zens.AbrarK
-helper-avatar: $assets.files.images.events.abrar.jpg
 status: Pending
 
 Lets list down all the main features we have, lets have a repo, and a website to
@@ -166,10 +155,8 @@ demo that feature.
 -- container:  dd-15
 
 -- dd.presentation: FTD 0.3: doc site
-owner: @ft-zens.Arpita
+owner: Arpita
 owner-avatar: $assets.files.images.events.arpita.jpg
-helper: @ft-zens.Arpita
-helper-avatar: $assets.files.images.events.arpita.jpg
 status: In Progress
 
 
@@ -185,4 +172,5 @@ Status: Entire companies priority now
 
 
 -- container: dd-15.demo-container.right-sidebar
+
 -- events.sidebar:

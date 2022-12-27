@@ -22,8 +22,7 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 -- dd.presentation: FPM Controller
-owner: @ft-zens.Rithik
-helper: @ft-zens.Rithik
+owner: Rithik
 status: Pending
 
 Let's create wireframe flow.
@@ -36,10 +35,8 @@ v: sT4Bjl2g2BE
 -- container:  dd-12
 
 -- dd.presentation: Personal/Everyone Website Website Theme
-owner: @ft-zens.Ganesh
+owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: @ft-zens.Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
 status: Pending
 
 
@@ -51,10 +48,8 @@ Johny-PS
 -- container:  dd-12
 
 -- dd.presentation: Tutorial: GoDaddy To Github Pages
-owner: @ft-zens.Ganesh
+owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: @ft-zens.Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
 status: Pending
 
 
@@ -64,10 +59,8 @@ End to end tutorial, with video.
 -- container:  dd-12
 
 -- dd.presentation: Demo Day Page
-owner: @ft-zens.Ganesh
+owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: @ft-zens.Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
 status: Carry Over
 
 Like we created proper modelling for workshop page, we have `ws.chapter`,
@@ -83,10 +76,9 @@ date: 18th Nov 2022
 in-future: true
 
 \-- dd.presentation: Move FifthTry.com to Heroku
-owner: @ft-zens.abrark
+owner: Abrark
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: @ft-zens.priyanka
-helper: @ft-zens.arpita
+helper: Arpita
 helper-avatar: $assets.files.images.events.arpita.jpg
 
 Currently we are using github pages, now lets switch to
@@ -99,4 +91,5 @@ groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
 
 -- container: dd-12.demo-container.right-sidebar
+
 -- events.sidebar:

@@ -144,7 +144,6 @@ We started using tandem.
 -- dd.presentation: Move FifthTry.com to Heroku
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: AbrarK
 status: On Track
 
 Currently we are using github pages, now lets switch to Heroku so we can start
@@ -260,8 +259,6 @@ we need email capability, which we do not yet have.
 -- dd.presentation: Subscription Walling
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: AbrarK
-helper-avatar: $assets.files.images.events.abrar.jpg
 status: Not Sure
 
 
@@ -314,8 +311,6 @@ show `ds.wall-message`.
 -- dd.presentation: Auth: More Providers
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
-helper: AbrarK
-helper-avatar: $assets.files.images.events.abrar.jpg
 status: Done
 
 
@@ -336,8 +331,6 @@ Slack.
 -- dd.presentation: Icon Support In Doc Site
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
 status: On Track
 
 We have to add support for this in doc-site. And in then update docs etc. Also
@@ -350,8 +343,6 @@ in dash-dash-ds.
 -- dd.presentation: Workshop Page
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
 status: On Track
 
 
@@ -365,8 +356,7 @@ Ganesh.
 -- dd.presentation: Font Documentation Improvement
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
+helper: Priyanka
 status: Half Done
 
 Follow the standard in all font sites.
@@ -376,8 +366,7 @@ Follow the standard in all font sites.
 -- dd.presentation: Spider Book DS
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
+helper: Priyanka
 status: Experimenting
 
 -- container: dd-11
@@ -387,8 +376,6 @@ status: Experimenting
 -- dd.presentation: More ftd 0.3
 owner: Arpita
 owner-avatar: $assets.files.images.events.arpita.jpg
-helper: Arpita
-helper-avatar: $assets.files.images.events.arpita.jpg
 status: Not Sure
 
 Let see if we can get doc-site working this week.

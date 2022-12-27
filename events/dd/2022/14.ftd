@@ -18,7 +18,8 @@ company.
 
 -- dd.presentation: Workshop
 owner: AmitU
-helper: AmitU
+owner-avatar: $assets.files.images.events.amitu.jpg
+helper: @ft-devs
 status: On Track
 
 - upgrade workshop source files to 0.3 syntax
@@ -38,14 +39,14 @@ Each module is 1hr or so, with 1 hr of exercise extra. Broken into 5 mins
 
 
 
+-- container: dd-14
 
 
 
 
--- ds.h1: FPM Controller: Fly Support
-
-
-Owner: Rithik
+-- dd.presentation: FPM Controller: Fly Support
+owner: Rithik
+status: Pending
 
 We have to bring back fly integration.
 
@@ -57,7 +58,6 @@ accepted).
 
 -- dd.presentation: FPM Controller: Deploy Using FifthTry Button
 owner: Rithik
-helper: Rithik
 status: Pending
 
 Button will redirect to fpm with github repo name embedded in it. We want a clean
@@ -86,8 +86,7 @@ We will show the link to abrark/my-repo repo.
 -- dd.presentation: Style Guide - Typography
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-builders
 status: Pending
 
 -- container: dd-14
@@ -95,12 +94,12 @@ status: Pending
 -- dd.presentation: Sitemap: Bury Support
 owner: Ganesh
 owner-avatar: $assets.files.images.events.ganesh.jpg
-helper: Ganesh
-helper-avatar: $assets.files.images.events.ganesh.jpg
+helper: @ft-builders
 status: Not Sure
 
 All buries must be contigeous and at the end of any list.
 
 
 -- container: dd-14.demo-container.right-sidebar
+
 -- events.sidebar:
