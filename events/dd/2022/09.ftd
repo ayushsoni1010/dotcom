@@ -1,6 +1,6 @@
 -- import: fifthtry.com/events
 
--- dd.past-demo-day:  Fifthtry
+-- dd.past-demo-day:  FifthTry
 number: #9
 date: 04 Nov 
 year: 2022
@@ -25,7 +25,7 @@ libraries](https://fpm.dev/all/) for our end users. Excited to have a new
 co-consiprator, help us change the world.
 
 We are also working with [Harish Shankaran](https://www.linkedin.com/in/harishshankaran/)
-as a consultant. Harish will help us redesign ftd.dev, fpm.dev, fifthtry.com etc
+as a consultant. Harish will help us redesign ftd.dev, fpm.dev, FifthTry.com etc
 websites.
 
 -- ds.h1: FifthTry Repositioning: DXP?
@@ -176,7 +176,7 @@ applications as FPM package. Now adding a full working reusable backend
 application is also a matter of addings `fpm.dependency` in your `FPM.ftd`.
 
 Abrar shows how he can "install" the [kameri app (a todo
-application)](https://github.com/FifthTry/kameri-app/) in `abrark.com`. The WIP
+application)](https://github.com/fifthtry/kameri-app/) in `abrark.com`. The WIP
 mount-point support he showed in last demo is now ready, and site owner can
 decide on what URL should the re-usable app be mounted.
 

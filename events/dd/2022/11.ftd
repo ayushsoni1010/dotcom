@@ -1,6 +1,6 @@
 -- import: fifthtry.com/events
 
--- dd.past-demo-day:  Fifthtry
+-- dd.past-demo-day:  FifthTry
 number: #11
 date: 18 Nov 
 year: 2022
@@ -397,7 +397,7 @@ Also the UI that I saw last time had buttons for developers etc, we have to
 create UI for our end users. The goal is to make this live asap, that end users
 can use.
 
-It will be deployed on `fifthtry.com/hosting/`. Ganesh will find the UI that
+It will be deployed on `FifthTry.com/hosting/`. Ganesh will find the UI that
 Thakkar created.
 
 -- container: dd-11.demo-container.right-sidebar

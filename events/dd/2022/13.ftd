@@ -2,7 +2,7 @@
 
 
 
--- dd.past-demo-day:  Fifthtry
+-- dd.past-demo-day:  FifthTry
 number: #13
 date: 02 Dec 
 year: 2022
@@ -51,7 +51,7 @@ We are giving this to an agency (growisto).
 owner: Rithik
 status: Half Done
 
-Login pages. Show it working with fifthtry.com. Do db only backend without
+Login pages. Show it working with FifthTry.com. Do db only backend without
 integration with fly and stripe.
 
 

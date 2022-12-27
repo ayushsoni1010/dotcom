@@ -1,7 +1,7 @@
 -- import: fifthtry.com/events
 
 
--- dd.past-demo-day:  Fifthtry
+-- dd.past-demo-day:  FifthTry
 number: #15
 date: 23 Dec 
 year: 2022
@@ -85,7 +85,7 @@ owner-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 - abrark: telegram, twitter, discord testing: pending
-- fifthtry.com is still not powered by fpm: github app pending
+- FifthTry.com is still not powered by fpm: github app pending
 - d-day page to be used
 
 -- container:  dd-15
