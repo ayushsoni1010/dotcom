@@ -1,0 +1,91 @@
+-- import: fifthtry.com/events
+
+-- ds.page: FifthTry's 1st Demo Day Of 2023
+id: dd-23-01
+sidebar: true
+
+Our 16th weekly [demo event](/h/dd/) will happen on 30th Dec 2022. We showcase
+what people in FifthTry have built in this week. This is an important part of
+our, [how to do remote right initiative](/h/remote/), we are now fully remote
+company.
+
+
+
+-- ds.h1: All Demos
+
+Owner: AbrarK
+
+
+Lets list down all the main features we have, lets have a repo, and a website to
+demo that feature.
+
+
+-- ds.h1: Subscription App - Using Django
+
+Owner: AbrarK
+
+Let's implement this as django app for now. Shared. API Key.
+
+
+
+-- ds.h1: API Documentation Components
+
+Owner: Ganesh
+
+https://www.twilio.com/blog/three-reasons-openapi-best-documentation-platform-api
+
+Let's take this as inspiration: https://elements-demo.stoplight.io/
+
+We need yml to ftd record parser for openapi files.
+
+
+-- ds.h1: Better Error Messages in FTD
+
+Owner: Arpita
+
+Status: Mehmet is still studying, not looking very likely right now.
+
+mehmet is working on this.
+
+
+
+
+-- ds.h1: Proper Authentication For FPM Controller
+
+
+Owner: Rithik
+
+
+
+
+-- ds.h1: Subscription App - Using Django
+
+Owner: AbrarK
+
+Let's implement this as django app for now. Shared. API Key.
+
+
+
+-- ds.h1: API Documentation Components
+
+Owner: Ganesh
+
+https://www.twilio.com/blog/three-reasons-openapi-best-documentation-platform-api
+
+Let's take this as inspiration: https://elements-demo.stoplight.io/
+
+We need yml to ftd record parser for openapi files.
+
+
+-- ds.h1: Better Error Messages in FTD
+
+Owner: Arpita
+
+Status: Mehmet is still studying, not looking very likely right now.
+
+mehmet is working on this.
+
+
+
+-- container: dd-23-01.wrapper.right-sidebar
+-- events.sidebar:
