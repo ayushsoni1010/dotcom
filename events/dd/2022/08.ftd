@@ -17,7 +17,12 @@ company.
 
 
 
--- ds.h1: Overview of Last Workshop
+
+
+-- dd.presentation: Overview of Last Workshop
+owner: AmitU
+owner-avatar: $assets.files.images.events.amitu.jpg
+status: Done
 
 Amit Upadhyay speaks about the last workshop we conducted, attended by 10 non
 FifthTry people. In this workshop we only managed to cover a third of the
@@ -51,7 +56,11 @@ We plan to add localstorage based read tracking in the workshop soon, so you wil
 be able to mark tasks as done, and resume the workshop when you come back, making
 FPM/ftd way of storing workshop content significanlty better than using Github.
 
--- ds.h1: WASM Based App On Heroku
+-- container: dd-8
+
+-- dd.presentation: WASM Based App On Heroku
+owner: Shobhit
+status: Done
 
 Shobhit showed [kameri.herokuapp.com](https://kameri.herokuapp.com/demo/) running
 https://github.com/FifthTry/kameri, our WASM powered todo application. WASM
@@ -77,7 +86,11 @@ Shobhit has written an early draft of a [how-to on
 WASM](https://github.com/ftd-lang/fpm.dev/pull/90/files). We are going to add a
 fourth part to our workshop, W4, where we would learn how to write WASM app.
 
--- ds.h1: FPM Heroku Buildpack
+-- container: dd-8
+
+-- dd.presentation: FPM Heroku Buildpack
+owner: Shobhit
+status: Done
 
 Heroku has a concept of [buildpacks](https://devcenter.heroku.com/articles/buildpacks),
 Shobhit has written a buildpack for FPM apps:
@@ -87,7 +100,12 @@ Heroku has a [marketplace for such buildpacks](https://elements.heroku.com/build
 we will be submitting our buildpack there shortly. This will help us in
 distribution, one of the biggest challenges for a startup.
 
--- ds.h1: Event Support In FTD
+-- container: dd-8
+
+-- dd.presentation: Event Support In FTD
+owner: Arpita
+owner-avatar: $assets.files.images.events.arpita.jpg
+status: Done
 
 Arpita has been relentlessly working on FTD 0.3, and has just added support for
 event handling. We have a way to write custom functions in FTD, which we demoed
@@ -114,7 +132,12 @@ we hope to finish this in another 7-10 days, and get doc-site working asap using
 0.3.
 
 
--- ds.h1: WIP Mount Point Support
+-- container: dd-8
+
+-- dd.presentation: WIP Mount Point Support
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+status: Done
 
 Abrar has been working on mount point support, and it is starting to get ready,
 he showed the work in progress demo of it.
@@ -128,11 +151,18 @@ is going to use this todo app daily, he would want a clean URL, which he can do
 by adding one line to `fpm.depdency`, and get clean URL `https://abrark.com/todos/`.
 
 
--- ds.h1: Search in Movie DB App
+-- container: dd-8
+
+-- dd.presentation: Search in Movie DB App
+owner: Aviral
+helper: Aditi
+status: Done
 
 Aviral and Aditi demothe search feature to the [Movie DB
 app](https://github.com/fifthtry/movie-db), a full stack FPM app with frontend
 written in FTD and backend in Django.
+
+-- container: dd-8
 
 -- ds.h1: That's All Folks!
 

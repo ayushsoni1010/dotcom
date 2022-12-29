@@ -22,21 +22,64 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
--- ds.markdown:
+
+
+
+
+
+-- dd.presentation: Recap
+owner: AmitU
+owner-avatar: $assets.files.images.events.amitu.jpg
+status: Done
 
 In this demo day Amit Upadhyay did a recap of what we did in Sept 2022.
 
+
+-- container: dd-5
+
+-- dd.presentation: Progress in FTD 0.3 syntax
+owner: Arpita
+owner-avatar: $assets.files.images.events.arpita.jpg
+status: Pending
+
 Arpita Jaiswal showed the progress she has made in FTD 0.3 syntax.
 
+-- container: dd-5
+
+-- dd.presentation: Todo App
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+status: Done
+
 Abrar Khan has built a todo app, the UI is in FTD and the backend is in Django.
+
+-- container: dd-5
+
+-- dd.presentation: Support for intra page linking
+owner: Rithik
+status: Done
 
 Rithik Seth has built support for intra page linking, so you can add table of
 content for headings in the current document.
 
+-- container: dd-5
+
+-- dd.presentation: DB App
+owner: Aditi
+helper: Aviral
+status: Done
+
 Aditi Rai and Aviral Verma showed the progress they have made in the movie db
 app that is going to be used for our upcoming workshop.
 
-And finally Ganesh Salunke showed the slideshow support in FTD.
+-- container: dd-5
+
+-- dd.presentation: Slideshow support in FTD
+owner:Ganesh
+owner-avatar: $assets.files.images.events.ganesh.jpg
+status: Done
+
+Ganesh Salunke showed the slideshow support in FTD.
 
 -- container: dd-5.demo-container.right-sidebar
 

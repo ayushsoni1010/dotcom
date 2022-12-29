@@ -117,7 +117,13 @@ all working together, and you just create your site by putting things together,
 in as few lines of glue code as possible.
 
 
--- ds.h1: Github Auth Works With FPM
+-- container: dd-10
+
+-- dd.presentation: Github Auth Works With FPM
+owner: AbrarK
+owner-avatar: $assets.files.images.events.abrar.jpg
+helper: Waseem
+status: Done
 
 Abrar and Waseem have finished implementing end to end auth support with Github.
 Abrar created a site that can be only be viewed by someone who has liked
@@ -136,6 +142,8 @@ site.
 Abrar also put refresh content API behind auth, so only authorised people can
 call refresh content. This was just to showcase that internal machinery of FPM
 now can start using auth.
+
+-- container: dd-10
 
 -- ds.h1: FPM Apps Have Arrived!
 
@@ -178,7 +186,11 @@ give you sync feature (Arpita has already implemented rudimentary two way sync
 support in fpm), so your data would be synced on your phone, and you can access
 it offline as well.
 
--- ds.h1: FPM App Switcher
+-- container: dd-10
+
+-- dd.presentation: FPM App Switcher
+owner: Ganesh
+status: Done
 
 Ganesh showed the UI he has built for switching between the "fpm apps" you have
 installed on your site. It acts like Cmd-Tab (Mac) or Alt-Tab (Windows), we have
@@ -188,11 +200,14 @@ used `Shift-Shift` as the shortcut.
 src: $assets.files.images.blog.app-switcher.png
 width: fill
 
-
 The app switcher that Ganesh has built is not yet integrated with fpm app
 backend that Abrar demod, in the next demo we will have them integrated.
 
--- ds.h1: Workshop Page
+-- container: dd-10
+
+-- dd.presentation: Workshop Page
+owner: Ganesh
+status: Done
 
 Ganesh also showed the progress in workshop page, which keeps track of your
 progress. Here is a [sample page](https://fifthtry.github.io/workshop-page/hello-world/).
@@ -212,6 +227,8 @@ Some hurdles still remain in this, which we hope to finish in next demo day.
 
 The way we have coded, the code that site authors have to write is still not
 ideal, and ftd 0.3 will take care of that.
+
+-- container: dd-10
 
 -- ds.h1: Who Owns Data?
 
