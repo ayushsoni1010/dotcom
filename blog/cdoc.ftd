@@ -1,9 +1,5 @@
 -- ds.page: Introducing `cDoc`: Continuous Documentation
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: Introducing `cDoc`: Continuous Documentation
-nav-sub-title-url: blog/cdoc/
-login-button: true
+
 
 After much wait we are launching “Continuous Documentation” today!
 

@@ -4,11 +4,7 @@
 
 -- ds.page:
 toc: $config.empty-toc
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: All Blog
-nav-sub-title-url: blog/
-login-button: true
+
 
 
 -- blg.featured-article: Introducing `cDoc`: Continuous Documentation

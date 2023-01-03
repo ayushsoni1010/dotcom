@@ -1,9 +1,4 @@
 -- ds.page: Doc in Git™
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: Doc in Git™
-nav-sub-title-url: blog/git/
-login-button: true
 
 For using continuous documentation effectively you have to store your
 documentation in `git`. In this blog post we will compare the documentation

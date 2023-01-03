@@ -1,9 +1,4 @@
 -- ds.page: Taste Of `cdoc` on Day To Day
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: Taste Of `cdoc` on Day To Day
-nav-sub-title-url: blog/day-to-day/
-login-button: true
 
 Yo Hello There! So you have [understood why continuous documentation is right
 thing to improve your team's happiness](blog/cdoc/), and you have already [set
