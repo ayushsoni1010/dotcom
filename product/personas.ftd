@@ -1,7 +1,4 @@
 -- ds.page: Personas
-nav-title: Product
-nav-title-url: product/
-login-button: true
 
 When using `cDoc` a user can belong to following categories:
 

@@ -1,7 +1,5 @@
 -- ds.page: Why `cDoc`?
-nav-title: Why `cDoc`?
-nav-title-url: why/
-login-button: true
+
 
 CDOC helps you implement a workflow that ensures documentation stays up to date
 with code changes.

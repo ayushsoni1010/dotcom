@@ -1,7 +1,5 @@
 -- ds.page: Login Page
-nav-title: Product
-nav-title-url: product/
-login-button: true
+
 
 The login page is the entry point for the end user to log into the system. 
 

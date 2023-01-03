@@ -1,9 +1,4 @@
 -- ds.page: Developing `cdoc`
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: How to setup continuous documentation for your Github Repo
-nav-sub-title-url: blog/setup/
-login-button: true
 
 This app is deployed on `cdoc.fifthtry.com` using Heroku.
 

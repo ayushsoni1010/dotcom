@@ -1,7 +1,5 @@
 -- ds.page: Routes: Pages, Widgets, Actions, and APIs
-nav-title: Product
-nav-title-url: product/
-login-button: true
+
 
 This section contains the information about the pages, actions and the APIs
 that are part of `cDoc`.

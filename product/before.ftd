@@ -1,7 +1,5 @@
 -- ds.page: How Is Life Before`cDoc`?
-nav-title: Product
-nav-title-url: product/
-login-button: true
+
 
 For teams that are serious about maintaining upto date documentation for the
 product, that are not using `cDoc`, nor an adhoc implementation of a very

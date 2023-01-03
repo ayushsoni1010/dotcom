@@ -1,9 +1,4 @@
 -- ds.page: Activity Framework
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: How to setup continuous documentation for your Github Repo
-nav-sub-title-url: blog/setup/
-login-button: true
 
 We use `activity table` to capture interesting events on server side. These
 events are captured to power our primary analytics needs.

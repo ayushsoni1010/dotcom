@@ -1,9 +1,5 @@
 -- ds.page: `GithubUserRefreshToken Model`
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: How to setup continuous documentation for your Github Repo
-nav-sub-title-url: blog/setup/
-login-button: true
+
 
 -- ds.code:
 lang: py

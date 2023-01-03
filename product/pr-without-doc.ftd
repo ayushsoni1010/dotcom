@@ -1,7 +1,4 @@
 -- ds.page: Allowing A PR To Go Through Without Documentation
-nav-title: Product
-nav-title-url: product/
-login-button: true
 
 One frequent question we are asked is what if the code change is a minor bug
 fix, a minor refactor or such that it does not need any documentation?

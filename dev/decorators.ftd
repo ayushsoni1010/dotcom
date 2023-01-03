@@ -1,9 +1,4 @@
 -- ds.page: Decorators
-nav-title: Blog
-nav-title-url: blog/
-nav-sub-title: How to setup continuous documentation for your Github Repo
-nav-sub-title-url: blog/setup/
-login-button: true
 
 At `cDoc` we use a few [Python decorators](https://www.geeksforgeeks.org/decorators-in-python/).
 

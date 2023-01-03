@@ -1,7 +1,5 @@
 -- ds.page: PR Life-cycle
-nav-title: Product
-nav-title-url: product/
-login-button: true
+
 
 The Repo Connection is described in [Setup continuous documentation for your
 Github Repo](blog/setup/) post.
