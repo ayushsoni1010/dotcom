@@ -1,6 +1,6 @@
 -- ds.page: Using `ftd_django.static()`
 
-We use [`ftd_django.static()`](https://fifthtry.github.io/python.ftd.dev/django/static/).
+We use [`ftd_django.static()`](https://github.com/ftd-lang/python.ftd.dev/blob/main/django/static).
 
 `ftd_django.static()` reads files from `.build` folder in `fpm package root`.
 The `.build` folder is created by running `fpm build`, so this command must be

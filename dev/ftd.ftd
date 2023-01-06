@@ -1,7 +1,7 @@
 -- ds.page: `ftd`
 
 
-We use [ftd_django](https://fifthtry.github.io/python.ftd.dev/django/template-backend/)
+We use [ftd_django](https://github.com/ftd-lang/python.ftd.dev/blob/main/django/template-backend)
 as our template backend.
 
 We use `fifthtry.github.io/cdoc` as fpm package where templates come from.

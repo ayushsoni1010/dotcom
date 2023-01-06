@@ -1,6 +1,6 @@
 -- ds.page: `Activity Table`
 
-`Activity Table` is part of [activity framework](dev/activity-framework/) for
+`Activity Table` is part of [activity framework](dev/activity/) for
 capture product analytics from our server.
 
 -- ds.h1: Schema
@@ -88,7 +88,7 @@ The id of the user who triggered this activity.
 
 -- ds.h2: `vid` and `vid_created`
 
-The visit ID for this activity. Checkout [`visit framework`](dev/visits/) to
+The visit ID for this activity. Checkout [`visit framework`](dev/visit/) to
 understand visits.
 
 -- ds.h2: `tid`, and `tid_created`

@@ -8,7 +8,7 @@ This is the person who writes the code and documentation. The is created by
 the developer and connected with each other on `cDoc` by the `developer`.
 
 `developer` primarily participate in [`Life Cycle Of A PR`
-journey](product/pr-lifecycle/).
+journey](product/pr-life-cycle/).
 
 -- ds.h1: `approver`
 
