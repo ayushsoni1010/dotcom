@@ -1,8 +1,20 @@
 -- import: fifthtry.com/events
 
--- ds.page: FifthTry's 5th Demo Day Of 2023
-id: dd-23-05
-sidebar: true
+-- dd.past-demo-day: FifthTry 
+number: #1
+date: 26 Jan 
+year: 2023
+demo-video: vOEO7hxvSSw
+demo-date: 01st Jan 2023
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 16th weekly [demo event](/h/dd/) will happen on 3rd Feb 2023. We showcase
 what people in FifthTry have built in this week. This is an important part of
@@ -114,7 +126,4 @@ Owner: AbrarK
 - payment
 - delete package
 
-
--- container: dd-23-05.wrapper.right-sidebar
--- events.sidebar:
-
+-- end: dd.past-demo-day

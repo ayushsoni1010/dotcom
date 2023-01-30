@@ -1,5 +1,6 @@
 -- import: fpm
--- import: fifthtry.com/events
+;;-- import: fifthtry.com/events
+
 
 -- common.venue venue:
 name: Zoom
@@ -9,7 +10,7 @@ link: https://us02web.zoom.us/j/89979537826?pwd=TkVVSk9ORDlzY2NnWTJSRHpyd29JUT09
 
 -- ds.page:
 
--- event.event: FTD Hands-On Workshop (C1W1)
+/-- event.event: FTD Hands-On Workshop (C1W1)
 src: $assets.files.images.events.ftd-hands-on-workshop-beta-22nd-oct-2022.png
 host: $events.amitu
 venue: $venue
@@ -20,12 +21,12 @@ timestamp: Fri, 22 Oct 2022, 11:30am
 presence: Online
 form-active: false
 
---- ds.h3: Registration
+-- ds.h3: Registration
 
---- registration:
+-- registration:
 
 
---- ds.h3: Workshop Details
+-- ds.h3: Workshop Details
 
 FTD language is a possible replacement for JavaScript/React to build web
 front-ends. In this workshop you will learn the basics of FTD and build a web
@@ -43,6 +44,7 @@ write code to get the application working. Participants are required to have a
 decent computer, but there is no need to install any software before hand
 (other than your favorite editor).
 
+-- end: ds.page
 
 
 
@@ -53,26 +55,32 @@ decent computer, but there is no need to install any software before hand
 
 
 
+-- component registration:
 
+-- ftd.column:
+width: fill-container
 
--- ftd.column registration:
-width: fill
+-- ftd.row:
+spacing.fixed.px: 10
 
---- ftd.row:
-spacing: 10
-
---- ftd.image:
+-- ftd.image:
 src: $assets.files.images.events.talk-bubble-icon.svg
-width: 22
-height: 22
-align: center
+width.fixed.px: 22
+height.fixed.px: 22
+;;align: center
 
---- ftd.text: Join Workshop On Discord
-role: $fpm.type.copy-tight
-color: $fpm.color.main.cta-primary.base
+-- ftd.text: Join Workshop On Discord
+role: $inherited.types.copy-tight
+color: $inherited.colors.cta-primary.base
 open-in-new-tab: true
 link: https://discord.gg/d2MgKBybEQ
-padding-bottom: 1
-border-bottom: 1
-align: center
- margin-top: -12
+padding-bottom.px: 1
+border-bottom-width.px: 1
+text-align: center
+margin-top.px: -12
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: registration

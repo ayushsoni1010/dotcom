@@ -19,7 +19,7 @@ This is the main UI for us.
 
 -- ds.image:
 src: $assets.files.images.pr-checks.png
-width: fill
+width: fill-container
 
 We will have a check named "cdoc" which will show up here, like we currently see
 "Rust Checks / Rust Checks (pull_request)". It will show passing or failing

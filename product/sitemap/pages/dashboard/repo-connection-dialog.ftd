@@ -25,10 +25,15 @@ the user can select the corresponding repository for the mapping.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.repo-function-selection-dialog.png
-width: fill
+width: fill-container
 caption: "#1: Repository function selection dialog"
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.repo-connection-dialog.png
-width: fill
+width: fill-container
 caption: "#2: Repository Connection Dialog"
+
+
+
+
+-- end: ds.page

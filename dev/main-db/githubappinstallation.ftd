@@ -51,3 +51,5 @@ class GithubAppInstallation(models.Model):
             expires_at=expires_at,
             github_app_installation=self,
         )[1]
+
+-- end: ds.page

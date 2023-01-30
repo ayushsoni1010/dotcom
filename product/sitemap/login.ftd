@@ -1,10 +1,8 @@
 -- ds.page: Login Page
 
-
 The login page is the entry point for the end user to log into the system. 
 
 Currently you can only login via Github.
-
 
 -- ds.h1: URL and Parameters
 
@@ -23,8 +21,9 @@ Page](product/sitemap/dashboard/).
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.login-page.png
-width: fill
+width: fill-container
 
 The "Sign in with Github" button redirects the user to the Github OAuth2 login
 page.
 
+-- end: ds.page

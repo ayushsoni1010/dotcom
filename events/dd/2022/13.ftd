@@ -8,8 +8,15 @@ date: 02 Dec
 year: 2022
 demo-video: vOEO7hxvSSw
 demo-date: 02nd Dec 2022
-sidebar: true
-id: dd-13
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 13th weekly [demo event](/h/dd/) happened on 2nd Dec 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
@@ -31,7 +38,7 @@ status: Pending
 
 Can we do doc-site?
 
--- container: dd-13
+
 
 -- dd.presentation: FTD Workshop Parts 2 & 3, FPM Part 1
 owner: AmitU
@@ -45,7 +52,7 @@ on just the workshop.
 
 We are giving this to an agency (growisto).
 
--- container: dd-13
+
 
 -- dd.presentation: FPM Controller
 owner: Rithik
@@ -55,7 +62,7 @@ Login pages. Show it working with FifthTry.com. Do db only backend without
 integration with fly and stripe.
 
 
--- container: dd-13
+
 
 -- dd.presentation: WASM Support in FPM
 owner: AbrarK
@@ -66,7 +73,7 @@ Lets try to see if new way of doing wasm (without wit dependency) can be
 implemented. Also lets see if we can expose actix web api instead of our
 custom api.
 
--- container: dd-13
+
 
 -- dd.presentation: Personal/Everyone Website Website Theme
 owner: Ganesh
@@ -78,7 +85,7 @@ Johny-PS: rename pending. Usage pending.
 Sublime like Design.
 
 
--- container: dd-13
+
 
 -- dd.presentation: Tutorial: GoDaddy To Github Pages
 owner: Ganesh
@@ -92,7 +99,7 @@ To be added to [FPM.dev -> Author Manual ->
 How-To](https://fpm.dev/how-to/install/).
 
 
--- container: dd-13
+
 
 -- dd.presentation: Demo Day Page
 owner: Ganesh
@@ -100,14 +107,14 @@ owner-avatar: $assets.files.images.events.ganesh.jpg
 status: On Track
 
 
--- container: dd-13
+
 
 -- dd.presentation: FPM Auth
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
--- container: dd-13
+
 
 -- dd.presentation: Style Guide - Colors
 owner: Ganesh
@@ -118,7 +125,6 @@ https://design.squareboat.com/
 
 Only for FPM projects. Should honour current color-schemes, widgets etc.
 
+-- end: dd.presentation
 
--- container: dd-13.demo-container.right-sidebar
-
--- events.sidebar:
+-- end: dd.past-demo-day

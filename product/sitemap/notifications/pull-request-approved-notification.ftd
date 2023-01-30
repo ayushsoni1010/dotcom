@@ -7,4 +7,6 @@ user who approved the pull request.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.notifications.pull-request-approved-notification.png
-width: fill
+width: fill-container
+
+-- end: ds.page

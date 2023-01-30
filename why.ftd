@@ -1,5 +1,6 @@
 -- ds.page: Why `cDoc`?
 
-
 CDOC helps you implement a workflow that ensures documentation stays up to date
 with code changes.
+
+-- end: ds.page

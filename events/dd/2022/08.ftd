@@ -6,16 +6,21 @@ date: 28 Oct
 year: 2022
 demo-video: X4DKoyUDHUQ
 demo-date: 28th Oct 2022
-sidebar: true
-id: dd-8
+$sidebar: true
+
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 8th weekly [demo event](/h/dd/) happened on 28th Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
-
-
-
 
 
 
@@ -56,7 +61,7 @@ We plan to add localstorage based read tracking in the workshop soon, so you wil
 be able to mark tasks as done, and resume the workshop when you come back, making
 FPM/ftd way of storing workshop content significanlty better than using Github.
 
--- container: dd-8
+
 
 -- dd.presentation: WASM Based App On Heroku
 owner: Shobhit
@@ -86,7 +91,7 @@ Shobhit has written an early draft of a [how-to on
 WASM](https://github.com/ftd-lang/fpm.dev/pull/90/files). We are going to add a
 fourth part to our workshop, W4, where we would learn how to write WASM app.
 
--- container: dd-8
+
 
 -- dd.presentation: FPM Heroku Buildpack
 owner: Shobhit
@@ -100,7 +105,7 @@ Heroku has a [marketplace for such buildpacks](https://elements.heroku.com/build
 we will be submitting our buildpack there shortly. This will help us in
 distribution, one of the biggest challenges for a startup.
 
--- container: dd-8
+
 
 -- dd.presentation: Event Support In FTD
 owner: Arpita
@@ -132,7 +137,7 @@ we hope to finish this in another 7-10 days, and get doc-site working asap using
 0.3.
 
 
--- container: dd-8
+
 
 -- dd.presentation: WIP Mount Point Support
 owner: AbrarK
@@ -151,7 +156,7 @@ is going to use this todo app daily, he would want a clean URL, which he can do
 by adding one line to `fpm.depdency`, and get clean URL `https://abrark.com/todos/`.
 
 
--- container: dd-8
+
 
 -- dd.presentation: Search in Movie DB App
 owner: Aviral
@@ -162,7 +167,7 @@ Aviral and Aditi demothe search feature to the [Movie DB
 app](https://github.com/fifthtry/movie-db), a full stack FPM app with frontend
 written in FTD and backend in Django.
 
--- container: dd-8
+
 
 -- ds.h1: That's All Folks!
 
@@ -171,6 +176,6 @@ on [Discord](https://discord.gg/d2MgKBybEQ), [Twitter](https://twitter.com/Fifth
 or [LinkedIn](https://www.linkedin.com/company/69613898/) to get learn more
 about what's up with FifthTry.
 
+-- end: dd.presentation
 
--- container: dd-8.demo-container.right-sidebar
--- events.sidebar:
+-- end: dd.past-demo-day

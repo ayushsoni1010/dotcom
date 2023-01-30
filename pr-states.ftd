@@ -11,7 +11,7 @@ change the CI status of this PR as failing or queued.
 
 -- ds.image: Unconnected Pull Request On Github
 src: $assets.files.images.unconnected-pr.png
-width: fill
+width: fill-container
 
 Clicking on the "Connect Now" button takes you to Connect PR Flow. [Read more
 about how we create IU on Github](ui/).
@@ -30,3 +30,6 @@ Once a PR itself has to be approved on Github first.
 
 Then someone has to certify that the changes implemented in code PR are
 themselves in perfect sync with the requirement PR.
+
+
+-- end: ds.page

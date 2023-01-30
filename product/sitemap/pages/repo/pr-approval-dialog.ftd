@@ -13,5 +13,7 @@ the PR to the "manual approved" state.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.approve-connected-pr-dialog.png
-width: fill
+width: fill-container
 caption: "#1: Approve Code pull request with an associated documentation PR"
+
+-- end: ds.page

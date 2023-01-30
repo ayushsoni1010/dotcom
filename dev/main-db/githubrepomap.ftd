@@ -25,3 +25,5 @@ class GithubRepoMap(models.Model):
 
     class Meta:
         unique_together = ("integration", "code_repo", "documentation_repo")
+
+-- end: ds.page

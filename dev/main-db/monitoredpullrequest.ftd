@@ -81,3 +81,5 @@ class MonitoredPullRequest(models.Model):
             return self.prapproval_set.latest("created_on")
         except:
             return None
+
+-- end: ds.page

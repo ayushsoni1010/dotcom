@@ -28,3 +28,5 @@ class GithubPullRequest(models.Model):
         return (
             f"https://github.com/{self.repository.repo_full_name}/pull/{self.pr_number}"
         )
+
+-- end: ds.page

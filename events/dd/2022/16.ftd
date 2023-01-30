@@ -3,15 +3,20 @@
 -- dd.upcoming-demo-day:  FifthTry
 number: #16
 date: 30 Dec 
-sidebar: true
-id: dd-16
+$sidebar: true
+
+-- dd.upcoming-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.upcoming-demo-day.sidebar-content
+
+-- dd.upcoming-demo-day.body:
 
 Our 16th weekly [demo event](/h/dd/) will happen on 30th Dec 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
-
--- container: dd-16
 
 -- dd.presentation: Subscription App - Using Django
 owner: AmitU
@@ -21,8 +26,6 @@ helper-avatar: $assets.files.images.events.abrar.jpg
 status: Pending
 
 Let's implement this as django app for now. Shared. API Key.
-
--- container: dd-16
 
 -- dd.presentation: API Documentation Components
 owner: Ganesh
@@ -36,18 +39,14 @@ Let's take this as inspiration: https://elements-demo.stoplight.io/
 
 We need yml to ftd record parser for openapi files.
 
--- container: dd-16
-
 -- dd.presentation: Better Error Messages in FTD
 owner: Arpita
 owner-avatar: $assets.files.images.events.arpita.jpg
 helper-avatar: $assets.files.images.events.arpita.jpg
 status: Not Sure
 
-
 mehmet is working on this.
 
+-- end: dd.presentation
 
--- container: dd-16.upcoming-demo-container.right-sidebar
-
--- events.sidebar:
+-- end: dd.upcoming-demo-day

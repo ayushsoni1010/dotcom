@@ -5,7 +5,6 @@ documentation in `git`. In this blog post we will compare the documentation
 workflow used when storing documentaiton in Notion/Confluence/Google Docs vs the
 workflow when using Git.
 
-
 -- ds.h1: Requirement Document Workflow
 
 A typical way many product teams work is by creating requirement documents.
@@ -178,3 +177,5 @@ rots with time. With the approach described here your documentation will start
 out light, *and* with time it will grow more accurate and comprehensive.
 
 And there you go! You have on your hands a documentation nirvana playbook.
+
+-- end: ds.page

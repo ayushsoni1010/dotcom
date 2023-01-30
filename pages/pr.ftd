@@ -52,7 +52,7 @@ to each show a "connect" button.
 
 -- ds.image:
 src: $assets.files.images.pr-status-page-unconnected.png
-width: fill
+width: fill-container
 
 
 
@@ -60,7 +60,7 @@ width: fill
 
 -- ds.image:
 src: $assets.files.images.pr-status-page.png
-width: fill
+width: fill-container
 
 
 

@@ -7,3 +7,5 @@ class GithubInstallationToken(Token):
     github_app_installation = models.ForeignKey(
         GithubAppInstallation, on_delete=models.CASCADE, related_name="tokens"
     )
+
+-- end: ds.page

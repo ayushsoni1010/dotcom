@@ -8,8 +8,16 @@ demo-video: vOEO7hxvSSw
 planning-video: -whhhABOWSs
 demo-date: 09th Dec 2022
 planning-date: 05th Dec 2022
-sidebar: true
-id: dd-14
+$sidebar: true
+
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 14th weekly [demo event](/h/dd/) happened on 9th Dec 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -26,7 +34,11 @@ status: On Track
 
 - upgrade workshop source files to 0.3 syntax
 
--- ds.h2: Module planning
+-- dd.presentation: Module planning
+owner: AmitU
+owner-avatar: $assets.files.images.events.amitu.jpg
+helper: Ajit
+status: On Track
 
 1. data modelling
 2. ui & components
@@ -41,7 +53,7 @@ Each module is 1hr or so, with 1 hr of exercise extra. Broken into 5 mins
 
 
 
--- container: dd-14
+
 
 
 
@@ -56,7 +68,7 @@ Download Base URL should be just `abrark/foo` (not the full URL, which is also
 accepted).
 
 
--- container: dd-14
+
 
 -- dd.presentation: FPM Controller: Deploy Using FifthTry Button
 owner: Rithik
@@ -83,7 +95,7 @@ containing:
 We will show the link to abrark/my-repo repo.
 
 
--- container: dd-14
+
 
 -- dd.presentation: Style Guide - Typography
 owner: Ganesh
@@ -91,7 +103,7 @@ owner-avatar: $assets.files.images.events.ganesh.jpg
 helper: Meenu
 status: Pending
 
--- container: dd-14
+
 
 -- dd.presentation: Sitemap: Bury Support
 owner: Ganesh
@@ -102,6 +114,6 @@ status: Not Sure
 All buries must be contigeous and at the end of any list.
 
 
--- container: dd-14.demo-container.right-sidebar
+-- end: dd.presentation
 
--- events.sidebar:
+-- end: dd.past-demo-day

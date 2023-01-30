@@ -1,5 +1,5 @@
 -- import: fifthtry.com/events
--- fpm.dependency: fifthtry.github.io/demo-day as dd
+;;-- fpm.dependency: fifthtry.github.io/demo-day as dd
 
 
 
@@ -13,8 +13,15 @@ date: 07 Oct
 year: 2022
 demo-video: BwWbsVe-8XE
 demo-date: 3rd Oct 2022
-sidebar: true
-id: dd-5
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 5th weekly [demo event](/h/dd/) happened on 7th Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -35,7 +42,7 @@ status: Done
 In this demo day Amit Upadhyay did a recap of what we did in Sept 2022.
 
 
--- container: dd-5
+
 
 -- dd.presentation: Progress in FTD 0.3 syntax
 owner: Arpita
@@ -44,7 +51,7 @@ status: Pending
 
 Arpita Jaiswal showed the progress she has made in FTD 0.3 syntax.
 
--- container: dd-5
+
 
 -- dd.presentation: Todo App
 owner: AbrarK
@@ -53,7 +60,7 @@ status: Done
 
 Abrar Khan has built a todo app, the UI is in FTD and the backend is in Django.
 
--- container: dd-5
+
 
 -- dd.presentation: Support for intra page linking
 owner: Rithik
@@ -62,7 +69,7 @@ status: Done
 Rithik Seth has built support for intra page linking, so you can add table of
 content for headings in the current document.
 
--- container: dd-5
+
 
 -- dd.presentation: DB App
 owner: Aditi
@@ -72,7 +79,7 @@ status: Done
 Aditi Rai and Aviral Verma showed the progress they have made in the movie db
 app that is going to be used for our upcoming workshop.
 
--- container: dd-5
+
 
 -- dd.presentation: Slideshow support in FTD
 owner:Ganesh
@@ -81,8 +88,6 @@ status: Done
 
 Ganesh Salunke showed the slideshow support in FTD.
 
--- container: dd-5.demo-container.right-sidebar
+-- end: dd.presentation
 
--- events.sidebar:
-
-
+-- end: dd.past-demo-day

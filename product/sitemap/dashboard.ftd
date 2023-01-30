@@ -35,27 +35,26 @@ The search query can be a substring of the repository name.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-page.png
-width: fill
+width: fill-container
 
 -- ds.h3: State: New installation without any mapping
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-no-connections.png
-width: fill
+width: fill-container
 
 
 -- ds.h3: State: Search with results
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-page-with-results.png
-width: fill
+width: fill-container
 
 
 -- ds.h3: State: Search with empty results
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-page-no-results.png
-width: fill
+width: fill-container
 
-
-
+-- end: ds.page

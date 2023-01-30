@@ -47,7 +47,7 @@ box.
 
 -- ds.image:
 src: $assets.files.images.repo-page.png
-width: fill
+width: fill-container
 
 
 

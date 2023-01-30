@@ -6,8 +6,15 @@ date: 04 Nov
 year: 2022
 demo-video: gxAfeuOm_Wo
 demo-date: 04th Nov 2022
-sidebar: true
-id: dd-9
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 9th weekly [demo event](/h/dd/) happened on 4th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -100,7 +107,7 @@ empty so far.
 
 -- ds.image:
 src: $assets.files.images.blog.right-sidebar.jpg
-width: fill
+width: fill-container
 
 Ganesh showed how we can easily configure the sidebar. He also showed how the
 sidebar works on mobile, where the sidebar comes as a "info" icon next to the
@@ -116,7 +123,7 @@ Ganesh also gave a sneek preview of the course page that he is working on.
 
 -- ds.image:
 src: $assets.files.images.blog.course-sneek-peek.jpg
-width: fill
+width: fill-container
 
 It will keep track of what all have you done so far so when you come back on
 the course page, you can resume from where you left off.
@@ -141,7 +148,7 @@ some github repository or not.
 
 -- ds.image:
 src: $assets.files.images.blog.auth-initial.png
-width: fill
+width: fill-container
 
 We call this feature "gating". NYTimes etc gate on money. They say if you want
 to read this article you have to pay. We allow site authors to gate on anything,
@@ -310,7 +317,4 @@ code, where we went back and forther on design decisions, built things in
 patchwork, where as in 0.3 we have a clear design when we started, so everything
 is much more thought through.
 
-
--- container: dd-9.demo-container.right-sidebar
-
--- events.sidebar:
+-- end: dd.past-demo-day

@@ -23,7 +23,7 @@ is posted on behalf of the Github user who connected the two PRs.
 
 -- ds.image: Comment on PR So All Collaborators Are Updated
 src: $assets.files.images.blog.day-7.png
-width: fill
+width: fill-container
 
 -- ds.h2: Post Approval PR Comment
 
@@ -32,7 +32,7 @@ on the code PR on the behalf of the person who approved it.
 
 -- ds.image: A Comment Is Posted On Github When PR Docs Are Approved
 src: $assets.files.images.blog.day-10.png
-width: fill
+width: fill-container
 
 -- ds.h1: Approval Requires Signature
 
@@ -40,7 +40,7 @@ We require the approvar to sign their name while approving.
 
 -- ds.image: Approve Has To Sign Their Name
 src: $assets.files.images.blog.day-9.png
-width: fill
+width: fill-container
 
 -- ds.h1: Code PR Without Docs
 
@@ -49,15 +49,15 @@ required. We support that as well.
 
 -- ds.image: In Case You Don't Need Docs! Use It Judiciously!
 src: $assets.files.images.blog.day-11.png
-width: fill
+width: fill-container
 
 You will still have to put your name behind it, and soon only people with right
 permission will be able to perform this action.
 
 -- ds.image: Sign Your Name To Confirm This PR Does Not Need Documentation
 src: $assets.files.images.blog.day-12.png
-width: 500
-align: center
+width.fixed.px: 500
+;;align: center
 
 -- ds.h1: One To One Code Repo to Doc Repo Connection
 
@@ -69,3 +69,5 @@ Checkout [glossary](product/glossary/) for meaning of some of these terms.
 -- ds.h1: TODO: Disconnect PR
 
 Currently there is no way to disconnect a PR after it has been connected.
+
+-- end: ds.page

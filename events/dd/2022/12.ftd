@@ -1,13 +1,9 @@
 -- import: fifthtry.com/events
--- fpm.dependency: fifthtry.github.io/demo-day as dd
 
 
 
 
-
-
-
--- dd.past-demo-day:  FifthTry
+-- dd.past-demo-day: FifthTry
 number: #5
 date: 25 Nov 
 year: 2022
@@ -15,8 +11,15 @@ demo-video: BwWbsVe-8XE
 planning-video: huNWsabPBV8
 demo-date: 25th Nov 2022
 planning-date: 21st Nov 2022
-sidebar: true
-id: dd-12
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 12th weekly [demo event](/h/dd/) happened on 25th Nov 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
@@ -34,7 +37,6 @@ Let's create wireframe flow.
 v: sT4Bjl2g2BE
 
 
--- container:  dd-12
 
 -- dd.presentation: Personal/Everyone Website Website Theme
 owner: Ganesh
@@ -47,7 +49,6 @@ should have more template specific to needs, eg personal-site.
 
 Johny-PS
 
--- container:  dd-12
 
 -- dd.presentation: Tutorial: GoDaddy To Github Pages
 owner: Ganesh
@@ -58,7 +59,6 @@ status: Pending
 End to end tutorial, with video.
 
 
--- container:  dd-12
 
 -- dd.presentation: Demo Day Page
 owner: Ganesh
@@ -91,7 +91,7 @@ others, and for FifthTry employees it would act as
 planning document. Also implement auth with following
 groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
+-- end: dd.presentation
 
--- container: dd-12.demo-container.right-sidebar
 
--- events.sidebar:
+-- end: dd.past-demo-day

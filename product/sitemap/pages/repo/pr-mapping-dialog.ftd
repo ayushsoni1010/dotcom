@@ -20,10 +20,12 @@ list.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.attach-documentation-pr-dialog.png
-width: fill
+width: fill-container
 caption: "#1: Attach Documentation Pull Request Dialog"
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.approve-unconnected-pr-dialog.png
-width: fill
+width: fill-container
 caption: "#2: Approve Code pull request without documentation PR"
+
+-- end: ds.page

@@ -42,4 +42,6 @@ be in one of the following states:
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.repository-page.png
-width: fill
+width: fill-container
+
+-- end: ds.page

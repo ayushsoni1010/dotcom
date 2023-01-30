@@ -8,8 +8,15 @@ date: 11 Nov
 year: 2022
 demo-video: yZID38Zjwoo
 demo-date: 11th Nov 2022
-sidebar: true
-id: dd-10
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 10th weekly [demo event](/h/dd/) happened on 11th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -116,9 +123,6 @@ FPM/FTD and you get from CSS to Git, App marketplace to template repositories,
 all working together, and you just create your site by putting things together,
 in as few lines of glue code as possible.
 
-
--- container: dd-10
-
 -- dd.presentation: Github Auth Works With FPM
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
@@ -143,7 +147,7 @@ Abrar also put refresh content API behind auth, so only authorised people can
 call refresh content. This was just to showcase that internal machinery of FPM
 now can start using auth.
 
--- container: dd-10
+
 
 -- ds.h1: FPM Apps Have Arrived!
 
@@ -186,7 +190,7 @@ give you sync feature (Arpita has already implemented rudimentary two way sync
 support in fpm), so your data would be synced on your phone, and you can access
 it offline as well.
 
--- container: dd-10
+
 
 -- dd.presentation: FPM App Switcher
 owner: Ganesh
@@ -198,12 +202,12 @@ used `Shift-Shift` as the shortcut.
 
 -- ds.image: App Switcher UI
 src: $assets.files.images.blog.app-switcher.png
-width: fill
+width: fill-container
 
 The app switcher that Ganesh has built is not yet integrated with fpm app
 backend that Abrar demod, in the next demo we will have them integrated.
 
--- container: dd-10
+
 
 -- dd.presentation: Workshop Page
 owner: Ganesh
@@ -214,7 +218,7 @@ progress. Here is a [sample page](https://fifthtry.github.io/workshop-page/hello
 
 -- ds.image: Workshop Page
 src: $assets.files.images.blog.workshop-page.png
-width: fill
+width: fill-container
 
 When you mark a lesson understood or task done it gets grayed out. We store your
 progress in local store so when you come back to the site it remembers where you
@@ -228,7 +232,7 @@ Some hurdles still remain in this, which we hope to finish in next demo day.
 The way we have coded, the code that site authors have to write is still not
 ideal, and ftd 0.3 will take care of that.
 
--- container: dd-10
+
 
 -- ds.h1: Who Owns Data?
 
@@ -282,6 +286,6 @@ picture is starting take shape.
 Do checkout our [next demo day's planning page](/events/dd/2022/11/) to checkout
 what to expect in the next one. See you on 18th Nov 2022!
 
+-- end: dd.presentation
 
--- container: dd-10.demo-container.right-sidebar
--- events.sidebar:
+-- end: dd.past-demo-day

@@ -1,22 +1,41 @@
 -- import: fpm
 -- import: cbox
 
--- common.host amitu: Amit Upadhyay
+
+
+
+
+/-- common.host amitu: Amit Upadhyay
 title: CEO, FifthTry, Inc
 email: amitu@fifthtry.com
 website: www.fifthtry.com
 avatar: $assets.files.images.events.amitu.jpg
 
--- ftd.column sidebar:
-width: fill
 
---- cbox.text-3: Upcoming Event
+-- component sidebar:
+
+-- ftd.column:
+width: fill-container
+
+-- cbox.text-3: Upcoming Event
 
 Join our upcoming **demo day #14** on *9th Dec 2022* at 5:30PM IST.
 
+-- end: ftd.column
+
+-- end: sidebar
+
 -- ds.page: FifthTry Events
-id: ft-events
-sidebar: true
+$sidebar: true
+
+
+-- ds.page.extra-headers:
+
+-- sidebar:
+
+-- end: ds.page.extra-headers
+
+-- ds.page.body:
 
 On this page you will find past and upcoming events at FifthTry. Subscribe us
 on [Discord](https://discord.gg/d2MgKBybEQ), [Twitter](https://twitter.com/FifthTryHQ),
@@ -38,5 +57,4 @@ Our 11th event Demo Day will happen on 18th Nov 2022.
 - [Demo Day #5](events/dd/2022/05)
 
 
--- container: ft-events.wrapper.right-sidebar
--- sidebar:
+-- end: ds.page

@@ -7,3 +7,5 @@ Every time a [tracker](dev/tracker/) comes back to `cdoc` after an idle time of
 
 A visit is identified by a guid, `vid`. `vid` is stored in
 [`activity table`](dev/main-db/activity/).
+
+-- end: ds.page

@@ -4,9 +4,11 @@
 
 Test: If update content is working
 
+-- end: ds.page
+
 -- record user-details:
 boolean is-login:
-$always-include$: true
+;;$always-include$: true
 
 -- user-details ud:
 $processor$: user-details
@@ -19,19 +21,21 @@ dark: white
 light: white
 
 -- ftd.column:
-background-color: $white-color
+background.solid: $white-color
 
---- ftd.text: Login With GitHub
-if: not $ud.is-login
+-- ftd.text: Login With GitHub
+if: { !$ud.is-login}
 link: /auth/login/?platform=github
-role: $fpm.type.heading-large
+role: $inherited.types.heading-large
 
---- ftd.text: Logout
-if: $ud.is-login
+-- ftd.text: Logout
+if: {$ud.is-login}
 link: /auth/logout/
-role: $fpm.type.heading-large
+role: $inherited.types.heading-large
 
---- ftd.text: Refresh Content
-if: $ud.is-login
+-- ftd.text: Refresh Content
+if: {$ud.is-login}
 link: /-/clear-cache/?package=main&all-dependencies=true
-role: $fpm.type.heading-large
+role: $inherited.types.heading-large
+
+-- end: user-details

@@ -9,13 +9,14 @@ so you can click on this link:
 
 -- ds.image: In Case You Don't Need Docs! Use It Judiciously!
 src: $assets.files.images.blog.day-11.png
-width: fill
+width: fill-container
 
 You will still have to put your name behind it, and soon only people with right
 permission will be able to perform this action.
 
 -- ds.image: Sign Your Name To Confirm This PR Does Not Need Documentation
 src: $assets.files.images.blog.day-12.png
-width: 500
-align: center
+width.fixed.px: 500
+;;align: center
 
+-- end: ds.page

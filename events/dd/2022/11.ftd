@@ -1,5 +1,9 @@
 -- import: fifthtry.com/events
 
+
+
+
+
 -- dd.past-demo-day:  FifthTry
 number: #11
 date: 18 Nov 
@@ -10,15 +14,22 @@ review-video: XDQTz4kvhCw
 demo-date: 18th Nov 2022
 planning-date: 14th Nov 2022
 review-date: 16th Nov 2022
-sidebar: true
-id: dd-11
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 11th weekly [demo event](/h/dd/) happened on 18th Nov 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
--- container: dd-11
+
 
 -- ds.h1: One Week Of One on Ones
 
@@ -140,7 +151,7 @@ Brief.pptx](https://docs.google.com/presentation/d/1CHWKFM1kA5XOv2cig3pQ3NbmoMS6
 
 We started using tandem.
 
--- container: dd-11
+
 
 -- dd.presentation: Move FifthTry.com to Heroku
 owner: AbrarK
@@ -154,7 +165,7 @@ This document will become the "coming soon page" for others, and for
 FifthTry employees it would act as planning document. Also implement auth with
 following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
 
--- container: dd-11
+
 
 -- dd.presentation: End to End FPM App + Doc Site Support
 owner: AbrarK
@@ -168,7 +179,7 @@ We have built both app switcher, the processor etc, we need to see the whole
 thing end to end. Lets ensure tha app icons are working. `.icon` support in
 `fpm.package` record.
 
--- container: dd-11
+
 
 
 -- dd.presentation: WASM: Subscription App With Doc Site Support
@@ -255,7 +266,7 @@ Note: we are not doing any email validation (this is not [double opt
 in](https://en.wikipedia.org/wiki/Opt-in_email)) in this release. To do opt-in
 we need email capability, which we do not yet have.
 
--- container: dd-11
+
 
 -- dd.presentation: Subscription Walling
 owner: AbrarK
@@ -279,7 +290,7 @@ show pages to only people who are subscribed to us.
 What if they come from a different browser? They will have to enter their email
 address again in the new browser.
 
--- container: dd-11
+
 
 -- dd.presentation: Wall Support in Sitemap
 owner: AbrarK
@@ -307,7 +318,7 @@ show `ds.wall-message`.
 
 [Refernce drawing](https://app.excalidraw.com/s/2xFnk4q86Ix/8Sx8MfYb0Vj)
 
--- container: dd-11
+
 
 -- dd.presentation: Auth: More Providers
 owner: AbrarK
@@ -327,7 +338,7 @@ Discord.
 Slack.
 
 
--- container: dd-11
+
 
 -- dd.presentation: Icon Support In Doc Site
 owner: Ganesh
@@ -339,7 +350,7 @@ in dash-dash-ds.
 
 
 
--- container: dd-11
+
 
 -- dd.presentation: Workshop Page
 owner: Ganesh
@@ -352,7 +363,7 @@ show `ftd.dev/workshop`, with proper content using the latest work done by
 Ganesh.
 
 
--- container: dd-11
+
 
 -- dd.presentation: Font Documentation Improvement
 owner: Ganesh
@@ -362,7 +373,7 @@ status: Half Done
 
 Follow the standard in all font sites.
 
--- container: dd-11
+
 
 -- dd.presentation: Spider Book DS
 owner: Ganesh
@@ -370,7 +381,7 @@ owner-avatar: $assets.files.images.events.ganesh.jpg
 helper: Priyanka
 status: Experimenting
 
--- container: dd-11
+
 
 
 
@@ -381,7 +392,7 @@ status: Not Sure
 
 Let see if we can get doc-site working this week.
 
--- container: dd-11
+
 
 -- dd.presentation: Payment Improvements
 owner: Rithik
@@ -400,6 +411,7 @@ can use.
 It will be deployed on `FifthTry.com/hosting/`. Ganesh will find the UI that
 Thakkar created.
 
--- container: dd-11.demo-container.right-sidebar
+-- end: dd.presentation
 
--- events.sidebar:
+
+-- end: dd.past-demo-day

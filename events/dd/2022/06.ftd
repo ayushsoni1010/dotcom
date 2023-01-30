@@ -1,5 +1,5 @@
 -- import: fifthtry.com/events
--- fpm.dependency: fifthtry.github.io/demo-day as dd
+;;-- fpm.dependency: fifthtry.github.io/demo-day as dd
 
 
 
@@ -13,8 +13,15 @@ date: 14 Oct
 year: 2022
 demo-video: 3v5wHcs7M5k
 demo-date: 14th Oct 2022
-sidebar: true
-id: dd-6
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 6th weekly [demo event](/h/dd/) happened on 14th Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -22,7 +29,4 @@ our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
 
-
-
--- container: dd-6.demo-container.right-sidebar
--- events.sidebar:
+-- end: dd.past-demo-day

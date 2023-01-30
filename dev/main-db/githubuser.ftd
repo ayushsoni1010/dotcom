@@ -72,3 +72,5 @@ class GithubUser(models.Model):
             },
         )
         return self.process_token_response(response.content.decode())
+
+-- end: ds.page

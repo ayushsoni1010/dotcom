@@ -18,5 +18,4 @@ def view(request, *args, **kwargs):
 This decorator is a quick hack and we will soon refactor it to accept parameters
 from `request` object instead of hardcoding like this.
 
-
-
+-- end: ds.page

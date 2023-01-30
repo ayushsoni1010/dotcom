@@ -7,3 +7,5 @@ class GithubUserAccessToken(Token):
     github_user = models.ForeignKey(
         GithubUser, on_delete=models.CASCADE, related_name="access_tokens"
     )
+
+-- end: ds.page

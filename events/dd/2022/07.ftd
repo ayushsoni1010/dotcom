@@ -7,8 +7,15 @@ date: 21 Oct
 year: 2022
 demo-video: 9X6yYZNIDV0
 demo-date: 21st Oct 2022
-sidebar: true
-id: dd-7
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 7th weekly [demo event](/h/dd/) happened on 21st Oct 2022. We showcased
 what people in FifthTry have built in this week. This is an important part of
@@ -27,6 +34,4 @@ https://ftd-lang.github.io/ftd/6-function.html
 https://github.com/ftd-lang/ftd/blob/main/t/html/6-function.ftd
 
 
--- container: dd-7.demo-container.right-sidebar
-
--- events.sidebar:
+-- end: dd.past-demo-day

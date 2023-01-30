@@ -17,15 +17,17 @@ the user can select the corresponding repository for the mapping.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.dashboard-connection-journey-start.png
-width: fill
+width: fill-container
 caption: #1: Click on 'Connect' button of the repository you want to connect
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.repo-function-selection-dialog.png
-width: fill
+width: fill-container
 caption: #2: Repository function selection dialog
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.pages.repo-connection-dialog.png
-width: fill
+width: fill-container
 caption: #3: Repository Connection Dialog
+
+-- end: ds.page

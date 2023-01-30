@@ -36,7 +36,7 @@ Consider [this study](https://ieeexplore.ieee.org/document/7997917):
 
 -- ds.image: Developer Time
 src: $assets.files.images.blog.developer-time.png
-width: fill
+width: fill-container
 
 Developers spent 57% of their time on trying to understand, to comprehend, how
 things work. This does not include the time they take reading code, navigating
@@ -61,3 +61,7 @@ heads.
 
 And that is the problem FifthTry’s [Continuous Documentation](/) is trying
 to solve.
+
+-- end: ds.page
+
+

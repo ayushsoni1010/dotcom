@@ -19,7 +19,7 @@ long run, it slows things down.
 
 -- ds.image: Traffic Lights Slow Traffic Down?
 src: $assets.files.images.blog.traffic.jpg
-width: fill
+width: fill-container
 
 Image License: Public Domain
 
@@ -56,3 +56,4 @@ What do you think? Do you like working on software that has good documentation?
 Or do you think its a luxury or a crutch, and diving into code is the right way
 to go for most people?
 
+-- end: ds.page

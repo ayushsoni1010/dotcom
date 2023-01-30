@@ -7,7 +7,7 @@ getting merged till documentation is written and approved.
 
 -- ds.image: What `cDoc` Does In A Nutshell
 src: $assets.files.images.blog.process.png
-width: fill
+width: fill-container
 
 -- ds.h1: Who is `cDoc` For?
 
@@ -34,7 +34,7 @@ employees exit organisation they take with them valuable information.
 
 -- ds.image: Developer Waste A Lot Of Time Understanding Software
 src: $assets.files.images.blog.developer-time.png
-width: fill
+width: fill-container
 
 We believe the documentation is not adequate in many software teams despite them
 knowing the advantage of upto date documentation because of a lack of process.
@@ -63,21 +63,21 @@ The documentation is stored in a separate repository from code.
 
 -- ds.image: Connect Documentation PR With Code PR
 src: $assets.files.images.blog.day-5.png
-width: fill
+width: fill-container
 
 To connect the code PR with doc PR one has to go to `fifthtry.com`. Similarly
 to approve the PRs one has to go `fifthtry.com`.
 
 -- ds.image: Approve That Documentation And Code Are In Sync
 src: $assets.files.images.blog.day-9.png
-width: fill
+width: fill-container
 
 `cDoc` also post the status on Github PR so everyone working on the feature can
 be informed:
 
 -- ds.image: Comment on PR So All Collaborators Are Updated
 src: $assets.files.images.blog.day-10.png
-width: fill
+width: fill-container
 
 The process is described in detail in the [Taste Of `cDoc` on Day To
 Day](blog/day-to-day/) blog post.
@@ -89,3 +89,5 @@ and roadmap, all issues etc publicly available to anyone under BSD license.
 Anyone can install `cDoc` and create their of Github App to use it if they want
 to. We offer paid SAAS solution for those who want to outsource the day to day
 operations to us.
+
+-- end: ds.page

@@ -67,7 +67,7 @@ has been written and approved.
 
 -- ds.image: You Need A Process To Keep Documentation Up To Date
 src: $assets.files.images.blog.process.png
-width: fill
+width: fill-container
 
 A team can use continuous documentation workflow by installing [FifthTry’s
 Github App](/) on their code repository, and the app will stop blocking a pull
@@ -78,3 +78,4 @@ for your Github Repos](blog/setup/)! You can do it in under 2 minutes!
 
 PS: Gitlab and Bitbucket support is on our roadmap.
 
+-- end: ds.page

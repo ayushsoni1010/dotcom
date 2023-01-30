@@ -2,7 +2,7 @@
 -- import: fpm
 -- import: fifthtry.github.io/inter/assets as font-assets
 
--- fpm.font-display: $font-assets.fonts.Inter
+;;-- fpm.font-display: $font-assets.fonts.Inter
 
 
 -- ftd.font-size copy-relaxed-medium-desktop:

@@ -5,7 +5,7 @@ Request:
 
 -- ds.image: Pull Request Description
 src: $assets.files.images.pr.png
-width: fill
+width: fill-container
 
 The content of the description is editable using the Github's [Update a pull
 request](https://docs.github.com/en/rest/reference/pulls#update-a-pull-request)
@@ -19,3 +19,6 @@ keep overwriting the content.
 This can cause [two race conditions](race-conditions/), which if we can not
 mitigate we will not use pull request description approach, and fall back to
 [last comment approach](last-comment/).
+
+
+-- end: ds.page

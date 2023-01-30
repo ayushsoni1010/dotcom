@@ -1,4 +1,8 @@
--- import: fifthtry.com/library as lib
+;; -- import: fifthtry.com/library as lib
+-- import: ds
+-- import: fpm/processors as pr
+
+
 
 
 
@@ -6,7 +10,6 @@
 
 Our suite of products are open source and available on Github. You are free to 
 download install and customize them to your needs.
-
 
 We’d love to hear your feedback and suggestions, and collectively make 
 Documentation easier and better for everyone 
@@ -21,66 +24,16 @@ US-based early-stage startup accelerator programme Y Combinator finalised 16
 Indian startups that got selected for its winter batch of 2021, scheduled between 
 January and March.
 
-
 FifthTry was one of those 16.
 
 
--- lib.list-tc: Poor Documentation is Costing you
-thumbnail: $assets.files.assets.images.slide-show-image-1.png
-index: 1
-
-Onboarding new team members take time, lack of docs means calendar full of
-meetings, critical employee leaving.
 
 
 
--- lib.list-tc: Gate the changes
-thumbnail: $assets.files.assets.images.slide-show-image-2.png
-index: 2
+-- ds.page:
+$widthfill: true
 
-
-FifthTry integrates with Github and blocks Pull Requests from getting merged
-till documentation is written and approved.
-
-
-
--- lib.list-tc: Write the Docs
-thumbnail: $assets.files.assets.images.slide-show-image-3.png
-index: 3
-
-Store documentation in Github repo, and write documentation in a PR against that
-repo. Connect the doc PR with code PR on FifthTry.
-
--- lib.list-tc: Verify The Docs
-thumbnail: $assets.files.assets.images.slide-show-image-4.png
-index: 4
-is-last: true
-
-Once documentation PR is ready and approve and someone has verified code
-is exactly as per docs merge both code and doc PRs.
-
-
--- lib.homepage:
-
--- lib.hero-section: Products should reflect their Documentation. We make that a {lib.green:process.}
-hero-left-sub-heading: Solve it with
-hero-left-heading: Continuous Documentation
-hero-left-cta-one: Get Started
-hero-right-sub-heading: Solve it with
-hero-right-heading: Continuous Translation
-hero-right-cta-one: Coming Soon
-image-hero-left: $assets.files.assets.images.code-to-doc.png
-image-hero-right: $assets.files.assets.images.doc-to-trans.png
-
-
--- lib.slideshow-left: Continuous Documentation
-list-title-copy: $lib.list-tc
-
-FifthTry helps you solve out of date and incomplete documentation problem by
-using what we call *Continuous Documentation*.
-
-
--- lib.info:
+-- info:
 left-title: FifthTry is Open Source
 right-title: YC  Winter Batch  ‘21
 cta: Full Story »
@@ -89,12 +42,15 @@ right-logo: $assets.files.assets.images.logo-ycom-square.png
 left-body: $left-content
 right-body: $right-content
 
+-- end: info
 
-
--- lib.footer:
+-- footer:
 footer-nav: $config.footer-nav
 copyright: © 2022 FifthTry. All rights reserved
 
+-- end: footer
+
+-- end: ds.page
 
 
 
@@ -103,3 +59,625 @@ copyright: © 2022 FifthTry. All rights reserved
 
 
 
+
+
+-- component info:
+caption right-title:
+caption left-title:
+optional ftd.image-src right-logo:
+optional ftd.image-src left-logo:
+string left-body:
+string right-body:
+string cta:
+
+-- ftd.row:
+id: info-1
+
+-- info-desktop:
+if: { ftd.device != "mobile"}
+right-title: $info.right-title
+left-title: $info.left-title
+right-logo: $info.right-logo
+cta: $info.cta
+left-logo: $info.left-logo
+left-body: $info.left-body
+right-body: $info.right-body
+
+-- info-mobile:
+if:{ ftd.device == "mobile" }
+right-title: $info.right-title
+left-title: $info.left-title
+cta: $info.cta
+right-logo: $info.right-logo
+left-logo: $info.left-logo
+left-body: $info.left-body
+right-body: $info.right-body
+
+-- end: ftd.row
+
+-- end: info
+
+
+
+
+
+
+
+
+
+
+-- component info-desktop:
+caption right-title:
+caption left-title:
+optional ftd.image-src right-logo:
+optional ftd.image-src left-logo:
+string left-body:
+string right-body:
+string cta:
+
+-- ftd.row:
+padding-horizontal.px: 64
+padding-vertical.px: 64
+width: fill-container
+spacing.fixed.px: 64
+
+-- ftd.row:
+width: fill-container
+
+-- info-card: $info-desktop.left-title
+sites-logo: $info-desktop.left-logo
+body: $info-desktop.left-body
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+
+-- info-card: $info-desktop.right-title
+link-text: $info-desktop.cta
+body: $info-desktop.right-body
+sites-logo: $info-desktop.right-logo
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: info-desktop
+
+
+
+
+
+
+
+
+
+
+-- component info-mobile:
+caption right-title:
+caption left-title:
+optional ftd.image-src right-logo:
+optional ftd.image-src left-logo:
+string left-body:
+string right-body:
+string cta:
+
+-- ftd.column:
+padding-vertical.px: 64
+width: fill-container
+spacing.fixed.px: 64
+
+-- ftd.row:
+width: fill-container
+
+-- info-card: $info-mobile.left-title
+sites-logo: $info-mobile.left-logo
+body: $info-mobile.left-body
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+
+-- info-card: $info-mobile.right-title
+link-text: $info-mobile.cta
+body: $info-mobile.right-body
+sites-logo: $info-mobile.right-logo
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: info-mobile
+
+
+
+
+
+
+
+
+
+
+-- component info-card:
+caption title:
+body body: 
+optional string link-text:
+optional ftd.image-src sites-logo:
+
+-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+spacing.fixed.px: 32
+border-radius.px: 8
+
+-- info-card-desktop: $info-card.title
+if: { ftd.device != "mobile" }
+sites-logo: $info-card.sites-logo
+body: $info-card.body
+link-text: $info-card.link-text
+
+-- info-card-mobile: $info-card.title
+if: {ftd.device == "mobile"}
+sites-logo: $info-card.sites-logo
+body: $info-card.body
+link-text: $info-card.link-text
+
+-- end: ftd.row
+
+-- end: info-card
+
+
+
+
+
+
+
+
+
+
+-- component info-card-desktop:
+caption title:
+body body: 
+optional string link-text:
+optional ftd.image-src sites-logo:
+optional ftd.color bg-color: $inherited.colors.background.step-1
+
+-- ftd.row:
+padding-horizontal.px: 32
+padding-vertical.px: 32
+background.solid: $info-card-desktop.bg-color
+spacing.fixed.px: 32
+border-radius.px: 8
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $info-card-desktop.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+margin-bottom.px: 16
+
+-- ftd.text:
+text: $info-card-desktop.body
+role: $inherited.types.copy-relaxed
+color: $inherited.colors.text
+
+-- ftd.text:
+if: {$info-card-desktop.link-text != NULL}
+text: $info-card-desktop.link-text
+role: $inherited.types.label-small
+color: $inherited.colors.cta-primary.base
+link: https://www.ycombinator.com/companies/fifthtry
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $info-card-desktop.sites-logo
+width.fixed.px: 80
+height: auto
+
+-- end: ftd.row
+
+-- end: info-card-desktop
+
+
+
+
+
+
+
+
+
+
+-- component info-card-mobile:
+caption title:
+body body: 
+optional string link-text:
+optional ftd.image-src sites-logo:
+optional ftd.color bg-color: $inherited.colors.background.step-1
+
+-- ftd.column:
+background.solid: $info-card-mobile.bg-color
+spacing.fixed.px: 8
+border-radius.px: 8
+width: fill-container
+padding-horizontal.px: 16
+padding-vertical.px: 20
+
+-- ftd.image:
+src: $info-card-mobile.sites-logo
+width.fixed.px: 80
+height: auto
+
+-- ftd.text: $info-card-mobile.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+text: $info-card-mobile.body
+role: $inherited.types.copy-relaxed
+color: $inherited.colors.text
+
+-- ftd.text:
+if: {$info-card-mobile.link-text != NULL}
+text: $info-card-mobile.link-text
+role: $inherited.types.label-small
+color: $inherited.colors.cta-primary.base
+link: https://www.ycombinator.com/companies/fifthtry
+
+-- end: ftd.column
+
+-- end: info-card-mobile
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+optional ftd.image-src logo:  $assets.files.assets.images.logo-fifthtry-dark.svg
+optional ftd.color footer-bg: $inherited.colors.background.base
+optional ftd.image-src group-logo: $assets.files.assets.images.group.png
+optional ftd.image-src backed-logo: $assets.files.assets.images.backed-by.png
+optional ftd.image-src fill-logo: $assets.files.assets.images.logo-ycom-dark.svg
+pr.toc-item list footer-nav: $config.footer-nav
+optional string copyright:
+
+-- ftd.column:
+background.solid: $footer.footer-bg
+width: fill-container
+border-color: $inherited.colors.cta-primary.base
+border-top-width.px: 3
+
+-- footer-desktop:
+if: {ftd.device != "mobile"}
+logo: $footer.logo
+group-logo: $footer.group-logo
+backed-logo: $footer.backed-logo
+fill-logo: $footer.fill-logo
+footer-bg: $footer.footer-bg
+copyright: $footer.copyright
+footer-nav: $footer.footer-nav
+
+-- footer-mobile:
+if: {ftd.device == "mobile"}
+group-logo: $footer.group-logo
+backed-logo: $footer.backed-logo
+fill-logo: $footer.fill-logo
+logo: $footer.logo
+footer-bg: $footer.footer-bg
+copyright: $footer.copyright
+footer-nav: $footer.footer-nav
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component footer-desktop:
+optional ftd.image-src logo:
+optional ftd.color footer-bg:
+optional ftd.image-src group-logo: 
+optional ftd.image-src backed-logo: 
+optional ftd.image-src fill-logo:
+pr.toc-item list footer-nav: 
+optional string copyright:
+
+-- ftd.column:
+padding-horizontal.px: 32
+background.solid: $footer-desktop.footer-bg
+width: fill-container
+padding-vertical.px: 32
+
+-- ftd.row:
+width: fill-container
+height.fixed.px: 48
+padding-left.px: 24
+
+-- ftd.row:
+link: \
+height: fill-container
+
+-- ftd.image:
+src: $footer-desktop.logo
+height: fill-container
+width: auto
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+border-color: $inherited.colors.border
+border-left-width.px: 3
+margin-left.px: 29
+;;border-width.px: 3
+
+-- ftd.row:
+link: \
+width: fill-container
+height: fill-container
+;;id: right-side-footer
+padding-left.px: 24
+
+-- ftd.image:
+src: $footer-desktop.fill-logo
+height: fill-container
+width: auto
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+
+-- footer-section-right:
+footer-nav: $footer-desktop.footer-nav
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.column:
+align-self: end
+margin-top.px: 16
+
+-- ftd.text:
+text: $footer-desktop.copyright
+text-align: end
+role: $inherited.types.copy-tight
+color: $inherited.colors.text-strong
+white-space: nowrap
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: footer-desktop
+
+
+
+
+
+
+
+
+
+
+-- component footer-mobile:
+optional ftd.image-src group-logo: 
+optional ftd.image-src backed-logo: 
+optional ftd.image-src fill-logo:
+optional ftd.image-src logo:
+optional ftd.color footer-bg:
+optional string copyright:
+pr.toc-item list footer-nav:
+
+-- ftd.column:
+background.solid: $footer-mobile.footer-bg
+width: fill-container
+padding-top.px: 34
+padding-horizontal.px: 16
+padding-bottom.px: 16
+spacing.fixed.px: 24
+
+-- ftd.column:
+width: fill-container
+margin-top.px: 10
+
+-- ftd.row:
+width: fill-container
+margin-top.px: 15
+padding-left.px: 10
+padding-right.px: 10
+
+-- ftd.image:
+src: $assets.files.assets.images.logo-fifthtry-dark.svg
+
+-- ftd.row:
+align-self: end
+width: fill-container
+spacing.fixed.px: 20
+
+-- ftd.column:
+align-self: end
+width: fill-container
+
+-- ftd.text:
+text: Backed by
+role: $inherited.types.label-small
+color: $inherited.colors.text
+text-align: end
+width: fill-container
+
+-- ftd.text:
+text: YCombinator
+role: $inherited.types.label-big
+color: $inherited.colors.custom.one
+width: fill-container
+text-align: end
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $assets.files.assets.images.y-combinator-logo.svg
+link: https://www.ycombinator.com/companies/fifthtry
+height.fixed.px: 36
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+align-self: center
+spacing.fixed.px: 20
+
+-- nav-one-line-mobile: $obj.title
+$loop$: $footer-mobile.footer-nav as $obj
+children: $obj.children
+link: $obj.url
+
+-- end: ftd.row
+
+-- ftd.column:
+margin-top.px: 10
+width: fill-container
+
+-- ftd.row:
+align-self: center
+
+-- ftd.text:
+text: © 2022 FifthTry. All rights reserved
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: footer-mobile
+
+
+
+
+
+
+
+
+
+
+-- component nav-one-line-mobile:
+caption title:
+optional string link:
+pr.toc-item list children:
+ftd.color text-color: $inherited.colors.text-strong
+
+-- ftd.row:
+
+-- ftd.row:
+align-self: center
+
+-- ftd.text: $nav-one-line-mobile.title
+if: {$nav-one-line-mobile.link != NULL}
+role: $inherited.types.label-big
+link: $nav-one-line-mobile.link
+color: $nav-one-line-mobile.text-color
+white-space: nowrap
+padding-vertical.px: 10
+padding-left.px: 10
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: nav-one-line-mobile
+
+-- component footer-section-right:
+pr.toc-item list footer-nav:
+
+-- ftd.row:
+spacing.fixed.px: 32
+
+-- footer-nav-items: $obj.title
+$loop$: $footer-section-right.footer-nav as $obj
+children: $obj.children
+link: $obj.url
+
+-- end: ftd.row
+
+-- end: footer-section-right
+
+
+
+
+
+
+
+
+
+
+-- component footer-section:
+pr.toc-item list footer-nav:
+
+-- ftd.column:
+spacing.fixed.px: 16
+
+-- footer-nav-items: $obj.title
+$loop$: $footer-section.footer-nav as $obj
+children: $obj.children
+link: $obj.url
+
+-- end: ftd.column
+
+-- end: footer-section
+
+
+
+
+
+
+
+
+
+
+-- component footer-nav-items:
+caption title:
+optional string link:
+pr.toc-item list children:
+ftd.color text-color: $inherited.colors.text-strong
+
+-- ftd.column:
+
+/-- ftd.row:
+width: fill-container
+border-left-width.px: 3
+padding-left.px: 20
+margin-left.px: 20
+border-color: $inherited.colors.text-strong
+
+-- ftd.text: $footer-nav-items.title
+if: { $footer-nav-items.link != NULL}
+link: $footer-nav-items.link
+color: $footer-nav-items.text-color
+white-space: nowrap
+role: $inherited.types.label-big
+
+-- end: ftd.column
+
+-- end: footer-nav-items

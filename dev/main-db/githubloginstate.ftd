@@ -15,3 +15,5 @@ class GithubLoginState(models.Model):
 
     def __str__(self) -> str:
         return self.state.__str__()
+
+-- end: ds.page

@@ -1,21 +1,30 @@
 -- import: fifthtry.com/events
 
 
+
+
+
 -- dd.past-demo-day:  FifthTry
 number: #15
 date: 23 Dec 
 year: 2022
 demo-video: vOEO7hxvSSw
 demo-date: 23rd Dec 2022
-sidebar: true
-id: dd-15
+$sidebar: true
+
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
 
 Our 15th weekly [demo event](/h/dd/) will happen on 23rd Dec 2022. We showcase
 what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
-
--- container:  dd-15
 
 -- dd.presentation: Marketing: Finish Up Developer Messaging
 owner: AbrarK
@@ -29,7 +38,6 @@ talking points, objections.
 
 -- ds.h2: Junior Developer
 
-
 -- ds.h3: FTD/FPM Awareness
 
 -- ds.h3: Workshop/Training
@@ -42,7 +50,7 @@ talking points, objections.
 
 -- ds.h3: Full Stack App
 
--- container:  dd-15
+-- end: dd.presentation
 
 -- dd.presentation: Engineering College
 owner: AbrarK
@@ -54,11 +62,7 @@ status: Pending
 Talking points, etc. And 5 calls with 5 diff colleges. Actual event in week to
 10 days.
 
-
 -- ds.h2: Initial Conversation
-
-
--- container:  dd-15
 
 -- dd.presentation: Marketing: 5 Hrs or video
 owner: AbrarK
@@ -67,17 +71,9 @@ status: On Track
 
 Ajit to learn and record FTD. Calls with AmitU, Arpita etc.
 
-
-
-
--- container:  dd-15
-
 -- dd.presentation: texty-ps to be used by rithik
 owner: Rithik
 status: On Track
-
-
--- container:  dd-15
 
 -- dd.presentation: Old Stuff
 owner: AbrarK
@@ -88,8 +84,6 @@ status: On Track
 - FifthTry.com is still not powered by fpm: github app pending
 - d-day page to be used
 
--- container:  dd-15
-
 -- dd.presentation: Rename fpm.dev to fastn.io
 owner: Abrar
 owner-avatar: $assets.files.images.events.abrar.jpg
@@ -97,10 +91,7 @@ helper: Ganesh
 helper-avatar: $assets.files.images.events.ganesh.jpg
 status: On Track
 
-
 Github repo, CLI binary name, code.
-
--- container:  dd-15
 
 -- dd.presentation: Proper Authentication For FPM Controller
 owner: Rithik
@@ -118,14 +109,11 @@ How do we invite team mates? Github Username.
 
 Deploy on https://hostn.io.
 
-
 -- ds.code:
 lang: ftd
 
 \-- fpm.app:
 user-id: <github-username>
-
--- container:  dd-15
 
 -- dd.presentation: FPM Controller: Fly Support
 owner: Rithik
@@ -135,15 +123,12 @@ We have to bring back fly integration.
 Download Base URL should be just `abrark/foo` (not the full URL, which is also
 accepted).
 
--- container:  dd-15
 -- dd.presentation: Auth On Some Site & Docs
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 Let's ensure there is auth implemented on some site.
-
--- container:  dd-15
 
 -- dd.presentation: All Demos
 owner: AbrarK
@@ -152,8 +137,6 @@ status: Pending
 
 Lets list down all the main features we have, lets have a repo, and a website to
 demo that feature.
-
--- container:  dd-15
 
 -- dd.presentation: FTD 0.3: doc site
 owner: Arpita
@@ -167,11 +150,7 @@ Status: Entire companies priority now
 - import optimisation
 - processors
 
+-- end: dd.presentation
 
 
-
-
-
--- container: dd-15.demo-container.right-sidebar
-
--- events.sidebar:
+-- end: dd.past-demo-day

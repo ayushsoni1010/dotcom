@@ -7,4 +7,6 @@ comment is posted on the Github Pull Request on behalf of the current user.
 
 -- ds.image:
 src: $assets.files.images.product-manual.routes.notifications.documentation-attached-notification.png
-width: fill
+width: fill-container
+
+-- end: ds.page

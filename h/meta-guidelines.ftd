@@ -33,7 +33,7 @@ for the country that must be strictly adhered or else..
 
 -- ds.image: We Mean Guideline In This Literal Sense, Lines On The Floor To Guide You
 src: $assets.files.images.blog.guidelines.jpg
-align: center
+;;align: center
 
 Guidelines are like these yellow lines. If everyone walked on the yellow line
 and they wanted to reach the lift, they will do it optimally. If someone strays
@@ -63,3 +63,5 @@ down. Same with guidelines.
 
 Guidelines should be few, clearly communicated, no one should be surprised that
 there is yet another guideline for something.
+
+-- end: ds.page
