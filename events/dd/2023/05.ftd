@@ -1,0 +1,120 @@
+-- import: fifthtry.com/events
+
+-- ds.page: FifthTry's 5th Demo Day Of 2023
+id: dd-23-05
+sidebar: true
+
+Our 16th weekly [demo event](/h/dd/) will happen on 3rd Feb 2023. We showcase
+what people in FifthTry have built in this week. This is an important part of
+our, [how to do remote right initiative](/h/remote/), we are now fully remote
+company.
+
+
+
+-- ds.h1: Week Goals
+
+- 0.3 done (all blockers)
+- fastn.io (homepage online)
+- set-1 (landging page ready)
+- fmp -> fastn
+- dynamic dom: attempt 1
+- better docs/examples
+- hostn: r1
+
+
+
+
+
+-- ds.h1: 0.3 blocker: cleanups
+
+Owner: Rithik
+
+
+- ftd.checkbox
+- extra gap in headings: ganesh to give test case
+- full sitemap processor: abrar
+- pending css
+
+
+
+
+
+-- ds.h1: new colors and type variables
+
+Owner: Rithik
+
+- define the colors and type stuff
+- two color schemes: fastn.io, landing-page (proper fpm packages)
+- two type schemes: roboto, loto
+
+
+
+
+
+-- ds.h1: 0.3 blocker: implement style and font weights in design system
+
+Owner: Rithik
+
+
+we have to change ftd.type-data.
+
+We will have four weights specified for each "role", eg `heading-hero` will
+have `light-weight`, `regular-weight`, `medium-weight` and `bold-weight`.
+
+-- ds.code:
+lang: ftd
+
+\-- ftd.text: hello
+role: $inherited.types.heading-hero
+style: bold
+
+-- ds.markdown:
+
+If `style` is say `bold`, the `bold-weight` will be applied. Possible values
+of style is in the figma file. Four styles mentioned above change weight. Others
+set appropriate CSS property.
+
+
+-- ds.h1: 0.3 blocker: re-export
+
+
+-- ds.h1: fastn.io
+
+Owner: Ganesh
+
+
+-- ds.h1: component library: set 1 (octuber)
+
+Owner: Ganesh (Sourabh)
+
+- teach ftd
+- figma: https://www.figma.com/file/8JNdHNa41JDHbjjUhKU5aW/Fastn-Master-Component-File?node-id=1081%3A40637&t=oMkw8ocVE2dU8HE0-0
+
+
+-- ds.h1: fpm -> fastn
+
+Owner: AbrarK
+
+- rename repo, everything in source, gh action, install script etc
+- docs, FPM.ftd -> FASTN.ftd
+- fpm.dev -> fastn.io domain mapping, vercel configuration etc
+
+
+-- ds.h1: hostn minimum release
+
+Owner: AbrarK
+
+
+- r1: static website (index page/coming soon)
+- r2: auth (take user to signin/signup page)
+- r3: create/view/edit package
+- r4: it should work with fly
+- one click package create flow
+- domain: amitu.com/abrark.com
+- payment
+- delete package
+
+
+-- container: dd-23-05.wrapper.right-sidebar
+-- events.sidebar:
+
