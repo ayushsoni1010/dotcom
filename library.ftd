@@ -983,7 +983,7 @@ padding-horizontal: 42
 --- ftd.text:
 text: $left-testimony-body
 color: $fpm.color.main.text
-role: $font.copy-relaxed
+role: $font.copy-regular
 
 --- ftd.column:
 margin-top: 80
@@ -998,7 +998,7 @@ margin-bottom: 8
 --- ftd.text: $left-designation
 width: fill
 color: $fpm.color.main.text-strong
-role: $font.copy-relaxed
+role: $font.copy-regular
 
 --- container: testimonial-container
 
@@ -1016,7 +1016,7 @@ padding-horizontal: 42
 --- ftd.text:
 text: $right-testimony-body
 color: $fpm.color.main.text
-role: $font.copy-relaxed
+role: $font.copy-regular
 
 --- ftd.column:
 margin-top: 158
@@ -1031,7 +1031,7 @@ margin-bottom: 8
 --- ftd.text: $right-designation
 width: fill
 color: $fpm.color.main.text-strong
-role: $font.copy-relaxed
+role: $font.copy-regular
 
 
 
@@ -1086,7 +1086,7 @@ align: center
 --- ftd.text:
 text: $left-testimony-body
 color: $fpm.color.main.text
-role: $font.copy-relaxed
+role: $font.copy-regular
 padding-horizontal:9
 padding-top: 74
 
@@ -1107,7 +1107,7 @@ role: $font.cta
 --- ftd.text: $left-designation
 width: fill
 color: $fpm.color.main.text-strong
-role: $font.copy-relaxed
+role: $font.copy-regular
 
 --- container: testimonial-container
 
@@ -1128,7 +1128,7 @@ align: center
 --- ftd.text:
 text: $right-testimony-body
 color: $fpm.color.main.text
-role: $font.copy-relaxed
+role: $font.copy-regular
 padding-horizontal:9
 padding-top: 54
 
@@ -1150,7 +1150,7 @@ role: $font.cta
 --- ftd.text: $right-designation
 width: fill
 color: $fpm.color.main.text-strong
-role: $font.copy-relaxed
+role: $font.copy-regular
 
 
 

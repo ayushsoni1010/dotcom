@@ -5,15 +5,15 @@
 ;;-- fpm.font-display: $font-assets.fonts.Inter
 
 
--- ftd.font-size copy-relaxed-medium-desktop:
+-- ftd.font-size copy-regular-medium-desktop:
 line-height: 24
 size: 16
 letter-spacing: 0
 
--- ftd.type copy-relaxed-medium: $fpm.font-display
-desktop: $copy-relaxed-medium-desktop
-mobile: $copy-relaxed-medium-desktop
-xl: $copy-relaxed-medium-desktop
+-- ftd.type copy-regular-medium: $fpm.font-display
+desktop: $copy-regular-medium-desktop
+mobile: $copy-regular-medium-desktop
+xl: $copy-regular-medium-desktop
 weight: 700
 
 -- ftd.font-size heading-hero-sml:
@@ -218,7 +218,7 @@ line-height: 24
 size: 16
 letter-spacing: 0
 
--- ftd.type copy-relaxed: $fpm.font-display
+-- ftd.type copy-regular: $fpm.font-display
 desktop: $copy-relax
 mobile: $copy-relax
 xl: $copy-relax
