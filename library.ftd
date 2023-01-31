@@ -667,7 +667,7 @@ height: 200
 
 
 --- ftd.text: $copy
-role: $fpm.type.copy-tight
+role: $fpm.type.copy-small
 color: $text-color
 width: fill
 min-height: 80
@@ -840,7 +840,7 @@ align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-big
+role: $fpm.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
@@ -859,7 +859,7 @@ align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-big
+role: $fpm.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
@@ -878,7 +878,7 @@ align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-big
+role: $fpm.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
@@ -1456,7 +1456,7 @@ width: fill
 
 --- ftd.text:
 text: YCombinator
-role: $fpm.type.label-big
+role: $fpm.type.label-large
 color: $font.orange
 width: fill
 text-align: right
@@ -1569,7 +1569,7 @@ if: $link is not null
 link: $link
 color: $text-color
 white-space: nowrap
-role: $fpm.type.label-big
+role: $fpm.type.label-large
 
 
 
@@ -1759,7 +1759,7 @@ color: $fpm.color.main.text-strong
 --- ftd.text:
 width: fill
 text: $body
-role: $fpm.type.copy-tight
+role: $fpm.type.copy-small
 color: $fpm.color.main.text
 
 
@@ -2118,7 +2118,7 @@ margin-bottom: $fpm.space.space-4
 
 --- ftd.text:
 text: $body
-role: $fpm.type.copy-relaxed
+role: $fpm.type.copy-regular
 color: $fpm.color.main.text
 
 
@@ -2164,7 +2164,7 @@ color: $fpm.color.main.text-strong
 
 --- ftd.text:
 text: $body
-role: $fpm.type.copy-relaxed
+role: $fpm.type.copy-regular
 color: $fpm.color.main.text
 
 

@@ -259,7 +259,7 @@ margin-bottom.px: 16
 
 -- ftd.text:
 text: $info-card-desktop.body
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- ftd.text:
@@ -315,7 +315,7 @@ color: $inherited.colors.text-strong
 
 -- ftd.text:
 text: $info-card-mobile.body
-role: $inherited.types.copy-relaxed
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- ftd.text:
@@ -457,7 +457,7 @@ margin-top.px: 16
 -- ftd.text:
 text: $footer-desktop.copyright
 text-align: end
-role: $inherited.types.copy-tight
+role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
 white-space: nowrap
 
@@ -524,7 +524,7 @@ width: fill-container
 
 -- ftd.text:
 text: YCombinator
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 color: $inherited.colors.custom.one
 width: fill-container
 text-align: end
@@ -595,7 +595,7 @@ align-self: center
 
 -- ftd.text: $nav-one-line-mobile.title
 if: {$nav-one-line-mobile.link != NULL}
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 link: $nav-one-line-mobile.link
 color: $nav-one-line-mobile.text-color
 white-space: nowrap
@@ -676,7 +676,7 @@ if: { $footer-nav-items.link != NULL}
 link: $footer-nav-items.link
 color: $footer-nav-items.text-color
 white-space: nowrap
-role: $inherited.types.label-big
+role: $inherited.types.label-large
 
 -- end: ftd.column
 
