@@ -56,7 +56,7 @@ Owner: Rithik
 Owner: Rithik
 
 - define the colors and type stuff
-- two color schemes: fastn.io, landing-page (proper fpm packages)
+- two color schemes: fastn.io, landing-page (proper fastn packages)
 - two type schemes: roboto, loto
 
 
@@ -103,13 +103,13 @@ Owner: Ganesh (Sourabh)
 - figma: https://www.figma.com/file/8JNdHNa41JDHbjjUhKU5aW/Fastn-Master-Component-File?node-id=1081%3A40637&t=oMkw8ocVE2dU8HE0-0
 
 
--- ds.h1: fpm -> fastn
+-- ds.h1: fastn -> fastn
 
 Owner: AbrarK
 
 - rename repo, everything in source, gh action, install script etc
-- docs, FPM.ftd -> FASTN.ftd
-- fpm.dev -> fastn.io domain mapping, vercel configuration etc
+- docs, FASTN.ftd -> FASTN.ftd
+- fastn.dev -> fastn.io domain mapping, vercel configuration etc
 
 
 -- ds.h1: hostn minimum release

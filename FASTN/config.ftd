@@ -1,29 +1,29 @@
--- import: fpm
+-- import: fastn
 -- import: ds
 -- import: blg
 -- import: fifthtry.com/assets
 -- import: ps
 -- import: fbs
--- import: fpm/processors as pr
+-- import: fastn/processors as pr
 
 
--- ds.github: https://github.com/fifthtry/cdoc/
+-- $ds.github: https://github.com/fifthtry/cdoc/
 
 
--- ds.site-logo:
+-- $ds.site-logo:
 light: $assets.files.assets.images.logo-fifthtry-dark.svg.light
 dark: $assets.files.assets.images.logo-fifthtry-dark.svg.dark
 
 
--- ds.site-name:
+-- $ds.site-name:
 
 
 -- boolean is-mobile: false
 
 
 
--- ds.sections:
-$processor$: toc
+-- $ds.sections:
+$processor$: pr.toc
 
 - Why: why/
 - Blog: blog/
@@ -31,8 +31,8 @@ $processor$: toc
 - Development: dev/
 
 
--- ds.toc:
-$processor$: toc
+-- $ds.toc:
+$processor$: pr.toc
 
 - Flow: flow/
   - Permissions: permissions/
@@ -53,7 +53,7 @@ $processor$: toc
 
 
 -- pr.toc-item list footer-nav:
-$processor$: toc
+$processor$: pr.toc
 
 
 - About: https://github.com/FifthTry

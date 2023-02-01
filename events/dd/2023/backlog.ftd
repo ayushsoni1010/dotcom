@@ -5,7 +5,7 @@
 Owner: AbrarK
 
 We will convert each auth provider code, like github, telegram etc, into WASM
-and will add provider by adding `-- fpm.dependency` instead of modifying `fpm`
+and will add provider by adding `-- fastn.dependency` instead of modifying `fastn`
 codebase.
 
 -- end: ds.page

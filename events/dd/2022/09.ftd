@@ -28,11 +28,11 @@ company.
 We have hired Meenu Kumari as a "FTD Developer" for the "FTD Design and
 Development" team. She will be joining us in a few weeks, and will be working
 with Ganesh and Priyanka to help deliver more [FTD component
-libraries](https://fpm.dev/all/) for our end users. Excited to have a new
+libraries](https://fastn.dev/all/) for our end users. Excited to have a new
 co-consiprator, help us change the world.
 
 We are also working with [Harish Shankaran](https://www.linkedin.com/in/harishshankaran/)
-as a consultant. Harish will help us redesign ftd.dev, fpm.dev, FifthTry.com etc
+as a consultant. Harish will help us redesign ftd.dev, fastn.dev, FifthTry.com etc
 websites.
 
 -- ds.h1: FifthTry Repositioning: DXP?
@@ -81,18 +81,18 @@ to agency, tells them they want to do something, agency tells them there are
 these solutions like Sitecore etc.
 
 So this is what we want to do. Go to the agencies. Tell them they can push
-Sitecore, or they can push FPM. It will then become a simple question of "Is
-FPM solving problems of agencies, the kind of projects CEO wants to execute, can
-the agency deliver it faster and better using FPM than using Sitecore?". If we
+Sitecore, or they can push FASTN. It will then become a simple question of "Is
+FASTN solving problems of agencies, the kind of projects CEO wants to execute, can
+the agency deliver it faster and better using FASTN than using Sitecore?". If we
 make the answer yes, we have done it. Us being text based means we have full
 power of version control, Pull Requests, history, merge, conflict etc. We being
 fully programmable language, and nothing else, no massive "engine" you have to
-understand means, people can understand FPM end to end in a weekend, where as
+understand means, people can understand FASTN end to end in a weekend, where as
 Sitecore etc takes months and months. And since we are build it yourself, here
 are the lowest level building blocks, we are like React at some level, so there
-is no quesiton of what you can not do with FPM, where as in case of Sitecore you
+is no quesiton of what you can not do with FASTN, where as in case of Sitecore you
 have to rely on features that sitecore team has built. We are librally open
-source so digital agencies get to keep larger share of revenues, deploying fpm
+source so digital agencies get to keep larger share of revenues, deploying fastn
 in a new company is lot easier etc.
 
 So lets not compare ourselves with Notions and Wix, lets solve digital agencies
@@ -132,18 +132,18 @@ There is a nice, "you finished the chapter" celebration thing he put there. I
 think we should revive our comic stuff, and chat message etc, visual stuff to
 make content more interesting than just text blocks.
 
--- ds.h1: Auth Support In FPM
+-- ds.h1: Auth Support In FASTN
 
-Wasif showed off preliminary auth support in FPM. Earlier we implemented the
-auth support using Django, but that required people who run FPM to run the fpm
+Wasif showed off preliminary auth support in FASTN. Earlier we implemented the
+auth support using Django, but that required people who run FASTN to run the fastn
 binary, as well as configure Django, and a database (PostgreSQL). This was too
 much dependencies, so we are now implementing support for authentication
-directly in FPM binary itself, and further doing it in such a way to avoid
+directly in FASTN binary itself, and further doing it in such a way to avoid
 database altogether (storing stuff in cookies).
 
 So far Wasif has implemented login with Github, and it just shows the user's
 Github username on the page. Wasif has also implemented an API which will be
-called from internals of FPM, to test if currently logged in user has starred
+called from internals of FASTN, to test if currently logged in user has starred
 some github repository or not.
 
 -- ds.image:
@@ -162,25 +162,25 @@ on Github, then you have the full feature available.
 Maybe we will also support NFT tomorrow, want to read this blog post, buy our
 NFT first.
 
-Another thing is currently we have implemented this feature in FPM directly, we
-modified the FPM code. But when we start building dozens of integrations it will
-start bloating fpm binary. So we will soon finish our WASM support and move the
+Another thing is currently we have implemented this feature in FASTN directly, we
+modified the FASTN code. But when we start building dozens of integrations it will
+start bloating fastn binary. So we will soon finish our WASM support and move the
 gating code to WASM, so you only pay for (meaning download code of) the
 integration you care about. This will allow anyone to create any integration,
-and we will not have to worry about questions like should FPM really support
+and we will not have to worry about questions like should FASTN really support
 crypto.
 
--- ds.h1: Using FPM Applications As Dependencies
+-- ds.h1: Using FASTN Applications As Dependencies
 
 So far we have create a bunch of component libraries, doc-site, resume,
 slideshows, bling, etc. These are static components, mostly displaying some
 content in aesthetically pleasing manner. If you want to use any of these
-packages, you just have to add a `fpm.dependency` clause in your `FPM.ftd` and
+packages, you just have to add a `fastn.dependency` clause in your `FASTN.ftd` and
 we take care of the rest.
 
 Over last few months we have been building support for packaging full
-applications as FPM package. Now adding a full working reusable backend
-application is also a matter of addings `fpm.dependency` in your `FPM.ftd`.
+applications as FASTN package. Now adding a full working reusable backend
+application is also a matter of addings `fastn.dependency` in your `FASTN.ftd`.
 
 Abrar shows how he can "install" the [kameri app (a todo
 application)](https://github.com/fifthtry/kameri-app/) in `abrark.com`. The WIP
@@ -197,7 +197,7 @@ automatically be deployed, the Django app will have to provide a Dockerfile and
 we take care of rest.
 
 Also as soon as WASM effort takes shape we will move the logic in Django to WASM
-so you do not need Django service at all, and WASM will run inside FPM binary
+so you do not need Django service at all, and WASM will run inside FASTN binary
 itself. Once this is done, the ease of deploying a fully working applicaiton
 would be unmatched with anything out there as an option to site owners.
 
@@ -208,8 +208,8 @@ Event and Scheduling etc etc. All of these will be available to site owners,
 for free, open source, to use with their sites.
 
 We will also create a marketplace, so indipendent developers can create their
-apps, which any FPM site owner can install. The apps can be free or even paid,
-so indipendent developers can make a living making FPM apps. What Apple and
+apps, which any FASTN site owner can install. The apps can be free or even paid,
+so indipendent developers can make a living making FASTN apps. What Apple and
 Android did to mobile apps, we will do to web apps.
 
 -- ds.h1: Icon Support In Sitemap
@@ -222,7 +222,7 @@ Currently these are not supported by doc-site, but soon Ganesh and his team will
 be doing that.
 
 We have to implement error checking, if icon file does not exist, it should not
-lead to 404 in browser that you site visitors will see, rather the entire FPM
+lead to 404 in browser that you site visitors will see, rather the entire FASTN
 server should come down crashing, so you can quickly identify the problem and
 fix it.
 

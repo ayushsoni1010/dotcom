@@ -25,7 +25,7 @@ domain where it is hosted.
 
 -- ds.h2: `repo-name`, `pr-number`
 
-`repo-name`, eg `FifthTry/fpm` and `pr-number` identy the pull request.
+`repo-name`, eg `FifthTry/fastn` and `pr-number` identy the pull request.
 
 
 

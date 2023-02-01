@@ -26,7 +26,7 @@ what people in FifthTry have built in this week. This is an important part of
 our, [how to do remote right initiative](/h/remote/), we are now fully remote
 company.
 
--- dd.presentation: FPM Controller
+-- dd.presentation: FASTN Controller
 owner: Rithik
 status: Pending
 
@@ -44,7 +44,7 @@ owner-avatar: $assets.files.images.events.ganesh.jpg
 status: Pending
 
 
-And template. People should stop using `fpm-template`, it is too basic, we
+And template. People should stop using `fastn-template`, it is too basic, we
 should have more template specific to needs, eg personal-site.
 
 Johny-PS
@@ -84,12 +84,12 @@ helper: Arpita
 helper-avatar: $assets.files.images.events.arpita.jpg
 
 Currently we are using github pages, now lets switch to
-Heroku so we can start using fpm's auth feature.
+Heroku so we can start using fastn's auth feature.
 
 This document will become the "coming soon page" for
 others, and for FifthTry employees it would act as
 planning document. Also implement auth with following
-groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
+groups: `ft-zens`, `ftd-fans`, `fastn-fans`.
 
 -- end: dd.presentation
 

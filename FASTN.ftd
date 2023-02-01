@@ -1,38 +1,38 @@
--- import: fpm
+-- import: fastn
 
--- fpm.package: fifthtry.com
+-- fastn.package: fifthtry.com
 zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
--- fpm.dependency: fifthtry.github.io/inter
--- fpm.dependency: fifthtry.github.io/demo-day as dd
--- fpm.dependency: fifthtry.github.io/doc-site as ds
--- fpm.dependency: fifthtry.github.io/product-switcher as ps
--- fpm.dependency: fifthtry.github.io/fifthtry-brand-switcher as fbs
--- fpm.dependency: fifthtry.github.io/blog-components as blg
--- fpm.dependency: fifthtry.github.io/octicon
--- fpm.dependency: fifthtry.github.io/roboto-mono as mono
--- fpm.dependency: fifthtry.github.io/event as event
-;;-- fpm.dependency: fifthtry.github.io/common as common
--- fpm.dependency: fifthtry.github.io/admonitions as cbox
--- fpm.dependency: fifthtry.github.io/bling
+-- fastn.dependency: fifthtry.github.io/inter
+-- fastn.dependency: fifthtry.github.io/demo-day as dd
+-- fastn.dependency: fifthtry.github.io/doc-site as ds
+-- fastn.dependency: fifthtry.github.io/product-switcher as ps
+-- fastn.dependency: fifthtry.github.io/fifthtry-brand-switcher as fbs
+-- fastn.dependency: fifthtry.github.io/blog-components as blg
+-- fastn.dependency: fifthtry.github.io/octicon
+-- fastn.dependency: fifthtry.github.io/roboto-mono as mono
+-- fastn.dependency: fifthtry.github.io/event as event
+;;-- fastn.dependency: fifthtry.github.io/common as common
+-- fastn.dependency: fifthtry.github.io/admonitions as cbox
+-- fastn.dependency: fifthtry.github.io/bling
 
 
 
--- fpm.auto-import: event
--- fpm.auto-import: ds
--- fpm.auto-import: dd
--- fpm.auto-import: fifthtry.com/FPM/config
--- fpm.auto-import: fifthtry.com/assets
--- fpm.auto-import: fifthtry.github.io/bling/chat
+-- fastn.auto-import: event
+-- fastn.auto-import: ds
+-- fastn.auto-import: dd
+-- fastn.auto-import: fifthtry.com/FASTN/config
+-- fastn.auto-import: fifthtry.com/assets
+-- fastn.auto-import: fifthtry.github.io/bling/chat
 
 ;; Test Purpose
--- fpm.user-group: fpm-fans
-github-starred: ftd-lang/fpm
+-- fastn.user-group: fastn-fans
+github-starred: ftd-lang/fastn
 
 
 
--- fpm.sitemap:
+-- fastn.sitemap:
 
 
 # Why: /why/
@@ -163,9 +163,3 @@ github-starred: ftd-lang/fpm
   - PrApproval Table: dev/main-db/prapproval/
   - GithubCheckRun Table: dev/main-db/githubcheckrun/
   - GithubLoginState Table: dev/main-db/githubloginstate/
-
-## Test: /test/login/
-
-- Login: /test/login/
-- Test Login: /test/fpm-fans/
-  readers: fpm-fans

@@ -38,7 +38,7 @@ talking points, objections.
 
 -- ds.h2: Junior Developer
 
--- ds.h3: FTD/FPM Awareness
+-- ds.h3: FTD/FASTN Awareness
 
 -- ds.h3: Workshop/Training
 
@@ -81,10 +81,10 @@ owner-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 - abrark: telegram, twitter, discord testing: pending
-- FifthTry.com is still not powered by fpm: github app pending
+- FifthTry.com is still not powered by fastn: github app pending
 - d-day page to be used
 
--- dd.presentation: Rename fpm.dev to fastn.io
+-- dd.presentation: Rename fastn.dev to fastn.io
 owner: Abrar
 owner-avatar: $assets.files.images.events.abrar.jpg
 helper: Ganesh
@@ -93,7 +93,7 @@ status: On Track
 
 Github repo, CLI binary name, code.
 
--- dd.presentation: Proper Authentication For FPM Controller
+-- dd.presentation: Proper Authentication For FASTN Controller
 owner: Rithik
 status: On Track
 
@@ -101,7 +101,7 @@ Who/what is going to be the provider? Github. One strong reason to use github,
 why we can not use gmail etc is because site content would still be managed by
 github.
 
-We need to implement X-FPM-USER-ID header support. Earlier we discussed hashing
+We need to implement X-FASTN-USER-ID header support. Earlier we discussed hashing
 based user-id, here we will need non-hashing "original" user-id, github username
 in this case.
 
@@ -112,10 +112,10 @@ Deploy on https://hostn.io.
 -- ds.code:
 lang: ftd
 
-\-- fpm.app:
+\-- fastn.app:
 user-id: <github-username>
 
--- dd.presentation: FPM Controller: Fly Support
+-- dd.presentation: FASTN Controller: Fly Support
 owner: Rithik
 status: On Track
 

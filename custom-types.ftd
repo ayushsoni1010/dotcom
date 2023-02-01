@@ -1,8 +1,8 @@
 -- import: fifthtry.com/assets
--- import: fpm
+-- import: fastn
 -- import: fifthtry.github.io/inter/assets as font-assets
 
-;;-- fpm.font-display: $font-assets.fonts.Inter
+;;-- fastn.font-display: $font-assets.fonts.Inter
 
 
 -- ftd.font-size copy-regular-medium-desktop:
@@ -21,7 +21,7 @@ line-height: 52
 size: 36
 letter-spacing: 0
 
--- ftd.type heading-hero: $fpm.font-display
+-- ftd.type heading-hero: $fastn.font-display
 desktop: $heading-hero-sml
 mobile: $heading-hero-sml
 xl: $heading-hero-sml
@@ -32,7 +32,7 @@ line-height: 44
 size: 32
 letter-spacing: 0
 
--- ftd.type sub-heading-small: $fpm.font-display
+-- ftd.type sub-heading-small: $fastn.font-display
 desktop: $sub-heading-sml
 mobile: $sub-heading-sml
 xl: $sub-heading-sml
@@ -95,7 +95,7 @@ line-height: 14
 size: 13
 letter-spacing: 0
 
--- ftd.type buttonjnvj: $fpm.font-display
+-- ftd.type buttonjnvj: $fastn.font-display
 desktop: $button-normal-lg
 mobile: $button-normal-lg
 xl: $button-normal-lg
@@ -108,7 +108,7 @@ line-height: 14
 size: 12
 letter-spacing: 0
 
--- ftd.type copyright-small: $fpm.font-display
+-- ftd.type copyright-small: $fastn.font-display
 desktop: $copyright-font-small
 mobile: $copyright-font-small
 xl: $copyright-font-small
@@ -123,7 +123,7 @@ line-height: 44
 size: 32
 letter-spacing: 0
 
--- ftd.type sub-heading-large: $fpm.font-display
+-- ftd.type sub-heading-large: $fastn.font-display
 desktop: $sub-heading-lg
 mobile: $sub-heading-lg
 xl: $sub-heading-lg
@@ -136,7 +136,7 @@ line-height: 60
 size: 48
 letter-spacing: 0
 
--- ftd.type hero-large: $fpm.font-display
+-- ftd.type hero-large: $fastn.font-display
 desktop: $hero-lg
 mobile: $hero-lg
 xl: $hero-lg
@@ -147,7 +147,7 @@ line-height: 44
 size: 36
 letter-spacing: 0
 
--- ftd.type hero-large-mobile: $fpm.font-display
+-- ftd.type hero-large-mobile: $fastn.font-display
 desktop: $hero-lg-mobile
 mobile: $hero-lg-mobile
 xl: $hero-lg-mobile
@@ -159,7 +159,7 @@ line-height: 16
 size: 16
 letter-spacing: 0
 
--- ftd.type cta: $fpm.font-display
+-- ftd.type cta: $fastn.font-display
 desktop: $cta-txt
 mobile: $cta-txt
 xl: $cta-txt
@@ -171,7 +171,7 @@ line-height: 16
 size: 14
 letter-spacing: 0
 
--- ftd.type footer-font: $fpm.font-display
+-- ftd.type footer-font: $fastn.font-display
 desktop: $footer-txt
 mobile: $footer-txt
 xl: $footer-txt
@@ -182,7 +182,7 @@ line-height: 36
 size: 24
 letter-spacing: 0
 
--- ftd.type list-title: $fpm.font-display
+-- ftd.type list-title: $fastn.font-display
 desktop: $list-tit
 mobile: $list-tit
 xl: $list-tit
@@ -194,7 +194,7 @@ line-height: 20
 size: 14
 letter-spacing: 0
 
--- ftd.type list-body: $fpm.font-display
+-- ftd.type list-body: $fastn.font-display
 desktop: $list-bd
 mobile: $list-bd
 xl: $list-bd
@@ -206,7 +206,7 @@ line-height: 44
 size: 32
 letter-spacing: 0
 
--- ftd.type section-title: $fpm.font-display
+-- ftd.type section-title: $fastn.font-display
 desktop: $section-t
 mobile: $section-t
 xl: $section-t

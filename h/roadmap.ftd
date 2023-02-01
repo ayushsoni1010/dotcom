@@ -9,14 +9,14 @@ This is our monthly goal. We update this every month.
 
 
 
--- ds.h2: fpm.dev, ftd.dev and fifthtry.com landing pages
+-- ds.h2: fastn.dev, ftd.dev and fifthtry.com landing pages
 
 Currently these pages are not doing a good job of explaining any of these
 projects do. We are hiring a design agency and trying to fix this.
 
 FifthTry.com expecially is talking about cdoc product, which we are not working
-on, it will be made into an fpm app someday. For now FifthTry is a hosting
-for FPM apps and sites.
+on, it will be made into an fastn app someday. For now FifthTry is a hosting
+for FASTN apps and sites.
 
 Who: AmitU, Harish
 
@@ -27,9 +27,9 @@ audiance.
 
 Who: AmitU, Ganesh
 
--- ds.h2: fpm hosting
+-- ds.h2: fastn hosting
 
-Currently our FPM hosting aspect is in early prototype stage, this month we have
+Currently our FASTN hosting aspect is in early prototype stage, this month we have
 to bring it in ready for beta launch state.
 
 We have to support payments.
@@ -42,7 +42,7 @@ We have to get 0.3 out, and start looking at improving performance.
 
 Who: Arpita
 
--- ds.h2: fpm
+-- ds.h2: fastn
 
 We have to launch apps, auth, wasm.
 
@@ -72,7 +72,7 @@ We need a lot of apps, at least 10 or so apps we should have by end of jan.
 
 -- ds.h2: Better FTD
 
--- ds.h2: FPM Features?
+-- ds.h2: FASTN Features?
 
 Importers:
 
@@ -84,7 +84,7 @@ Importers:
 
 -- ds.h1: Y: What Do We Want To Do By 2023 End?
 
-We must have 10K domains (not sub domains) using FTD/FPM.
+We must have 10K domains (not sub domains) using FTD/FASTN.
 
 This is our rolling annual goal. We will update it every quarter or so.
 

@@ -2,6 +2,6 @@
 
 We use [`ftd_django.static()`](https://github.com/ftd-lang/python.ftd.dev/blob/main/django/static).
 
-`ftd_django.static()` reads files from `.build` folder in `fpm package root`.
-The `.build` folder is created by running `fpm build`, so this command must be
+`ftd_django.static()` reads files from `.build` folder in `fastn package root`.
+The `.build` folder is created by running `fastn build`, so this command must be
 run before everything will work correctly.

@@ -59,7 +59,7 @@ domain for such stuff, and not use an dozens of SAAS for different things.
 
 We plan to add localstorage based read tracking in the workshop soon, so you will
 be able to mark tasks as done, and resume the workshop when you come back, making
-FPM/ftd way of storing workshop content significanlty better than using Github.
+FASTN/ftd way of storing workshop content significanlty better than using Github.
 
 
 
@@ -69,10 +69,10 @@ status: Done
 
 Shobhit showed [kameri.herokuapp.com](https://kameri.herokuapp.com/demo/) running
 https://github.com/FifthTry/kameri, our WASM powered todo application. WASM
-support in [FPM](https://fpm.dev) is taking shape now.
+support in [FASTN](https://fastn.dev) is taking shape now.
 
 Unlike the same [todo app implemented using Django](https://github.com/FifthTry/kameri-app),
-where we had to deploy both FPM dyno and a dyno running Django, the one with WASM
+where we had to deploy both FASTN dyno and a dyno running Django, the one with WASM
 only has one dyno running.
 
 This is the future of backend development I believe. We can have dozens of such
@@ -83,23 +83,23 @@ apps are written in same technology and somehow can be made to run in same
 process, or end up having dozens of servers running, and deal with Kubernetes and
 all shorts of Devops knowledge heavy stuff to deply.
 
-With FPM/WASM anyone can deploy apps, no devops or even programming knowledge
-needed, look at [how easy it is to add this wasm APP to your existing FPM
+With FASTN/WASM anyone can deploy apps, no devops or even programming knowledge
+needed, look at [how easy it is to add this wasm APP to your existing FASTN
 site](https://kameri.herokuapp.com/existing-package/).
 
 Shobhit has written an early draft of a [how-to on
-WASM](https://github.com/ftd-lang/fpm.dev/pull/90/files). We are going to add a
+WASM](https://github.com/ftd-lang/fastn.dev/pull/90/files). We are going to add a
 fourth part to our workshop, W4, where we would learn how to write WASM app.
 
 
 
--- dd.presentation: FPM Heroku Buildpack
+-- dd.presentation: FASTN Heroku Buildpack
 owner: Shobhit
 status: Done
 
 Heroku has a concept of [buildpacks](https://devcenter.heroku.com/articles/buildpacks),
-Shobhit has written a buildpack for FPM apps:
-[fpm-heroku-buildpack](https://github.com/ftd-lang/fpm-heroku-buildpack).
+Shobhit has written a buildpack for FASTN apps:
+[fastn-heroku-buildpack](https://github.com/ftd-lang/fastn-heroku-buildpack).
 
 Heroku has a [marketplace for such buildpacks](https://elements.heroku.com/buildpacks),
 we will be submitting our buildpack there shortly. This will help us in
@@ -128,7 +128,7 @@ One of the charms of using Node on server side, so your code can work both in
 frontend and on backend. With functions working on both server side and on
 client side, we have managed to capture this advantage, if you write your
 backend in django etc, you are going to still have to re-write same functions
-in JavaScript to make them work on frontend. With FTD/FPM you do not have to
+in JavaScript to make them work on frontend. With FTD/FASTN you do not have to
 repeat yourself.
 
 With this change, trickiest portions of FTD 0.3 is done, we have to add a lot
@@ -147,13 +147,13 @@ status: Done
 Abrar has been working on mount point support, and it is starting to get ready,
 he showed the work in progress demo of it.
 
-When using FPM, a site, say `abrark.com` can use any number of FPM packages, say
+When using FASTN, a site, say `abrark.com` can use any number of FASTN packages, say
 `fifthtry.github.io/kameri-app`. Without `mount-point`, the full URL of
 `kameri-app` would be `https://abrark.com/-/fifthtry.github.io/kameri-app/`. As
 you can see this is not a very clean URL. We need such namespaced URL scheme as
 we expect end users to deply any number of such applications. But if say Abrar
 is going to use this todo app daily, he would want a clean URL, which he can do
-by adding one line to `fpm.depdency`, and get clean URL `https://abrark.com/todos/`.
+by adding one line to `fastn.depdency`, and get clean URL `https://abrark.com/todos/`.
 
 
 
@@ -164,7 +164,7 @@ helper: Aditi
 status: Done
 
 Aviral and Aditi demothe search feature to the [Movie DB
-app](https://github.com/fifthtry/movie-db), a full stack FPM app with frontend
+app](https://github.com/fifthtry/movie-db), a full stack FASTN app with frontend
 written in FTD and backend in Django.
 
 

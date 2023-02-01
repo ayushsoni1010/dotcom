@@ -1,6 +1,6 @@
--- import: fpm
+-- import: fastn
 -- import: blg
--- import: fpm/processors as pr
+-- import: fastn/processors as pr
 
 
 

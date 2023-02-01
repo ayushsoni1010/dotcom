@@ -43,7 +43,7 @@ status: On Track
 1. data modelling
 2. ui & components
 3. functions & event handling (without http support)
-4. fpm, hosting/deployment, sitemap, remixing, auth
+4. fastn, hosting/deployment, sitemap, remixing, auth
 5. full stack apps (frontend http, dynamic URLs, parameters), reusable apps | api-integrations
 6. full stack apps, reusable apps | wasm
 
@@ -58,7 +58,7 @@ Each module is 1hr or so, with 1 hr of exercise extra. Broken into 5 mins
 
 
 
--- dd.presentation: FPM Controller: Fly Support
+-- dd.presentation: FASTN Controller: Fly Support
 owner: Rithik
 status: Pending
 
@@ -70,11 +70,11 @@ accepted).
 
 
 
--- dd.presentation: FPM Controller: Deploy Using FifthTry Button
+-- dd.presentation: FASTN Controller: Deploy Using FifthTry Button
 owner: Rithik
 status: Pending
 
-Button will redirect to fpm with github repo name embedded in it. We want a clean
+Button will redirect to fastn with github repo name embedded in it. We want a clean
 add site flow, with user entering nothing in best case.
 
 fastn.io/deploy/?github-repo=abrark/my-repo&branch=master (authenticate and then

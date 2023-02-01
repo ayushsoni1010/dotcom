@@ -147,7 +147,7 @@ can borrow from.
 
 You should pick some sort of static site generator, [there are more than 300
 available just in Open Source world](https://jamstack.org/generators/), we at
-[FifthTry also has our own static site generator](///fpm.dev), pick one of them,
+[FifthTry also has our own static site generator](///fastn.dev), pick one of them,
 pick the documentation framework, and document the current state of the product.
 
 -- ds.h2: Incremental Documentation

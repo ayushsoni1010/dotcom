@@ -159,15 +159,15 @@ owner-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
 
 Currently we are using github pages, now lets switch to Heroku so we can start
-using fpm's auth feature.
+using fastn's auth feature.
 
 This document will become the "coming soon page" for others, and for
 FifthTry employees it would act as planning document. Also implement auth with
-following groups: `ft-zens`, `ftd-fans`, `fpm-fans`.
+following groups: `ft-zens`, `ftd-fans`, `fastn-fans`.
 
 
 
--- dd.presentation: End to End FPM App + Doc Site Support
+-- dd.presentation: End to End FASTN App + Doc Site Support
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
 helper: Ganesh
@@ -177,7 +177,7 @@ status: Done
 
 We have built both app switcher, the processor etc, we need to see the whole
 thing end to end. Lets ensure tha app icons are working. `.icon` support in
-`fpm.package` record.
+`fastn.package` record.
 
 
 
@@ -204,7 +204,7 @@ Maybe we should update our localstore framework and let app developers say this
 variable is local store backed, so if the variable is modified in any way from
 browser, it should automatically update localstore.
 
-If we had https://github.com/ftd-lang/fpm/discussions/626 implemented we could
+If we had https://github.com/ftd-lang/fastn/discussions/626 implemented we could
 have made subscription support optional in doc-site but for now it is going to
 be mandatory. You can switch off subscription dialog using some global variable.
 
@@ -212,7 +212,7 @@ How would we update the dialog content? We may want to change the subscription
 dialog content globally, show this content every where, or we can do it on a
 per page basis, eg for this page show this reason to subscribe to me.
 
-The global variables should have default side wide value in `FPM/config.ftd`,
+The global variables should have default side wide value in `FASTN/config.ftd`,
 or overwrite them in the current documents ftd file.
 
 We will have variables called `-- subscription-app.dialog-data
@@ -254,7 +254,7 @@ We will create github.com/FifthTry/subscription-app. This repo will contain
 wasm stuff, and the UI code to show the dialog. Doc-site will add a dependency
 to this package.
 
-Lets also add an entry in `fpm.dev/featured/` for this app. We will create a new
+Lets also add an entry in `fastn.dev/featured/` for this app. We will create a new
 section called "featured apps", after "Documentation Sites", and it will only
 contain this for now.
 
@@ -279,7 +279,7 @@ Can we use the fact that user is subscribed or not to create a wall.
 -- ds.code: defining a user-group using cookie
 lang: ftd
 
-\-- fpm.user-groupd: readers
+\-- fastn.user-groupd: readers
 has-cookie: is-subscribed
 
 -- ds.markdown:

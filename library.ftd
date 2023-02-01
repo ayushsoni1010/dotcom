@@ -1,6 +1,6 @@
 -- import: fifthtry.com/custom-types as font
 -- import: fbs
--- import: fpm
+-- import: fastn
 -- import: ds
 -- import: ps
 -- import: fifthtry.github.io/octicon as octicons
@@ -15,10 +15,10 @@
 light: rgba(45, 212, 143, 0.05)
 dark: rgba(45, 212, 143, 0.05)
 
--- ftd.type bold-small-title: $fpm.type.label-small.font
-desktop: $fpm.type.label-small.desktop
-mobile: $fpm.type.label-small.mobile
-xl: $fpm.type.label-small.xl
+-- ftd.type bold-small-title: $fastn.type.label-small.font
+desktop: $fastn.type.label-small.desktop
+mobile: $fastn.type.label-small.mobile
+xl: $fastn.type.label-small.xl
 weight: 700
 
 -- record tc:
@@ -75,10 +75,10 @@ optional string github-cta:
 optional string width:
 optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.svg
 optional string link: https://github.com/apps/continuous-documentation
-padding-horizontal: $fpm.space.space-4
-padding-vertical: $fpm.space.space-2
-color: $fpm.color.main.background.step-1
-background-color: $fpm.color.main.cta-primary.base
+padding-horizontal: $fastn.space.space-4
+padding-vertical: $fastn.space.space-2
+color: $fastn.color.main.background.step-1
+background-color: $fastn.color.main.cta-primary.base
 border-radius: 4
 width: $width
 cursor: pointer
@@ -93,7 +93,7 @@ align: center
 white-space: nowrap
 role: $bold-small-title
 text-align: center
-color: $fpm.color.main.background.step-1
+color: $fastn.color.main.background.step-1
 margin-right: 4
 
 --- ftd.image:
@@ -188,7 +188,7 @@ padding-top: 94
 
 --- ftd.text: $title
 role: $font.hero-large
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 
 --- container: ftd.main
 
@@ -220,13 +220,13 @@ margin-bottom: 10
 
 --- ftd.text: $hero-left-sub-heading
 role: $font.sub-heading-small
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 text-align: center
 width: fill
 
 --- ftd.text: $hero-left-heading
 role: $font.sub-heading-large
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 text-align: center
 width: fill
 
@@ -247,7 +247,7 @@ icon-github: $icon-github
 --- cta: Book a demo
 link: https://calendly.com/amitu-fifthtry/30min?month=2022-04
 cta-bg: $font.cta_secondary_base
-cta-color:  $fpm.color.main.background.step-1
+cta-color:  $fastn.color.main.background.step-1
 
 --- container: hero-image-section
 
@@ -262,7 +262,7 @@ border-left: 0
 border-top: 0
 border-bottom: 0
 border-style: dashed
-border-color: $fpm.main.border
+border-color: $fastn.main.border
 width: 10
 height: fill
 align: center
@@ -282,13 +282,13 @@ margin-bottom: 20
 
 --- ftd.text: $hero-right-sub-heading
 role: $font.sub-heading-small
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 text-align: center
 width: fill
 
 --- ftd.text: $hero-right-heading
 role: $font.sub-heading-large
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 text-align: center
 width: fill
 
@@ -304,13 +304,13 @@ align: center
 
 
 --- cta :$hero-right-cta-one
-cta-bg: $fpm.color.main.cta-primary.disabled
-cta-color:  $fpm.color.main.cta-primary.disabled
+cta-bg: $fastn.color.main.cta-primary.disabled
+cta-color:  $fastn.color.main.cta-primary.disabled
 
 
 /--- ftd.text: $hero-right-cta-one
 role: $font.cta
-color:  $fpm.color.main.cta-primary
+color:  $fastn.color.main.cta-primary
 padding-top: 10
 
 
@@ -339,7 +339,7 @@ padding-top: 94
 
 --- ftd.text: $title
 role: $font.hero-large-mobile
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 padding-horizontal: 30
 text-align: center
 
@@ -372,13 +372,13 @@ margin-bottom: 10
 
 --- ftd.text: $hero-left-sub-heading
 role: $font.sub-heading-small
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 text-align: center
 width: fill
 
 --- ftd.text: $hero-left-heading
 role: $font.sub-heading-large
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 text-align: center
 width: fill
 
@@ -408,7 +408,7 @@ border-left: 0
 border-top: 0
 border-bottom: 0
 border-style: dashed
-border-color: $fpm.main.border
+border-color: $fastn.main.border
 width: 10
 height: fill
 align: center
@@ -432,13 +432,13 @@ margin-bottom: 10
 
 --- ftd.text: $hero-right-sub-heading
 role: $font.sub-heading-small
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 text-align: center
 width: fill
 
 --- ftd.text: $hero-right-heading
 role: $font.sub-heading-large
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 text-align: center
 width: fill
 
@@ -452,7 +452,7 @@ spacing: 16
 
 --- ftd.text: $hero-right-cta-one
 role: $font.cta
-color:  $fpm.color.main.text
+color:  $fastn.color.main.text
 padding-top: 10
 
 
@@ -498,12 +498,12 @@ padding-vertical: 155
 --- ftd.text: $title
 align: center
 role: $font.heading-hero
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 padding-bottom: 16
 
 --- ftd.text: $playtime
 align: center
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 padding-bottom: 38
 role: $font.footer-font
 
@@ -526,11 +526,11 @@ padding-vertical: 45
 
 --- ftd.text: $title
 role: $font.heading-hero
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 padding-bottom: 16
 
 --- ftd.text: $playtime
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 padding-bottom: 38
 role: $font.footer-font
 
@@ -572,7 +572,7 @@ align: center
 width: fill
 text-align: center
 role: $font.section-title
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 margin-bottom: 16
 
 --- container: ftd.main
@@ -612,7 +612,7 @@ margin-bottom: 16
 --- ftd.text:
 text: $body
 role: $font.list-body
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 margin-bottom: 16
 
 
@@ -637,20 +637,20 @@ is-last: $obj.is-last
 string title:
 string copy:
 ftd.image-src thumbnail:
-ftd.color text-color: $fpm.color.main.text
-ftd.color text-hover: $fpm.color.main.text-strong
+ftd.color text-color: $fastn.color.main.text
+ftd.color text-hover: $fastn.color.main.text-strong
 integer index:
 boolean is-last:
 width: fill
 boolean mouse-in: false
 z-index: 0
 spacing: 24
-margin-bottom: $fpm.space.space-6
+margin-bottom: $fastn.space.space-6
 
 
 --- ftd.text: $title
 role: $font.list-title
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 width: fill
 min-height: 72
 
@@ -667,7 +667,7 @@ height: 200
 
 
 --- ftd.text: $copy
-role: $fpm.type.copy-small
+role: $fastn.type.copy-small
 color: $text-color
 width: fill
 min-height: 80
@@ -684,7 +684,7 @@ if: not $is-last
 
 
 --- octicons.arrow-right:
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 
 
 --- container:moving-container
@@ -695,7 +695,7 @@ align: center
 if: $is-last
 
 --- octicons.arrow-left:
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 
 
 
@@ -713,8 +713,8 @@ color: $fpm.color.main.text-strong
 -- ftd.row list-loop:
 string title:
 string copy:
-ftd.color text-color: $fpm.color.main.text
-ftd.color text-hover: $fpm.color.main.text-strong
+ftd.color text-color: $fastn.color.main.text
+ftd.color text-hover: $fastn.color.main.text-strong
 integer index:
 boolean is-last:
 width: fill
@@ -758,7 +758,7 @@ width: 1
 height: percent 110
 left: -38
 top: 3
-background-color: $fpm.color.main.text-strong
+background-color: $fastn.color.main.text-strong
 open: false
 z-index: 0
 
@@ -791,8 +791,8 @@ optional string link: /
 width: $width
 text: $title
 white-space: nowrap
-optional ftd.color cta-bg: $fpm.color.main.background.base
-optional ftd.color cta-color: $fpm.color.main.text-strong
+optional ftd.color cta-bg: $fastn.color.main.background.base
+optional ftd.color cta-color: $fastn.color.main.text-strong
 padding-vertical: 8
 padding-horizontal: 16
 background-color: $cta-bg
@@ -832,15 +832,15 @@ border-radius: 4
 -- ftd.column nav-items:
 caption title:
 optional string link:
-fpm.toc-item list children:
-ftd.color text-color: $fpm.color.glass.text-strong
+fastn.toc-item list children:
+ftd.color text-color: $fastn.color.glass.text-strong
 
 --- ftd.row:
 align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-large
+role: $fastn.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
@@ -851,15 +851,15 @@ white-space: nowrap
 -- ftd.column nav-items-mobile:
 caption title:
 optional string link:
-fpm.toc-item list children:
-ftd.color text-color: $fpm.color.glass.text-strong
+fastn.toc-item list children:
+ftd.color text-color: $fastn.color.glass.text-strong
 
 --- ftd.row:
 align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-large
+role: $fastn.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
@@ -870,15 +870,15 @@ padding-left: 10
 -- ftd.row nav-one-line-mobile:
 caption title:
 optional string link:
-fpm.toc-item list children:
-ftd.color text-color: $fpm.color.glass.text-strong
+fastn.toc-item list children:
+ftd.color text-color: $fastn.color.glass.text-strong
 
 --- ftd.row:
 align: center
 
 --- ftd.text: $title
 if: $link is not null
-role: $fpm.type.label-large
+role: $fastn.type.label-large
 link: $link
 color: $text-color
 white-space: nowrap
@@ -959,7 +959,7 @@ align: center
 
 --- ftd.text: $title
 role: $font.section-title
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 width: fill
 text-align: center
 
@@ -1057,7 +1057,7 @@ align: center
 
 --- ftd.text: $title
 role: $font.section-title
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 width: fill
 text-align: center
 
@@ -1281,11 +1281,11 @@ sites-logo: $right-logo
 
 -- ftd.column footer:
 optional ftd.image-src logo:  $assets.files.assets.images.logo-fifthtry-dark.svg
-optional ftd.color footer-bg: $fpm.color.glass.background.base
+optional ftd.color footer-bg: $fastn.color.glass.background.base
 optional ftd.image-src group-logo: $assets.files.assets.images.group.png
 optional ftd.image-src backed-logo: $assets.files.assets.images.backed-by.png
 optional ftd.image-src fill-logo: $assets.files.assets.images.logo-ycom-dark.svg
-fpm.toc-item list footer-nav: $config.footer-nav
+fastn.toc-item list footer-nav: $config.footer-nav
 optional string copyright:
 background-color: $footer-bg
 width: fill
@@ -1321,7 +1321,7 @@ optional ftd.color footer-bg:
 optional ftd.image-src group-logo: 
 optional ftd.image-src backed-logo: 
 optional ftd.image-src fill-logo:
-fpm.toc-item list footer-nav: 
+fastn.toc-item list footer-nav: 
 optional string copyright:
 padding-horizontal: 48
 background-color: $footer-bg
@@ -1333,7 +1333,7 @@ padding-vertical: 48
 id: footer-container
 width: fill
 height: 48
-padding-left: $fpm.space.space-5
+padding-left: $fastn.space.space-5
 
 --- ftd.row:
 link: \
@@ -1351,7 +1351,7 @@ width: auto
 --- ftd.row:
 width: fill
 height: fill
-border-color: $fpm.color.main.border
+border-color: $fastn.color.main.border
 border-left: 3
 margin-left:29
 /border-width: 3
@@ -1362,7 +1362,7 @@ link: \
 width: auto
 height: fill
 id: right-side-footer
-padding-left: $fpm.space.space-5
+padding-left: $fastn.space.space-5
 
 --- ftd.image:
 src: $fill-logo
@@ -1387,7 +1387,7 @@ margin-top: 16
 text: $copyright
 text-align: right
 role: $font.footer-font
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 white-space: nowrap
 
 
@@ -1415,7 +1415,7 @@ optional ftd.image-src fill-logo:
 optional ftd.image-src logo:
 optional ftd.color footer-bg:
 optional string copyright:
-fpm.toc-item list footer-nav: 
+fastn.toc-item list footer-nav: 
 background-color: $footer-bg
 width: fill
 padding-top: 34
@@ -1449,14 +1449,14 @@ width: fill
 
 --- ftd.text:
 text: Backed by
-role: $fpm.type.label-small
-color: $fpm.color.main.text
+role: $fastn.type.label-small
+color: $fastn.color.main.text
 text-align: right
 width: fill
 
 --- ftd.text:
 text: YCombinator
-role: $fpm.type.label-large
+role: $fastn.type.label-large
 color: $font.orange
 width: fill
 text-align: right
@@ -1491,7 +1491,7 @@ align: center
 --- ftd.text:
 text: © 2022 FifthTry. All rights reserved
 role: $font.copyright-small
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 
 
 
@@ -1505,7 +1505,7 @@ color: $fpm.color.main.text
 
 
 -- ftd.row footer-section-right:
-fpm.toc-item list footer-nav:
+fastn.toc-item list footer-nav:
 spacing: 32
 
 
@@ -1530,7 +1530,7 @@ link: $obj.url
 
 
 -- ftd.column footer-section:
-fpm.toc-item list footer-nav:
+fastn.toc-item list footer-nav:
 spacing: 16
 
 --- footer-nav-items: $obj.title
@@ -1554,22 +1554,22 @@ link: $obj.url
 -- ftd.column footer-nav-items:
 caption title:
 optional string link:
-fpm.toc-item list children:
-ftd.color text-color: $fpm.color.glass.text-strong
+fastn.toc-item list children:
+ftd.color text-color: $fastn.color.glass.text-strong
 
 /--- ftd.row:
 width: fill
 border-left: 3
-padding-left: $fpm.space.space-5
-margin-left: $fpm.space.space-5
-border-color: $fpm.color.main.text-strong
+padding-left: $fastn.space.space-5
+margin-left: $fastn.space.space-5
+border-color: $fastn.color.main.text-strong
 
 --- ftd.text: $title
 if: $link is not null
 link: $link
 color: $text-color
 white-space: nowrap
-role: $fpm.type.label-large
+role: $fastn.type.label-large
 
 
 
@@ -1620,7 +1620,7 @@ $on-click$: toggle $sidebar-open
 -- ftd.row slideshow-left:
 caption title:
 optional body body:
-optional ftd.color bg-color: $fpm.color.main.background.step-1
+optional ftd.color bg-color: $fastn.color.main.background.step-1
 optional string title-copy:
 tc list list-title-copy:
 width: fill
@@ -1669,13 +1669,13 @@ width: fill
 --- ftd.text: $title
 width: fill
 role: $font.section-title
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 margin-bottom: 18
 
 --- ftd.text:
 text: $body
 role: $font.list-body
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 margin-bottom: 30
 
 --- list-loop:
@@ -1751,7 +1751,7 @@ align: center
 width: fill
 text-align: center
 role: $font.section-title
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 
 
 --- container: ftd.main
@@ -1759,8 +1759,8 @@ color: $fpm.color.main.text-strong
 --- ftd.text:
 width: fill
 text: $body
-role: $fpm.type.copy-small
-color: $fpm.color.main.text
+role: $fastn.type.copy-small
+color: $fastn.color.main.text
 
 
 --- container: ftd.main
@@ -1893,13 +1893,13 @@ padding-left: 45
 --- ftd.text: $title
 width: fill
 role: $font.section-title
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 margin-bottom: 18
 
 --- ftd.text:
 text: $body
 role: $font.list-body
-color: $fpm.color.main.text
+color: $fastn.color.main.text
 margin-bottom: 30
 
 --- list-loop:
@@ -1921,13 +1921,13 @@ margin-top: 30
 
 
 -- ftd.text white: yo
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 
 -- ftd.text orange: yo
 color: $font.orange
 
 -- ftd.text green: yo
-color: $fpm.color.main.accent.primary
+color: $fastn.color.main.accent.primary
 
 
 
@@ -2012,7 +2012,7 @@ margin-bottom: 29
 
 --- ftd.text: $title
 role: $font.sub-heading-large
-color: $fpm.color.main.text-strong
+color: $fastn.color.main.text-strong
 text-align: center
 
 --- container: ftd.main
@@ -2061,7 +2061,7 @@ caption title:
 string width:
 width: $width
 border-radius: 8
-background-color: $fpm.color.main.text-strong
+background-color: $fastn.color.main.text-strong
 padding-vertical: 16
 padding-horizontal: 32
 placeholder: $title
@@ -2077,7 +2077,7 @@ caption title:
 body body: 
 optional string link-text:
 optional ftd.image-src sites-logo:
-optional ftd.color bg-color: $fpm.color.main.background.step-1
+optional ftd.color bg-color: $fastn.color.main.background.step-1
 background-color: $bg-color
 spacing: 32
 border-radius: 8
@@ -2100,10 +2100,10 @@ link-text: $link-text
 caption title:
 body body: 
 optional string link-text:
-padding-horizontal: $fpm.space.space-7
-padding-vertical: $fpm.space.space-7
+padding-horizontal: $fastn.space.space-7
+padding-vertical: $fastn.space.space-7
 optional ftd.image-src sites-logo:
-optional ftd.color bg-color: $fpm.color.main.background.step-1
+optional ftd.color bg-color: $fastn.color.main.background.step-1
 background-color: $bg-color
 spacing: 32
 border-radius: 8
@@ -2112,21 +2112,21 @@ border-radius: 8
 width: fill
 
 --- ftd.text: $title
-role: $fpm.type.heading-medium
-color: $fpm.color.main.text-strong
-margin-bottom: $fpm.space.space-4
+role: $fastn.type.heading-medium
+color: $fastn.color.main.text-strong
+margin-bottom: $fastn.space.space-4
 
 --- ftd.text:
 text: $body
-role: $fpm.type.copy-regular
-color: $fpm.color.main.text
+role: $fastn.type.copy-regular
+color: $fastn.color.main.text
 
 
 --- ftd.text:
 if: $link-text is not null
 text: $link-text
-role: $fpm.type.label-small
-color: $fpm.color.main.cta-primary.base
+role: $fastn.type.label-small
+color: $fastn.color.main.cta-primary.base
 link: https://www.ycombinator.com/companies/fifthtry
 
 
@@ -2143,13 +2143,13 @@ caption title:
 body body: 
 optional string link-text:
 optional ftd.image-src sites-logo:
-optional ftd.color bg-color: $fpm.color.main.background.step-1
+optional ftd.color bg-color: $fastn.color.main.background.step-1
 background-color: $bg-color
 spacing: 8
 border-radius: 8
 width: fill
-padding-horizontal: $fpm.space.space-4
-padding-vertical: $fpm.space.space-5
+padding-horizontal: $fastn.space.space-4
+padding-vertical: $fastn.space.space-5
 
 --- ftd.image:
 src: $sites-logo
@@ -2158,21 +2158,21 @@ height: auto
 
 
 --- ftd.text: $title
-role: $fpm.type.heading-medium
-color: $fpm.color.main.text-strong
+role: $fastn.type.heading-medium
+color: $fastn.color.main.text-strong
 
 
 --- ftd.text:
 text: $body
-role: $fpm.type.copy-regular
-color: $fpm.color.main.text
+role: $fastn.type.copy-regular
+color: $fastn.color.main.text
 
 
 --- ftd.text:
 if: $link-text is not null
 text: $link-text
-role: $fpm.type.label-small
-color: $fpm.color.main.cta-primary.base
+role: $fastn.type.label-small
+color: $fastn.color.main.cta-primary.base
 link: https://www.ycombinator.com/companies/fifthtry
 
 

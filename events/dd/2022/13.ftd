@@ -40,21 +40,21 @@ Can we do doc-site?
 
 
 
--- dd.presentation: FTD Workshop Parts 2 & 3, FPM Part 1
+-- dd.presentation: FTD Workshop Parts 2 & 3, FASTN Part 1
 owner: AmitU
 owner-avatar: $assets.files.images.events.amitu.jpg
 status: Done
 
 
 
-Wasif, Meenu etc should be able to learn FTD and FPM use it on their own based
+Wasif, Meenu etc should be able to learn FTD and FASTN use it on their own based
 on just the workshop.
 
 We are giving this to an agency (growisto).
 
 
 
--- dd.presentation: FPM Controller
+-- dd.presentation: FASTN Controller
 owner: Rithik
 status: Half Done
 
@@ -64,7 +64,7 @@ integration with fly and stripe.
 
 
 
--- dd.presentation: WASM Support in FPM
+-- dd.presentation: WASM Support in FASTN
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
 status: Experimenting
@@ -95,8 +95,8 @@ status: Done
 
 End to end tutorial, with video.
 
-To be added to [FPM.dev -> Author Manual ->
-How-To](https://fpm.dev/how-to/install/).
+To be added to [FASTN.dev -> Author Manual ->
+How-To](https://fastn.dev/how-to/install/).
 
 
 
@@ -109,7 +109,7 @@ status: On Track
 
 
 
--- dd.presentation: FPM Auth
+-- dd.presentation: FASTN Auth
 owner: AbrarK
 owner-avatar: $assets.files.images.events.abrar.jpg
 status: On Track
@@ -123,7 +123,7 @@ status: Done
 
 https://design.squareboat.com/
 
-Only for FPM projects. Should honour current color-schemes, widgets etc.
+Only for FASTN projects. Should honour current color-schemes, widgets etc.
 
 -- end: dd.presentation
 
