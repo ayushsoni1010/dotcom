@@ -5,6 +5,7 @@ zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
 download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 -- fastn.dependency: fifthtry.github.io/demo-day as dd
+-- fastn.dependency: fifthtry.github.io/code-block as cb
 -- fastn.dependency: fifthtry.github.io/simple-header as h
 -- fastn.dependency: fifthtry.github.io/product-switcher as ps
 -- fastn.dependency: fifthtry.github.io/fifthtry-brand-switcher as fbs
@@ -20,9 +21,11 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 -- fastn.auto-import: event
 -- fastn.auto-import: h
+-- fastn.auto-import: cb
 -- fastn.auto-import: dd
 -- fastn.auto-import: fifthtry.com/FASTN/config
 -- fastn.auto-import: fifthtry.com/assets
+-- fastn.auto-import: fifthtry.com/library as ds
 -- fastn.auto-import: fifthtry.github.io/bling/chat
 
 

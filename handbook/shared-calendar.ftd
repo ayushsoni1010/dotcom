@@ -1,7 +1,6 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: Shared Calendar
-show-sections: false
 
 We have a shared calendar on Google Calendar called "FifthTry Shared". Every
 company related event is posted on that calendar.

@@ -136,86 +136,7 @@ author-meta author:
 
 
 
--- page: Introduction to doc-site
 
-We at FifthTry designed and developed `FTD` langauge for you. Using our own `FTD`
-language `doc-site` is designed for you to create FTD web-sites.
-
-
-
-
-Check out our simple and easy [documentation](docs/) to learn more about 
-`doc-site`.
-
--- h2: 🚀 Project Structure
-
-Inside of your `doc-site` project, you'll see the following folders and files:
-
--- code:
-lang: text
-
-\
-├── .build/
-│   └── index.html
-│
-├── .packages/
-│   └── fifthtry.github.io/
-│   	└── All downloaded dependencies
-│
-├── blog-articles/
-│	├── category-1/
-│   │	├── index.ftd
-│   │   ├── sample-post-1.ftd
-│   │   └── sample-post-2.ftd
-│   │
-│   └── category-2/
-│   	├── index.ftd
-│       ├── sample-post-3.ftd
-│       └── sample-post-4.ftd
-│
-├── blog-authors/
-│   ├── abrar.ftd
-│   ├── amitu.ftd
-│   ├── arpita.ftd
-│   └── ganesh.ftd
-│
-├── documentation/
-│   ├── blog-docs.ftd
-│   └── docs.ftd
-│
-├── static/
-│   └── All images and static assets included in doc-site
-│
-├── FASTN.ftd
-├── index.ftd
-├── featured-posts.ftd
-├── floater.ftd
-├── image.ftd
-├── LICENSE
-└── README.md
-
-
--- h2: 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
--- code:
-lang: text
-
-=======================================================================
-| Command                | Action                                     |
-| :--------------------- | :----------------------------------------- |
-| fastn build              | FASTN builder installs all `FASTN` dependencies|
-| fastn serve              | Starts local dev server at available port  |
-|                        | `localhost:8000`                           |
-=======================================================================
-
-
--- h2: 👀 Want to learn more?
-
-Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: page
 
 
 
@@ -244,9 +165,9 @@ optional pr.toc-item current-page: $sitemap.current-page
 toc-item list footer-toc: $footer-nav
 string github-text: {green: Sign in} to access Editing Tools
 string github-text-url: /
-ftd.image-src side-logo: $assets.files.static.editor-icon.svg
-ftd.image-src sidebar-brand-logo: $assets.files.static.brand-logo.svg
-ftd.image-src cross-icon:$assets.files.static.cross.svg
+ftd.image-src side-logo: $assets.files.assets.editor-icon.svg
+ftd.image-src sidebar-brand-logo: $assets.files.assets.brand-logo.svg
+ftd.image-src cross-icon:$assets.files.assets.cross.svg
 string about-text: About this page
 string about-text-url: /
 string edit-text: Edit This Page
@@ -258,7 +179,7 @@ boolean $widthfill: false
 ftd.type-data types: $typo.types
 ftd.color-scheme colors: $ftd.default-colors
 optional integer max-width: $max-width
-optional boolean show-sections: true
+optional boolean show-sections: false
 optional ftd.color headerbg: $inherited.colors.background.base
 
 -- ftd.column:
@@ -435,7 +356,7 @@ width: fill-container
 spacing.fixed.px: 16
 
 /-- ftd.image:
-src: $assets.files.static.avatar.svg
+src: $assets.files.assets.avatar.svg
 
 -- ftd.text: $floater.github-text
 link: $floater.github-text-url
@@ -555,7 +476,7 @@ site-url: $doc-page-desktop.site-url
 site-name: $doc-page-desktop.site-name
 logo-height: 38
 current-url: /
-menu-icon: $assets.files.static.header.hamburger-dark.svg
+menu-icon: $assets.files.assets.header.hamburger-dark.svg
 max-width: $doc-page-desktop.max-width
 show-sections: $doc-page-desktop.show-sections
 background: $doc-page-desktop.headerbg
@@ -697,8 +618,9 @@ brand-caption: $brand-caption
 site-name: $doc-page-mobile.site-name
 logo-height: 38
 current-url: /
-menu-icon: $assets.files.static.header.hamburger.svg
+menu-icon: $assets.files.assets.header.hamburger.svg
 parent-brand: $parent-brand
+show-sections: $doc-page-mobile.show-sections
 
 -- ftd.column:
 width: fill-container
@@ -721,7 +643,7 @@ align-content: center
 padding-top.px: 8
 
 -- ftd.image:
-src: $assets.files.static.info-icon.svg
+src: $assets.files.assets.info-icon.svg
 width.fixed.px: 36
 $on-click$: $ftd.toggle($a=$doc-page-mobile.open-right-sidebar-info)
 
@@ -768,7 +690,7 @@ $on-click$: $ftd.set-bool($a = $doc-page-mobile.open-right-sidebar-info, v = fal
 width: fill-container
 
 -- ftd.image:
-src: $assets.files.static.cross.svg
+src: $assets.files.assets.cross.svg
 height.fixed.px: 16
 width: auto
 margin-top.px: 30

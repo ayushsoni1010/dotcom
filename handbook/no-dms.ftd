@@ -1,7 +1,6 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: No DMs
-show-sections: false
 
 At FifthTry we do not do direct message and prefer public chat. [Here is a good
 writeup on the rationale for why we do

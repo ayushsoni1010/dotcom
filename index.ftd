@@ -6,39 +6,8 @@
 
 
 
-
-
-
-
-
-
--- string left-content:
-
-Our suite of products are open source and available on Github. You are free to 
-download install and customize them to your needs.
-
-We’d love to hear your feedback and suggestions, and collectively make 
-Documentation easier and better for everyone 
-
-
-
-
-
--- string right-content:
-
-US-based early-stage startup accelerator programme Y Combinator finalised 16 
-Indian startups that got selected for its winter batch of 2021, scheduled between 
-January and March.
-
-FifthTry was one of those 16.
-
-
-
-
-
 -- ds.page:
 $widthfill: true
-show-sections: false
 
 -- row-container:
 spacing: 30

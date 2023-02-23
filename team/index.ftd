@@ -28,6 +28,7 @@ photo: $assets.files.images.team.ganeshs.jpg
 link: https://github.com/gsalunke
 
 -- member: Rithik
+photo: $assets.files.images.team.rithik.jpg
 link: https://github.com/Heulitig
 
 -- member: Meenu

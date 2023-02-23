@@ -1,7 +1,6 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: App Interface
-show-sections: false
 
 We have a concept of an app interface. An App Interface defines how level
 features and UI of an app. How the user interacts with the app, how many fields
