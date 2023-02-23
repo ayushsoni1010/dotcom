@@ -32,12 +32,15 @@ photo: $assets.files.images.team.rithik.jpg
 link: https://github.com/Heulitig
 
 -- member: Meenu
+photo: $assets.files.images.team.meenu.png
 link: https://github.com/MeenuKumari28
 
 -- member: Priyanka
+photo: $assets.files.images.team.priyanka.jpg
 link: https://github.com/priyanka9634
 
 -- member: Ajit
+photo: $assets.files.images.team.ajit.jpg
 link: https://github.com/gargajit
 
 -- end: team
