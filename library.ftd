@@ -476,7 +476,7 @@ site-url: $doc-page-desktop.site-url
 site-name: $doc-page-desktop.site-name
 logo-height: 38
 current-url: /
-menu-icon: $assets.files.assets.header.hamburger-dark.svg
+menu-icon: $assets.files.assets.header.hamburger.svg
 max-width: $doc-page-desktop.max-width
 show-sections: $doc-page-desktop.show-sections
 background: $doc-page-desktop.headerbg
