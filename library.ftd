@@ -551,7 +551,7 @@ extra-headers: $doc-page-desktop.extra-headers
 -- end: ftd.row
 
 -- footer:
-copyright: © 2022 FifthTry. All rights reserved
+copyright: © 2023 FifthTry. All rights reserved
 
 -- end: footer
 
@@ -727,7 +727,7 @@ children: $doc-page-mobile.extra-headers
 -- end: ftd.column
 
 -- footer:
-copyright: © 2022 FifthTry. All rights reserved
+copyright: © 2023 FifthTry. All rights reserved
 
 
 -- end: ftd.column
@@ -993,7 +993,7 @@ width: fill-container
 align-self: center
 
 -- ftd.text:
-text: © 2022 FifthTry. All rights reserved
+text: © 2023 FifthTry. All rights reserved
 role: $inherited.types.fine-print
 color: $inherited.colors.text
 
