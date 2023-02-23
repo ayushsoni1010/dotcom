@@ -509,7 +509,7 @@ padding-top.px if { doc-page-desktop.widthfill }: 9
 -- ftd.column:
 width: fill-container
 
--- tf.h0: $doc-page-desktop.title
+-- tf.h1: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
 
 -- wall-box:
