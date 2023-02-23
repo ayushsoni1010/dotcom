@@ -810,7 +810,7 @@ optional ftd.image-src backed-logo: $assets.files.assets.images.backed-by.png
 optional ftd.image-src fill-logo: $assets.files.assets.images.logo-ycom-dark.svg
 toc-item list footer-nav: $footer-nav
 optional string copyright:
-optional integer max-width: 1440
+optional integer max-width: $max-width
 
 -- ftd.column:
 background.solid: $footer.footer-bg
