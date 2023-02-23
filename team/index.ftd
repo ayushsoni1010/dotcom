@@ -1,0 +1,159 @@
+-- import: fifthtry.com/library as ds
+
+
+
+
+
+
+-- ds.page: Our Team
+$widthfill: true
+
+
+-- team:
+
+-- member: AmitU
+photo: $assets.files.images.team.amitu.jpg
+link: https://github.com/amitu
+
+-- member: Abrar
+photo: $assets.files.images.team.abrar-k.jpg
+link: https://github.com/AbrarNitk
+
+-- member: Aprita
+photo: $assets.files.images.team.arpita.jpg
+link: https://github.com/Arpita-Jaiswal
+
+-- member: Ganesh
+photo: $assets.files.images.team.ganeshs.jpg
+link: https://github.com/gsalunke
+
+-- member: Rithik
+link: https://github.com/Heulitig
+
+-- member: Meenu
+link: https://github.com/MeenuKumari28
+
+-- member: Priyanka
+link: https://github.com/priyanka9634
+
+-- member: Ajit
+link: https://github.com/gargajit
+
+-- end: team
+
+-- end: ds.page
+
+
+
+
+
+
+
+-- component team:
+children team-wrap:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 60
+
+-- ftd.row:
+if: { ftd.device != "mobile" }
+width: fill-container
+max-width.fixed.percent: 100
+wrap: true
+children: $team.team-wrap
+spacing.fixed.px: 50
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+children: $team.team-wrap
+spacing.fixed.px: 32
+align-content: center
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: team
+
+
+
+
+
+
+
+
+-- component member:
+caption title:
+optional ftd.image-src photo: 
+optional string link:
+
+-- ftd.column:
+spacing.fixed.px: 24
+align-content: center
+link: $member.link
+
+-- ftd.column:
+if: { ftd.device != "mobile" }
+width: fill-container
+spacing.fixed.px: 24
+align-content: center
+
+-- ftd.image:
+if: { member.photo != NULL }
+src: $member.photo
+width.fixed.px: 130
+height.fixed.px: 130
+border-radius.px: 100
+
+-- ftd.column:
+if: { member.photo == NULL }
+width.fixed.px: 130
+height.fixed.px: 130
+border-radius.px: 100
+background.solid: $inherited.colors.background.code
+
+-- end: ftd.column
+
+-- ftd.text: $member.title
+role: $inherited.types.copy-small
+color: $inherited.colors.custom.ten
+
+-- end: ftd.column
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+align-content: center
+spacing.fixed.px: 24
+
+-- ftd.image:
+if: { member.photo != NULL }
+src: $member.photo
+width.fixed.px: 200
+height.fixed.px: 200
+border-radius.px: 100
+
+-- ftd.column:
+if: { member.photo == NULL }
+width.fixed.px: 200
+height.fixed.px: 200
+border-radius.px: 100
+background.solid: $inherited.colors.background.code
+
+-- end: ftd.column
+
+-- ftd.text: $member.title
+role: $inherited.types.copy-small
+color: $inherited.colors.custom.ten
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: member

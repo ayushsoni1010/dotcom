@@ -14,7 +14,6 @@
 light: $assets.files.assets.images.logo-fifthtry-dark.svg.light
 dark: $assets.files.assets.images.logo-fifthtry-dark.svg.dark
 
-
 -- $ds.site-name:
 
 
@@ -23,7 +22,7 @@ dark: $assets.files.assets.images.logo-fifthtry-dark.svg.dark
 
 
 -- $ds.sections:
-$processor$: pr.toc
+$processor$: pr.sitemap
 
 - Why: why/
 - Blog: blog/
@@ -32,7 +31,7 @@ $processor$: pr.toc
 
 
 -- $ds.toc:
-$processor$: pr.toc
+$processor$: pr.sitemap
 
 - Flow: flow/
   - Permissions: permissions/
@@ -53,8 +52,7 @@ $processor$: pr.toc
 
 
 -- pr.toc-item list footer-nav:
-$processor$: pr.toc
-
+$processor$: pr.sitemap
 
 - About: https://github.com/FifthTry
 - Terms: /terms/
@@ -62,7 +60,7 @@ $processor$: pr.toc
 
 
 -- pr.toc-item list main-mobile-nav:
-$processor$: toc
+$processor$: pr.sitemap
 
 - Why: /why/
 - Blog: /blog/

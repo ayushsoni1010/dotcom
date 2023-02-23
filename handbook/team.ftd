@@ -1,3 +1,5 @@
+-- import: fifthtry.com/library as ds
+
 -- record team:
 caption name:
 optional ftd.image-src image:
