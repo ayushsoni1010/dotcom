@@ -58,7 +58,7 @@ children row-wrap:
 
 -- ftd.column:
 max-width.fixed.px: 1440
-margin-top.px: $row-container.top-gap
+margin-top.px if { ftd.device != "mobile" }: $row-container.top-gap
 align-self: center
 
 -- ftd.row:
