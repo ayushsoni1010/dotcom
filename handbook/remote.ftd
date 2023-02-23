@@ -1,6 +1,7 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: FifthTry Is A Remote Company
+show-sections: true
 
 Being a remote company is hard, and a lot of companies call themselves, or were
 forced to call themselves Remote, and have since turned hybrid, and probably

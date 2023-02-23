@@ -1,6 +1,7 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: Regular Meetings
+show-sections: true
 
 At FifthTry we try to do as few meetings as possible. We believen in making
 clear what we are working on, and letting people take as much part in making

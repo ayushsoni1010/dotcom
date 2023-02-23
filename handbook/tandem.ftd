@@ -1,6 +1,7 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: Tandem
+show-sections: true
 
 We are using [Tandem](https://tandem.chat) since Oct 2022.
 

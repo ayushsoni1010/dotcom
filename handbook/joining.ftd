@@ -1,6 +1,7 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: Full Time Employee Joining Formalities
+show-sections: true
 
 -- ds.h1: Accepting Offer
 
