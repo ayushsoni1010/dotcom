@@ -10,16 +10,14 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fastn.dependency: fifthtry.github.io/product-switcher as ps
 -- fastn.dependency: fifthtry.github.io/fifthtry-brand-switcher as fbs
 -- fastn.dependency: fifthtry.github.io/blog-components as blg
--- fastn.dependency: fifthtry.github.io/event as event
 -- fastn.dependency: fifthtry.github.io/admonitions as cbox
 -- fastn.dependency: fifthtry.github.io/bling
 -- fastn.dependency: fifthtry.github.io/typography as tf
 -- fastn.dependency: fifthtry.github.io/app-switcher 
 -- fastn.dependency: fifthtry.github.io/dotcom-typography as typo
+-- fastn.dependency: fifthtry.github.io/common as common
 
 
-
--- fastn.auto-import: event
 -- fastn.auto-import: h
 -- fastn.auto-import: cb
 -- fastn.auto-import: dd
@@ -27,6 +25,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fastn.auto-import: fifthtry.com/assets
 -- fastn.auto-import: fifthtry.com/library as ds
 -- fastn.auto-import: fifthtry.github.io/bling/chat
+-- fastn.auto-import: common
 
 
 
@@ -55,3 +54,5 @@ github-starred: ftd-lang/fastn
 - Communication Advice:
   - No DMs: /handbook/no-dms/
   - Tandem: /handbook/tandem/
+
+;;# Events: events/2023/mar-2023/01/

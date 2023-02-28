@@ -1324,7 +1324,6 @@ max-width.fixed.px: 800
 if: {image.caption != NULL}
 text: $image.caption
 color: $inherited.colors.text
-;;width if {image.width != NULL}: $width
 width if {image.width == NULL}: fill-container
 role: $inherited.types.label-large
 border-bottom-left-radius.px: 5
@@ -2792,3 +2791,289 @@ width.fixed.px: 50
 -- end: ftd.row
 
 -- end: dark-mode-switcher-float
+
+
+
+
+
+
+
+
+
+
+-- component row-container:
+optional caption title:
+optional integer desktop-spacing:
+optional integer mobile-spacing:
+optional integer margin-bottom:
+optional integer margin-top:
+children row-wrap:
+integer width: $max-width
+optional integer padding-vertical: 
+boolean wrap: false
+optional integer index:
+optional integer reset:
+boolean switch-to-column: false
+boolean title-medium: false
+boolean align-left: false
+boolean slides: false
+
+
+-- ftd.column:
+width: fill-container
+
+-- row-container-desktop: $row-container.title
+if: { ftd.device != "mobile" }
+spacing: $row-container.desktop-spacing
+margin-bottom: $row-container.margin-bottom
+margin-top: $row-container.margin-top
+row-wrap: $row-container.row-wrap
+width: $row-container.width
+padding-vertical: $row-container.padding-vertical
+wrap: $row-container.wrap
+index: $row-container.index
+reset: $row-container.reset
+align-left: $row-container.align-left
+title-medium: $row-container.title-medium
+slides: $row-container.slides
+
+-- row-container-mobile: $row-container.title
+if: { ftd.device == "mobile" }
+spacing: $row-container.mobile-spacing
+row-wrap: $row-container.row-wrap
+width: $row-container.width
+padding-vertical: $row-container.padding-vertical
+wrap: $row-container.wrap
+index: $row-container.index
+reset: $row-container.reset
+switch-to-column: $row-container.switch-to-column
+title-medium: $row-container.title-medium
+align-left: $row-container.align-left
+slides: $row-container.slides
+
+-- end: ftd.column
+
+-- end: row-container
+
+
+
+
+
+
+
+
+
+
+-- component row-container-desktop:
+optional caption title:
+optional integer spacing:
+optional integer margin-bottom:
+optional integer margin-top:
+children row-wrap:
+integer width:
+optional integer padding-vertical: 
+boolean wrap:
+optional integer index:
+optional integer reset:
+boolean title-medium: 
+boolean align-left: 
+boolean slides: 
+
+-- ftd.column:
+if: { row-container-desktop.index == row-container-desktop.reset }
+align-self: center
+width.fixed.px: $row-container-desktop.width
+max-width.fixed.px: $row-container-desktop.width
+padding-vertical.px if { row-container-desktop.padding-vertical != NULL }: $row-container-desktop.padding-vertical
+align-content if {!row-container-desktop.align-left }: center
+margin-bottom.px if { row-container-desktop.margin-bottom != NULL }: $row-container-desktop.margin-bottom
+margin-top.px if { row-container-desktop.margin-top != NULL }: $row-container-desktop.margin-top
+
+-- ftd.column:
+if: { !row-container-desktop.title-medium }
+
+-- ftd.text: $row-container-desktop.title
+if: { row-container-desktop.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+text-align if {!row-container-desktop.align-left }: center
+margin-bottom.px: 80
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { row-container-desktop.title-medium }
+
+-- ftd.text: $row-container-desktop.title
+if: { row-container-desktop.title != NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text
+align-self: center
+margin-bottom.px: 80
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+children: $row-container-desktop.row-wrap
+spacing.fixed.px if { row-container-desktop.spacing != NULL }: $row-container-desktop.spacing
+max-width.fixed.px: $row-container-desktop.width
+align-self if { !row-container-desktop.align-left }: center
+align-content if { !row-container-desktop.align-left }: center
+wrap: $row-container-desktop.wrap
+overflow-y if {row-container-desktop.slides}: auto
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: row-container-desktop
+
+
+
+
+
+
+
+
+
+
+-- component row-container-mobile:
+optional caption title:
+optional integer spacing:
+children row-wrap:
+integer width:
+optional integer padding-vertical: 
+boolean wrap:
+optional integer index:
+optional integer reset:
+boolean switch-to-column: false
+boolean title-medium: 
+boolean align-left:
+boolean slides:
+
+-- ftd.column:
+width: fill-container
+if:{ row-container-mobile.index == row-container-mobile.reset }
+align-self: center
+padding-vertical.px if { row-container-mobile.padding-vertical != NULL }: $row-container-mobile.padding-vertical
+align-content: center
+
+-- ftd.column:
+if: { !row-container-mobile.title-medium }
+
+-- ftd.text: $row-container-mobile.title
+if: { row-container-mobile.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+align-self: center
+margin-bottom.px: 40
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { row-container-mobile.title-medium }
+
+-- ftd.text: $row-container-mobile.title
+if: { row-container-mobile.title != NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text
+align-self: center
+margin-bottom.px: 40
+;;padding-horizontal.px: 24
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { !row-container-mobile.switch-to-column }
+width.fixed.calc: 100vw
+children: $row-container-mobile.row-wrap
+spacing.fixed.px if { row-container-mobile.spacing != NULL }: $row-container-mobile.spacing
+overflow-x if {!row-container-mobile.slides}: auto
+wrap if {row-container-mobile.slides}: true
+padding-horizontal.px: 24
+;;padding-horizontal.px: 24
+align-content: center
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { row-container-mobile.switch-to-column }
+width: fill-container
+children: $row-container-mobile.row-wrap
+spacing.fixed.px if { row-container-mobile.spacing != NULL }: $row-container-mobile.spacing
+align-self: center
+align-content: center
+;;padding-horizontal.px: 24
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: row-container-mobile
+
+
+
+
+
+
+
+
+
+
+-- component social-card:
+optional caption title:
+ftd.image-src icon:
+optional string link:
+
+-- ftd.column:
+align-content: center
+
+-- ftd.column:
+if: { ftd.device != "mobile" }
+width.fixed.px: 102
+spacing.fixed.px: 40
+align-content: center
+
+-- ftd.image:
+if: { social-card.link != NULL}
+src: $social-card.icon
+width: auto
+height.fixed.px: 102
+align-self: center
+link: $social-card.link
+
+-- ftd.text: $social-card.title
+if: { social-card.title != NULL}
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+spacing.fixed.px: 10
+align-content: center
+
+-- ftd.image:
+if: { social-card.link != NULL}
+src: $social-card.icon
+width: auto
+height.fixed.px: 48
+align-self: center
+link: $social-card.link
+
+-- ftd.text: $social-card.title
+if: { social-card.title != NULL}
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: social-card
