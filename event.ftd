@@ -627,7 +627,7 @@ spacing.fixed.px: 44
 
 -- component speaker:
 caption title:
-ftd.image-src avatar: $assets.files.images.avatar.svg
+ftd.image-src avatar: $assets.files.images.events.avatar.svg
 optional string link:
 optional string profile:
 optional string email:
@@ -683,7 +683,7 @@ optional string title:
 optional string email:
 optional string website:
 optional string location:
-ftd.image-src avatar: $assets.files.images.avatar.svg
+ftd.image-src avatar: $assets.files.images.events.avatar.svg
 optional body bio:
 boolean is-venue: false
 
