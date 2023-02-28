@@ -27,7 +27,12 @@ guage which feedbacks are more frequent.
 
 -- ds.h2: Each idea should be independent
 
-Each feedback should be independent thread.
+Each feedback should be independent thread. 
+
+
+-- ds.h2: Encourage others to create discussion thread
+
+If at all possible try to get them to create thread.
 
 -- ds.h1: Guideline - nurture threads
 
@@ -63,6 +68,26 @@ But if these feedbacks are not made publicly available, outsiders, users of our
 product, potential contributors to our open source projects etc will not be
 replicate those mental models, and will have a hard time understanding our
 decision making process.
+
+
+-- ds.h1: Ajit's story
+
+Few days back we spoke with new FTD learners Saurabh and Suryansh, and they were
+not too happy.
+
+Then Ajit and Ganesh spoke with them and discussed their feedback in detail. We
+asked them to post their feedback. Based on that when Ajit spoke next day they were
+more enthusiastic.
+
+Taking people's feedback and giving them a place where the feedback is visible, gives
+people confidence as they are part of our team.
+
+
+Moral of the story is people will come and they will find things lacking. We are a
+new technology, it will take us time to atain maturity. What matters is what we do 
+in the interim. How do we make them part of the process and the solution. 
+Collaboratively gathering public feedback is the first step towards this.
+
 
 
 -- end: ds.page
