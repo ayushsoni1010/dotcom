@@ -1,7 +1,7 @@
 -- import: fifthtry.com/event as event
 
 
--- common.host amitu: FifthTry Pvt. Ltd.
+-- common.host fifthtry: FifthTry Pvt. Ltd.
 title: Bangalore
 email: info@fifthtry.com
 website: www.fifthtry.com
@@ -31,17 +31,25 @@ start-month: March 03
 start-date: 2023
 event-link: https://us042web.zoom.us/js/3121243tedss?
 event-type: Online
-host: $amitu
+host: $fifthtry
 venue: $venue
 
-The team at FifthTry would love to host our second FTD meet-up at 91Springboard(meeting room name here...) on the coming Friday [3/03/2023]. 
-In this meet-up, you will learn what [FTD](https://fastn.io/ftd/) is all about, what it takes to develop a language from the FTD development team, and what we have been up to of late.
+The team at FifthTry would love to host our second FTD meet-up at 91Springboard(meeting room name here...) on the coming Friday. 
 
-You will also hear from a few people who have learned and used [FTD](https://fastn.io/ftd/) of late, their experience, and what they have built.
+In this meet-up, you will learn:
 
-Also, we will conduct a hands-on session where you would learn [FTD](https://fastn.io/ftd/).
+- What [fastn](https://fastn.io/) and [FTD](https://fastn.io/ftd/) is all about? 
+- Why did we think of building a new language?
+- What it takes to develop a language from the FTD development team?
+- What we have been up to of late?
 
-We will appreciate if you can share it with your team, and if you have any feedback or advice on how to promote a new programming language, please feel free to reply back.
+Also, you will hear from a few people who have learned and used [FTD](https://fastn.io/ftd/). They will share their experience, and show what they have built.
+
+There will be a hands-on session where you will learn [FTD](https://fastn.io/ftd/).
+
+
+
+We will appreciate if you can share this meet-up with your team. 
 
 
 -- ds.h3: What is fastn?
@@ -53,7 +61,7 @@ Fastn is powered by three important elements - an indigenous design system, a cu
 Join us to learn more!
 
 
--- ds.h3: About FifthTry (W21):
+-- ds.h3: What is FTD?
 
 We have developed a new open-source, front-end, programming language. 
 Checkout our mini course - https://ftd.dev/expander/. We have also built a full-stack framework on top of it: https://github.com/fastn-stack/fastn
