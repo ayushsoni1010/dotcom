@@ -2,12 +2,22 @@
 
 -- ds.page: Feedback To Discussion
 
+tldr: if you get a feedback from someone, create or update a thread in [our
+forum](https://github.com/fastn-stack/fastn/discussions).
+
+-- ds.h1: Who It Applies To
+
+This guideline is for every member of FifthTry who talks to outsiders about
+what we do (doesn't everyone who works at FifthTry does that?).
+
+This is especially important if you play a role in support, marketing,
+training, development etc roles in FifthTry.
+
 -- ds.h1: Guideline - create threads
 
-While you play a support, marketing, training, development role in the company
-you will interact with outsiders and they will give pushbacks, objects,
-feedbacks. You are requested to create discussion thread in [fastn discussion
-forum](https://github.com/fastn-stack/fastn/discussions).
+When you talk to people about stuff we do, especially about fastn stack, they
+will give pushbacks, objections, feedbacks. You are requested to create
+discussion thread in [fastn discussion forum](https://github.com/fastn-stack/fastn/discussions).
 
 Before creating a new thread see if any existing thread captures the same
 feedback. If thread exists, add a new comment about the new source of feedback.
