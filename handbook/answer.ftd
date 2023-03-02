@@ -1,4 +1,5 @@
 -- import: fifthtry.com/library as ds
+-- import: fifthtry.com/assets
 
 -- ds.page: How To Answer Question?
 
@@ -21,6 +22,18 @@ down the question and the answer and create an entry [our Q&A Forum](https://git
 If you get a question in Discord, WhatsApp etc, encourage them to post the
 question on the Q&A forum. If they do not post the question promptly, create
 the question yourself.
+
+-- ds.h2: An example of a good answer
+
+-- ds.image:
+width: fill-container
+src: $assets.files.images.good-answer.png
+
+
+Notice how he actually answer the question, not just linked to any
+documentation. Notice Ganesh also included link to markdown documentation.
+Notice also he included the code snippet. Further notice that he gave link to
+working example.
 
 -- ds.h2: How to Answer - Source Of Truth
 
@@ -54,6 +67,38 @@ with just that use case.
 
 Do not just paste the snippet.
 
+
+
+-- ds.h2: Get Your Answer Accepted
+
+An unswered question looks like this:
+
+-- ds.image:
+width: fill-container
+src: $assets.files.images.unanswered.png
+
+Where as an answered question looks like this:
+
+
+-- ds.image:
+width: fill-container
+src: $assets.files.images.answered.png
+
+
+-- ds.h2: Ensure An Answer is An Answer
+
+Sometimes the person who has asked the question will use the wrong text box
+to ask for clarification or comment on answer.
+
+-- ds.image:
+width: fill-container
+src: $assets.files.images.answer-comments.png
+
+Remind people to only suggest an answer if it is an independent answer to the
+original quesiton, and not some comment on question or existing answer.
+
+Github does not have a way to ask for comment on question without answering
+the question.
 
 -- ds.h2: Answer Is Work - Prompt First, Detail Later
 
