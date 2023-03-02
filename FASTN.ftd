@@ -54,5 +54,6 @@ github-starred: ftd-lang/fastn
   - Tandem: /handbook/tandem/
   - Feedback To Discussion: /f2d/
     document: handbook/feedback-to-discussion.ftd
-
+  - How To Answer: /answer/
+    document: handbook/answer.ftd
 ;;# Events: events/2023/mar-2023/01/
