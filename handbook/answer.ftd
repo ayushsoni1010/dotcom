@@ -123,9 +123,12 @@ hey use `padding: 10`, they should learn that now they have to write
 `padding.px: 10`.
 
 Further ask them to upvote your answer if it works, so if the answer does not
-work for them the loop closes. Either they upvote it, or they comment saying
-this does not work. This ensures we know for sure the person who asked the
-question is satisfied.
+work for them the loop closes, we will know, we can keep looking for their
+upvote. Either they upvote it, or they comment saying this does not work.
+This ensures we know for sure the person who asked the question is satisfied.
+
+If the person is not upvoting, but has answered in discord etc, please ping
+AmitU to accept the answer.
 
 -- ds.h1: Rationale
 
