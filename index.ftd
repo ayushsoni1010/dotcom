@@ -15,7 +15,7 @@ spacing: 30
 
 -- service-card: FTD Language for prose
 src: $assets.files.assets.images.ftd-logo.svg
-cta-link: https://ftd.dev/
+cta-link: https://fastn.io/ftd
 
 FTD is the innovative programming language for writing prose. Say goodbye to the
 complexities of traditional programming languages and hello to a simplified and
