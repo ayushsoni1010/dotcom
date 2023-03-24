@@ -15,10 +15,6 @@ $widthfill: true
 photo: $assets.files.images.team.amitu.jpg
 link: https://github.com/amitu
 
--- member: Abrar
-photo: $assets.files.images.team.abrar-k.jpg
-link: https://github.com/AbrarNitk
-
 -- member: Aprita
 photo: $assets.files.images.team.arpita.jpg
 link: https://github.com/Arpita-Jaiswal
