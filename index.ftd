@@ -8,10 +8,10 @@
 
 -- ds.page:
 $widthfill: true
+seo-title: Fastn static site generator | FTD Language for prose | HOSTN hosting fastn sites| fifthtry.com
 
 -- row-container:
 spacing: 30
-
 
 -- service-card: FTD Language for prose
 src: $assets.files.assets.images.ftd-logo.svg

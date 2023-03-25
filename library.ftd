@@ -181,6 +181,11 @@ ftd.color-scheme colors: $ftd.default-colors
 optional integer max-width: $max-width
 optional boolean show-sections: false
 optional ftd.color headerbg: $inherited.colors.background.base
+optional string seo-title:
+
+-- ftd.document:
+title if { $page.seo-title == NULL }: $page.title
+title if { $page.seo-title != NULL }: $page.seo-title
 
 -- ftd.column:
 width: fill-container
@@ -254,6 +259,8 @@ show-sections: $page.show-sections
 -- dark-mode-switcher-float:
 
 -- end: ftd.column
+
+-- end: ftd.document
 
 -- end: page
 
