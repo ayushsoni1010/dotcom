@@ -1,3 +1,6 @@
--- ds.page: `/ftd/` page
+-- ds.page: `ftd` page
 
 We have a dummy page `/ftd/` to test out [ftd template stuff](dev/ftd/).
+
+
+-- end: ds.page

@@ -100,5 +100,8 @@ result list result:
 
 
 
--- ftd.text page: $name
+-- ftd.text: $name
 link: $doc-url
+
+
+-- end: ds.page

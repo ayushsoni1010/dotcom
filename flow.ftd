@@ -53,3 +53,5 @@ Once `cdoc` has been activated for any repo, all existing open PRs and all new
 PRs opened will have the description updated with information about the
 documentation.
 
+
+-- end: ds.page
