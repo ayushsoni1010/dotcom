@@ -190,7 +190,7 @@ title if { $page.seo-title != NULL }: $page.seo-title
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.background.base
-
+padding-horizontal.px if { ftd.device != "mobile" }: 30
 
 -- ftd.column:
 
