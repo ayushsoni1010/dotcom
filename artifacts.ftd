@@ -151,6 +151,7 @@ if: { display-repo-data.repo.homepage-url != NULL }
 -- ds.markdown: $key-value-str(key = Description, value = $display-repo-data.repo.description)
 if: { display-repo-data.repo.description != NULL }
 
+-- ds.markdown: $key-value-str(key = Created at, value = $display-repo-data.repo.created-at)
 -- ds.markdown: $key-value-str(key = Updated at, value = $display-repo-data.repo.updated-at)
 -- ds.markdown: $key-value-str(key = Stars, value = $display-repo-data.repo.stars)
 -- ds.markdown: $key-value-str(key = Privacy, value = $display-repo-data.repo.privacy)
@@ -158,7 +159,6 @@ if: { display-repo-data.repo.description != NULL }
 -- ds.markdown: $key-value-str(key = License, value = $display-repo-data.repo.license)
 if: { display-repo-data.repo.license != NULL }
 
--- ds.markdown: $key-value-str(key = Updated at, value = $display-repo-data.repo.updated-at)
 -- ds.markdown: $key-value-str(key = Fork Count, value = $display-repo-data.repo.fork-count)
 
 -- ds.markdown: $key-value-str(key = Generated From, value = $display-repo-data.repo.template-repository)
@@ -212,6 +212,7 @@ string stars:
 string privacy:
 optional string license:
 string updated-at:
+string created-at:
 optional body description:
 string fork-count:
 optional string template-repository:
