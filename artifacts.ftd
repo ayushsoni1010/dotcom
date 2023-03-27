@@ -145,6 +145,8 @@ padding.px: 15
 if: { display-repo-data.open }
 
 -- ds.markdown: $key-value-str(key = URL, value = $display-repo-data.repo.url)
+-- ds.markdown: $key-value-str(key = Homepage URL, value = $display-repo-data.repo.homepage-url)
+if: { display-repo-data.repo.homepage-url != NULL }
 
 -- ds.markdown: $key-value-str(key = Description, value = $display-repo-data.repo.description)
 if: { display-repo-data.repo.description != NULL }
@@ -159,8 +161,20 @@ if: { display-repo-data.repo.license != NULL }
 -- ds.markdown: $key-value-str(key = Updated at, value = $display-repo-data.repo.updated-at)
 -- ds.markdown: $key-value-str(key = Fork Count, value = $display-repo-data.repo.fork-count)
 
--- ds.markdown: $key-value-str(key = License, value = $display-repo-data.repo.template-repository)
+-- ds.markdown: $key-value-str(key = Generated From, value = $display-repo-data.repo.template-repository)
 if: { display-repo-data.repo.template-repository != NULL }
+
+-- ftd.text: Template
+if: { display-repo-data.repo.is-template }
+color: $inherited.colors.info.text
+background.solid: $inherited.colors.info.base
+border-color: $inherited.colors.info.border
+border-width.px: 1
+anchor: parent
+top.px: 20
+right.px: 20
+padding-horizontal.px: 10
+padding-vertical.px: 5
 
 -- end: ftd.column
 
@@ -178,7 +192,7 @@ if: { display-repo-data.repo.template-repository != NULL }
 caption key:
 string value:
 
-key + ": " + value
+"***" + key + ":***  " + value
 
 
 
@@ -201,6 +215,8 @@ string updated-at:
 optional body description:
 string fork-count:
 optional string template-repository:
+optional string homepage-url:
+boolean is-template:
 
 
 -- record org-vice-repos-data:

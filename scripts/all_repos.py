@@ -10,7 +10,7 @@ for org in orgs:
     # Define the command to run
     cmd = "gh repo list --json name,url,description,stargazerCount,isPrivate," \
           "isTemplate,licenseInfo,updatedAt,description,forkCount," \
-          "templateRepository --limit 300 %s" % org
+          "templateRepository,homepageUrl --limit 300 %s" % org
 
     # Call the command and capture its output
     output = subprocess.check_output(cmd, shell=True, text=True)
@@ -29,7 +29,9 @@ for org in orgs:
         license = repo["licenseInfo"]["name"] if repo["licenseInfo"] else None
         updated_at = datetime.strptime(repo["updatedAt"], "%Y-%m-%dT%H:%M:%SZ")
         desc = repo["description"] if repo["description"] else None
+        homepageUrl = repo["homepageUrl"] if repo["homepageUrl"] else None
         forkCount = repo["forkCount"]
+        isTemplate = repo["isTemplate"]
         templateRepository = (
             repo["templateRepository"]["owner"]["login"]
             + "/"
@@ -47,6 +49,8 @@ for org in orgs:
             "description": desc,
             "fork-count": str(forkCount),
             "template-repository": templateRepository,
+            "homepage-url": homepageUrl,
+            "is-template": isTemplate
         }
         repos.append(repo_dict)
 
