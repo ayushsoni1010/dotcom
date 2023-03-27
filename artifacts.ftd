@@ -1,0 +1,214 @@
+-- import: fastn/processors as pr
+
+-- ds.page: FifthTry Organisation Vice Repository Status
+widthfill: true
+
+-- display-org-vice-repos:
+
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component display-org-vice-repos:
+org-vice-repos org: $org-vice-repos
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 40
+
+-- display-org: `fifthtry`
+repos: $display-org-vice-repos.org.fifthtry
+
+-- display-org: `fastn-stack`
+repos: $display-org-vice-repos.org.fastn-stack
+
+-- end: ftd.column
+
+
+-- end: display-org-vice-repos
+
+
+
+
+
+
+
+
+
+-- component display-org:
+caption org-name:
+repo-data list repos:
+boolean $open: true
+
+
+-- ftd.column:
+width: fill-container
+padding.px: 20
+border-width.px: 1
+border-color: $inherited.colors.border
+spacing.fixed.px: 20
+
+
+
+-- ftd.row:
+width: fill-container
+align-content: center
+$on-click$: $ftd.toggle($a = $display-org.open)
+
+-- ds.h2: $display-org.org-name
+
+-- ftd.image:
+src: $assets.files.images.up-arrow.svg
+src if { !display-org.open }: $assets.files.images.down-arrow.svg
+width.fixed.px: 30
+
+-- end: ftd.row
+
+
+
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 15
+if: { display-org.open }
+
+-- display-repo-data:
+repo: $obj
+$loop$: $display-org.repos as $obj
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- end: display-org
+
+
+
+
+
+
+
+
+
+-- component display-repo-data:
+repo-data repo:
+boolean $open: false
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+background.solid: $inherited.colors.error.base
+padding-horizontal.px: 15
+align-content: center
+$on-click$: $ftd.toggle($a = $display-repo-data.open)
+border-width.px: 1
+border-color: $inherited.colors.error.border
+
+-- ds.h3: $display-repo-data.repo.name
+
+-- ftd.text: Unverified
+role: $inherited.types.copy-regular
+color: $inherited.colors.error.text
+
+-- end: ftd.row
+
+
+
+-- ftd.column:
+width: fill-container
+border-left-width.px: 1
+border-right-width.px: 1
+border-bottom-width.px if { display-repo-data.open }: 1
+border-color: $inherited.colors.error.border
+background.solid: $inherited.colors.background.step-1
+padding.px: 15
+if: { display-repo-data.open }
+
+-- ds.markdown: $key-value-str(key = URL, value = $display-repo-data.repo.url)
+
+-- ds.markdown: $key-value-str(key = Description, value = $display-repo-data.repo.description)
+if: { display-repo-data.repo.description != NULL }
+
+-- ds.markdown: $key-value-str(key = Updated at, value = $display-repo-data.repo.updated-at)
+-- ds.markdown: $key-value-str(key = Stars, value = $display-repo-data.repo.stars)
+-- ds.markdown: $key-value-str(key = Privacy, value = $display-repo-data.repo.privacy)
+
+-- ds.markdown: $key-value-str(key = License, value = $display-repo-data.repo.license)
+if: { display-repo-data.repo.license != NULL }
+
+-- ds.markdown: $key-value-str(key = Updated at, value = $display-repo-data.repo.updated-at)
+-- ds.markdown: $key-value-str(key = Fork Count, value = $display-repo-data.repo.fork-count)
+
+-- ds.markdown: $key-value-str(key = License, value = $display-repo-data.repo.template-repository)
+if: { display-repo-data.repo.template-repository != NULL }
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: display-repo-data
+
+
+
+
+
+
+-- string key-value-str(key,value):
+caption key:
+string value:
+
+key + ": " + value
+
+
+
+
+
+
+
+
+
+
+
+
+-- record repo-data:
+caption name:
+string url:
+string stars:
+string privacy:
+optional string license:
+string updated-at:
+optional body description:
+string fork-count:
+optional string template-repository:
+
+
+-- record org-vice-repos-data:
+repo-data list fifthtry:
+repo-data list fastn-stack:
+
+
+
+-- org-vice-repos-data org-vice-repos:
+$processor$: pr.get-data
+file: artifacts.json

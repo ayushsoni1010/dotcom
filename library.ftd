@@ -175,7 +175,7 @@ string edit-text-url: /
 ;;item list itemlist: $itemlist
 boolean $sidebar: false
 ftd.ui list extra-headers:
-boolean $widthfill: false
+boolean widthfill: false
 ftd.type-data types: $typo.types
 ftd.color-scheme colors: $ftd.default-colors
 optional integer max-width: $max-width
@@ -2435,7 +2435,7 @@ color: $inherited.colors.cta-primary.border
 
 
 -- component markdown:
-body body:
+caption or body body:
 
 -- tf.markdown:
 
@@ -2798,13 +2798,3 @@ width.fixed.px: 50
 -- end: ftd.row
 
 -- end: dark-mode-switcher-float
-
-
-
-
-
-
-
-
-
-

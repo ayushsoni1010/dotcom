@@ -3,7 +3,7 @@
 
 
 -- ds.page:
-$widthfill: true
+widthfill: true
 seo-title: FifthTry | Meet the team | fifthtry.com
 
 -- team: Meet the team

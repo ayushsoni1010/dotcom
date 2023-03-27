@@ -7,7 +7,7 @@
 
 
 -- ds.page:
-$widthfill: true
+widthfill: true
 seo-title: Fastn static site generator | FTD Language for prose | HOSTN hosting fastn sites| fifthtry.com
 
 -- row-container:
@@ -161,13 +161,3 @@ height.fixed.px: 24
 
 
 -- end: service-card
-
-
-
-
-
-
-
-
-
-
