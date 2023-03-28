@@ -2,7 +2,7 @@ import subprocess
 import json
 from datetime import datetime
 
-orgs = ["fifthtry", "fastn-stack"]
+orgs = ["fifthtry", "fastn-stack", "fastn-community"]
 
 org_vice_repos = {}
 
@@ -59,7 +59,7 @@ for org in orgs:
     org_vice_repos[org] = repos
 
 # Write the list of dictionaries to a JSON file
-with open("artifacts.json", "w") as f:
+with open("../artifacts.json", "w") as f:
     json.dump(org_vice_repos, f)
 
 # Print a confirmation message

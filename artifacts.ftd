@@ -38,6 +38,9 @@ repos: $display-org-vice-repos.org.fifthtry
 -- display-org: `fastn-stack`
 repos: $display-org-vice-repos.org.fastn-stack
 
+-- display-org: `fastn-community`
+repos: $display-org-vice-repos.org.fastn-community
+
 -- end: ftd.column
 
 
@@ -223,6 +226,7 @@ boolean is-template:
 -- record org-vice-repos-data:
 repo-data list fifthtry:
 repo-data list fastn-stack:
+repo-data list fastn-community:
 
 
 
