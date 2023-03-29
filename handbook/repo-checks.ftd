@@ -6,15 +6,13 @@
 - fastn-stack
 - fastn-community
 
-
-
-Overall goal to create a standard for all repos that are part of `FifthTry` as an company.
+Overall goal is to create a standard for all repos that are part of `FifthTry` as an company.
 
 -- ds.h1: Repo Classifications
 
 Based on the components the repo's can be classified as followings:
 
-- ft-code-repo
+- [ft-code-repo](http://127.0.0.1:8000/handbook/repo-checks/#ft-code-repo)
 - ft-font-repo
 - ft-typography-repo
 - typography repo
