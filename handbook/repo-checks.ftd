@@ -12,10 +12,10 @@ Overall goal is to create a standard for all repos that are part of `FifthTry` a
 
 Based on the components the repo's can be classified as followings:
 
-- [ft-code-repo](http://127.0.0.1:8000/handbook/repo-checks/#ft-code-repo)
-- ft-font-repo
-- ft-typography-repo
-- typography repo
+- [ft-code-repo](/handbook/repo-checks/#ft-code-repo)
+- [ft-font-repo](/handbook/repo-checks/#ft-font-repo)
+- [ft-typography-repo](/handbook/repo-checks/#ft-typography-repo)
+- [typography repo](/handbook/repo-checks/#typography-repo)
 
 -- ds.h1: Common Repo Checks
 
