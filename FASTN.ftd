@@ -16,7 +16,6 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fastn.dependency: fifthtry.github.io/app-switcher 
 -- fastn.dependency: fifthtry.github.io/dotcom-typography as typo
 
-
 -- fastn.auto-import: h
 -- fastn.auto-import: cb
 -- fastn.auto-import: dd
@@ -24,6 +23,7 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fastn.auto-import: fifthtry.com/assets
 -- fastn.auto-import: fifthtry.com/library as ds
 -- fastn.auto-import: fifthtry.github.io/bling/chat
+-- fastn.auto-import: fifthtry.com/rules as rb 
 
 
 
@@ -57,3 +57,18 @@ github-starred: ftd-lang/fastn
   - How To Answer: /answer/
     document: handbook/answer.ftd
 ;;# Events: events/2023/mar-2023/01/
+
+# Rules: /rules/
+
+- Guideline 1: 80 char rule in text editor
+  url: /rule-1/
+  document: /rules/rule-1.ftd
+- Guideline  2: Spacing Rules
+  url: /rule-2/
+  document: /rules/rule-2.ftd
+- Guideline  3: Avoid CSS argument
+  url: /rule-3/
+  document: /rules/rule-3.ftd 
+- Guideline  4: Same argument and attribute types
+  url: /rule-4/
+  document: /rules/rule-4.ftd

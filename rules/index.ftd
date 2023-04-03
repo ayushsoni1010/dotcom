@@ -1,0 +1,98 @@
+-- ds.page: FifthTry Coding Guidelines
+show-sections: true
+
+The FifthTry team follows standard coding guidelines. These guidelines are imporant for several reasons:
+
+- **Readability**: Standard guidelines help to ensure that `code is consistent` and `easy to read`. This can make it `easier for other developers to understand and modify the code`.
+
+- **Maintainability**: Consistent coding practices can make it `easier to maintain and update code over time`. When everyone on a team follows the same guidelines, it becomes `easier to collaborate` and ensure that changes are made in a consistent manner.
+
+- **Efficiency**: These guidelines can help to `reduce the amount of time it takes to write and debug code`. When developers know exactly how to format code and where to put certain elements, they can write code more quickly and with fewer errors.
+
+- **Portability**: Following standard guidelines can make it `easier to port code from one platform to another`. When code is written in a consistent manner, it is more likely to work across different operating systems and environments.
+
+- **Compliance**: Standard coding guidelines can help ensure that code complies with industry standards and best practices. This can be important for security, performance, and other critical concerns.
+
+
+-- end: ds.page
+
+
+-- component rule-block:
+optional caption title:
+optional body body:
+children compare-wrap:
+optional string id: 
+
+-- ftd.column:
+width: fill-container
+id: $rule-block.id
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 14
+padding-vertical.px: 12
+background.solid: $inherited.colors.background.code
+;; border-top-left-radius.px: 4
+;; border-top-right-radius.px: 4
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.column:
+width.fixed.px: 8
+height.fixed.px: 8
+background.solid: $inherited.colors.custom.one
+;; border-radius.px: 12
+
+-- end: ftd.column
+
+-- ftd.text: $rule-block.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+width.fixed.percent if { ftd.device == "mobile" }: 80
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 32
+;; border-width.px: 1
+;; border-color: $inherited.colors.border
+padding-horizontal.px: 24
+padding-vertical.px: 24
+;; border-bottom-left-radius.px: 4
+;; border-bottom-right-radius.px: 4
+;; border-top-width.px: 0
+
+-- ftd.text:
+if: { rule-block.body != NULL }
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+$rule-block.body
+
+-- ftd.row:
+if: { ftd.device != "mobile" }
+width: fill-container
+spacing.fixed.px: 50
+children: $rule-block.compare-wrap
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+spacing.fixed.px: 50
+children: $rule-block.compare-wrap
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: rule-block

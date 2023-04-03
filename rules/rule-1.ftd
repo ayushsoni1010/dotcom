@@ -1,0 +1,10 @@
+-- ds.page: 80 char rule in text editor
+
+80-character word wrapping is a useful practice that can improve the readability, consistency, compatibility, accessibility, formatting of written documents, and portability as it is more likely to work across editors.
+
+We recommend `Sublime Text` text editor. Following is the step to set `80 char rule`:
+
+- Go to `Settings` in `Preferences`
+- add `"rulers": [80]`, `"word_wrap": true`
+
+-- end: ds.page
