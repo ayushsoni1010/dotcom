@@ -1,0 +1,19 @@
+-- ds.page: Pull Request Guidelines 🚧
+
+Each PR is a small unit of task.
+
+PRs must be short and specific to one task and sould be merged as soon as
+possible.
+
+Long PRs are bad. Try to make the PRs with less lines of code. Even 100 lines is on the higher
+side.
+
+Why?
+
+PR context is not visible to others, if PR is left for long, it do not fulfill
+it's purpose.
+
+There can be conflicts in future and that becomes tedious task.
+
+
+-- end: ds.page
