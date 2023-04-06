@@ -1,12 +1,14 @@
--- ds.page: Repo Checks
+-- ds.page: Repo Checks 🚧
 
-`Fifthtry` guidelines which are followed for every repository (historical or current) in the following official `GitHub` organizations:
+`Fifthtry` guidelines which are followed for every repository (historical or
+current) in the following official `GitHub` organizations:
 
 - fifthtry
 - fastn-stack
 - fastn-community
 
-Overall goal is to create a standard for all repos that are part of `FifthTry` as an company.
+Overall goal is to create a standard for all repos that are part of `FifthTry`
+as an company.
 
 -- ds.h1: Repo Classifications
 
@@ -19,7 +21,8 @@ Based on the components the repo's can be classified as followings:
 
 -- ds.h1: Common Repo Checks
 
-There are some common settings that each repo from all classifications and organizations must have.
+There are some common settings that each repo from all classifications and
+organizations must have.
 
 Following are the labels we add once a repo is verified.
 
