@@ -62,3 +62,5 @@ github-starred: ftd-lang/fastn
 - Guidelines 🚧: /guidelines/
   - Project Guidelines 🚧: /project-guidelines/
     document: /guidelines/project-guidelines.ftd
+  - `auto-import` Guidelines 🚧: /auto-import-guidelines/
+    document: /guidelines/auto-import-guidelines.ftd

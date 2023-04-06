@@ -1,0 +1,8 @@
+-- ds.page: Auto-import: When and When Not to Use It 🚧
+
+When a package is used in almost every document of that project then we
+use`auto-import`.
+
+`doc-site` is an ideal candidate of `auto-import`.
+
+-- end: ds.page
