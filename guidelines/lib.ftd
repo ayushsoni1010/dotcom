@@ -1,0 +1,130 @@
+-- string add-key(k,v):
+string k:
+string v:
+
+k+ ": " +v
+
+
+
+-- component ui-example:
+caption project-name:
+string project-type:
+string project-task:
+string img1-title:
+string img2-title:
+ftd.image-src img1:
+ftd.image-src img2:
+string img1-note:
+string img2-note:
+body summary:
+
+-- ftd.column:
+width: fill-container
+border-color: black
+border-width.px: 2
+
+-- ftd.row:
+width: fill-container
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+border-bottom-color: black
+border-bottom-width.px: 2
+padding.px: 5
+
+-- ftd.text: $add-key(k = **Project Name**, v = $ui-example.project-name)	
+width.fixed.percent: 30
+text-align: center
+
+-- ftd.text: $add-key(k = **Type**, v = $ui-example.project-type)
+width.fixed.percent: 40
+text-align: center
+
+-- ftd.text: $add-key(k = **Task**, v = $ui-example.project-task)
+width.fixed.percent: 30
+text-align: center
+
+-- end: ftd.row
+
+-- img-compare: 
+img1-title: $ui-example.img1-title
+img2-title: $ui-example.img2-title
+img1: $ui-example.img1
+img2: $ui-example.img2
+img1-note: $ui-example.img1-note
+img2-note: $ui-example.img2-note
+
+$ui-example.summary
+
+-- end: ftd.column
+
+-- end: ui-example
+
+
+
+-- component img-compare:
+string img1-title:
+string img2-title:
+ftd.image-src img1:
+ftd.image-src img2:
+string img1-note:
+string img2-note:
+body summary:
+
+
+-- ftd.column:
+width: fill-container
+-- ftd.row:
+width: fill-container
+
+-- img-ui: $img-compare.img1-title
+img: $img-compare.img1
+
+$img-compare.img1-note
+
+
+-- img-ui: $img-compare.img2-title
+img: $img-compare.img2
+
+$img-compare.img2-note
+
+
+-- end: ftd.row
+
+-- ftd.text: $img-compare.summary
+padding.px: 10
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+-- end: img-compare
+
+
+-- component img-ui:
+caption img-title:
+ftd.image-src img:
+body img-note:
+
+
+-- ftd.column:
+spacing.fixed.px: 5
+width.fixed.percent: 50
+padding.px: 10
+
+-- ftd.text: $img-ui.img-title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+
+-- ftd.image:
+src: $img-ui.img
+width: fill-container
+
+-- ftd.text: $img-ui.img-note
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+
+
+-- end: ftd.column
+
+
+-- end: img-ui
