@@ -14,11 +14,11 @@
 does not fulfill it's purpose. Also, there can be conflicts in future and that
 becomes tedious task.
 
-Small PRs caan be quickly reviewed and can be merged leading to a continuous
+Small PRs can be quickly reviewed and can be merged leading to a continuous
 flow of updates. With each PRs that are merged are adding value to the company.
 
 
--- ds.h1: 
+-- ds.h1: Recommendation
 
 Each contributor should create 4-5 PRs daily. Every PR must focus on small unit
 of the task.
