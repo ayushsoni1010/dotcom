@@ -1,19 +1,27 @@
 -- ds.page: Pull Request Guidelines 🚧
 
-Each PR is a small unit of task.
+- Each `Pull Request`(PR) is a small unit of task.
 
-PRs must be short and specific to one task and sould be merged as soon as
-possible.
+- PRs must be short and specific to one task and should be merged as soon as
+  possible.
 
-Long PRs are bad. Try to make the PRs with less lines of code. Even 100 lines is on the higher
-side.
+- Long PRs are bad. Try to make the PRs with less lines of code. Even 100 lines
+  is on the higher side.
 
-Why?
+-- ds.h1: Quick `Pull Request` merge is important
 
-PR context is not visible to others, if PR is left for long, it do not fulfill
-it's purpose.
+`Pull Request` context is not visible to others and if PR is left for long, it
+does not fulfill it's purpose. Also, there can be conflicts in future and that
+becomes tedious task.
 
-There can be conflicts in future and that becomes tedious task.
+Small PRs caan be quickly reviewed and can be merged leading to a continuous
+flow of updates. With each PRs that are merged are adding value to the company.
+
+
+-- ds.h1: 
+
+Each contributor should create 4-5 PRs daily. Every PR must focus on small unit
+of the task.
 
 
 -- end: ds.page
