@@ -62,6 +62,6 @@ github-starred: ftd-lang/fastn
 - Guidelines 🚧: /guidelines/
   - Project Guidelines 🚧: /project-guidelines/
     document: /guidelines/project-guidelines.ftd
-  - User Interface Guidelines: /ui-review/
+  - User Interface Review: /ui-review/
     document: /guidelines/ui-review.ftd
     
