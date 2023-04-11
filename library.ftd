@@ -2798,3 +2798,277 @@ width.fixed.px: 50
 -- end: ftd.row
 
 -- end: dark-mode-switcher-float
+
+
+
+
+
+
+
+
+
+
+-- component wscs:
+optional string view-all:
+children wscs-list:
+optional caption title:
+
+-- ftd.column:
+width: fill-container
+margin-top.px: 48
+
+-- ftd.text: $wscs.title
+if: { wscs.title != NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text
+margin-bottom.px: 24
+
+-- ftd.text: View all
+if: { wscs.view-all != NULL }
+role: $inherited.types.button-medium
+color: $inherited.colors.text-strong
+link: $wscs.view-all
+align-self: end
+
+-- ftd.row:
+width: fill-container
+children: $wscs.wscs-list
+spacing: space-between
+margin-vertical.px: 24
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: wscs
+
+
+
+
+
+
+
+
+
+
+-- component wsc:
+caption title:
+string location:
+string partner-level:
+ftd.image-src logo:
+body body:
+string contact:
+boolean $hover: false
+
+-- ftd.column:
+shadow: $wsc-shadow
+background.solid: $inherited.colors.background.step-1
+background.solid if { wsc.hover }:$inherited.colors.background.code
+$on-mouse-enter$: $ftd.set-bool($a = $wsc.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $wsc.hover, v = false)
+spacing.fixed.px: 16
+padding.px: 16
+width.fixed.px: 300
+border-radius.px: 6
+
+-- ftd.column:
+width.fixed.px: 55
+height.fixed.px: 55
+shadow: $wsc-logo
+
+-- ftd.image:
+src: $wsc.logo
+max-width.fixed.percent: 100
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 8
+
+-- ftd.text: $wsc.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text-strong
+
+-- ftd.text: $wsc.location
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.text: Partner level:
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $wsc.partner-level
+role: $inherited.types.button-small
+color: $inherited.colors.custom.one
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+$wsc.body
+
+-- ftd.row:
+link: $wsc.contact
+align-self: center
+padding-vertical.px: 10
+padding-horizontal.px: 30
+border-radius.px: 6
+border-color: $inherited.colors.border
+border-width.px: 1
+border-color if { wsc.hover }: $inherited.colors.custom.three
+
+-- ftd.text: Contact
+role: $inherited.types.copy-small
+color: $inherited.colors.custom.three
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: wsc
+
+
+
+
+
+
+
+
+
+
+-- component training-partners:
+optional string view-all:
+children partners-list:
+optional caption title:
+
+-- ftd.column:
+width: fill-container
+margin-vertical.px: 24
+
+-- ftd.text: $training-partners.title
+if: { training-partners.title != NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text
+margin-bottom.px: 24
+
+-- ftd.text: View all
+if: { training-partners.view-all != NULL }
+role: $inherited.types.button-medium
+color: $inherited.colors.text-strong
+link: $training-partners.view-all
+align-self: end
+
+-- ftd.row:
+width: fill-container
+children: $training-partners.partners-list
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: training-partners
+
+
+
+
+
+
+
+
+
+
+-- component training-partner: 
+caption title: 
+string website: 
+string partner-level:
+body body:
+boolean $hover: false
+
+-- ftd.column:
+shadow: $wsc-shadow
+background.solid: $inherited.colors.background.code
+background.solid if { training-partner.hover }:$inherited.colors.background.step-1
+$on-mouse-enter$: $ftd.set-bool($a = $training-partner.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $training-partner.hover, v = false)
+spacing.fixed.px: 16
+padding.px: 16
+width.fixed.px: 300
+border-radius.px: 6
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 8
+
+-- ftd.text: $training-partner.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text-strong
+
+
+-- ftd.row:
+link: $training-partner.website
+
+-- ftd.text: $training-partner.website
+role: $inherited.types.button-medium
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.text: Partner level:
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $training-partner.partner-level
+role: $inherited.types.button-small
+color: $inherited.colors.custom.one
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+$training-partner.body
+
+-- end: ftd.column
+
+-- end: training-partner
+
+
+
+
+
+-- ftd.shadow wsc-shadow:
+color: rgba(0,0,0,.108)
+x-offset.px: 3
+y-offset.px: 0
+blur.px: 7
+inset: false
+spread.px: 0
+
+
+
+
+
+-- ftd.shadow wsc-logo:
+color: rgba(0,0,0,.132)
+x-offset.px: 1
+y-offset.px: 0
+blur.px: 3
+inset: false
+spread.px: 0
+
