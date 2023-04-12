@@ -2863,7 +2863,7 @@ boolean $hover: false
 -- ftd.column:
 shadow: $wsc-shadow
 background.solid: $inherited.colors.background.step-1
-background.solid if { wsc.hover }:$inherited.colors.background.code
+background.solid if { wsc.hover }: $inherited.colors.background.code
 $on-mouse-enter$: $ftd.set-bool($a = $wsc.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wsc.hover, v = false)
 spacing.fixed.px: 16
