@@ -1,7 +1,11 @@
--- my-ds.page: FifthTry Partners
+-- import: fifthtry.com/library as ds
+
+
+-- ds.page: FifthTry Partners
+widthfill: true
 
 FifthTry is building technologies like `fastn`, `hostn`, that can be used to
-create websites. These technologies are designed to be really easy to use by
+create and host websites. These technologies are designed to be really easy to use by
 people at large.
 
 Despite that sometimes you just need someone to do the work for you. Maybe you
@@ -9,37 +13,42 @@ like the benefits of `fastn` but do not have inhouse bandwidth or expertise, or
 maybe you are looking to use the very best in the industry.
 
 FifthTry is partnering with select companies to offer `fastn` community various
-services. Our main focus right now is in web development and coaching /
-teaching services.
+services. Our main focus right now is in web development and teaching 
+services.
 
--- lib.wscs:
-view-all: /wscs/
+-- ds.wscs: Our Partners
+view-all: /partners/wscs/
 
--- lib.wsc: Trizwitz
+-- ds.wsc: Trizwitz
 location: Kochi, Kerala, India
-partner-level: gold
-logo: <>
+partner-level: Gold
+logo: https://raw.githubusercontent.com/Sarvom/trizwit/main/images/trizwit.jpeg
+contact: https://www.trizwit.com/about#contact
+
+Trizwitz is our gold partner. They have 4+ months of working experience with `fastn`
+technology, and have 4 `fastn` certified developers in house. Trizwitz is also
+organising meetups and training events in Kochi promoting `fastn`, and are
+known as local experts and evangelists of the technology.
+
+
+-- end: ds.wscs
+
+
+
+-- ds.training-partners: Training Partners
+view-all: /partners/training-partners/
+
+-- ds.training-partner: Trizwits
+website: https://www.trizwit.com/
+partner-level: Gold
 
 Trizwitz is our gold partner. They have 4+ months of working with `fastn`
 technology, and have 4 `fastn` certified developers in house. Trizwitz is also
 organising meetups and training events in Kochi promoting `fastn`, and are
 known as local experts and evangelists of the technology.
 
+-- end: ds.training-partner
 
--- end: lib.wscs
+-- end: ds.training-partners
 
-
-
--- lib.training-partners:
-view-all: /training-partners/
-
--- lib.training-partner: Trizwits
-
-
-
--- end: lib.training-partner
-
-
--- end: lib.training-partners
-
--- end: my-ds.page
+-- end: ds.page

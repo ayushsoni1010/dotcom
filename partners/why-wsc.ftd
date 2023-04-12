@@ -1,12 +1,15 @@
--- my-ds.page: Why Become A Web Services Company Partner?
+-- import: fifthtry.com/library as ds
 
-`fastn` is an upcoming technology that is getting early traction in the market.
-FifthTry has already conducted training sessions, meetups, sponsored hackathon
-etc. A community is starting to form around it, on Discord server and among
-Github users.
+-- ds.page: Why Become A Web Services Company Partner?
+widthfill: true
+
+`fastn` is an upcoming technology that is gaining early traction in the market.
+FifthTry has already conducted training sessions, meetups, and sponsored
+hackathons, among other activities. A community is starting to form around it
+on Discord servers and among GitHub users.
 
 Check out [how to become part of the FifthTry partner
-network](/partner/how-wsc/).
+network](/partners/how-wsc/).
 
 -- ds.h1: `fastn` Helps You Lower Cost
 
@@ -44,4 +47,7 @@ has no interest in becoming a services company, we are interested in creating
 the best technology out-there. Any demand that comes our way, we refer them to
 companies in our partner network.
 
--- end: my-ds.page
+-- ftd.column:
+height.fixed.px: 24
+
+-- end: ds.page
