@@ -16,7 +16,7 @@ FifthTry is partnering with select companies to offer `fastn` community various
 services. Our main focus right now is in web development and teaching 
 services.
 
--- ds.wscs: Our Partners:
+-- ds.wscs: Our Partners
 view-all: /partners/wscs/
 
 -- ds.wsc: Trizwitz
@@ -35,7 +35,7 @@ known as local experts and evangelists of the technology.
 
 
 
--- ds.training-partners: Training Partners:
+-- ds.training-partners: Training Partners
 view-all: /partners/training-partners/
 
 -- ds.training-partner: Trizwits

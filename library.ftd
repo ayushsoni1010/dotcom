@@ -2862,10 +2862,13 @@ boolean $hover: false
 
 -- ftd.column:
 shadow: $wsc-shadow
-background.solid: $inherited.colors.background.step-1
-background.solid if { wsc.hover }: $inherited.colors.background.code
+background.solid if { wsc.hover }: $inherited.colors.background.step-1
+background.solid: $inherited.colors.background.code
 $on-mouse-enter$: $ftd.set-bool($a = $wsc.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $wsc.hover, v = false)
+border-width.px: 1
+border-color: $inherited.colors.background.code
+border-color if { wsc.hover }: $inherited.colors.border
 spacing.fixed.px: 16
 padding.px: 16
 width.fixed.px: 300
@@ -2874,7 +2877,7 @@ border-radius.px: 6
 -- ftd.column:
 width.fixed.px: 55
 height.fixed.px: 55
-shadow: $wsc-logo
+shadow: $wsc-logo-shadow
 
 -- ftd.image:
 src: $wsc.logo
@@ -2924,11 +2927,11 @@ padding-horizontal.px: 30
 border-radius.px: 6
 border-color: $inherited.colors.border
 border-width.px: 1
-border-color if { wsc.hover }: $inherited.colors.custom.three
+border-color if { wsc.hover }: $inherited.colors.cta-primary.border
 
 -- ftd.text: Contact
 role: $inherited.types.copy-small
-color: $inherited.colors.custom.three
+color: $inherited.colors.cta-primary.base
 
 -- end: ftd.row
 
@@ -3064,7 +3067,7 @@ spread.px: 0
 
 
 
--- ftd.shadow wsc-logo:
+-- ftd.shadow wsc-logo-shadow:
 color: rgba(0,0,0,.132)
 x-offset.px: 1
 y-offset.px: 0
