@@ -2878,7 +2878,7 @@ shadow: $wsc-logo
 
 -- ftd.image:
 src: $wsc.logo
-max-width.fixed.percent: 100
+max-width: fill-container
 
 -- end: ftd.column
 
