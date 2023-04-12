@@ -987,7 +987,7 @@ align-self: center
 
 -- ftd.text:
 text: Backed by
-role: $inherited.types.label-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 width: fill-container
 
@@ -998,7 +998,7 @@ height.fixed.px: 36
 
 -- ftd.text:
 text: YCombinator
-role: $inherited.types.label-large
+role: $inherited.types.copy-regular
 color: $inherited.colors.custom.one
 width: fill-container
 
@@ -1010,24 +1010,25 @@ width: fill-container
 
 -- ftd.column:
 align-self: center
+spacing.fixed.px: 4
 
 -- ftd.text: - Our Partners
 text-align: end
-role: $inherited.types.copy-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 white-space: nowrap
 link: /partners/
 
 -- ftd.text: - Why partner with us?
 text-align: end
-role: $inherited.types.copy-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 white-space: nowrap
 link: /partners/why-wsc/
 
 -- ftd.text: - How partner with us?
 text-align: end
-role: $inherited.types.copy-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 white-space: nowrap
 link: /partners/how-wsc/
@@ -1043,7 +1044,7 @@ align-self: center
 
 -- ftd.text:
 text: © 2023 FifthTry. All rights reserved
-role: $inherited.types.fine-print
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- end: ftd.row
@@ -3015,6 +3016,7 @@ align-self: end
 -- ftd.row:
 width: fill-container
 children: $training-partners.partners-list
+margin-vertical.px: 24
 
 -- end: ftd.row
 
@@ -3056,7 +3058,6 @@ spacing.fixed.px: 8
 -- ftd.text: $training-partner.title
 role: $inherited.types.button-medium
 color: $inherited.colors.text-strong
-
 
 -- ftd.row:
 link: $training-partner.website
