@@ -1,6 +1,7 @@
 -- import: fifthtry.com/library as ds
 
 -- ds.page: How To Become WSC Partner?
+widthfill: true
 
 FifthTry is building a new technology `fastn` for building websites, and is
 running a [partner program](/partners/) and is creating a network of high
@@ -40,5 +41,8 @@ We will do a workshop on quality and maintenance as well.
 Please reach out to us on `partners@fifthtry.com` to let us know you are
 interested in becoming a partner.
 
+
+-- ftd.column:
+height.fixed.px: 24
 
 -- end: ds.page

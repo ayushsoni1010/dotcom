@@ -886,7 +886,6 @@ width: fill-container
 height: fill-container
 
 -- ftd.row:
-link: \
 width: fill-container
 height: fill-container
 ;;id: right-side-footer
@@ -894,12 +893,40 @@ height: fill-container
 -- ftd.image:
 src: $footer-desktop.fill-logo
 height: fill-container
-width: auto
+width.fixed.px: 300
+link: https://www.ycombinator.com/companies/fifthtry
 
 -- end: ftd.row
 
 -- end: ftd.row
 
+-- ftd.row:
+align-self: center
+margin-right.px: 24
+spacing.fixed.px: 16
+
+-- ftd.text: - Our Partners
+text-align: end
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+link: /partners/
+
+-- ftd.text: - Why partner with us?
+text-align: end
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+link: /partners/why-wsc/
+
+-- ftd.text: - How partner with us?
+text-align: end
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+link: /partners/how-wsc/
+
+-- end: ftd.row
 
 -- ftd.column:
 align-self: center
@@ -908,7 +935,7 @@ align-self: center
 text: $footer-desktop.copyright
 text-align: end
 role: $inherited.types.copy-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 white-space: nowrap
 
 -- end: ftd.column
@@ -955,8 +982,8 @@ spacing.fixed.px: 30
 
 -- ftd.row:
 align-content: center
-width: fill-container
 spacing.fixed.px: 20
+align-self: center
 
 -- ftd.text:
 text: Backed by
@@ -981,16 +1008,31 @@ width: fill-container
 
 -- end: ftd.column
 
-;;-- ftd.row:
-;;align-self: center
-;;spacing.fixed.px: 20
+-- ftd.column:
+align-self: center
 
-;;-- nav-one-line-mobile: $obj.title
-;;$loop$: $footer-mobile.footer-nav as $obj
-;;children: $obj.children
-;;link: $obj.url
+-- ftd.text: - Our Partners
+text-align: end
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+link: /partners/
 
-;;-- end: ftd.row
+-- ftd.text: - Why partner with us?
+text-align: end
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+link: /partners/why-wsc/
+
+-- ftd.text: - How partner with us?
+text-align: end
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+link: /partners/how-wsc/
+
+-- end: ftd.column
 
 -- ftd.column:
 margin-top.px: 10
