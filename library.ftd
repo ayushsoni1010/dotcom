@@ -2915,6 +2915,7 @@ border-color if { wsc.hover }: $inherited.colors.border
 spacing.fixed.px: 16
 padding.px: 16
 width.fixed.px: 300
+width if { ftd.device == "mobile" }: fill-container
 border-radius.px: 6
 
 -- ftd.column:
@@ -3052,6 +3053,7 @@ border-color if { training-partner.hover }: $inherited.colors.border
 spacing.fixed.px: 16
 padding.px: 16
 width.fixed.px: 300
+width if { ftd.device == "mobile" }: fill-container
 border-radius.px: 6
 
 -- ftd.column:
