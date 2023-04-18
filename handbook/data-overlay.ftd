@@ -6,13 +6,13 @@ At FifthTry we believe in a concept called data overlay.
 
 -- ds.h1: Who owns data?
 
-Consider a workshop or a course. A course is created by the author of the course.
-The author probably has a website where they have published the course. You want
-to buy the course and you should go to the authors site to buy the content of
-the course, or maybe to even read it every time you have to read it, so author
-can easily publish updates, remind you of other stuff the author has that you
-may be interested etc. Of course the author should not make the reading
-experience shitty.
+Consider a workshop or a course. A course is created by the author of the
+course. The author probably has a website where they have published the course.
+You want to buy the course and you should go to the authors site to buy the
+content of the course, or maybe to even read it every time you have to read it,
+so author can easily publish updates, remind you of other stuff the author has
+that you may be interested etc. Of course the author should not make the
+reading experience shitty.
 
 Now if you are learning the course, and making progress, and course is published
 with a software that lets you track your progress so you can more effectively

@@ -18,12 +18,12 @@ do remote right initiative. Since we do not sit in the same office it is hard
 for us to see what everyone is working on. The demo day announcement and the
 demo day helps us know what everyone is working on.
 
-Also the demo day presentation lets use hear and talk to everyone in the
-company, understand what they are passionate about etc.
+Also the demo day presentation lets us hear and talk to everyone in the company,
+understand what they are passionate about etc.
 
 We also want to become better speakers, presenters, writers (we will eventually
-start demo day writeup also), and marketer. If you have built it, you should be
-able to do justice in showing it off.c
+start demo day writeup also), and marketer. If you have built it, showing it
+off.
 
 Finally, we will someday start performance appraisals, and we will look at the
 past demo days to see what everyone delivered.
@@ -39,7 +39,7 @@ say maybe we should not do so and so for this and that reason.
 -- ds.h1: A Typical Demo Day
 
 At the beginning of each week we create a planning document for the upcoming
-demo day where we list what we hope demo. [Planning document for 11th
+demo day where we list what we hope to demo. [Planning document for 11th
 demo day](/events/dd/2022/11/).
 
 We announce the demo day details on social media platforms, Twitter, LinkedIn,
@@ -60,6 +60,43 @@ we often do an informal discussion about random things.
 Post demo, AmitU downloads the recording and uploads it on YouTube, and adds an
 entry in the events section of this site summarizing what was covered in the
 demo.
+
+-- ds.h1: Video Based Demos
+
+Starting 18th Apr 2023, we are trying to do demos in a new format. Why are we
+changing it? We have been doing demo day quite successfully, all the original
+goals are met, we are showing off what we have done, people are more informed
+what everyone is doing, and we are running remote without any issues.
+
+After this success we are trying to be more ambitous and trying to do even
+better by creating pre-recorded demos.
+
+Why? All the demo day videos are recorded and recordings are available, many on
+youtube, rest on AmitU's laptop. Problem is each video is 1.5-2hr long video
+and no one wants to see the whole video again.
+
+We are also reaching a stage in the company that we are starting to get a
+following, and we need quality content to share with our community. What gets
+built every week is a good content worth sharing. But the content is getting
+locked in our 2 hr long demo day recording videos.
+
+We can edit things out, cut the video into smaller sections, but even then the
+quality of those individual videos is not great to act as a standalone videos.
+The way we speak is also very impromptu, there is often very litttle
+preperation, and the internet audiance is fickle. The videos should be short,
+crisp, to the point etc. Maybe they should also have music, and some editing.
+
+-- ds.h2: Pre Demo Videos
+
+So what we are proposing is now on we pre-create videos and upload them on
+YouTube etc. And during the demo we use [Zoom's share pre-recorded
+video](https://support.zoom.us/hc/en-us/articles/360051673592-Sharing-a-recorded-video-with-sound-during-your-meeting)
+feature to play each video.
+
+Each person who has anything to demo will share the YouTube link with AmitU by
+5PM, and AmitU will download the video and upload them to FifthTry's YouTube
+channel. AmitU will also keep the video around, and share the mp4s during the
+demo day.
 
 -- ds.h1: General Advice For Presenters And Attendees
 
