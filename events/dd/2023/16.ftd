@@ -1,0 +1,45 @@
+-- import: fifthtry.com/events
+
+-- dd.past-demo-day: FifthTry 
+number: #16
+date: 21st April 
+year: 2023
+demo-video: vOEO7hxvSSw
+demo-date: 21st Apr 2023
+$sidebar: true
+
+-- dd.past-demo-day.sidebar-content:
+
+-- events.sidebar:
+
+-- end: dd.past-demo-day.sidebar-content
+
+-- dd.past-demo-day.body:
+
+Our 16th weekly [demo event](/events/dd/2023/16) will happen on 21st April 2023.
+We showcase what people in FifthTry have built in this week. This is an
+important part of our, [how to do remote right initiative](/h/remote/), we are
+now fully remote company.
+
+
+
+-- ds.h1: All Demos
+
+Owner: AmitU
+
+
+
+-- ds.h1: Admint.io into fastn package
+
+Owner: Ganesh S
+
+Pixel perfect UI of admint.io conversion into fastn UI using fastn tech stack.
+
+- GitHub: https://github.com/FifthTry/admint.io
+- Live Site: https://fifthtry.github.io/admint.io/index.html
+- Original Site: https://admint.io/#/
+- Video: https://youtu.be/mmIhl5ENCx0
+
+
+
+-- end: dd.past-demo-day
