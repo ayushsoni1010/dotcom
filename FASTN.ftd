@@ -49,9 +49,16 @@ github-starred: ftd-lang/fastn
 - Shared Calendar: /handbook/shared-calendar/
 - Joining Formalities: /handbook/joining/
 - We Are Remote: /handbook/remote/
-- Communication Advice:
-  - No DMs: /handbook/no-dms/
-  - Tandem: /handbook/tandem/
+- Communication Guidelines:
+  - No DMs: /no-dms/
+    document: handbook/no-dms.ftd
+  - Use Tandem: /tandem/
+    document: handbook/tandem.ftd
+  - Use Discord: /discord/
+    document: handbook/discord.ftd
+  - Don't Use Slack: /slack/
+    document: handbook/slack.ftd
+    skip: true
   - Feedback To Discussion: /f2d/
     document: handbook/feedback-to-discussion.ftd
   - How To Answer: /answer/
@@ -64,4 +71,3 @@ github-starred: ftd-lang/fastn
     document: /guidelines/project-guidelines.ftd
   - User Interface Review: /ui-review/
     document: /guidelines/ui-review.ftd
-    
