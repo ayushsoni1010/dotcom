@@ -1,3 +1,5 @@
+-- import: fifthtry.github.io/dotcom-typography as typo
+
 -- string add-key(k,v):
 string k:
 string v:
@@ -128,3 +130,140 @@ color: $inherited.colors.text
 
 
 -- end: img-ui
+
+
+
+
+
+
+
+
+
+-- component guideline:
+children wrapper:
+optional caption title:
+optional body body:
+boolean sidebar: false
+optional boolean widthfill: false
+
+-- ds.page: $guideline.title
+body: $guideline.body
+wrapper: $guideline.wrapper
+colors: $ftd.default-colors
+$sidebar: *$guideline.sidebar
+widthfill: $guideline.widthfill
+types: $typo.types
+
+
+
+
+-- end: guideline
+
+
+
+-- component h1:
+caption title:
+optional string id:
+optional body body:
+children inner:
+ftd.responsive-type title-role: $tr
+ftd.color title-color: $tc
+
+-- ftd.column:
+id: $h1.id
+width: fill-container
+
+-- ftd.text: $h1.title
+role: $h1.title-role
+color: $h1.title-color
+width: fill-container
+border-bottom-width.px: 1
+margin-bottom.rem: 0.5
+padding-top.em: 0.3
+region: h1
+
+-- ftd.text: 
+if: { h1.body != NULL }
+text: $h1.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+classes: markdown
+
+
+-- ftd.column:
+children: $h1.inner
+width: fill-container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: h1
+
+-- ftd.responsive-type tr: $desktop-type
+
+
+
+
+
+-- ftd.type desktop-type:
+size.px: 40
+weight: 900
+font-family: cursive
+line-height.px: 65
+letter-spacing.px: 5
+
+
+-- ftd.color tc:
+light: black
+dark: orange
+
+
+
+
+
+
+
+
+-- component compact-text:
+caption title:
+optional body body:
+children inner:
+
+-- ftd.column:
+width: fill-container
+padding-top.px: 14
+padding-bottom.px: 16
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
+
+-- ftd.text: $compact-text.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+padding-bottom.px: 16
+padding-top.px: 8
+region: h4
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text:
+if: { compact-text.body != NULL }
+text: $compact-text.body
+role: $inherited.types.fine-print
+color: $inherited.colors.text
+classes: markdown
+
+
+
+-- ftd.column:
+children: $compact-text.inner
+width: fill-container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: compact-text

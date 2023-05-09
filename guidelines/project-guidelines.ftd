@@ -1,6 +1,6 @@
 -- import: fifthtry.github.io/bling/note as note
 
--- ds.page: Project guidelines 🚧
+-- ds.page: Project guidelines
 
 At FifthTry, we place a high value on effective communication with our partner
 teams throughout the entire project lifecycle. We have established specific
@@ -55,8 +55,8 @@ stages.
 
 -- ds.h1: Stage 3: Component Structure
 
-We create components that are used in the the project which follows the `FTD
-Component Standards`.
+We create components that are used in the the project which follows the
+`Component Standards`.
 
 
 -- ds.h1: Stage 4: Documentation

@@ -31,7 +31,45 @@ anything interesting to say, there is no filter against using this role.
 
 -- ds.h2: `ft-dd-com` Role
 
-This role used to be called `dd-com`, we changed this role
+This role used to be called `dd-com`, we changed this role. This is related to 
+people who joins the Monday's demo day planning meeting.
+
+-- ds.h2: Discord Channels and their purpose
+
+We have a lot of channels that are used internally that serves various purposes.
+
+Here is the list of them:
+
+- [water-cooler](https://discord.gg/sjzpwd3a3e): Updates on the work-related 
+stuff which does not lie in any of the dedicated channels on Discord.
+
+	- Communication to individuals: Under the `water-cooler` channel we use 
+	  individuals' threads. To ensure that they are notified of any messages, 
+	  use the "@" symbol followed by their name to tag them in the thread. 
+	  This increases the likelihood that the individual will see and respond 
+	  to the message in a timely manner.
+
+- Voice-channels: We understand that at times it is required to discuss things 
+  over calls as it is not easy to discuss everything on text. For the same, 
+  we have `voice-channels` that comes handy to have one-to-one or group 
+  discussions.
+
+- [marketing-and-sales](https://discord.gg/kKvMQcxn9Q): Anything and everything 
+related to marketing. 
+
+- [demo-days](https://discord.gg/fR2zPVWz): To share the URLs of video 
+prepared by individual to showcase the work done throughout the week, based on 
+the demo-day planning meeting.
+To know more, you can checkout [Demo day](https://www.fifthtry.com/handbook/dd/).
+
+- [day-to-day](https://discord.gg/xwkMjNeK): to update if one is on leave or 
+any such discussion.
+
+- [random](https://discord.gg/Fvnk7nsyDk): It is meant to be a lighter and more 
+informal space for sharing content. For example, you might say that it's a 
+place to share non-work-related posts, thoughts, jokes, and memes with your 
+colleagues.
+
 
 -- ds.h1: Guidelines
 

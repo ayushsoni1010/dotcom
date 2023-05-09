@@ -67,7 +67,7 @@ github-starred: ftd-lang/fastn
 - Repository Checks 🚧: /repo-checks/
   document: /handbook/repo-checks.ftd
 - Guidelines 🚧: /guidelines/
-  - Project Guidelines 🚧: /project-guidelines/
+  - Project Guidelines: /project-guidelines/
     document: /guidelines/project-guidelines.ftd
   - User Interface Review: /ui-review/
     document: /guidelines/ui-review.ftd
