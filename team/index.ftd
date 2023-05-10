@@ -73,7 +73,7 @@ children team-wrap:
 -- ftd.column:
 width: fill-container
 padding-vertical.px if { ftd.device == "mobile" }: 30
-padding-vertical.px if { ftd.device == "desktop" }: 100
+padding-vertical.px: 100
 
 -- ftd.column:
 width: fill-container
@@ -96,8 +96,9 @@ $team.body
 
 -- end: ftd.column
 
+-- ftd.desktop:
+
 -- ftd.row:
-if: { ftd.device == "desktop" }
 width: fill-container
 max-width.fixed.px: 1120
 align-self: center
@@ -107,14 +108,20 @@ spacing: space-between
 
 -- end: ftd.row
 
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
 -- ftd.column:
-if: { ftd.device == "mobile" }
 width: fill-container
 children: $team.team-wrap
 align-self: center
 align-content: center
 
 -- end: ftd.column
+
+-- end: ftd.mobile
 
 -- end: ftd.column
 
@@ -147,8 +154,9 @@ z-index: 0
 $on-mouse-enter$: $ftd.set-bool($a = $member.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $member.mouse-in, v = false)
 
+-- ftd.mobile:
+
 -- ftd.column:
-if: { ftd.device == "mobile" }
 width: fill-container
 spacing.fixed.px: 24
 align-content: center
@@ -225,8 +233,12 @@ color: $inherited.colors.text-strong
 
 -- end: ftd.column
 
+-- end: ftd.mobile
+
+
+-- ftd.desktop:
+
 -- ftd.column:
-if: { ftd.device == "desktop" }
 width: fill-container
 spacing.fixed.px: 24
 align-content: center
@@ -302,6 +314,8 @@ color: $inherited.colors.text-strong
 -- end: ftd.column
 
 -- end: ftd.column
+
+-- end: ftd.desktop
 
 -- end: ftd.column
 

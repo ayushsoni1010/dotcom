@@ -61,19 +61,27 @@ max-width.fixed.px: 1440
 margin-top.px if { ftd.device != "mobile" }: $row-container.top-gap
 align-self: center
 
+-- ftd.desktop:
+
 -- ftd.row:
-if: { ftd.device != "mobile" }
 spacing.fixed.px: $row-container.spacing
 children: $row-container.row-wrap
 
 -- end: ftd.row
 
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
 -- ftd.column:
-if: { ftd.device == "mobile" }
 spacing.fixed.px: $row-container.spacing
 children: $row-container.row-wrap
 
 -- end: ftd.column
+
+-- end: ftd.mobile
+
 
 -- end: ftd.column
 
