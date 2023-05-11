@@ -40,7 +40,7 @@ designation: Marketing Consultant
 photo: $assets.files.images.team.ajit.jpg
 photo-grey: $assets.files.images.team.ajit-greyscale.jpg
 link: https://github.com/gargajit
-designation: Dev Rel
+designation: DevRel
 
 -- member: Arpita Jaiswal
 photo: $assets.files.images.team.arpita.jpg
