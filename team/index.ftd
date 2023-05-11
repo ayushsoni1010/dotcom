@@ -16,23 +16,50 @@ photo-grey: $assets.files.images.team.amitu-greyscale.jpg
 link: https://github.com/amitu
 designation: Founder, CEO
 
+-- member: Nandhini Devi
+photo: $assets.files.images.team.nandhini-devi.jpg
+photo-grey: $assets.files.images.team.nandhini-devi-greyscale.jpg
+link: https://github.com/nandhinidevie
+designation: Marketing Consultant
+
+-- member: Muskan Verma
+photo: $assets.files.images.team.muskan-verma.jpg
+photo-grey: $assets.files.images.team.muskan-verma-greyscale.jpg
+link: https://github.com/muskaanverma07
+designation: Marketing Consultant
+
+
+-- member: Ayush Soni
+photo: $assets.files.images.team.ayush-soni.jpg
+photo-grey: $assets.files.images.team.ayush-soni-greyscale.jpg
+link: https://github.com/ayushsoni1010
+designation: Marketing Consultant
+
+
+-- member: Ajit Garg
+photo: $assets.files.images.team.ajit.jpg
+photo-grey: $assets.files.images.team.ajit-greyscale.jpg
+link: https://github.com/gargajit
+designation: Dev Rel
+
 -- member: Arpita Jaiswal
 photo: $assets.files.images.team.arpita.jpg
 photo-grey: $assets.files.images.team.arpita-greyscale.jpg
 link: https://github.com/Arpita-Jaiswal
 designation: Senior Software Developer
 
--- member: Ganesh Salunke
-photo: $assets.files.images.team.ganeshs.jpg
-photo-grey: $assets.files.images.team.ganeshs-greyscale.jpg
-link: https://github.com/gsalunke
-designation: Senior Manager Frontend
 
 -- member: Rithik Seth
 photo: $assets.files.images.team.rithik.jpg
 photo-grey: $assets.files.images.team.rithik-greyscale.jpg
 link: https://github.com/Heulitig
 designation: Software Developer
+
+-- member: Ganesh Salunke
+photo: $assets.files.images.team.ganeshs.jpg
+photo-grey: $assets.files.images.team.ganeshs-greyscale.jpg
+link: https://github.com/gsalunke
+designation: Senior Manager Frontend
 
 -- member: Priyanka Yadav
 photo: $assets.files.images.team.priyanka.jpg
@@ -46,11 +73,11 @@ photo-grey: $assets.files.images.team.meenu-greyscale.jpg
 link: https://github.com/MeenuKumari28
 designation: Fastn Builder - FTD Dev
 
--- member: Ajit Garg
-photo: $assets.files.images.team.ajit.jpg
-photo-grey: $assets.files.images.team.ajit-greyscale.jpg
-link: https://github.com/gargajit
-designation: Dev Rel
+-- member: Saurabh Lohiya
+photo: $assets.files.images.team.saurabh-lohiya.jpg
+photo-grey: $assets.files.images.team.saurabh-lohiya-greyscale.jpg
+link: https://github.com/saurabh-lohiya
+designation: Fastn Builder - FTD Dev
 
 -- end: team
 
