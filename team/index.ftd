@@ -13,8 +13,14 @@ We are high on collaboration, low on ego, and take our happy hours seriously.
 -- member: Amit Upadhyay
 photo: $assets.files.images.team.amitu.jpg
 photo-grey: $assets.files.images.team.amitu-greyscale.jpg
-link: https://github.com/amitu
+link: https://www.linkedin.com/in/amitu/
 designation: Founder, CEO
+
+-- member: Harish Shankaran
+photo: $assets.files.images.team.harish.jpg
+photo-grey: $assets.files.images.team.harish-greyscale.jpg
+link: https://www.linkedin.com/in/harishshankaran/
+designation: Marketing Consultant
 
 -- member: Nandhini Devi
 photo: $assets.files.images.team.nandhini-devi.jpg
@@ -26,7 +32,7 @@ designation: Marketing Consultant
 photo: $assets.files.images.team.muskan-verma.jpg
 photo-grey: $assets.files.images.team.muskan-verma-greyscale.jpg
 link: https://github.com/muskaanverma07
-designation: Marketing Consultant
+designation: Design Consultant
 
 
 -- member: Ayush Soni
