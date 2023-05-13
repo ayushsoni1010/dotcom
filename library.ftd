@@ -182,10 +182,16 @@ optional integer max-width: $max-width
 optional boolean show-sections: false
 optional ftd.color headerbg: $inherited.colors.background.base
 optional string seo-title:
+optional string seo-description:
+optional ftd.raw-image-src seo-image:
 
 -- ftd.document:
-title if { $page.seo-title == NULL }: $page.title
 title if { $page.seo-title != NULL }: $page.seo-title
+title: $page.title
+og-title if { page.seo-title != NULL }: $page.seo-title
+og-title: $page.title
+description: $page.seo-description
+og-image: $page.seo-image
 
 -- ftd.column:
 width: fill-container
