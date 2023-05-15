@@ -8,8 +8,8 @@
 
 -- ds.page:
 widthfill: true
-seo-title: Fastn static site generator | FTD Language for prose | HOSTN hosting fastn sites| fifthtry.com
-seo-description: Fastn is a powerful command line tool written in Rust that offers a seamless experience for ftd package management and static site generation. www.fifthtry.com
+seo-title: FifthTry | Building fastn and HOSTN
+seo-description: Build stunning websites and web apps, host your projects, and learn the power of FTD language with FifthTry. Get started now!
 seo-image: https://www.fifthtry.com/-/fifthtry.com/images/fifthtry-og-image.jpg
 
 -- row-container:
