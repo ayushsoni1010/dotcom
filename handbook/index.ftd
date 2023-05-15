@@ -1,8 +1,6 @@
--- import: fifthtry.com/library as ds
 -- import: cbox
 
 -- ds.page: FifthTry Employee Handbook
-show-sections: true
 
 The FifthTry team handbook is the central repository for how we run the company.
 We want to be an open source company, so this handbook is open to the world.

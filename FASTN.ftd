@@ -1,8 +1,6 @@
 -- import: fastn
 
 -- fastn.package: fifthtry.com
-zip: github.com/fifthtry/dotcom/archive/refs/heads/main.zip
-download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 
 -- fastn.dependency: fifthtry.github.io/demo-day as dd
 -- fastn.dependency: fifthtry.github.io/code-block as cb
@@ -15,13 +13,15 @@ download-base-url: https://raw.githubusercontent.com/fifthtry/dotcom/main
 -- fastn.dependency: fifthtry.github.io/typography as tf
 -- fastn.dependency: fifthtry.github.io/app-switcher 
 -- fastn.dependency: fifthtry.github.io/dotcom-typography as typo
+-- fastn.dependency: fastn-community.github.io/doc-site
+-- fastn.dependency: fifthtry.com/FASTN/config as ds
 
 -- fastn.auto-import: h
 -- fastn.auto-import: cb
 -- fastn.auto-import: dd
--- fastn.auto-import: fifthtry.com/FASTN/config
+-- fastn.auto-import: ds
 -- fastn.auto-import: fifthtry.com/assets
--- fastn.auto-import: fifthtry.com/library as ds
+-- fastn.auto-import: cbox
 -- fastn.auto-import: fifthtry.github.io/bling/chat
 
 

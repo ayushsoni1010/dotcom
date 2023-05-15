@@ -1,5 +1,6 @@
 -- import: fastn
--- import: ds
+-- import: fastn-community.github.io/doc-site
+-- import: fastn-community.github.io/doc-site/common
 -- import: blg
 -- import: fifthtry.com/assets
 -- import: ps
@@ -7,21 +8,59 @@
 -- import: fastn/processors as pr
 
 
--- $ds.github: https://github.com/fifthtry/cdoc/
+-- $common.github: https://github.com/fifthtry/cdoc/
 
 
--- $ds.site-logo:
+-- $common.site-logo:
 light: $assets.files.assets.images.logo-fifthtry-dark.svg.light
 dark: $assets.files.assets.images.logo-fifthtry-dark.svg.dark
 
--- $ds.site-name:
+-- $common.site-name:
+
+
+
+
+
+-- component page:
+children wrapper:
+optional caption title:
+optional body body:
+boolean sidebar: true
+optional boolean widthfill: false
+
+-- doc-site.page: $page.title
+site-logo: $fastn-assets.files.images.fastn.svg
+body: $page.body
+colors: $dark-flame-cs.main
+$sidebar: *$page.sidebar
+$widthfill: *$page.widthfill
+types: $typo.types
+show-banner: true
+show-footer: true
+site-name: NULL
+logo-height: 38
+logo-width: 120
+
+
+-- ftd.column:
+spacing.fixed.em: 0.8
+width: fill-container
+children: $page.wrapper
+
+-- end: ftd.column
+
+-- end: doc-site.page
+
+-- end: page
+
+
 
 
 -- boolean is-mobile: false
 
 
 
--- $ds.sections:
+-- $common.sections:
 $processor$: pr.sitemap
 
 - Why: why/
@@ -30,7 +69,7 @@ $processor$: pr.sitemap
 - Development: dev/
 
 
--- $ds.toc:
+-- $common.toc:
 $processor$: pr.sitemap
 
 - Flow: flow/
