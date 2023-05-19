@@ -104,6 +104,10 @@ pages.
 
 -- ds.h1: History
 
+-- ds.h2: Revamped discord channels
+
+Organized discord channels meaningfully, improved naming conventions of all channels and introduced new channels.
+
 -- ds.h2: Moved From Slack ~ 8th Jan 2022
 
 Till this point we were using [Slack](/slack/) for internal communication, and
