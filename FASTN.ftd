@@ -61,10 +61,11 @@ github-starred: ftd-lang/fastn
     document: handbook/feedback-to-discussion.ftd
   - How To Answer: /answer/
     document: handbook/answer.ftd
-;;# Events: events/2023/mar-2023/01/
+  - Newcomer: /newcomer/
+    document: handbook/new-comer.ftd
 - Repository Checks 🚧: /repo-checks/
   document: /handbook/repo-checks.ftd
-- Guidelines 🚧: /guidelines/
+- Guidelines: /guidelines/
   - Project Guidelines: /project-guidelines/
     document: /guidelines/project-guidelines.ftd
   - User Interface Review: /ui-review/
