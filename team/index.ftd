@@ -40,6 +40,12 @@ photo-grey: $assets.files.images.team.saurabh-lohiya-greyscale.jpg
 link: https://github.com/saurabh-lohiya
 designation: Fastn Builder - FTD Dev
 
+-- member: Yashveer Mehra
+photo: $assets.files.images.team.yashveer-mehra.jpg
+photo-grey: $assets.files.images.team.yashveer-mehra-greyscale.jpg
+link: https://www.linkedin.com/in/yashveer-mehra-4b2a171a9
+designation: Design Consultant
+
 -- member: Ganesh Salunke
 photo: $assets.files.images.team.ganeshs.jpg
 photo-grey: $assets.files.images.team.ganeshs-greyscale.jpg
@@ -69,12 +75,6 @@ photo: $assets.files.images.team.amitu.jpg
 photo-grey: $assets.files.images.team.amitu-greyscale.jpg
 link: https://www.linkedin.com/in/amitu/
 designation: Founder, CEO
-
--- member: Muskan Verma
-photo: $assets.files.images.team.muskan-verma.jpg
-photo-grey: $assets.files.images.team.muskan-verma-greyscale.jpg
-link: https://github.com/muskaanverma07
-designation: Design Consultant
 
 -- member: Priyanka Yadav
 photo: $assets.files.images.team.priyanka.jpg
